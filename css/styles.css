@@ -1,0 +1,338 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+*{
+  font-family: 'Montserrat', sans-serif;
+    /* background-image: url("./sanciai_home.png");
+    background-repeat: repeat;
+    position: relative;
+    z-index: -50; */
+}
+
+a, a:link, a:visited, a:active{
+  text-decoration:none;
+}
+
+/* Fonts */
+.lexend {
+  font-family: 'Lexend Deca', sans-serif;
+  justify-content: flex-start;
+}
+
+/* Colors */
+  .yellow2{
+    color: #D7DF23;
+  }
+  .violet2{
+    color: #AF529E;
+  }
+  .green2{
+    color: #4E7E6E;
+  }
+  .green3{
+    color: #94C4B4;
+  }
+  .greygreen{
+    color: #445153;
+  }
+  .greygreen2{
+    color: #435053;
+  }
+  .grey2{
+    color: #333333;
+  }
+  .brown{
+    color: #454545;
+  }
+  .blue2{
+    color: #154455;
+  }
+  .blue3{
+    color: #33ADB6;
+  }
+  .blue4{
+    color: #28A8E0;
+  }
+
+  /* BG-Colors */
+  .bg-yellow2 {
+    background-color: #D7DF23 !important;
+  }
+  .bg-nav{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+  .bg-green2{
+    background-color: #94C4B4;
+  }
+  /* NavBar title */
+  .logo{
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  }
+
+.title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover{
+color: #435053;
+}
+a {
+  color: #445153;
+}
+
+  /* NavBar btn */
+  .languaje{
+    font-weight: 700 !important;
+  }
+  
+  .login{
+    color: white;
+    border-radius: 0.50rem;
+    height: 3em;
+    margin-right: 0.8rem;
+    background-color: #D7DF23;
+  }
+  .nav-link{
+    color: #435053;
+    font-weight: 500;
+    border-right: 2px solid #435053;
+    padding: 0;
+  }
+  .barsen{
+    color: #435053;
+    font-weight: 500;
+    border-right: none;
+    padding: 0;
+  }
+.input2{
+  font-family: FontAwesome, 'Montserrat', sans-serif;
+  color: none;
+  border: none;
+  border-bottom: 2px solid #435053;
+  margin-left: 10px;
+  width: auto;
+  display: inline-block;
+}
+span.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Header */
+.carousel-item {
+  height: 90vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.photoby{
+  font-size: 0.75rem;
+  color: rgba(255,255,255, 0.5);
+}
+.col-lg-4-nopad{
+  padding-left: 0;
+}
+.wave-base{
+  height: 90vh;
+  min-height: 300px;
+  justify-content: start;
+  background: no-repeat center center;
+  position: absolute;
+  z-index: 10;
+}
+.wave-text{  
+  position: absolute;
+  z-index: 15;
+  color: #435053;
+  margin-top: 9rem;
+  margin-left: 2rem;
+}
+.wave-text>h2{
+  font-weight: 900;
+}
+.wave-text>h3{
+  font-weight: 900;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid lightgray;
+}
+.wave-text>h4.d-none{
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 2rem 1rem 0 0;
+  text-align: left;
+  line-height: 1.3rem;
+}
+.wave-base-btn{
+  width: 70%;
+  margin-left: 2rem;
+  position: absolute;
+  z-index: 20;
+}
+/* Footer */
+footer{
+  font-family: FontAwesome, 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+}
+.social-icon{
+  font-size: 1.8rem;
+  margin: auto 0.25rem;
+  color: inherit;
+}
+.legal{
+    margin: auto 0.25rem;
+    color: inherit;
+    font-size: 1rem;
+  }
+
+/* Events */
+.events{
+  font-weight: 900;
+  color: #435053;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: none;
+    border: none;
+    border-radius: 0;
+    max-width: 70%;
+    height: auto;
+    vertical-align: center;
+  }
+.event-date{
+  line-height: 0.5;
+}
+.event-about{
+  padding-bottom: 0.25rem;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  background-color: transparent;
+  border: transparent;
+}
+.card-header{
+  padding: 0.3rem;
+  margin: 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.card-header:hover{
+  background-color: #94C4B4;
+}
+.month{
+  font-size: 1rem;
+}
+.day{
+  font-size: 2rem;
+}
+.event-type{
+  font-size: 0.5rem;
+  color: #154455;
+}
+.event-title{
+  font-size: 1rem;
+}
+.event-location{
+  font-size: 100%;
+}
+
+.btn-register{
+  background-color: #AF529E;
+  width: inherit;
+  color: white;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.event-description>p{
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+/* sm */
+
+
+@media (max-width: 768px){
+  .title{
+    color: #AF529E;
+    font-weight: 600;
+  }
+  a.nav-link{
+    color: #435053;
+    font-weight: 500;
+    border: none;
+    padding: 0;
+    margin-right: 0.5rem;
+  }
+ul.nav-link{
+  background-color: white;
+  border-radius: 0;
+}
+.login{
+  margin: 0.25rem 0;
+  width: 100%;
+  color: white;
+  background-color: #AF529E;
+}
+.bg-nav{
+  background-color: rgb(255, 255, 255, 1);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.wave-text>h2,h3{
+  color: white;
+  font-size: 2rem;
+  border-bottom: inherit;
+}
+.wave-text>h4.d-block{
+  position: absolute;
+  z-index: 15;
+  color: #435053;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.3rem;
+  margin-right: 1rem;
+}
+.wave-base{
+  height: 90vh;
+  min-height: 300px;
+  justify-content: start;
+  background: no-repeat center center;
+  position: absolute;
+  z-index: 10;
+}
+.wave-base-btn{
+  width: 40%;
+  margin: 1rem auto 1rem 6rem;
+  position: inherit;
+  z-index: 20;
+}
+}
