@@ -243,7 +243,7 @@ p {
 }
 .card-header{
   padding: 0.3em;
-  margin: 1em;
+  margin: 0;
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
@@ -290,10 +290,19 @@ p {
     color: #AF529E;
     font-weight: 600;
   }
+  .bg-nav{
+    width: auto;
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255, 1);
+    padding: 0.5em;
+    border-radius: 1em;
+  }
   a.nav-link{
     color: #435053;
     font-weight: 500;
+    font-size: inherit;
     border: none;
+    margin: 0.2em;
     padding: 0;
     margin-right: 0.5em;
   }
@@ -306,13 +315,6 @@ p {
     width: 100%;
     color: white;
     background-color: #AF529E;
-  }
-  .bg-nav{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 255, 255, 1);
-    padding: 0.5em;
-    border-radius: 1em;
   }
   .wave-text{  
     display: flex;
