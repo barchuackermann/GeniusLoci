@@ -41,7 +41,7 @@ a, a:link, a:visited, a:active{
     background-color: #94C4B4;
   }
   /* NavBar title */
-  .logo{
+.logo{
   display: inline-block;
   width: 2em;
   height: 2em;
@@ -50,9 +50,8 @@ a, a:link, a:visited, a:active{
   background: no-repeat center center;
   background-size: 100% 100%;
   }
-
 .title2{
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 500;
   text-decoration: none;
 }
@@ -63,13 +62,13 @@ a {
   color: #445153;
 }
 
-  /* NavBar btn */
+ /* NavBar btn */
 .bg-nav{
   display: flex;
   width: 70%;
   background-color: rgb(255, 255, 255, 0.7);
-  padding: 0.5rem;
-  border-radius: 2rem;
+  padding: 0.5em;
+  border-radius: 2em;
 }
 .empty{
   color: transparent;
@@ -132,64 +131,80 @@ span.navbar-toggler-icon{
   z-index: -1;
 }
 .photoby{
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: rgba(255,255,255, 0.5);
 }
 .col-lg-4-nopad{
   padding-left: 0;
+  width: 50%;
 }
-.wave-base{
+.wave-base.d-md-block{
   height: 90vh;
   min-height: 300px;
   justify-content: start;
   background: no-repeat center center;
   position: absolute;
   z-index: 10;
+  width: 70vw;
 }
 .wave-text{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 36vw;
   position: absolute;
   z-index: 15;
   color: #435053;
-  margin-top: 9rem;
-  margin-left: 2rem;
+  margin-top: 2.5em;
+  margin-left: 1.25em;
 }
 .wave-text>h2{
   font-weight: 900;
+  font-size: 0.8em;
 }
 .wave-text>h3{
   font-weight: 900;
-  padding-bottom: 1rem;
+  font-size: 0.5em;
+  padding-bottom: 0.3em;
   border-bottom: 2px solid lightgray;
 }
-.wave-text>h4.d-none{
+.wave-text>h4.d-md-block{
   font-weight: 500;
   font-size: 1rem;
-  padding: 2rem 1rem 0 0;
   text-align: left;
-  line-height: 1.3rem;
+  line-height: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 4rem;
+}
+.mapabtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .wave-base-btn{
-  width: 70%;
-  margin-left: 2rem;
+  width: 50%;
+  margin-left: 1.5em;
   position: absolute;
   z-index: 20;
 }
 /* Footer */
 footer{
   font-family: FontAwesome, 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: lighter;
   color: white;
 }
 .social-icon{
-  font-size: 1.8rem;
-  margin: auto 0.25rem;
+  font-size: 1.8em;
+  margin: auto 0.25em;
   color: inherit;
 }
 .legal{
-    margin: auto 0.25rem;
+    margin: auto 0.25em;
     color: inherit;
-    font-size: 1rem;
+    font-size: 1em;
   }
 
 /* Events */
@@ -202,7 +217,7 @@ p {
   margin-bottom: 0;
 }
 .img-thumbnail {
-    padding: 0.25rem;
+    padding: 0.25em;
     background-color: none;
     border: none;
     border-radius: 0;
@@ -214,7 +229,7 @@ p {
   line-height: 0.5;
 }
 .event-about{
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.25em;
 }
 .card {
   position: relative;
@@ -227,8 +242,8 @@ p {
   border: transparent;
 }
 .card-header{
-  padding: 0.3rem;
-  margin: 1rem;
+  padding: 0.3em;
+  margin: 1em;
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
@@ -236,17 +251,17 @@ p {
   background-color: #94C4B4;
 }
 .month{
-  font-size: 1rem;
+  font-size: 1em;
 }
 .day{
-  font-size: 2rem;
+  font-size: 2em;
 }
 .event-type{
-  font-size: 0.5rem;
+  font-size: 0.5em;
   color: #154455;
 }
 .event-title{
-  font-size: 1rem;
+  font-size: 1em;
 }
 .event-location{
   font-size: 100%;
@@ -257,12 +272,12 @@ p {
   width: inherit;
   color: white;
   font-weight: 500;
-  border-radius: 2rem;
+  border-radius: 2em;
 }
 
 .event-description>p{
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 
@@ -280,26 +295,28 @@ p {
     font-weight: 500;
     border: none;
     padding: 0;
-    margin-right: 0.5rem;
+    margin-right: 0.5em;
   }
 ul.nav-link{
   background-color: white;
   border-radius: 0;
 }
 .login{
-  margin: 0.25rem 0;
+  margin: 0.25em 0;
   width: 100%;
   color: white;
   background-color: #AF529E;
 }
 .bg-nav{
+  display: flex;
+  flex-direction: row;
   background-color: rgb(255, 255, 255, 1);
-  padding: 0.5rem;
-  border-radius: 1rem;
+  padding: 0.5em;
+  border-radius: 1em;
 }
 .wave-text>h2,h3{
   color: white;
-  font-size: 2rem;
+  font-size: 2em;
   border-bottom: inherit;
 }
 .wave-text>h4.d-block{
@@ -309,8 +326,8 @@ ul.nav-link{
   font-weight: 500;
   font-size: 0.8rem;
   text-align: left;
-  line-height: 1.3rem;
-  margin-right: 1rem;
+  line-height: 1.3em;
+  margin-right: 1em;
 }
 .wave-base{
   height: 90vh;
@@ -322,7 +339,7 @@ ul.nav-link{
 }
 .wave-base-btn{
   width: 40%;
-  margin: 1rem auto 1rem 6rem;
+  margin: 1em auto 1em 6em;
   position: inherit;
   z-index: 20;
 }
