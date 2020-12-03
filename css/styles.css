@@ -54,6 +54,7 @@ a, a:link, a:visited, a:active{
   font-size: 1.2em;
   font-weight: 500;
   text-decoration: none;
+  color: #AF529E;
 }
 a:hover{
 color: #435053;
@@ -95,6 +96,11 @@ a {
   border-right: 2px solid #435053;
   padding: 0;
   width: auto;
+}
+.dropdown-menu{
+  margin-top: 1.25em;
+  background-color:  rgb(255, 255, 255, 0.7);
+  border-radius: 0.3em;
 }
 .languaje{
   font-weight: 700 !important;
@@ -269,6 +275,8 @@ footer{
   color: white;
   font-weight: 500;
   border-radius: 2em;
+  position: relative;
+  z-index: 330;
 }
 .img-thumbnail {
   padding: 0.25em;
