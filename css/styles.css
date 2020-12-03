@@ -6,10 +6,9 @@
 
 *{
   font-family: 'Montserrat', sans-serif;
-    /* background-image: url("./sanciai_home.png");
-    background-repeat: repeat;
-    position: relative;
-    z-index: -50; */
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
 a, a:link, a:visited, a:active{
@@ -19,52 +18,24 @@ a, a:link, a:visited, a:active{
 /* Fonts */
 .lexend {
   font-family: 'Lexend Deca', sans-serif;
-  justify-content: flex-start;
 }
 
 /* Colors */
-  .yellow2{
-    color: #D7DF23;
-  }
-  .violet2{
-    color: #AF529E;
-  }
-  .green2{
-    color: #4E7E6E;
-  }
-  .green3{
-    color: #94C4B4;
-  }
-  .greygreen{
-    color: #445153;
-  }
-  .greygreen2{
-    color: #435053;
-  }
-  .grey2{
-    color: #333333;
-  }
-  .brown{
-    color: #454545;
-  }
-  .blue2{
-    color: #154455;
-  }
-  .blue3{
-    color: #33ADB6;
-  }
-  .blue4{
-    color: #28A8E0;
-  }
+  .yellow2{color: #D7DF23;}
+  .violet2{color: #AF529E;}
+  .green2{color: #4E7E6E;}
+  .green3{color: #94C4B4;}
+  .greygreen{color: #445153;}
+  .greygreen2{color: #435053;}
+  .grey2{color: #333333;}
+  .brown{color: #454545;}
+  .blue2{color: #154455;}
+  .blue3{color: #33ADB6;}
+  .blue4{color: #28A8E0;}
 
   /* BG-Colors */
   .bg-yellow2 {
     background-color: #D7DF23 !important;
-  }
-  .bg-nav{
-    background-color: rgb(255, 255, 255, 0.7);
-    padding: 0.5rem;
-    border-radius: 2rem;
   }
   .bg-green2{
     background-color: #94C4B4;
@@ -80,7 +51,7 @@ a, a:link, a:visited, a:active{
   background-size: 100% 100%;
   }
 
-.title{
+.title2{
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
@@ -93,37 +64,57 @@ a {
 }
 
   /* NavBar btn */
-  .languaje{
-    font-weight: 700 !important;
-  }
-  
-  .login{
-    color: white;
-    border-radius: 0.50rem;
-    height: 3em;
-    margin-right: 0.8rem;
-    background-color: #D7DF23;
-  }
-  .nav-link{
-    color: #435053;
-    font-weight: 500;
-    border-right: 2px solid #435053;
-    padding: 0;
-  }
-  .barsen{
-    color: #435053;
-    font-weight: 500;
-    border-right: none;
-    padding: 0;
-  }
+.bg-nav{
+  display: flex;
+  width: 70%;
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.empty{
+  color: transparent;
+  width: 6em;
+}
+.input-group{
+  width: 100%;
+  justify-content: center;
+}
 .input2{
   font-family: FontAwesome, 'Montserrat', sans-serif;
   color: none;
   border: none;
   border-bottom: 2px solid #435053;
-  margin-left: 10px;
+  width: 75%;
+  display: inline;
+}
+.lupa{
+  display: inline;
+  width: 20%;
+}
+.nav-link{
+  display: flex;
+  color: #435053;
+  font-size: 0.8em;
+  font-weight: 500;
+  border-right: 2px solid #435053;
+  padding: 0;
   width: auto;
-  display: inline-block;
+}
+.languaje{
+  font-weight: 700 !important;
+}
+.login{
+  color: white;
+  border-radius: 0.50em;
+  height: 3em;
+  margin-right: 0.8em;
+  background-color: #D7DF23;
+}
+.barsen{
+  color: #435053;
+  font-weight: 500;
+  border-right: none;
+  padding: 0;
 }
 span.navbar-toggler-icon{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
