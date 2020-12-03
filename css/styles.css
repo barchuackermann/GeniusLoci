@@ -297,50 +297,67 @@ p {
     padding: 0;
     margin-right: 0.5em;
   }
-ul.nav-link{
-  background-color: white;
-  border-radius: 0;
-}
-.login{
-  margin: 0.25em 0;
-  width: 100%;
-  color: white;
-  background-color: #AF529E;
-}
-.bg-nav{
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(255, 255, 255, 1);
-  padding: 0.5em;
-  border-radius: 1em;
-}
-.wave-text>h2,h3{
-  color: white;
-  font-size: 2em;
-  border-bottom: inherit;
-}
-.wave-text>h4.d-block{
-  position: absolute;
-  z-index: 15;
-  color: #435053;
-  font-weight: 500;
-  font-size: 0.8rem;
-  text-align: left;
-  line-height: 1.3em;
-  margin-right: 1em;
-}
-.wave-base{
-  height: 90vh;
-  min-height: 300px;
-  justify-content: start;
-  background: no-repeat center center;
-  position: absolute;
-  z-index: 10;
-}
-.wave-base-btn{
-  width: 40%;
-  margin: 1em auto 1em 6em;
-  position: inherit;
-  z-index: 20;
-}
+  ul.nav-link{
+    background-color: white;
+    border-radius: 0;
+  }
+  .login{
+    margin: 0.25em 0;
+    width: 100%;
+    color: white;
+    background-color: #AF529E;
+  }
+  .bg-nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255, 1);
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  .wave-text{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80vw;
+    position: absolute;
+    z-index: 15;
+    color: white;
+    margin-top: 1.8em;
+    margin-left: 0.8em;
+  }
+  .wave-text>h2{
+    font-weight: 900;
+    font-size: 0.8em;
+  }
+  .wave-text>h3{
+    font-weight: 900;
+    font-size: 0.4em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid lightgray;
+  }
+  .wave-text>h4.d-sm-block{
+    font-weight: 500;
+    font-size: 0.2em;
+    color: black;
+    text-align: left;
+    line-height: 1.3em;
+    position: relative;
+    margin-top: 40vh;
+  }
+  .wave-base.d-sm-block{
+    height: 90vh;
+    width: 100vw;
+    max-width: 110vw;
+    justify-content: start;
+    background: no-repeat center center;
+    position: absolute;
+    z-index: 10;
+  }
+  .mapabtn{
+    width: 50%;
+    margin-left: 0.5em;
+    align-content: center;
+    justify-content: center;
+  }
 }
