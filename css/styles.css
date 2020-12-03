@@ -212,10 +212,6 @@ footer{
   font-weight: 900;
   color: #435053;
 }
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .img-thumbnail {
     padding: 0.25em;
     background-color: none;
@@ -224,7 +220,7 @@ p {
     max-width: 70%;
     height: auto;
     vertical-align: center;
-  }
+}
 .event-date{
   line-height: 0.5;
 }
@@ -248,7 +244,8 @@ p {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 .card-header:hover{
-  background-color: #94C4B4;
+  color: white;
+  background-color: #444444;
 }
 .month{
   font-size: 1em;
