@@ -144,60 +144,75 @@ span.navbar-toggler-icon{
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
 }
-.col-lg-4-nopad{
-  padding-left: 0;
-  width: 50%;
+.bg-white-wave{
+  height: 90vh;
+  min-height: 300px;
+  justify-content: start;
+  position: absolute;
+  z-index: 10;
+  width: 65vw;
+  object-fit: scale-down;
 }
 .wave-base.d-md-block{
   height: 90vh;
   min-height: 300px;
   justify-content: start;
-  background: no-repeat center center;
   position: absolute;
-  z-index: 10;
+  z-index: 15;
   width: 65vw;
+  object-fit: fill;
 }
 .wave-text{  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 36vw;
   position: absolute;
-  z-index: 15;
+  z-index: 20;
   color: #435053;
-  margin-top: 2.5em;
-  margin-left: 1.25em;
+  object-fit: scale-down;
+  margin-top: 2.3em;
+  margin-left: 0.8em;
+  width: 100%;
+  max-height: 90vh;
+  object-fit: scale-down;
 }
 .wave-text>h2{
   font-weight: 900;
   font-size: 0.8em;
+  position: relative;
+  z-index: 20;
 }
 .wave-text>h3{
   font-weight: 900;
   font-size: 0.5em;
-  padding-bottom: 0.3em;
   border-bottom: 2px solid lightgray;
+  position: relative;
+  z-index: 20;
 }
 .wave-text>h4.d-md-block{
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.3em;
   text-align: left;
   line-height: 1.3em;
-  margin-top: 1.5em;
-  margin-bottom: 4rem;
-}
+  margin-top: 1em;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 20;
+  }
 .mapabtn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-}
+  object-fit: scale-down;
+  }
 .wave-base-btn{
   width: 50%;
   margin-left: 1.5em;
   position: absolute;
   z-index: 20;
+  object-fit: scale-down;
 }
 /* Footer */
 footer{
@@ -287,6 +302,9 @@ footer{
 .btn-register:focus{
   box-shadow: none;
 }
+.card-body{
+  display: flex;
+}
 .img-thumbnail {
   padding: 0.25em;
   background-color: none;
@@ -307,9 +325,25 @@ p.event-data{
 
 
 @media (max-width: 768px){
-  .title{
-    color: #AF529E;
+  .title2{
+    color: #D7DF23;
     font-weight: 600;
+    font-size: 0.8em;
+  }
+  .lexend{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  .bg.transparent{
+    padding: 0;
+    margin: 0;
+  }
+  .logo{
+    width: 15%;
+  }
+  .navbar-toggler-right{
+    margin-right: 3%;
   }
   .bg-nav{
     width: auto;
@@ -342,7 +376,7 @@ p.event-data{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 80vw;
+    width: 100%;
     position: absolute;
     z-index: 15;
     color: white;
@@ -366,7 +400,6 @@ p.event-data{
     text-align: left;
     line-height: 1.3em;
     position: relative;
-    margin-top: 40vh;
   }
   .wave-base.d-sm-block{
     height: 90vh;
@@ -382,5 +415,57 @@ p.event-data{
     margin-left: 0.5em;
     align-content: center;
     justify-content: center;
+  }
+  .events{
+    font-weight: 900;
+    color: #435053;
+    margin: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: transparent;
+  }
+  .card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    margin: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+  .card-header:hover{
+    color: white;
+    background-color: #444444;
+  }
+  .event-date{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+  }
+  .event-month{
+    font-size: 1em;
+    margin: 0;
+  }
+  .event-day{
+    font-size: 2em;
+    margin: 0;
+  }
+  .event-title{
+    font-size: 1em;
+    margin: 0;
+  }
+  .event-location{
+    font-size: 90%;
+    margin: 0;
+  }
+  .event-container{
+    display: block;
+  }
+  .img-thumbnail {
+    margin-bottom: 1.3em;
   }
 }
