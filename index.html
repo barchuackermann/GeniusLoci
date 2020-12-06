@@ -2,51 +2,49 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
-<!-- FontAwesome -->
-<script src="https://kit.fontawesome.com/a99166f815.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a99166f815.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
 
   <title>Šančiųbendruomenė.lt</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
-
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-transparent fixed-top">
-    <div class="container-fluid mt-3">
-      <a class="navbar-brand lexend yellow2 active" href="index.html">
-        <img src="./css/Logo Icon.svg" alt="logo icon" class="img logo mr-2">
+  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand lexend active" href="index.html">
+        <img src="./css/Logo Icon.svg" alt="logo icon" class="logo">
         <span class="title2">Šančiųbendruomenė.lt</span>
       </a>
-      <button class="navbar-toggler navbar-toggler-right bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarResponsive">
+      <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarResponsive">
         <ul class="navbar-nav bg-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">MAPS</a>
           </li>
+          <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item">
             <a class="nav-link" href="./communities.html">COMMUNITIES</a>
           </li>
+          <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENIUS LOCI</a>
             <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
@@ -55,10 +53,12 @@
               <a class="dropdown-item" href="#">Calendar</a>
               <a class="dropdown-item" href="#">Partners</a>
             </div>
+            <li class="separador d-none d-sm-none d-md-block">|</li>
           </li>
           <li class="nav-item">
-            <a class="nav-link barsen" href="#">NEWS</a>
+            <a class="nav-link" href="#">NEWS</a>
           </li>
+          <li class="separador d-none d-sm-none d-md-block">|</li>
           <li>
             <form method ="get" action="#" class="input-group">
               <input type="search" id="search" name="Search" aria-label="Search" method="GET" action="" placeholder="Search" class="form-inline bg-transparent input2">
@@ -70,30 +70,42 @@
           <li class="nav-item">
             <a class="nav-link languaje" href="#">LT</a>
           </li>
+          <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item">
-            <a class="nav-link languaje barsen active" href="#">EN</a>
+            <a class="nav-link languaje active" href="#">EN</a>
           </li>
         </ul>
-        <button type="button" class="btn justify-content-end login">Log-In</button>
+        <button type="button" class="btn login">Log-In</button>
       </div>      
     </div>
   </nav>
 
   <!-- Header / Carousel -->
-  <header class="display-4 shadow-lg rounded">
-    <div class="row">
-      <div class="col-lg-4 justify-content-start bg-white-wave">
-        <img src="./css/home-wave2.png" alt="home-wave" class="wave-base d-none d-sm-none d-md-block"> <!-- Esta img se ve en pc -->
-        <img src="./css/home-wave3.png" alt="home-wave" class="img wave-base d-block d-sm-block d-md-none"> <!-- Esta en mobile -->
-        <div class="wave-text">
-          <h2>GENIUS LOCI:</h2>
-          <h3>Urbanization and civil society</h3>
-          <h4 class="d-none d-sm-none d-md-block">This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4> <!-- Este texto en PC va arriba del button -->
-          <div class="mapabtn">
-            <a href="#" class="d-flex"><img src="./css/home/MAP_EN.png" alt="button-map" class="img-fluid wave-base-btn"></a>
+  <header class="display-4">
+    <div class="principal">
+      <div class="row m-0">
+        <!-- Desktop -->
+        <div class="carousel-supra d-none d-sm-none d-md-block" style="background-image: url(./css/home/WAVE-WEB.png)">
+          <div class="carousel-text">
+            <h2>GENIUS LOCI:</h2>
+            <h3>Urbanization and civil society</h3>
+            <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4>
+            <div style="background-image: url(./css/home/button-maps2.png)" class="btn-maps">
+              <a href="#">MAPS</a>
+            </div>
           </div>
-          <h4 class="d-block d-sm-block d-md-none">This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4><!-- Este texto en mobile va abajo del button -->
-      </div>
+        </div>
+        <!-- Mobile -->
+        <div class="carousel-supra d-block d-sm-block d-md-none" style="background-image: url(./css/home/WAVE-MOBILE.png)"> 
+          <div class="carousel-text">
+            <h2>GENIUS LOCI:</h2>
+            <h3>Urbanization and civil society</h3>
+            <div style="background-image: url(./css/home/button-maps2.png)" class="btn-maps">
+              <a href="#">MAPS</a>
+            </div>
+            <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -142,11 +154,11 @@
   <!-- Events -->
   <section class="row mt-5 mb-5 justify-content-center">
     <div class="col-md-8">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center ">
         <h2 class="text-center events">Upcomming Events</h2>
       </div>
-      <!-- First Event -->
-      <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="mb-4 justify-content-center" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- 1st Event -->
         <div class="card">
           <a 
           class="card-header" role="tab" 
@@ -156,19 +168,19 @@
           href="#collapseOne" 
           aria-expanded="true" 
           aria-controls="collapseOne">
-            <div class="col-md-3 col-sm-12 event-date">
+            <div class="col-md-3 col-sm-3 event-date">
               <p class="event-month">NOV</p>
               <p class="event-day">29</p>
             </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="row event-type">
-                  <p class="event-proyect ea">GENIUS LOCI</p>
-                  <p class="event-category ea">EDUCATION</p>
-                  <p class="event-subcategory">Seminars</p>
+            <div class="col-md-6 col-sm-9 ml-5">
+              <div class="event-type">
+                  <span class="event-proyect ea">GENIUS LOCI</span>
+                  <span class="event-category ea">EDUCATION</span>
+                  <span class="event-subcategory">Seminars</span>
               </div>              
-              <div class="row">
-                <p class="event-title ea">PUBLIC DISCUSSION</p>
-                <p class="event-location">Sanciai Biblioteka 20h.</p>
+              <div class="event-type-title">
+                <span class="event-title ea">PUBLIC DISCUSSION</span>
+                <span class="event-location">Sanciai Biblioteka 20h.</span>
               </div>
             </div>
             <div class="col-md-3 col-sm-12">
@@ -176,11 +188,12 @@
             </div>
           </a>
   
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-body event-container">
-              <div class="col-md-3 col-sm-12 align-content-center text-center">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail"></div>
-              <div class="col-md-9 col-sm-12 event-description justify-content-between">
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body">
+              <div class="col-md-3 col-sm-12 event-container">
+                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
+              </div>
+              <div class="col-md-9 col-sm-12 event-description">
                 <h6 class="event-about">About the Event</h6>
                 <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
                 </p>
@@ -192,98 +205,196 @@
             </div>
           </div>
         </div>
+        <!-- 2nd Event -->
         <div class="card">
           <a 
-              class="collapsed card-header" 
-              role="tab" 
-              id="headingTwo" 
-              data-toggle="collapse" 
-              data-parent="#accordion" 
-              href="#collapseTwo" 
-              aria-expanded="false" 
-              aria-controls="collapseTwo">
-              <div class="col-md-3 col-sm-12 event-date">
-                <p class="event-month">NOV</p>
-                <p class="event-day">29</p>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="row event-type">
-                    <p class="event-proyect ea">GENIUS LOCI</p>
-                    <p class="event-category ea">EDUCATION</p>
-                    <p class="event-subcategory">Seminars</p>
-                </div>              
-                <div class="row">
-                  <p class="event-title ea">PUBLIC DISCUSSION</p>
-                  <p class="event-location">Sanciai Biblioteka 20h.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <button type="button" class="btn btn-register">Register</button>
-              </div>
-              </a>
-          </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-body event-container">
-              <div class="col-md-3 col-sm-12 align-content-center text-center"><img src="./css/events photos/meeting.jpg" alt="event image" class="img-thumbnail"></div>
-              <div class="col-md-9 col-sm-12 event-description justify-content-between">
-              <h6 class="event-about">About the Event</h6>
-              <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-              </p>
-              <h6 class="event-about">Time and location</h6>
-              <p class="small event-data">Nov 29, 2020, 20:00</p>
-              <p class="small event-data">Sanciai Biblioteka</p>
-              <p class="small event-data">Sandėlių g. 7, Kaunas</p>
+          class="card-header" role="tab" 
+          id="headingTwo" 
+          data-toggle="collapse" 
+          data-parent="#accordion" 
+          href="#collapseTwo" 
+          aria-expanded="false" 
+          aria-controls="collapseTwo">
+            <div class="col-md-3 col-sm-12 event-date">
+              <p class="event-month">NOV</p>
+              <p class="event-day">29</p>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <a 
-              class="collapsed card-header" 
-              role="tab" 
-              id="headingThree" 
-              data-toggle="collapse" 
-              data-parent="#accordion" 
-              href="#collapseThree" 
-              aria-expanded="false" 
-              aria-controls="collapseThree">
-              <div class="col-md-3 col-sm-12 event-date">
-                <p class="event-month">NOV</p>
-                <p class="event-day">29</p>
+            <div class="col-md-6 col-sm-12 col-12 ml-5">
+              <div class="event-type">
+                  <span class="event-proyect ea">GENIUS LOCI</span>
+                  <span class="event-category ea">EDUCATION</span>
+                  <span class="event-subcategory">Seminars</span>
+              </div>              
+              <div class="event-type-title">
+                <span class="event-title ea">PUBLIC DISCUSSION</span>
+                <span class="event-location">Sanciai Biblioteka 20h.</span>
               </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="row event-type">
-                    <p class="event-proyect ea">GENIUS LOCI</p>
-                    <p class="event-category ea">EDUCATION</p>
-                    <p class="event-subcategory">Seminars</p>
-                </div>              
-                <div class="row">
-                  <p class="event-title ea">PUBLIC DISCUSSION</p>
-                  <p class="event-location">Sanciai Biblioteka 20h.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <button type="button" class="btn btn-register">Register</button>
-              </div>
-              </a>
-          </div>
-          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="card-body event-container">
-              <div class="col-md-3 col-sm-12 align-content-center text-center">
-                <img src="./css/events photos/biotope.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description justify-content-between">
-              <h6 class="event-about">Abot the Event</h6>
-              <p class="small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-              </p>
-              <h6 class="event-about">Time and location</h6>
-              <p class="small event-data">Nov 29, 2020, 20:00</p>
-              <p class="small event-data">Sanciai Biblioteka</p>
-              <p class="small event-data">Sandėlių g. 7, Kaunas</p>
             </div>
-          </div>
-        </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-register">Register</button>
+            </div>
+          </a>
   
-    
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-body">
+              <div class="col-md-3 col-sm-12 event-container">
+                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
+              </div>
+              <div class="col-md-9 col-sm-12 event-description">
+                <h6 class="event-about">About the Event</h6>
+                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
+                </p>
+                <h6 class="event-about">Time and location</h6>
+                <p class="event-data">Nov 29, 2020, 20:00</p>
+                <p class="event-data">Sanciai Biblioteka</p>
+                <p class="event-data">Sandėlių g. 7, Kaunas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Event -->        
+        <div class="card">
+          <a 
+          class="card-header" role="tab" 
+          id="headingThree" 
+          data-toggle="collapse" 
+          data-parent="#accordion" 
+          href="#collapseThree" 
+          aria-expanded="false" 
+          aria-controls="collapseThree">
+            <div class="col-md-3 col-sm-12 event-date">
+              <p class="event-month">NOV</p>
+              <p class="event-day">29</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12 ml-5">
+              <div class="event-type">
+                  <span class="event-proyect ea">GENIUS LOCI</span>
+                  <span class="event-category ea">EDUCATION</span>
+                  <span class="event-subcategory">Seminars</span>
+              </div>              
+              <div class="event-type-title">
+                <span class="event-title ea">PUBLIC DISCUSSION</span>
+                <span class="event-location">Sanciai Biblioteka 20h.</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-register">Register</button>
+            </div>
+          </a>
+  
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-body">
+              <div class="col-md-3 col-sm-12 event-container">
+                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
+              </div>
+              <div class="col-md-9 col-sm-12 event-description">
+                <h6 class="event-about">About the Event</h6>
+                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
+                </p>
+                <h6 class="event-about">Time and location</h6>
+                <p class="event-data">Nov 29, 2020, 20:00</p>
+                <p class="event-data">Sanciai Biblioteka</p>
+                <p class="event-data">Sandėlių g. 7, Kaunas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4th Event -->
+        <div class="card">
+          <a 
+          class="card-header" role="tab" 
+          id="headingFour" 
+          data-toggle="collapse" 
+          data-parent="#accordion" 
+          href="#collapseFour" 
+          aria-expanded="false" 
+          aria-controls="collapseFour">
+            <div class="col-md-3 col-sm-12 event-date">
+              <p class="event-month">NOV</p>
+              <p class="event-day">29</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12 ml-5">
+              <div class="event-type">
+                  <span class="event-proyect ea">GENIUS LOCI</span>
+                  <span class="event-category ea">EDUCATION</span>
+                  <span class="event-subcategory">Seminars</span>
+              </div>              
+              <div class="event-type-title">
+                <span class="event-title ea">PUBLIC DISCUSSION</span>
+                <span class="event-location">Sanciai Biblioteka 20h.</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-register">Register</button>
+            </div>
+          </a>
+  
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="card-body">
+              <div class="col-md-3 col-sm-12 event-container">
+                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
+              </div>
+              <div class="col-md-9 col-sm-12 event-description">
+                <h6 class="event-about">About the Event</h6>
+                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
+                </p>
+                <h6 class="event-about">Time and location</h6>
+                <p class="event-data">Nov 29, 2020, 20:00</p>
+                <p class="event-data">Sanciai Biblioteka</p>
+                <p class="event-data">Sandėlių g. 7, Kaunas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5th Event -->
+        <div class="card">
+          <a 
+          class="card-header" role="tab" 
+          id="headingFive" 
+          data-toggle="collapse" 
+          data-parent="#accordion" 
+          href="#collapseFive" 
+          aria-expanded="false" 
+          aria-controls="collapseFive">
+            <div class="col-md-3 col-sm-12 event-date">
+              <p class="event-month">NOV</p>
+              <p class="event-day">29</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12 ml-5">
+              <div class="event-type">
+                  <span class="event-proyect ea">GENIUS LOCI</span>
+                  <span class="event-category ea">EDUCATION</span>
+                  <span class="event-subcategory">Seminars</span>
+              </div>              
+              <div class="event-type-title">
+                <span class="event-title ea">PUBLIC DISCUSSION</span>
+                <span class="event-location">Sanciai Biblioteka 20h.</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-register">Register</button>
+            </div>
+          </a>
+  
+          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="card-body">
+              <div class="col-md-3 col-sm-12 event-container">
+                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
+              </div>
+              <div class="col-md-9 col-sm-12 event-description">
+                <h6 class="event-about">About the Event</h6>
+                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
+                </p>
+                <h6 class="event-about">Time and location</h6>
+                <p class="event-data">Nov 29, 2020, 20:00</p>
+                <p class="event-data">Sanciai Biblioteka</p>
+                <p class="event-data">Sandėlių g. 7, Kaunas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       </section>
 
 
