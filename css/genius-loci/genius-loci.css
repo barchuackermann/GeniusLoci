@@ -160,7 +160,7 @@ header{
   font-size: 1vw;
   font-weight: 500;
   text-align: left;
-  line-height: 1.3em;
+  line-height: 2em;
   margin-top: 2vw;
   margin-right: 2vw;
 }
@@ -168,22 +168,19 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
+  margin-top: 7em;
   margin-left: 0.8em;
-  width: 20vw;
-  height: 30vh;
-  background: no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: contain;
+  width: auto;
+  height: auto;
+  background-color: #AF529E;
+  border-radius: 10rem;
+  padding: 1em 2em;
 }
 .btn-maps>a{
   color: white;
-  font-style: italic;
   vertical-align: center;
-  font-weight: 900;
-  font-size: 2.75rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .carousel-item {
   height: 90vh;
