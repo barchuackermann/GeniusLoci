@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
-
 *{
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -197,114 +191,102 @@ header{
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
 }
-/* Events */
-.events{
-  font-weight: 900;
-  color: #435053;
-  margin: 2rem;
-}
-.card {
-  background-color: transparent;
-  border: transparent;
-}
-.card-header{
+/* Waht is GENIUS LOCI */
+.card{
+  position: relative;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: transparent;
+  border-radius: 0.5rem;
+  margin: 1em;
+  background-color: #46626a;
+  color: white;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 600;
+}
+.sameheight{
+  height: 35vh;
+}
+.sameheight>p{
+  text-align: justify;
+  font-size: 0.9em;
+}
+.card-vimeo{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.3em;
-  margin: 0;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin: 1em;
 }
-.card-header:hover{
-  color: white;
-  background-color: #444444;
+.vimeo-title{
+  width: 80%;
+  justify-content: center;
+  align-items:center;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .event-date{
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  align-content: center;
   padding: 0;
+  font-size: 1.5em;
 }
 .event-month{
-  font-size: 2em;
+  font-size: 1em;
   margin: 0;
 }
 .event-day{
-  font-size: 3em;
+  font-size: 1.8em;
   margin: 0;
 }
-.event-type>span{
-  font-size: 0.8em;
-  margin: 0;
+.vimeo{
+  width: 60vw;
+  margin: 2em 2em 1em 2em;
 }
-.event-title{
-  font-size: 1.2em;
-  margin: 0;
-}
-.event-location{
-  font-size: 100%;
-  margin: 0;
-}
-.ea::after{
-  content: "/";
-  margin: 0.5em;
-}
-.btn-register{
-  background-color: #AF529E;
-  width: inherit;
-  color: white;
-  font-weight: 500;
-  border-radius: 2em;
-  position: relative;
-  z-index: 330;
-}
-.card-body{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-}
-.event-container{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  margin-left: 2em;
-  padding: 0;
-}
-.event-description{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  padding:0;
-  margin: -1.3em;
-}
-.event-description>h6{
-  margin: 0;
-  padding:0;
-}
-.event-description>p{
-  margin: 0;
-  padding: 0;
-}
-.img-thumbnail {
-  padding: 0;
-  background-color: none;
-  border-radius: 0.5em;
-  max-width: 60%;
+.btn-more{
+  align-self: flex-start;
+  margin: 0.5em 0 1.5em 5em;
+  width: auto;
   height: auto;
+  background-color: #AF529E;
+  padding: 0.3em 2em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
 }
-p.event-data{
-  font-size: 0.8em;
-  border: 0;
-  margin: 0;
-  padding: 0;
+.btn-more>a{
+  color: white;
+  vertical-align: center;
+  font-weight: 400;
+  font-size: 1rem;
 }
 /* Footer */
 footer{
