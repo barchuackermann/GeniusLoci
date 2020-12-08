@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
-
 *{
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -277,6 +271,9 @@ header{
   content: "/";
   margin: 0.5em;
 }
+/* a>.btn-register{
+  ;
+} */
 .btn-register{
   background-color: #AF529E;
   width: inherit;
@@ -285,6 +282,10 @@ header{
   border-radius: 2em;
   position: relative;
   z-index: 330;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
 }
 .card-body{
   display: flex;
