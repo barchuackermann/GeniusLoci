@@ -138,7 +138,7 @@ header{
   color: #435053;
   font-weight: 900;
   font-size: 3vw;
-  margin-top: calc(1em + 5vw);
+  margin-top: calc(3em + 5vw);
 }
 .carousel-text>h3{
   text-decoration: underline #435053;
@@ -152,7 +152,7 @@ header{
   font-weight: 500;
   text-align: left;
   line-height: 2em;
-  margin-top: 2vw;
+  margin-top: 1vw;
   margin-right: 2vw;
 }
 
@@ -211,25 +211,41 @@ header{
   margin: 1em;
   padding: 0;
 }
-.subcatergory-card{
+.partner-card{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #d6de26;
   border-radius: 0.5em;
+  margin: 0.2em;
+  padding: 0.2em;
+  height: 20vw;
 }
-.card-title>a{
-  font-size: 1.5em;
-  font-weight: 600;
+.namepartner{
   color: white;
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 0.5em;
+  margin: 0;
+}
+.card-title{
+  width: 90%;
+  margin: 0.2em;
+  background-color: #AF529E;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  box-shadow: 2px 3px 8px -3px #3F4F4C;
 }
 .img {
   padding: 1em;
   background-color: none;
-  border-radius: 15em;
-  max-width: 70%;
+  max-width: 13vw;
   height: auto;
+  border-radius: 15em;
   -webkit-border-radius: 15em;
   -moz-border-radius: 15em;
   -ms-border-radius: 15em;
@@ -246,6 +262,31 @@ header{
   -moz-border-radius: 10em;
   -ms-border-radius: 10em;
   -o-border-radius: 10em;
+}
+.modal-dialog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  min-width: calc(50% - 1rem);
+  border: none;
+}
+.modal-content{
+  background-color: #D7DF23;
+  border: none;
+  border-radius: 1.5em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  color: #435053;
+}
+.partner-contact>a{
+  margin: 0.2em 1em;
+}
+.partner-contact>a>.fab{
+  margin: 0.2em -0.5em;
+  font-size: 1.5em;
 }
 /* Footer */
 footer{
@@ -368,7 +409,7 @@ header{
   text-align: left;
   line-height: 1.3em;
   margin-right: 2vw;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 .carousel-item {
   height: 90vh;
@@ -386,17 +427,3 @@ header{
   color: rgba(255,255,255, 0.5);
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

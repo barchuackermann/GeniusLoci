@@ -21,7 +21,7 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="css/activities/activities.css" rel="stylesheet">
+  <link href="css/partners/partners.css" rel="stylesheet">
 </head>
 
 <body>
@@ -111,78 +111,39 @@
   <!-- Events -->
   <section class="row mt-5 mb-5 justify-content-center">
     <div class="col-md-8 center">
-<!-- FIRST PARTNER -->
-                <!-- <div class="subcatergory-card m-1 p-2">
-                  <img src="./css/events photos/activities.jpg" alt="event image" class="img">
-                  <h6 class="card-title">Žemųjų Šančių Bendruomenė</h6>
-                </div> -->
-                <div class="col-md-6 col-lg-4">
-                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                      <div class="portfolio-item-caption-content text-center text-white">
-                        <i class="fas fa-plus fa-3x"></i>
-                      </div>
-                    </div>
-                    <img class="img-fluid" src="./css/logos/sanciai.png" alt="" />
-                  </div>
-                </div>
-
-
-
-<!-- SECOND PARTNER -->
-              <!-- </div>
-              <div class="col-lg-3 col-md-3 text-center">
-                <div class="subcatergory-card m-1 p-2">
-                  <img src="./css/events photos/activities.jpg" alt="event image" class="img">
-                  <h6 class="card-title">KTU</h6>
-                </div>
-              </div> -->
-              <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="./css/logos/bodo.png" alt="" />
-                </div>
+      <div class="card">
+        <div id="" class="" role="tabpanel" aria-labelledby="headingOne">
+          <div class="row event-container">
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="partner-card">
+                <img src="./css/events photos/meeting.jpg" alt="event image" class="img">
+                  <button class="card-title" data-toggle="modal" data-target="#Partner1"><h6 class="namepartner">Žemųjų Šančių Bendruomenė
+                  </h6></button>
               </div>
-<!-- THIRD PARTNER -->              
-              <!-- <div class="col-lg-3 col-md-3 text-center">
-                <div class="subcatergory-card m-1 p-2">
-                  <img src="./css/events photos/activities.jpg" alt="event image" class="img">
-                  <h6 class="card-title">Vellenes Fellesorganisajon</h6>
-                </div>
-              </div> -->
-              <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="./css/logos/Vellenes.png" alt="" />
-                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="partner-card">
+                <img src="./css/events photos/meeting.jpg" alt="event image" class="img">
+                <button class="card-title" data-toggle="modal" data-target="#Partner1"><h6 class="namepartner">KTU
+                </h6></button>
               </div>
-
-<!-- FOURTH PARTNER -->              
-              <!-- <div class="col-lg-3 col-md-3 text-center">
-                <div class="subcatergory-card m-1 p-2">
-                  <img src="./css/events photos/activities.jpg" alt="event image" class="img">
-                  <h6 class="card-title">Bodø kommune</h6>
-                </div>
-              </div> -->
-              <div class="col-md-6 col-lg-4">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="./css/logos/ktu.png" alt="" />
-                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="partner-card">
+                <img src="./css/events photos/meeting.jpg" alt="event image" class="img">
+                <button class="card-title" data-toggle="modal" data-target="#Partner1"><h6 class="namepartner">Vellenes Fellesorganisajon</h6></button>
               </div>
-            
+            </div>
+            <div class="col-lg-3 col-md-3 text-center">
+              <div class="partner-card">
+                <img src="./css/events photos/meeting.jpg" alt="event image" class="img">
+                <button class="card-title" data-toggle="modal" data-target="#Partner1"><h6 class="namepartner">Bodø kommune
+                </h6></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -207,9 +168,105 @@
       </div>
     </div>
   </footer>
+
+  <!----------- Modals ---------------->
+  <!-- modal1 -->
+  <div class="modal fade" id="Partner1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-between">
+          <div class="col-4">
+            <img src="./css/events photos/meeting.jpg" alt="partner1" class="img">
+          </div>
+          <div class="col-8">
+            <img src="" alt="logo" class="img2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt et excepturi! Vitae deserunt inventore ullam adipisci quis nemo voluptatum laboriosam quae eaque quod obcaecati ea, reprehenderit deleniti sint aut.</p>
+            <h6>Contact</h6>
+            <div class="partner-contact">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#">website.com</a>
+              <a>email@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal2 -->
+  <div class="modal fade" id="Partner1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-between">
+          <div class="col-4">
+            <img src="./css/events photos/meeting.jpg" alt="partner1" class="img">
+          </div>
+          <div class="col-8">
+            <img src="" alt="logo" class="img2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt et excepturi! Vitae deserunt inventore ullam adipisci quis nemo voluptatum laboriosam quae eaque quod obcaecati ea, reprehenderit deleniti sint aut.</p>
+            <h6>Contact</h6>
+            <div class="partner-contact">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#">website.com</a>
+              <a>email@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal3 -->
+  <div class="modal fade" id="Partner1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-between">
+          <div class="col-4">
+            <img src="./css/events photos/meeting.jpg" alt="partner1" class="img">
+          </div>
+          <div class="col-8">
+            <img src="" alt="logo" class="img2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt et excepturi! Vitae deserunt inventore ullam adipisci quis nemo voluptatum laboriosam quae eaque quod obcaecati ea, reprehenderit deleniti sint aut.</p>
+            <h6>Contact</h6>
+            <div class="partner-contact">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#">website.com</a>
+              <a>email@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal4 -->
+  <div class="modal fade" id="Partner1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-between">
+          <div class="col-4">
+            <img src="./css/events photos/meeting.jpg" alt="partner1" class="img">
+          </div>
+          <div class="col-8">
+            <img src="" alt="logo" class="img2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt et excepturi! Vitae deserunt inventore ullam adipisci quis nemo voluptatum laboriosam quae eaque quod obcaecati ea, reprehenderit deleniti sint aut.</p>
+            <h6>Contact</h6>
+            <div class="partner-contact">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#">website.com</a>
+              <a>email@example.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
