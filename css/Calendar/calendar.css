@@ -105,8 +105,9 @@ color: #435053;
 .nav-link.active{
   color: #D7DF23;
 }
-.dropdown-item.active{
-  font-weight: 600;
+.dropdown-item.active, .dropdown-item:active{
+  background-color: white;
+  color: #D7DF23;
 }
 .languaje{
   font-weight: 700 !important;
@@ -128,7 +129,7 @@ header{
   border-radius: 0.25rem !important;
 }
 .carousel-supra {
-  height: 90vh;
+  height: 70vh;
   min-height: 50vh;
   max-height: 90vh;
   background: no-repeat center center;
@@ -136,7 +137,7 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
+  position: relative;
   z-index: 10;
   vertical-align: center;
   width: 100vw;
@@ -153,8 +154,6 @@ header{
   margin-top: calc(1em + 5vw);
 }
 .carousel-text>h3{
-  text-decoration: underline #435053;
-  text-decoration-skip-ink: none;
   color: #435053;
   font-weight: 900;
   font-size: 2vw;
@@ -163,7 +162,7 @@ header{
   font-size: 1vw;
   font-weight: 500;
   text-align: left;
-  line-height: 1.3em;
+  line-height: 2em;
   margin-top: 2vw;
   margin-right: 2vw;
 }
@@ -204,10 +203,29 @@ header{
   color: rgba(255,255,255, 0.5);
 }
 /* Events */
-.events{
-  font-weight: 900;
-  color: #435053;
-  margin: 2rem;
+.filter{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.filter>a{
+  background-color: #D7DF23;
+  border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30vw;
+}
+.filter>a>p{
+  padding: 0.5em 1em;
+  margin: 0;
+  justify-content: space-between;
+  align-content: center;
 }
 .card {
   background-color: transparent;
@@ -314,20 +332,33 @@ p.event-data{
 }
 /* Footer */
 footer{
-  font-family: FontAwesome, 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
 }
-.social-icon{
-  font-size: 1.8em;
-  margin: auto 0.25em;
-  color: inherit;
+.support {
+  font-weight: 600;
+}
+.btn-donate{
+  background-color: #AF529E;
+  width: auto;
+  border-radius: 2em;
+  margin: 0.8em;
+  padding: 0.1em 3em;
+}
+.btn-donate>a{
+  color: white;
+  font-weight: 600;
 }
 .legal{
-    margin: auto 0.25em;
-    color: inherit;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+.legal>a{
     font-size: 1em;
+    font-weight: 500;
+    color: #204496;
   }
 
 @media (max-width: 768px){

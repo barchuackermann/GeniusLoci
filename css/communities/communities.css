@@ -150,8 +150,6 @@ header{
   margin-top: calc(1em + 5vw);
 }
 .carousel-text>h3{
-  text-decoration: underline #435053;
-  text-decoration-skip-ink: none;
   color: #435053;
   font-weight: 900;
   font-size: 2vw;
@@ -168,9 +166,9 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
-  margin-left: 0em;
-  width: 30vw;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  width: 20vw;
   height: 40vh;
   background: no-repeat top center;
   -webkit-background-size: cover;
@@ -181,9 +179,9 @@ header{
 .btn-maps>a{
   color: white;
   font-style: italic;
-  vertical-align: center;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: -1em;
 }
 .carousel-item {
   height: 90vh;
@@ -311,22 +309,34 @@ p.event-data{
 }
 /* Footer */
 footer{
-  font-family: FontAwesome, 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
 }
-.social-icon{
-  font-size: 1.8em;
-  margin: auto 0.25em;
-  color: inherit;
+.support {
+  font-weight: 600;
+}
+.btn-donate{
+  background-color: #AF529E;
+  width: auto;
+  border-radius: 2em;
+  margin: 0.8em;
+  padding: 0.1em 3em;
+}
+.btn-donate>a{
+  color: white;
+  font-weight: 600;
 }
 .legal{
-    margin: auto 0.25em;
-    color: inherit;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+.legal>a{
     font-size: 1em;
+    font-weight: 500;
+    color: #204496;
   }
-
 @media (max-width: 768px){
 /* NavBar Mobile */
   .title2{

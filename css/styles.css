@@ -45,7 +45,7 @@ a {
 .blue2{color: #154455;}
 .blue3{color: #33ADB6;}
 .blue4{color: #28A8E0;}
-
+  
 /* BG-Colors */
 .bg-pistaccio {
   background-color: #D7DF23 !important;
@@ -153,8 +153,6 @@ header{
   margin-top: calc(1em + 5vw);
 }
 .carousel-text>h3{
-  text-decoration: underline #435053;
-  text-decoration-skip-ink: none;
   color: #435053;
   font-weight: 900;
   font-size: 2vw;
@@ -163,7 +161,7 @@ header{
   font-size: 1vw;
   font-weight: 500;
   text-align: left;
-  line-height: 1.3em;
+  line-height: 2em;
   margin-top: 2vw;
   margin-right: 2vw;
 }
@@ -314,20 +312,33 @@ p.event-data{
 }
 /* Footer */
 footer{
-  font-family: FontAwesome, 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  font-weight: lighter;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
 }
-.social-icon{
-  font-size: 1.8em;
-  margin: auto 0.25em;
-  color: inherit;
+.support {
+  font-weight: 600;
+}
+.btn-donate{
+  background-color: #AF529E;
+  width: auto;
+  border-radius: 2em;
+  margin: 0.8em;
+  padding: 0.1em 3em;
+}
+.btn-donate>a{
+  color: white;
+  font-weight: 600;
 }
 .legal{
-    margin: auto 0.25em;
-    color: inherit;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+.legal>a{
     font-size: 1em;
+    font-weight: 500;
+    color: #204496;
   }
 
 @media (max-width: 768px){
@@ -494,7 +505,7 @@ header{
   }
   .btn-register{
     background-color: #AF529E;
-    width: inherit;
+    width: auto;
     color: white;
     font-weight: 500;
     border-radius: 2em;
