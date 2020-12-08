@@ -222,6 +222,13 @@ header{
   padding: 0.2em;
   height: 20vw;
 }
+.partner-card:hover{
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
 .namepartner{
   color: white;
   font-size: 1vw;
