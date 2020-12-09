@@ -129,16 +129,22 @@ header{
   vertical-align: center;
   width: 100vw;
 }
+.active-citizens-logo{
+  position: relative;
+  z-index: 10;
+  width:12vw;
+  height: auto;
+  margin: 2em 0 0 0.75em;
+}
 .carousel-text{
   width: 40vw;
   margin-left: 0.75em;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 .carousel-text>h2{  
   color: #435053;
   font-weight: 900;
   font-size: 3vw;
-  margin-top: calc(1em + 5vw);
 }
 .carousel-text>h3{
   text-decoration: underline #435053;
@@ -191,10 +197,10 @@ header{
   color: white;
   background-color: #d6de26;
   border-radius: 4em;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-webkit: border radius 4em;
+  -moz-webkit: border radius 4em;
+  -ms-webkit: border radius 4em;
+  -o-webkit: border radius 4em;
 }
 .event-category-title{
   font-size: 1.5em;

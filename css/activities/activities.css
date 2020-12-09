@@ -129,16 +129,22 @@ header{
   vertical-align: center;
   width: 100vw;
 }
+.active-citizens-logo{
+  position: relative;
+  z-index: 10;
+  width:12vw;
+  height: auto;
+  margin: 2em 0 0 0.75em;
+}
 .carousel-text{
   width: 40vw;
   margin-left: 0.75em;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 .carousel-text>h2{  
   color: #435053;
   font-weight: 900;
   font-size: 3vw;
-  margin-top: calc(1em + 5vw);
 }
 .carousel-text>h3{
   text-decoration: underline #435053;
