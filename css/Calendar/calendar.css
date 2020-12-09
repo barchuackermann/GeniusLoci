@@ -368,7 +368,7 @@ footer{
     color: #204496;
   }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 /* NavBar Mobile */
   .title2{
     font-family: 'Lexend Deca', sans-serif;
@@ -405,26 +405,22 @@ footer{
 header{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
 }
-.carousel-supra {
-  background: no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 70vh;
-  position: absolute;
+.active-citizens-logo{
+  position: relative;
   z-index: 10;
-  width: 100%;
+  width:30vw;
+  height: auto;
+  margin: 1.2em 0 0 0.5em;
 }
 .carousel-text{
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 2em;
+  width: 70vw;
+  margin-left: 0.5em;
+  /* margin-top: 2em; */
 }
 .carousel-text>h2{  
-  color: white;
   font-weight: 900;
-  font-size: 8vh;
-  margin-top: calc(1em + 1vh);
+  font-size: 8vw;
+  margin-top: 0.5em;
 }
 .carousel-text>h3{
   text-decoration: underline white;
@@ -479,6 +475,25 @@ header{
 }
 
   /* Events Mobile */
+  .filter{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    width: 100vw;
+  }
+  .filter>.nav-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0 1em;
+  }
+  .filter>a>p{
+    padding: 0.5em 1em;
+    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+  }
   .events{
     font-weight: 900;
     color: #435053;
@@ -534,12 +549,17 @@ header{
     background-color: #AF529E;
     width: inherit;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 2em;
     position: relative;
     z-index: 330;
     margin: 0.5em;
-  }
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+
   .card-body{
     display: flex;
     flex-direction: column;
