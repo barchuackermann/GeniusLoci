@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
-
 *{
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -128,9 +122,9 @@ header{
   border-radius: 0.25rem !important;
 }
 .carousel-supra {
-  height: 90vh;
+  height: 100vh;
   min-height: 50vh;
-  max-height: 90vh;
+  max-height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -187,7 +181,7 @@ header{
   font-size: 2.75rem;
 }
 .carousel-item {
-  height: 90vh;
+  height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;

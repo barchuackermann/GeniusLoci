@@ -216,7 +216,8 @@ header{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #d6de26;
+  background-color: white;
+  border: 3px solid #d6de26;
   border-radius: 0.5em;
   margin: 0.2em;
   padding: 0.2em;
@@ -257,7 +258,16 @@ header{
   -moz-border-radius: 15em;
   -ms-border-radius: 15em;
   -o-border-radius: 15em;
-
+}
+.img3{
+  background-color: none;
+  width: auto;
+  max-height: 40vh;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
 }
 .img2{
   padding: 1em;
@@ -279,19 +289,24 @@ header{
   border: none;
 }
 .modal-content{
-  background-color: #D7DF23;
-  border: none;
-  border-radius: 1.5em;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  -ms-border-radius: 1.5em;
-  -o-border-radius: 1.5em;
+  background-color: white;
+  border: 5px solid #d6de26;
+  border-radius: 0.5em;
   color: #435053;
 }
-.partner-contact>a{
+.modal-logo{
+  height: 4vw;
+  width: auto;
+  margin: 1em 0 2em 0;
+}
+.modal-footer>p{
+  margin: 0.2em 1em;
+  font-weight: 600;
+}
+.modal-footer>a{
   margin: 0.2em 1em;
 }
-.partner-contact>a>.fab{
+.modal-footer>a>.fab{
   margin: 0.2em -0.5em;
   font-size: 1.5em;
 }

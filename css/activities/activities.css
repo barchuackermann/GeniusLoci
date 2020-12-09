@@ -191,10 +191,10 @@ header{
   color: white;
   background-color: #d6de26;
   border-radius: 4em;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  -ms-border-radius: 4em;
+  -o-border-radius: 4em;
 }
 .event-category-title{
   font-size: 1.5em;
@@ -216,13 +216,14 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d6de26;
+  background-color: white;
+  border: 3px solid #d6de26;
   border-radius: 0.5em;
 }
 .card-title>a{
   font-size: 1.5em;
   font-weight: 600;
-  color: white;
+  color: #46626a;
 }
 .img {
   padding: 1em;
