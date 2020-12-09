@@ -347,7 +347,7 @@ footer{
     color: #204496;
   }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 /* NavBar Mobile */
   .title2{
     font-family: 'Lexend Deca', sans-serif;
@@ -384,26 +384,22 @@ footer{
 header{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
 }
-.carousel-supra {
-  background: no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 70vh;
-  position: absolute;
+.active-citizens-logo{
+  position: relative;
   z-index: 10;
-  width: 100%;
+  width:30vw;
+  height: auto;
+  margin: 1.2em 0 0 0.5em;
 }
 .carousel-text{
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 2em;
+  width: 70vw;
+  margin-left: 0.5em;
+  /* margin-top: 2em; */
 }
 .carousel-text>h2{  
-  color: white;
   font-weight: 900;
-  font-size: 8vh;
-  margin-top: calc(1em + 1vh);
+  font-size: 8vw;
+  margin-top: 0.5em;
 }
 .carousel-text>h3{
   color: white;
@@ -453,5 +449,66 @@ header{
 .photoby{
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
+}
+/* Partners Cards */
+.partner-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #d6de26;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  padding: 0.2em;
+  height: auto;
+}
+.card-title{
+  width: 90%;
+  margin: 0.2em;
+  background-color: #AF529E;
+  border-radius: 2em;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+  box-shadow: 2px 3px 8px -3px #3F4F4C;
+}
+.card-title>h6{
+  font-size: 1em;
+}
+.img {
+  padding: 1em;
+  background-color: none;
+  max-width: 50vw;
+  height: auto;
+  border-radius: 15em;
+  -webkit-border-radius: 15em;
+  -moz-border-radius: 15em;
+  -ms-border-radius: 15em;
+  -o-border-radius: 15em;
+}
+/* Modal MObile */
+.modal-dialog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  border: none;
+}
+.modal-content{
+  background-color: white;
+  border: 5px solid #d6de26;
+  border-radius: 0.5em;
+  color: #435053;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.modal-logo{
+  height: 20vw;
+  width: auto;
+  margin: 1em 0 2em 0;
 }
 }
