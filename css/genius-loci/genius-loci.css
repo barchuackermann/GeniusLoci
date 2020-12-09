@@ -154,8 +154,7 @@ header{
   font-size: 3vw;
 }
 .carousel-text>h3{
-  text-decoration: underline #435053;
-  text-decoration-skip-ink: none;
+
   color: #435053;
   font-weight: 900;
   font-size: 2vw;
@@ -405,7 +404,7 @@ footer{
     color: #204496;
   }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 /* NavBar Mobile */
   .title2{
     font-family: 'Lexend Deca', sans-serif;
@@ -464,8 +463,6 @@ header{
   margin-top: calc(1em + 1vh);
 }
 .carousel-text>h3{
-  text-decoration: underline white;
-  text-decoration-skip-ink: none;
   color: white;
   font-weight: 900;
   font-size: 7vw;
@@ -479,7 +476,7 @@ header{
   height: auto;
   background-color: #AF529E;
   border-radius: 10rem;
-  padding: 1em 0.5em;
+  padding: 0.2em 0.5em;
 }
 .btn-maps>a{
   color: white;
@@ -516,5 +513,8 @@ header{
 }
 .sameheight{
   height: auto;
+}
+.events{
+  font-size: inherit;
 }
 }
