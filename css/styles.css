@@ -123,9 +123,9 @@ header{
 }
 .carousel-supra {
   height: 100vh;
-  min-height: 50vh;
+  min-height: 100vh;
   max-height: 100vh;
-  background: no-repeat center center;
+  background: url("./home/WAVE-WEB.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -136,9 +136,10 @@ header{
   width: 100vw;
 }
 .carousel-text{
-  width: 40vw;
+  position: absolute;
+  width: 35vw;
+  height: 100vh;
   margin-left: 0.75em;
-  margin-top: 2em;
 }
 .carousel-text>h2{  
   color: #435053;
@@ -163,22 +164,26 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
-  margin-left: 0.8em;
-  width: 20vw;
-  height: 30vh;
-  background: no-repeat top center;
+  min-width: 20vw;
+  min-height: 30vh;
+  background: url("./home/button-maps2.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
-}
-.btn-maps>a{
-  color: white;
+  position: relative;
+  top: 5%;
+  left: -10%;
+  color: white !important;
   font-style: italic;
   vertical-align: center;
+  text-align: center;
   font-weight: 900;
-  font-size: 2.75rem;
+  font-size: 2.75vw;
+}
+.btn-maps:hover{
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
 }
 .carousel-item {
   height: 100vh;
@@ -373,19 +378,22 @@ header{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
 }
 .carousel-supra {
-  background: no-repeat center bottom;
+  background: url("./home/WAVE-MOBILE.png") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 70vh;
+  background-size: 100vw;
   position: absolute;
   z-index: 10;
   width: 100vw;
 }
 .carousel-text{
-  width: auto;
-  height: 40vw;
-  margin: 2em 0.5em 1em 0.5em;
+  position: absolute;
+  z-index: 20;
+  top: 10%;
+  left: -5%;
+  width: 35vw;
+  height: 100vh;
 }
 .carousel-text>h2{  
   color: white;
@@ -400,32 +408,24 @@ header{
 }
 .btn-maps{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 50vw;
-  height: 20vh;
-  background: no-repeat top center;
+  min-width: 90vw;
+  background: url("./home/button-maps2.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-.btn-maps>a{
   color: white;
   font-style: italic;
   vertical-align: center;
+  text-align: center;
   font-weight: 900;
   font-size: 1.8rem;
 }
 .carousel-text>h4{
-  font-size: 3vw;
-  font-weight: 500;
-  text-align: left;
-  line-height: 1.3em;
-  margin-right: 2vw;
-  margin-top: 1em;
+  color: white;
+  font-weight: 900;
 }
 .carousel-item {
   height: 100vh;
@@ -558,7 +558,7 @@ header{
   }
 }
 /* FIXED FOR TABLETS */
-@media (min-width: 768px) and (max-width: 1023px){
+/* @media (min-width: 768px) and (max-width: 1023px){
   .carousel-text>h4{
     color:white;
   }
@@ -568,7 +568,6 @@ header{
   .btn-maps{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 0.5em;
     margin-left: 0.8em;
     width: 20vw;
@@ -589,4 +588,4 @@ header{
     display: flex;
     justify-content: center;
   }
-}
+} */
