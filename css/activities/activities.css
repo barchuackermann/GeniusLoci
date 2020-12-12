@@ -212,24 +212,36 @@ header{
 .event-container{
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  margin: 1em;
+  align-content: flex-end;
+  justify-content: flex-end;
+  height: 60vh;
+  background-position: center;
+  margin: 0.5em 1em;
   padding: 0;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
 }
 .subcatergory-card{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 2px solid #d6de26;
-  border-radius: 0.5em;
+  border-radius: 10em;
+  background-color: #94C4B4;
+  width: 8vw;
+  height: 8vw;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  -ms-border-radius: 10em;
+  -o-border-radius: 10em;
 }
-.card-title>a{
-  font-size: 1.5em;
+.card-title{
+  font-size: 1.2vw;
   font-weight: 600;
-  color: #46626a;
+  color:white !important;
 }
 .img {
   padding: 1em;
