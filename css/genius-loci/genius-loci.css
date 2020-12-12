@@ -126,7 +126,7 @@ header{
   height: 100vh;
   min-height: 50vh;
   max-height: 100vh;
-  background: no-repeat center center;
+  background: url("../home/WAVE-WEB.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,7 +144,7 @@ header{
   margin: 2em 0 0 0.75em;
 }
 .carousel-text{
-  width: 40vw;
+  width: 35vw;
   margin-left: 0.75em;
   margin-top: 0.5em;
 }
@@ -171,7 +171,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7em;
+  margin-top: 5em;
   margin-left: 0.8em;
   width: auto;
   height: auto;
@@ -404,7 +404,7 @@ footer{
     color: #204496;
   }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
 /* NavBar Mobile */
   .title2{
     font-family: 'Lexend Deca', sans-serif;
@@ -442,19 +442,22 @@ header{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
 }
 .carousel-supra {
-  background: no-repeat center bottom;
+  background: url("../home/WAVE-MOBILE.png") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 70vh;
+  background-size: 100vw;
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 100vw;
 }
 .carousel-text{
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 2em;
+  position: absolute;
+  z-index: 20;
+  top: 5%;
+  left: -5%;
+  width: 40vw;
+  height: 100vh;
 }
 .carousel-text>h2{  
   color: white;
@@ -467,33 +470,31 @@ header{
   font-weight: 900;
   font-size: 7vw;
 }
-.btn-maps{
+.twobtn{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 5em 0.6em 2em -0.5em;
-  width: auto;
-  height: auto;
-  background-color: #AF529E;
-  border-radius: 10rem;
-  padding: 0.2em 0.5em;
+  position: relative;
+  left: 50%;
 }
-.btn-maps>a{
+.btn-maps{
+  background-color: #AF529E;
+  border-radius: 2rem;
   color: white;
   vertical-align: center;
   font-weight: 400;
   font-size: 1rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 .carousel-text>h4{
-  font-size: 3vw;
-  font-weight: 500;
-  text-align: left;
-  line-height: 1.3em;
-  margin-right: 2vw;
-  margin-top: 1em;
+  color: white;
+  font-weight: 900;
 }
 .carousel-item {
-  height: 90vh;
+  height: 100vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;

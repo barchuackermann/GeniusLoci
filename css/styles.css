@@ -497,14 +497,18 @@ header{
   }
   .btn-register{
     background-color: #AF529E;
-    width: auto;
+    width: inherit;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 2em;
     position: relative;
     z-index: 330;
     margin: 0.5em;
-  }
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
   .card-body{
     display: flex;
     flex-direction: column;
