@@ -86,7 +86,7 @@
     <div class="principal">
       <div class="row m-0">
         <!-- Desktop -->
-        <div class="carousel-supra" style="background-image: url(./css/activities/GL_banner_02.jpg)">
+        <div class="carousel-supra">
           <div class="carousel-text">
             <h2>Opera Performance</h2>
             <!-- <h3>Activities</h3> -->
@@ -134,7 +134,7 @@
           <div class="checks">
             <div class="custom-control custom-checkbox align-content-center justify-content-between">
               <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">I accept <a href="#" class="terms">Terms and Conditions</a></label>
+              <label class="custom-control-label" for="customCheck1">Accept <a href="#" class="terms">Terms and Conditions</a></label>
             </div>
             <img src="./css/logos/recaptcha.png" alt="captcha" class="img-small">
           </div>
@@ -162,7 +162,7 @@
           <span class="support">Paremkite Šančių pilietinę visuomenę</span>
         </div>
         <div class="col-12">
-          <button class="btn-donate"><a href="#">Paaukok</a></button>
+          <button type="button" class="btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
         </div>
         <div class="col-12">
           <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
@@ -172,6 +172,22 @@
           <a href="#">Privatumo politika</a>
         </div>
         
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog donate-dialog">  
+        <div class="modal-content donate-content">
+          <div class="modal-header donate-header">
+            <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
+          </div>
+          <div class="modal-body donate-body">
+              <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
+              <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
+              <p>Įmonės kodas: 303497934</p>
+              <p>Adresas: Norvegų g. 7A, Kaunas</p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

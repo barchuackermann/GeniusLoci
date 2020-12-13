@@ -139,10 +139,17 @@ header{
   vertical-align: center;
   width: 100vw;
 }
+.sadm-logo{
+  position: relative;
+  z-index: 10;
+  width:12vw;
+  height: auto;
+  margin: 2em 0 0 0.75em;
+}
 .carousel-text{
   position: absolute;
   z-index: 20;
-  width: 35vw;
+  width: 40vw;
   height: 100vh;
   margin-left: 0.75em;
 }
@@ -150,7 +157,7 @@ header{
   color: #435053;
   font-weight: 900;
   font-size: 3vw;
-  margin-top: calc(1em + 5vw);
+  margin-top: 1.5vw;
 }
 .carousel-text>h3{
   color: #435053;
@@ -329,8 +336,6 @@ footer{
   border-radius: 2em;
   margin: 0.8em;
   padding: 0.1em 3em;
-}
-.btn-donate>a{
   color: white;
   font-weight: 600;
 }
@@ -344,6 +349,41 @@ footer{
     font-weight: 500;
     color: #204496;
   }
+.donate-dialog{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+    min-width: 50vw;
+}
+.donate-content{
+  background-color: #94C4B4;
+  color: #4E7E6E;
+  font-weight: 700;
+  text-align: center;
+}
+.donate-header{
+  color: white;
+  font-weight: 900;
+  margin: 0 5em;
+  padding: 1rem 1rem;
+  text-align: center !important;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.donate-body{
+  justify-content: center;
+}
 @media (max-width: 769px){
   /* NavBar Mobile */
     .title2{

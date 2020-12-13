@@ -119,7 +119,7 @@ header{
   height: 60vh;
   min-height: 50vh;
   max-height: 90vh;
-  background: no-repeat center center;
+  background: url(../activities/GL_banner_02.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -270,8 +270,6 @@ footer{
   border-radius: 2em;
   margin: 0.8em;
   padding: 0.1em 3em;
-}
-.btn-donate>a{
   color: white;
   font-weight: 600;
 }
@@ -285,6 +283,41 @@ footer{
     font-weight: 500;
     color: #204496;
   }
+.donate-dialog{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+    min-width: 50vw;
+}
+.donate-content{
+  background-color: #94C4B4;
+  color: #4E7E6E;
+  font-weight: 700;
+  text-align: center;
+}
+.donate-header{
+  color: white;
+  font-weight: 900;
+  margin: 0 5em;
+  padding: 1rem 1rem;
+  text-align: center !important;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.donate-body{
+  justify-content: center;
+}
 
 @media (max-width: 768px){
 /* NavBar Mobile */
@@ -323,28 +356,26 @@ footer{
 header{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
 }
-.carousel-supra {
-  background: no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 70vh;
-  position: absolute;
+.active-citizens-logo{
+  position: relative;
   z-index: 10;
-  width: 100%;
+  width:30vw;
+  height: auto;
+  margin: 1.2em 0 0 0.5em;
 }
 .carousel-text{
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 2em;
+  width: 70vw;
+  margin-left: 0.5em;
+  /* margin-top: 2em; */
 }
 .carousel-text>h2{  
-  color: white;
   font-weight: 900;
-  font-size: 8vh;
-  margin-top: calc(1em + 1vh);
+  font-size: 8vw;
+  margin-top: 0.5em;
 }
 .carousel-text>h3{
+  text-decoration: underline white;
+  text-decoration-skip-ink: none;
   color: white;
   font-weight: 900;
   font-size: 7vw;
@@ -371,12 +402,7 @@ header{
   font-size: 1.8rem;
 }
 .carousel-text>h4{
-  font-size: 3vw;
-  font-weight: 500;
-  text-align: left;
-  line-height: 1.3em;
-  margin-right: 2vw;
-  margin-top: 0.5em;
+  display: none;
 }
 .carousel-item {
   height: 90vh;
@@ -392,5 +418,90 @@ header{
 .photoby{
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
+}
+/* FORM */
+.form2{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+.form-group>p{
+  width: 100%;
+  margin: 0.5em;
+}
+label {
+  display: flex;
+  margin: 0.5rem;
+}
+.input{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+.emailfit{
+  width: 95%;
+}
+label{
+  font-size: 0.8em;
+}
+.checks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.img-small{
+  width: 50%;
+}
+.terms{
+  padding: 0 0.5em;
+  margin: 0;
+}
+.custom-control-label{
+  align-items: baseline;
+}
+.btn-form{
+  background-color: #AF529E;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  padding: 0.5em;
+  color: white;
+  width: 95%;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event-data{
+  margin: 2em 0 0 0 ;
+  width: 70%;
+  padding: 2em;
+}
+.img{
+  width: 50%;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  margin: 3em;
+}
+.event-category{
+  font-size: 0.7em;
+  color: #AF529E;
+}
+.event-activity{
+  font-size: 1.2em;
+}
+.event-date{
+  font-size: 1em;
+}
+.event-location{
+  font-size: 0.75em;
 }
 }

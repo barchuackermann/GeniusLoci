@@ -352,8 +352,6 @@ footer{
   border-radius: 2em;
   margin: 0.8em;
   padding: 0.1em 3em;
-}
-.btn-donate>a{
   color: white;
   font-weight: 600;
 }
@@ -367,6 +365,41 @@ footer{
     font-weight: 500;
     color: #204496;
   }
+.donate-dialog{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+    min-width: 50vw;
+}
+.donate-content{
+  background-color: #94C4B4;
+  color: #4E7E6E;
+  font-weight: 700;
+  text-align: center;
+}
+.donate-header{
+  color: white;
+  font-weight: 900;
+  margin: 0 5em;
+  padding: 1rem 1rem;
+  text-align: center !important;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.donate-body{
+  justify-content: center;
+}
 
 @media (max-width: 767px){
 /* NavBar Mobile */
@@ -451,12 +484,7 @@ header{
   font-size: 1.8rem;
 }
 .carousel-text>h4{
-  font-size: 3vw;
-  font-weight: 500;
-  text-align: left;
-  line-height: 1.3em;
-  margin-right: 2vw;
-  margin-top: 1em;
+  display: none;
 }
 .carousel-item {
   height: 90vh;
