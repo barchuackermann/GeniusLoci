@@ -247,7 +247,7 @@ header{
   padding: 0.5em;
   margin: 0;
 }
-.namepartner:hover{
+.partner-card:hover{
   cursor: pointer;
 }
 /* .card-title{

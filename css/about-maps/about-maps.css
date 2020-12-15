@@ -314,7 +314,6 @@ footer{
   margin: 0 5em;
   padding: 1rem 1rem;
   text-align: center !important;
-
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -328,6 +327,17 @@ footer{
 }
 .donate-body{
   justify-content: center;
+}
+.img-new{
+  max-width: 12vw;
+  border-radius: 7em;
+  -webkit-border-radius: 7em;
+  -moz-border-radius: 7em;
+  -ms-border-radius: 7em;
+  -o-border-radius: 7em;
+}
+.bg-about{
+  background-color: #94C4B4;
 }
 
 @media (max-width: 767px){
@@ -435,6 +445,15 @@ header{
 .photoby{
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
+}
+.img-new{
+  max-width: 52vw;
+  border-radius: 7em;
+  -webkit-border-radius: 7em;
+  -moz-border-radius: 7em;
+  -ms-border-radius: 7em;
+  -o-border-radius: 7em;
+  margin: 0;
 }
 }
 
