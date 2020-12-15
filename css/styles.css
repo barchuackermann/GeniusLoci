@@ -166,7 +166,7 @@ header{
   align-items: center;
   min-width: 20vw;
   min-height: 30vh;
-  background: url("./home/button-maps2.png") no-repeat center center;
+  background: url("./home/MAP_EN.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -444,7 +444,7 @@ header{
   justify-content: center;
   align-items: center;
   min-width: 90vw;
-  background: url("./home/button-maps2.png") no-repeat center center;
+  background: url("./home/MAP_EN.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
