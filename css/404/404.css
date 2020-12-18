@@ -1,46 +1,4 @@
-/*!
- * Start Bootstrap - Modern Business (https://startbootstrap.com/template/modern-business)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
- */
-
-*{
-  font-family: 'Montserrat', sans-serif;
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-/* Clean Links*/
-a, a:link, a:visited, a:active a:hover{
-  text-decoration: none;
-  color: #435053;
-}
-a {
-  color: #435053;
-}
-.btn:focus{
-  box-shadow: none;
-}
-/* Fonts */
-.lexend {
-  font-family: 'Lexend Deca', sans-serif;
-}
-/* Colors */
-.pistaccio{color: #D7DF23;}
-.colortexts{color: #435053;}
-.violet2{color: #AF529E;}
-
-.green2{color: #4E7E6E;}
-.green3{color: #94C4B4;}
-.greygreen{color: #445153;}
-.grey2{color: #333333;}
-.brown{color: #454545;}
-.blue2{color: #154455;}
-.blue3{color: #33ADB6;}
-.blue4{color: #28A8E0;}
-
-
-/* Header */
+/* 404 */
 .error404{
   margin: 0;
   width: 30vw;
