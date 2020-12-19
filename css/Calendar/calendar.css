@@ -217,7 +217,6 @@ p.event-data{
     -ms-border-radius: 2em;
     -o-border-radius: 2em;
 }
-
   .card-body{
     display: flex;
     flex-direction: column;

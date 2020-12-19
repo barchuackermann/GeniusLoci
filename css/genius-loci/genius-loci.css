@@ -106,13 +106,11 @@
 .presentation {
   margin-bottom: 70px;
 }
-
 .presentation .container-principal {
   display: flex;
   align-items: center;
   position: relative;
 }
-
 .presentation .container-principal .left-arrow,
 .presentation .container-principal .right-arrow {
   position: absolute;
@@ -128,217 +126,42 @@
   z-index: 500;
   transition: 0.2s ease all;
 }
-
 .presentation .container-principal .left-arrow {
   left: 0;
 }
-
 .presentation .container-principal .right-arrow {
   right: 0;
 }
-
 .presentation .container-principal .left-arrow:hover,
 .presentation .container-principal .right-arrow:hover {
   background: rgba(255,255,255, 0.9);
 }
-
 .presentation .carousel-container {
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
   scroll-behavior: smooth;
 }
-
 .presentation .carousel-container .carousel {
   display: flex;
   flex-wrap: nowrap;
 }
-
 .presentation .carousel-container .slide {
   min-width: 20%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 .presentation .carousel-container .slide:hover {
   transform: scale(1.2);
   transform-origin: center;
 }
-
 .presentation .carousel-container .slide img {
   width: 100%;
   vertical-align: top;
 }
 
-
-/* Footer */
-footer{
-  font-size: 1em;
-  font-weight: 400;
-  color: white;
-}
-.support {
-  font-weight: 600;
-}
-.btn-donate{
-  background-color: #AF529E;
-  width: auto;
-  border-radius: 2em;
-  margin: 0.8em;
-  padding: 0.1em 3em;
-  color: white;
-  font-weight: 600;
-}
-.legal{
-  color: white;
-  font-weight: 400;
-  font-size: 0.8em;
-}
-.legal>a{
-    font-size: 1em;
-    font-weight: 500;
-    color: #204496;
-  }
-.donate-dialog{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: calc(100% - 1rem);
-    min-width: 50vw;
-}
-.donate-content{
-  background-color: #94C4B4;
-  color: #4E7E6E;
-  font-weight: 700;
-  text-align: center;
-}
-.donate-header{
-  color: white;
-  font-weight: 900;
-  margin: 0 5em;
-  padding: 1rem 1rem;
-  text-align: center !important;
-
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 1rem 1rem;
-  border-bottom: 2px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
-}
-.donate-body{
-  justify-content: center;
-}
-
 @media (max-width: 768px){
-/* NavBar Mobile */
-  .title2{
-    font-family: 'Lexend Deca', sans-serif;
-    color: #D7DF23;
-    font-weight: 600;
-    font-size: 0.8em;
-  }
-  .logo{
-  display: inline-block;
-  width: 1em;
-  height: auto;
-  margin-bottom: 0.2em;
-  }
-  .bg-nav{
-    align-items: flex-end;
-  }
-  a.nav-link{
-    color: #435053;
-    font-weight: 500;
-    font-size: inherit;
-    border: none;
-    margin: 0.2em;
-    margin-right: 1em;
-  }
-  .login{
-    margin-right: 0;
-    width: 95%;
-    color: white;
-    background-color: #AF529E;
-    align-self: center;
-}
 
-/* Header Mobile */
-header{
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.0) !important;
-}
-.carousel-supra {
-  background: url("../home/WAVE-MOBILE.png") no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100vw;
-  position: absolute;
-  z-index: 10;
-  width: 100vw;
-}
-.carousel-text{
-  position: absolute;
-  z-index: 20;
-  top: 5%;
-  left: -5%;
-  width: 40vw;
-  height: 100vh;
-}
-.carousel-text>h2{  
-  color: white;
-  font-weight: 900;
-  font-size: 8vh;
-  margin-top: calc(1em + 1vh);
-}
-.carousel-text>h3{
-  color: white;
-  font-weight: 900;
-  font-size: 7vw;
-}
-.twobtn{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  left: 50%;
-}
-.btn-maps{
-  background-color: #AF529E;
-  border-radius: 2rem;
-  color: white;
-  vertical-align: center;
-  font-weight: 400;
-  font-size: 1rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-}
-.carousel-text>h4{
-  color: white;
-  font-weight: 900;
-}
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-.photoby{
-  font-size: 1rem;
-  color: rgba(255,255,255, 0.5);
-}
 /* Cards */
 .sameheight>p{
   font-size: calc(0.7em + 0.5vw)

@@ -37,10 +37,16 @@ header{
     height: auto;
     margin: 2em 0 0 0.75em;
   }
+  .active-citizens-logo.--communities{
+    margin: 1.5em 0 0 0.75em;
+  }
+  .carousel-text>h2.--communities{
+    margin-top: 1vw;
+  }
   .carousel-text{
     position: absolute;
     width: 35vw;
-    height: 100vh;
+    height: 80%;
     margin-left: 0.75em;
   }
   .banner-text{
@@ -169,11 +175,11 @@ header{
     height: 100vh;
   }
   .carousel-text>h2{  
-    color: #46626a;
+    color: white;
     font-weight: 900;
     font-size: 8vh;
-  }
-  .carousel-text.--banner{
+  }  
+  .carousel-text .--banner{
     width: 70vw;
     margin-left: 0.5em;
   }
@@ -181,7 +187,9 @@ header{
     margin-top: 2.5em;
     margin-left: 0.5em;
     font-size: 6.5vh;
+    color: #46626a;
   }
+
   .carousel-text>h3{
     color: white;
     font-weight: 900;
@@ -206,6 +214,25 @@ header{
     text-align: center;
     font-weight: 900;
     font-size: 1.8rem;
+  }
+  .btn-maps-pills{
+    background-color: #AF529E;
+    border-radius: 2rem;
+    color: white;
+    vertical-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  .twobtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 50%;
   }
   .carousel-text>h4{
     color: white;

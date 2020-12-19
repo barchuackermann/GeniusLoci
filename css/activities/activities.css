@@ -74,18 +74,6 @@
   -moz-border-radius: 15em;
   -ms-border-radius: 15em;
   -o-border-radius: 15em;
-
-}
-.img2{
-  padding: 1em;
-  background-color: none;
-  border-radius: 10em;
-  max-width: 50%;
-  height: auto;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  -ms-border-radius: 10em;
-  -o-border-radius: 10em;
 }
 
 

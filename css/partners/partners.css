@@ -72,7 +72,7 @@
   background: url(../events\ photos/meeting.jpg);
   background-position: center;
   background-size: contain;
-  max-width: 13vw;
+  max-width: 10vw;
   height: auto;
   border-radius: 15em;
   -webkit-border-radius: 15em;
@@ -89,17 +89,6 @@
   -moz-border-radius: 0.2em;
   -ms-border-radius: 0.2em;
   -o-border-radius: 0.2em;
-}
-.img2{
-  padding: 1em;
-  background-color: none;
-  border-radius: 10em;
-  max-width: 50%;
-  height: auto;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  -ms-border-radius: 10em;
-  -o-border-radius: 10em;
 }
 .modal-dialog{
   display: flex;
@@ -160,10 +149,13 @@
 .card-title>h6{
   font-size: 1em;
 }
+.namepartner{
+  font-size: 1em;
+}
 .img {
   padding: 1em;
   background-color: none;
-  max-width: 50vw;
+  max-width: 40vw;
   height: auto;
   border-radius: 15em;
   -webkit-border-radius: 15em;

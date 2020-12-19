@@ -1,4 +1,4 @@
-/* Events */
+/* Upcomming Events with accordion */
 .events{
   font-weight: 900;
   color: #435053;
@@ -109,7 +109,7 @@ p.event-data{
 }
 
 @media (max-width: 768px){
-  /* Events Mobile */
+  /* Mobile Upcomming Events with accordion */
   .events{
     font-weight: 900;
     color: #435053;
