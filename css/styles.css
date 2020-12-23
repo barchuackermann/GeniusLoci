@@ -84,7 +84,7 @@
   justify-content: start;
   align-items: flex-start;
   padding:0;
-  margin: -1.3em;
+  margin: 1em -1.3em;
 }
 .event-description>h6{
   margin: 0;
