@@ -10,17 +10,102 @@
 .bg-about{
   background-color: #94C4B4;
 }
-
-@media (max-width: 767px){
-.img-new{
-  max-width: 52vw;
-  border-radius: 7em;
-  -webkit-border-radius: 7em;
-  -moz-border-radius: 7em;
-  -ms-border-radius: 7em;
-  -o-border-radius: 7em;
+.bold{
+  font-weight: 600;
+}
+.bold>h3{
+  font-size: 2vw;
+  color: #144355;
+  font-weight: 700;
+}
+.bold>i{
+  font-size: 5vw;
+  color: #144355;
+}
+.card-icon{
+  min-height: 22vw;
+  max-height: 22vw;
+  border: 2px solid #a7d1e7;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+.card-icon:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+}
+.card-img-top{
+  margin-top: 1em;
+  max-width: 15vw;
+  align-items: center;
+}
+.maps-icon-text{
+  color: #4E7E6E;
+  font-size: 1vw;
+  font-weight: 700;
+  padding: 0.5em;
   margin: 0;
 }
+.new2{
+  min-width: 16vw;
+  margin-bottom: 2em;
+}
+.card{
+  border: none;
+}
+.card-header{
+  background-color: #4787c6;
+  border-radius: 1em !important;
+  -webkit-border-radius: 1em !important;
+  -moz-border-radius: 1em !important;
+  -ms-border-radius: 1em !important;
+  -o-border-radius: 1em !important;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+.card-header>p{
+  margin: 0;
+}
+
+@media (max-width: 767px){
+  .img-new{
+    max-width: 52vw;
+    border-radius: 7em;
+    -webkit-border-radius: 7em;
+    -moz-border-radius: 7em;
+    -ms-border-radius: 7em;
+    -o-border-radius: 7em;
+    margin: 0;
+  }
+  .card-icon{
+    min-height: 50vw;
+    border: 2px solid #a7d1e7;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    margin: 0.5em 0;
+  }
+  .card-img-top{
+    margin-top: 1em;
+    min-width: 30vw;  
+    align-items: center;
+  }
+  .maps-icon-text{
+    color: #4E7E6E;
+    font-size: 3vw;
+    font-weight: 700;
+    padding: 0.5em;
+    margin: 0;
+  }
 }
 
 
