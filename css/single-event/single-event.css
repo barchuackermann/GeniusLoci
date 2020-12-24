@@ -1,0 +1,58 @@
+/* Single Event */
+.event {
+    margin: 7em auto 2em auto;
+    height: 30vw;
+}
+.event-data{
+    max-height: 30vw;
+}
+.event-card{
+    height: 30vh;
+    margin-bottom: 0.2em;
+}
+.event-card-body{
+    overflow-y: scroll;
+    max-height: 15vw;
+    font-size: 0.8em;
+}
+.event-image{
+    vertical-align: middle;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.breadcrumb-item{
+    font-size: 0.8em;
+}
+.org-img{
+    background-color: grey;
+    margin: 0.5em;
+}
+.event-title>h2{
+    color: #435053;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.event-card-body>p{
+    margin-bottom: 0;
+}
+.event-card-footer{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+.event-date-body{
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+.event-date-body>p{
+    margin: 0;
+}
