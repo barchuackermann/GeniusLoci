@@ -92,7 +92,6 @@ box-shadow: 0 1rem 3em rgba(0, 0, 0, 0.075) !important;
   color: #435053;
   padding: 0;
 }
-
 .nav-link{
   display: flex;
   color: #435053;
@@ -244,10 +243,10 @@ footer{
     font-weight: 900;
     font-size: 3vw;
   }
-  h2.--banner{
+  .--banner>h2{
     margin-top: 1em;
   }
-  h2.--banner2{
+  .--banner2>h2{
     margin-top: 4em;
   }
   .carousel-text>h3{
@@ -334,6 +333,21 @@ footer{
   }
 
   @media (max-width: 768px){
+    .bg-nav{
+      display: flex;
+      align-items: flex-end;
+    }
+    .bg-nav>li{
+      padding: 0 1em;
+    }
+    .nav-link{
+      display: flex;
+      color: #435053;
+      font-size: 4vw;
+      font-weight: 500;
+      padding: 0;
+      justify-content: end !important;
+    }
     /* Header Mobile */
     .carousel-supra {
     background: url("./home/WAVE-MOBILE.png") no-repeat center bottom;
@@ -369,13 +383,13 @@ footer{
       width: 70vw;
       margin-left: 0.5em;
     }
-    h2.--banner{
-      margin-top: 2.5em;
+    .--banner>h2{
+      margin-top: 5em;
       margin-left: 0.5em;
       font-size: 6.5vh;
       color: #46626a;
     }
-    h2.--banner2{
+    .--banner2>h2{
       margin-top: 3.5em;
       margin-left: 0.2em;
       font-size: 6.5vh;
@@ -386,7 +400,7 @@ footer{
       font-weight: 900;
       font-size: 7vw;
     }
-    .--banner-none{
+    .--banner>h4{
       display: none;
     }
     .btn-maps{
