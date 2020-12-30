@@ -162,14 +162,19 @@
 
 @media (max-width: 768px){
 
-/* Cards */
-.sameheight>p{
-  font-size: calc(0.7em + 0.5vw)
-}
-.sameheight{
-  height: auto;
-}
-.events{
-  font-size: inherit;
-}
+  /* Cards */
+  .sameheight>p{
+    font-size: calc(0.7em + 0.5vw)
+  }
+  .sameheight{
+    height: auto;
+  }
+  .events{
+    font-size: inherit;
+  }
+  .presentation .carousel-container .slide {
+    min-width: 100%;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
 }

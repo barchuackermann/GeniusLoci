@@ -1,7 +1,7 @@
 /* Upcomming Events with accordion */
 .events{
   font-weight: 900;
-  color: #435053;
+  color: hsl(191, 11%, 29%);
   margin: 2rem;
 }
 .card {
@@ -225,5 +225,11 @@ p.event-data{
     border: 0;
     margin: 0;
     padding: 0;
+  }
+  .principal>.btn-register{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0;
   }
 }
