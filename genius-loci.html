@@ -32,9 +32,9 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand lexend" href="index.html">
+      <a class="navbar-brand lexend active" href="index.html">
         <img src="./css/Logo Icon.svg" alt="logo icon" class="logo">
-        <span class="title2">Šančiųbendruomenė.lt</span>
+        <span class="title2">Genius Loci</span>
       </a>
       <button class="navbar-toggler navbar-toggler-right bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,10 +63,10 @@
               <a class="dropdown-item" href="./partners.html">Partners</a>
             </div>
           </li>
-          <li class="separador d-none d-sm-none d-md-block">|</li>
+          <!-- <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item">
             <a class="nav-link" href="./news.html">NEWS</a>
-          </li>
+          </li> -->
           <li class="separador d-none d-sm-none d-md-block">|</li>
           <li>
             <form method ="get" action="#" class="input-group">
@@ -76,93 +76,79 @@
                 </button>
               </form>          
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link languaje" href="#">LT</a>
           </li>
           <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item">
             <a class="nav-link languaje active" href="#">EN</a>
-          </li>
+          </li> -->
         </ul>
-        <!-- <button type="button" class="btn login">Log-In</button> -->
+        <button type="button" class="btn login">Log-In</button>
       </div>      
     </div>
-  </nav> 
+  </nav>
 
   <!-- Header / Carousel -->
-  <header class="display-4">
-    <div class="principal">
-      <div class="row m-0">
-        <!-- Desktop -->
-        <div class="carousel-supra d-none d-sm-none d-md-block" style="background-image: url(./css/home/WAVE-WEB.png);">
-          <img src="./css/logos/Active-citizens-fund@4x.png" alt="Active Citizens Logo" class="active-citizens-logo">
-          <div class="carousel-text">
-            <h2>Urbanization and civil society</h2>
-            <!-- <h3>Urbanization and civil society</h3> -->
-            <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4>
-            <div class="container d-flex btn-maps --btn-maps">
-              <button class="btn btn-maps-pills">
-                <a href="#">APF Funds</a>
-              </button>
-              <button class="btn btn-maps-pills">
-                <a href="#">CPVA Funds</a>
-              </button>
+    <header class="display-4">
+      <div class="principal">
+        <div class="row m-0">
+          <!-- Desktop -->
+          <div class="carousel-supra d-none d-sm-none d-md-block" style="background-image: url(./css/home/WAVE-WEB.png);">
+            <img src="./css/logos/Active-citizens-fund@4x.png" alt="Active Citizens Logo" class="active-citizens-logo">
+            <div class="carousel-text">
+              <h2>Urbanization and civil society</h2>
+              <!-- <h3>Urbanization and civil society</h3> -->
+              <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4>
+              <div class="container d-flex btn-maps --btn-maps">
+                <button class="btn btn-maps-pills">
+                  <a href="#">APF Funds</a>
+                </button>
+                <button class="btn btn-maps-pills">
+                  <a href="#">CPVA Funds</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile -->
+          <div class="carousel-supra d-block d-sm-block d-md-none" style="background-image: url('./css/home/WAVE-MOBILE.png');"> 
+            <div class="carousel-text">
+              <h2 class="carousel-text-title">GENIUS LOCI:</h2>
+              <h3>Urbanization and civil society</h3>
+                <div class="twobtn">
+                  <button class="btn-maps-pills" onclick="location.href='#'">APF Funds</button>
+                  <button class="btn-maps-pills" onclick="location.href='#'">CPVA Funds</button>
+                </div>
             </div>
           </div>
         </div>
-        <!-- Mobile -->
-        <div class="carousel-supra d-block d-sm-block d-md-none" style="background-image: url('./css/home/WAVE-MOBILE.png');"> 
-          <div class="carousel-text">
-            <h2 class="carousel-text-title">GENIUS LOCI:</h2>
-            <h3>Urbanization and civil society</h3>
-              <div class="twobtn">
-                <button class="btn-maps-pills" onclick="location.href='#'">APF Funds</button>
-                <button class="btn-maps-pills" onclick="location.href='#'">CPVA Funds</button>
+        <!-- Carousel Images and indicators -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="background-image: url(./css/img/01.jpg)">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="photoby">Photo by</h3>
               </div>
-            <!-- <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4> -->
+            </div>
+            <div class="carousel-item" style="background-image: url('./css/img/002.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="photoby">Photo by</h3>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('./css/img/4.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="photoby">Photo by</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Carousel Images and indicators -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(./css/img/01.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="photoby">Photo by</h3>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./css/img/002.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="photoby">Photo by</h3>
-          </div>
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./css/img/4.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="photoby">Photo by</h3>
-          </div>
-        </div>
-      </div>
-      <!-- Flechas -->
-      <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
-    </div>
-  </header>
+    </header>
 
   <!-- What is GENIUS LOCI -->
   <section class="container mt-5 mb-5">
@@ -216,6 +202,7 @@
       </div>
     </div>
   </section>
+
   <!-- Project presentation -->
   <section class="row mt-5 mb-5 justify-content-center">
     <div class="col-md-10 center">
@@ -291,42 +278,42 @@
 
 
   <!-- Footer -->
-  <footer class="py-4 bg-green2">
+<footer class="py-4 bg-green2">
     <div class="container-fluid">
-      <div class="row m-0 text-center align-items-center">
-        <div class="col-12">
-          <span class="support">Paremkite Šančių pilietinę visuomenę</span>
+        <div class="row m-0 text-center align-items-center">
+            <div class="col-12">
+            <span class="support">Paremkite Šančių pilietinę visuomenę</span>
+            </div>
+            <div class="col-12">
+            <button type="button" class="btn btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
+            </div>
+            <div class="col-12">
+            <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
+            </span>
+            </div>
+            <div class="col-12 legal">
+            <a href="./terms-and-conditions.html">Privatumo politika</a>
+            </div>
         </div>
-        <div class="col-12">
-          <button type="button" class="btn btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
-        </div>
-        <div class="col-12">
-          <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
-          </span>
-        </div>
-        <div class="col-12 legal">
-          <a href="./terms-and-conditions.html">Privatumo politika</a>
-        </div>
-        
-      </div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog donate-dialog">  
-        <div class="modal-content donate-content">
-          <div class="modal-header donate-header">
-            <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
-          </div>
-          <div class="modal-body donate-body">
-              <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
-              <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
-              <p>Įmonės kodas: 303497934</p>
-              <p>Adresas: Norvegų g. 7A, Kaunas</p>
-          </div>
+        <div class="modal-dialog donate-dialog">  
+            <div class="modal-content donate-content">
+            <div class="modal-header donate-header">
+                <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
+            </div>
+            <div class="modal-body donate-body">
+                <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
+                <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
+                <p>Įmonės kodas: 303497934</p>
+                <p>Adresas: Norvegų g. 7A, Kaunas</p>
+            </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
