@@ -3,6 +3,9 @@
     margin: 7em auto 2em auto;
     height: 30vw;
 }
+.row-main{
+    align-items: center;
+}
 .event-data{
     max-height: 30vw;
 }
@@ -16,7 +19,7 @@
     font-size: 0.8em;
 }
 .event-image{
-    vertical-align: middle;
+    align-self: middle;
     border-radius: 2em;
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
@@ -33,7 +36,7 @@
     font-size: 0.8em;
 }
 .org-img{
-    background-color: grey;
+    background-color: transparent;
     margin: 0.5em;
 }
 .event-title>h2{
@@ -42,17 +45,78 @@
     font-size: 2vw;
 }
 .event-card-body>p{
-    margin-bottom: 0;
+    margin: 0.5em 0;
+}
+.facigroup{
+    margin-bottom: 1em;
+    
+}
+.facimg{
+    max-width: 3vw;
+    margin: 0 0.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 .event-card-footer{
+    background-color: transparent;
     font-size: 0.8em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0em 1em 0 0 ;
+    font-weight: 600;
+}
+.event-card-footer>a{
+    margin: 0;
+    font-weight: 600;
+}
+.links-card-footer{
+    display: flex;
+    align-content: center;
+}
+.links-card-footer>a>.fab{
+    margin: 0 0.5em 0 0;
+    font-size: 1.5em;
 }
 .event-date-body{
     font-size: 0.8em;
     padding: 0.5em;
+    margin-top: 0.3em;
 }
 .event-date-body>p{
     margin: 0;
+    font-weight: 600;
 }
+.event-date-body>p>span{
+    font-weight: 400;
+}
+.btn:focus{
+    box-shadow: none !important;
+  }
+.btn-block{
+    margin: 0;
+    padding: 0.3em 0;
+}
+.event-register{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        background-color: #AF529E;
+        border-radius: 10rem;
+        padding: 0.3em 2em;
+        -webkit-border-radius: 10rem;
+        -moz-border-radius: 10rem;
+        -ms-border-radius: 10rem;
+        -o-border-radius: 10rem;
+        color: white;
+        vertical-align: center;
+        font-weight: 400;
+        font-size: 1rem;
+}
+
