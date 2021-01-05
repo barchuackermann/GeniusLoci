@@ -4,7 +4,7 @@
     height: 30vw;
 }
 .row-main{
-    align-items: center;
+    align-items: center
 }
 .event-data{
     max-height: 30vw;
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0em 1em 0 0 ;
+    margin: 0;
     font-weight: 600;
 }
 .event-card-footer>a{
@@ -98,7 +98,7 @@
   }
 .btn-block{
     margin: 0;
-    padding: 0.3em 0;
+    padding: 0.5em 0;
 }
 .event-register{
         display: flex;
@@ -119,4 +119,140 @@
         font-weight: 400;
         font-size: 1rem;
 }
+.event-register:focus{
+    outline: none;
+}
+/* SECTION ORGANIZERS */
+.organizers{
+    margin-bottom: 2em;
+}
+.organizers>div>h2{
+    font-weight: bold;
+}
 
+/* SECTION VIDEO-EVENT */
+.video-event{
+    background-color: #94C4B4;
+    padding-bottom: 2em;
+}
+.vimeo-title>h4{
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.8em 0;
+}
+.caption{
+    margin: 0.8em 0;
+    font-weight: 600;
+    font-size: small;
+}
+.caption>span{
+    font-weight: 400;
+}
+
+/* PROYECT PRESENTATION */
+.presentation-title>h2{
+    font-weight: bold;
+}
+
+.presentation {
+    margin-bottom: 1em;
+  }
+  .presentation .container-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .presentation .container-principal .left-arrow,
+  .presentation .container-principal .right-arrow {
+    position: absolute;
+    border: none;
+    background: rgba(255,255,255, 0.3);
+    font-size: 2em;
+    height: 50%;
+    top: calc(50% - 20%);
+    line-height: 2em;
+    width: 4%;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: 0.2s ease all;
+  }
+  .presentation .container-principal .left-arrow {
+    left: 0;
+  }
+  .presentation .container-principal .right-arrow {
+    right: 0;
+  }
+  .presentation .container-principal .left-arrow:hover,
+  .presentation .container-principal .right-arrow:hover {
+    background: rgba(255,255,255, 0.9);
+  }
+  .presentation .carousel-container {
+    width: 100%;
+    padding: 1em 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .presentation .carousel-container .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .presentation .carousel-container .slide {
+    min-width: 20%;
+    transition: 0.3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition:0.3s ease all;
+    -moz-transition:0.3s ease all;
+    -ms-transition:0.3s ease all;
+    -o-transition:0.3s ease all;
+}
+  .presentation .carousel-container .slide:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  .presentation .carousel-container .slide img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
+
+  @media (max-width: 768px){
+/* Event */
+.event{
+    height: auto;
+}
+.event-title>h2{
+    color: #435053;
+    font-weight: 700;
+    font-size: 6vw;
+}
+.event-card{
+    height: 30vh;
+}
+.event-card-body{
+    overflow-y: scroll;
+    max-height: 30vh;
+    font-size: 0.8em;
+}
+.event-card-footer{
+    height: 10vw;
+}
+    /* Cards */
+    .sameheight>p{
+      font-size: calc(0.7em + 0.5vw)
+    }
+    .sameheight{
+      height: auto;
+    }
+    .events{
+      font-size: inherit;
+    }
+    .presentation .carousel-container .slide {
+      min-width: 100%;
+      transition: 0.3s ease all;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
