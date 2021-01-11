@@ -76,6 +76,24 @@
   -o-border-radius: 15em;
 }
 
+@media (max-width: 768px){
+  .event-container{
+    height: 90vw;
+    width: auto;
+    background: no-repeat bottom center;
+  }
+  .subcatergory-card{
+    height: 23vw;
+    width: 23vw;
+  }
+  .card-title{
+    font-size: 4vw;
+  }
+  .circle{
+    margin-bottom: 1em;
+  }
+}
+
 
 
 

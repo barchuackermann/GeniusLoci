@@ -1,10 +1,13 @@
 /* Single Event */
 .event {
-    margin: 7em auto 2em auto;
+    margin: 5em auto 2em auto;
     height: 30vw;
 }
 .row-main{
-    align-items: center
+    align-items: center;
+}
+.hola{
+    margin-top: 0;
 }
 .event-data{
     max-height: 30vw;
@@ -230,11 +233,11 @@
     font-size: 6vw;
 }
 .event-card{
-    height: 30vh;
+    height: 70vh;
 }
 .event-card-body{
     overflow-y: scroll;
-    max-height: 30vh;
+    max-height: 70vh;
     font-size: 0.8em;
 }
 .event-card-footer{
