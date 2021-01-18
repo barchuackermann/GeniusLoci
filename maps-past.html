@@ -22,7 +22,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/base.css">
-  <link href="css/communities/communities.css" rel="stylesheet">
+  <link href="css/map-past/map-past.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,253 +86,168 @@
     </div>
   </nav>
 
-  <!-- Header / Carousel -->
-
-  <!-- Events -->
-  <!-- <section class="row mt-5 mb-5 justify-content-center">
-    <div class="col-md-8 center">
-      <div class="row justify-content-center ">
-        <h2 class="text-center events">Upcomming Events</h2>
+  <!-- Header Map -->
+  <header class="display-4">
+    <div class="principal">
+      <div class="row m-0 map">
+        <!-- Desktop -->
+        <div class="col-md-4 sidebar">
+            <h2>MEMORY Map</h2>
+            <h4>
+              Aleida Assman, one of the world’s most famous researchers of memory culture says: 
+            </h4>
+            <p>“The future cannot simply be separated from the past.[…] We come to the future only through the past. Especially when that past is still felt in the present. Something needs to be done with it because the path to the future will remain simply blocked. After all, the goal is the future, not the past. […] It's transforming energy".</p>
+            <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
+              How to become a creator of Šančiai history 
+            </button>
+            <h4>The purpose of the Šančiai memory map is to collect and to share images and narratives of our collective and individual history. It is based not only on the officially protected cultural heritage, but also on our memories, legends of the place, personal images, etc.</h4>
+            <div class="botones">
+              <button class="btn btn-header btn-header-question" onclick="">
+                <img src="./css/map-past/question-icon.png" alt="Having questions?">
+                <p>Having questions?</p>
+              </button>
+              <button class="btn btn-header btn-header-point" onclick="">
+                <img src="./css/map-past/point-icon.png" alt="Create the map">
+                <p>Create the map</p>
+              </button>
+            </div>
+        </div>
+        <div class="col-md-8 mapa" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture">
+          <a href=""></a>
+        </div>
       </div>
-      <div class="mb-4 justify-content-center" id="accordion" role="tablist" aria-multiselectable="true"> -->
-        <!-- 1st Event -->
-        <!-- <div class="card">
-          <a 
-          class="card-header align-content-center" role="tab" 
-          id="headingOne" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseOne" 
-          aria-expanded="true" 
-          aria-controls="collapseOne">
-            <div class="col-md-3 col-sm-3 event-date">
-              <p class="event-month">NOV</p>
-              <p class="event-day">29</p>
-            </div>
-            <div class="col-md-6 col-sm-9">
-              <div class="event-type">
-                  <span class="event-proyect ea">GENIUS LOCI</span>
-                  <span class="event-category ea">EDUCATION</span>
-                  <span class="event-subcategory">Seminars</span>
-              </div>              
-              <div class="event-type-title">
-                <span class="event-title ea">PUBLIC DISCUSSION</span>
-                <span class="event-location">Sanciai Biblioteka 20h.</span>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12 center m-0">
-              <button type="button" class="btn btn-register">Register</button>
-            </div>
-          </a> -->
-          <!-- <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-body">
-              <div class="col-md-3 col-sm-12 event-container">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description">
-                <h6 class="event-about">About the Event</h6>
-                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-                </p>
-                <h6 class="event-about">Time and location</h6>
-                <p class="event-data">Nov 29, 2020, 20:00</p>
-                <p class="event-data">Sanciai Biblioteka</p>
-                <p class="event-data">Sandėlių g. 7, Kaunas</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- 2nd Event -->
-        <!-- <div class="card">
-          <a 
-          class="card-header" role="tab" 
-          id="headingTwo" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseTwo" 
-          aria-expanded="false" 
-          aria-controls="collapseTwo">
-            <div class="col-md-3 col-sm-12 event-date">
-              <p class="event-month">NOV</p>
-              <p class="event-day">29</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-12 ">
-              <div class="event-type">
-                  <span class="event-proyect ea">GENIUS LOCI</span>
-                  <span class="event-category ea">EDUCATION</span>
-                  <span class="event-subcategory">Seminars</span>
-              </div>              
-              <div class="event-type-title">
-                <span class="event-title ea">PUBLIC DISCUSSION</span>
-                <span class="event-location">Sanciai Biblioteka 20h.</span>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-register">Register</button>
-            </div>
-          </a> -->
-  
-          <!-- <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-body">
-              <div class="col-md-3 col-sm-12 event-container">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description">
-                <h6 class="event-about">About the Event</h6>
-                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-                </p>
-                <h6 class="event-about">Time and location</h6>
-                <p class="event-data">Nov 29, 2020, 20:00</p>
-                <p class="event-data">Sanciai Biblioteka</p>
-                <p class="event-data">Sandėlių g. 7, Kaunas</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- 3rd Event -->        
-        <!-- <div class="card">
-          <a 
-          class="card-header" role="tab" 
-          id="headingThree" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseThree" 
-          aria-expanded="false" 
-          aria-controls="collapseThree">
-            <div class="col-md-3 col-sm-12 event-date">
-              <p class="event-month">NOV</p>
-              <p class="event-day">29</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-12">
-              <div class="event-type">
-                  <span class="event-proyect ea">GENIUS LOCI</span>
-                  <span class="event-category ea">EDUCATION</span>
-                  <span class="event-subcategory">Seminars</span>
-              </div>              
-              <div class="event-type-title">
-                <span class="event-title ea">PUBLIC DISCUSSION</span>
-                <span class="event-location">Sanciai Biblioteka 20h.</span>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-register">Register</button>
-            </div>
-          </a> -->
-  
-          <!-- <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="card-body">
-              <div class="col-md-3 col-sm-12 event-container">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description">
-                <h6 class="event-about">About the Event</h6>
-                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-                </p>
-                <h6 class="event-about">Time and location</h6>
-                <p class="event-data">Nov 29, 2020, 20:00</p>
-                <p class="event-data">Sanciai Biblioteka</p>
-                <p class="event-data">Sandėlių g. 7, Kaunas</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- 4th Event -->
-        <!-- <div class="card">
-          <a 
-          class="card-header" role="tab" 
-          id="headingFour" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseFour" 
-          aria-expanded="false" 
-          aria-controls="collapseFour">
-            <div class="col-md-3 col-sm-12 event-date">
-              <p class="event-month">NOV</p>
-              <p class="event-day">29</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-12">
-              <div class="event-type">
-                  <span class="event-proyect ea">GENIUS LOCI</span>
-                  <span class="event-category ea">EDUCATION</span>
-                  <span class="event-subcategory">Seminars</span>
-              </div>              
-              <div class="event-type-title">
-                <span class="event-title ea">PUBLIC DISCUSSION</span>
-                <span class="event-location">Sanciai Biblioteka 20h.</span>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-register">Register</button>
-            </div>
-          </a>
-          
-          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="card-body">
-              <div class="col-md-3 col-sm-12 event-container">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description">
-                <h6 class="event-about">About the Event</h6>
-                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-                </p>
-                <h6 class="event-about">Time and location</h6>
-                <p class="event-data">Nov 29, 2020, 20:00</p>
-                <p class="event-data">Sanciai Biblioteka</p>
-                <p class="event-data">Sandėlių g. 7, Kaunas</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- 5th Event -->
-        <!-- <div class="card">
-          <a 
-          class="card-header" role="tab" 
-          id="headingFive" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseFive" 
-          aria-expanded="false" 
-          aria-controls="collapseFive">
-            <div class="col-md-3 col-sm-12 event-date">
-              <p class="event-month">NOV</p>
-              <p class="event-day">29</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-12">
-              <div class="event-type">
-                  <span class="event-proyect ea">GENIUS LOCI</span>
-                  <span class="event-category ea">EDUCATION</span>
-                  <span class="event-subcategory">Seminars</span>
-              </div>              
-              <div class="event-type-title">
-                <span class="event-title ea">PUBLIC DISCUSSION</span>
-                <span class="event-location">Sanciai Biblioteka 20h.</span>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <button type="button" class="btn btn-register">Register</button>
-            </div>
-          </a>
-          
-          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div class="card-body">
-              <div class="col-md-3 col-sm-12 event-container">
-                <img src="./css/events photos/activities.jpg" alt="event image" class="img-thumbnail">
-              </div>
-              <div class="col-md-9 col-sm-12 event-description">
-                <h6 class="event-about">About the Event</h6>
-                <p class="event-data">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, omnis mollitia. Aliquam rem quae expedita nemo qui nisi illo, ratione quod veritatis corporis ipsam at non fuga id porro voluptatum.</p>
-                </p>
-                <h6 class="event-about">Time and location</h6>
-                <p class="event-data">Nov 29, 2020, 20:00</p>
-                <p class="event-data">Sanciai Biblioteka</p>
-                <p class="event-data">Sandėlių g. 7, Kaunas</p>
-              </div>
-            </div>
+    </div>
+    <!-- Modal How to Create -->
+    <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered how-dialog">  
+        <div class="modal-content how-content">
+          <div class="modal-body modal-body-how">
+            <h6>Here goes any text to explain what is memory map and how to fill the map.
+            </h6>
+            <p>- Select the point and place it in the map where is your location.</p>
+            <p>- If you make a mistake, you can drag it to another location on the map.</p>
+            <p>- Fill in the info of your memory and indicate the sources of information and the authors of the photos.</p>
+            <p>- After providing all the required information click the "submit" button.</p>
+            <button class="btn-how-modal" onclick="location.href='./about-maps.html'">
+              Read more about Šančiai Maps
+            </button>
           </div>
         </div>
       </div>
-      </section> -->
+    </div>
+    <!-- Modal Point Map -->
+    <div class="modal fade" id="picture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered picture-dialog">  
+        <div class="modal-content picture-content">
+          <div class="modal-body modal-body-picture">
+            <section class="row mt-5 mb-5 justify-content-center">
+              <div class="col-md-10 center">
 
+                <div class="img-modal row">  
+                  <div class="container-principal d-flex center">
+                    <button role="button" id="left-arrow" class="left-arrow">
+                      <i class="fas fa-angle-left"></i>
+                    </button>
+            
+                    <div class="carousel-container">
+                      <div class="carousel">
+                        <div class="slide">
+                          <img src="./css/genius-loci/jpg presentation/Slide1.JPG" alt="Slide 1" />
+                        </div>
+                        <div class="slide">
+                          <img src="./css/genius-loci/jpg presentation/Slide2.JPG" alt="Slide 2" />
+                        </div>
+                      </div>
+                    </div>
+            
+                    <button role="button" id="right-arrow" class="right-arrow">
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+          
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <p>Bažnyčia</p>
+            <button type="button" class="btn btn-how">Read about</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Gallery -->
+  <section class="row mt-5 mb-5 justify-content-center">
+    <div class="col-md-10 center">
+      <div class="row justify-content-center ">
+        <h2 class="text-center events">Gallery</h2>
+      </div>
+
+      <div class="presentation row">  
+        <div class="container-principal d-flex center">
+          <button role="button" id="left-arrow" class="left-arrow">
+            <i class="fas fa-angle-left"></i>
+          </button>
+  
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide1.JPG" alt="Slide 1" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide2.JPG" alt="Slide 2" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide3.JPG" alt="Slide 3" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide4.JPG" alt="Slide 4" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide5.JPG" alt="Slide 5" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide6.JPG" alt="Slide 6" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide7.JPG" alt="Slide 7" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide8.JPG" alt="Slide 8" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide9.JPG" alt="Slide 9" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide10.JPG" alt="Slide 10" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide11.JPG" alt="Slide 11" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide12.JPG" alt="Slide 12" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide13.JPG" alt="Slide 13" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide14.JPG" alt="Slide 14" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide15.JPG" alt="Slide 15" />
+              </div>
+              <div class="slide">
+                <img src="./css/genius-loci/jpg presentation/Slide16.JPG" alt="Slide 16" />
+              </div>
+            </div>
+          </div>
+  
+          <button role="button" id="right-arrow" class="right-arrow">
+            <i class="fas fa-angle-right"></i>
+          </button>
+
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="py-4 bg-green2">
