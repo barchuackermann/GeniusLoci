@@ -177,7 +177,7 @@ header{
 }
 .carousel-text{
   position: absolute;
-  width: 35vw;
+  width: 40vw;
   height: 80%;
   margin-left: 0.75em;
 }
@@ -209,6 +209,7 @@ header{
   line-height: 2em;
   margin-top: 2vw;
   margin-right: 2vw;
+  width: 35vw;
 }
 .btn-maps{
   display: flex;
@@ -223,7 +224,7 @@ header{
   background-size: contain;
   position: relative;
   top: 5%;
-  left: -10%;
+  left: -15%;
   color: white !important;
   font-style: italic;
   vertical-align: center;
