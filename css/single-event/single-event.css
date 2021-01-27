@@ -6,10 +6,10 @@
     align-items: center;
     margin: 5em 0;
 }
-/* .event-card{
-    max-height: 27vw;
-    margin-bottom: 0.2em;
-} */
+.event-card{
+    display: block;
+    min-width: 100%;
+}
 .event-card-body{
     overflow-y: scroll;
     max-height: 18vw;
