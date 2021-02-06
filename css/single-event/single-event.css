@@ -213,6 +213,29 @@
     vertical-align: top;
 }
 
+.scrollable{
+  position: relative;
+  overflow-y: scroll;
+}
+.scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  margin: 1em;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
+}
+
   /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
 
 @media (max-width: 768px){
@@ -239,9 +262,9 @@
     .breadcrumb{
         background-color: transparent;
         padding-left: 0;
-        margin: 0;
+        margin: 0 0 2vw 0;
         padding-bottom: 0;
-        font-size: 1em;
+        font-size: 6vw;
     }
     .breadcrumb-item{
         font-size: 0.5em;
@@ -266,6 +289,9 @@
         max-width: 10vw;
     }
     /* Cards */
+    .org{
+        margin-top: -8vw;
+    }
     .sameheight>p{
         font-size: calc(0.7em + 0.5vw)
     }
