@@ -16,7 +16,10 @@
     font-size: 0.8em;
 }
 .event-image{
-    max-height: 40vw;
+    max-height: 35vw;
+    height: 35vw;
+      object-fit: cover;
+      object-position: center center;
     width: auto ;
     border-radius: 1em;
     -webkit-border-radius: 1em;
@@ -219,8 +222,9 @@
         margin: 4em 0;
     }
     .event-img-cont{
-        display:flex;
-        justify-content: center;
+        height: 100%;
+      object-fit: cover;
+      object-position: center center;
     }
     .event-image-res{
         height: 100vw;
@@ -229,6 +233,8 @@
         -moz-border-radius: 1em;
         -ms-border-radius: 1em;
         -o-border-radius: 1em;
+        object-fit: cover;
+        object-position: center center;
 }
     .breadcrumb{
         background-color: transparent;
