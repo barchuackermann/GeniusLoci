@@ -15,6 +15,10 @@
     max-height: 18vw;
     font-size: 0.8em;
 }
+.card-title{
+    font-weight: bold;
+    color: #435053;
+}
 .event-image{
     max-height: 35vw;
     height: 35vw;
