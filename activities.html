@@ -114,7 +114,8 @@
         <!-- 1st Event -->
         <div class="card">
           <a 
-          class="card-headers align-content-center" role="tab" 
+          class="card-headers align-content-center" 
+          role="tab" 
           id="headingOne" 
           data-toggle="collapse" 
           data-parent="#accordion" 
@@ -127,23 +128,85 @@
           </a>
   
           <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="row event-container img-fluid" style="background-image: url(./css/activities/education.jpg);">
-              <div class="col-lg-2 col-md-2 circle">
-                  <h6 class="subcatergory-card m-0" style="background-color: #669999"><a href="#" class="card-title m-0">Lectures</a></h6>
+            <div class="row event-container">
+              <div class="col-lg-2 col-md-2 col circle">
+                  <a 
+                    role="tab" 
+                    id="lectures" 
+                    data-toggle="collapse" 
+                    data-parent="#accordion" 
+                    href=".lectures" 
+                    aria-expanded="true" 
+                    aria-controls="collapseLectures"
+                    class="card-title m-0"><h6 class="subcatergory-card" id="lecturesCircle">Lectures</h6></a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #66cccc;"><a href="#" class="card-title m-0">Seminars</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="seminars" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".seminars" 
+                  aria-expanded="true" 
+                  aria-controls="collapseSeminars" class="card-title m-0"><h6 class="subcatergory-card" id="seminarsCircle">Seminars</h6></a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #34544f"><a href="#" class="card-title m-0">Tours</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="tours" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".tours" 
+                  aria-expanded="true" 
+                  aria-controls="collapseTours" class="card-title m-0"><h6 class="subcatergory-card" id="toursCircle">Tours</h6></a>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card card-activity collapse lectures" id="collapseAct1" role="tabpanel" aria-labelledby="Act1">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Lectures</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse seminars" id="collapseAct1" role="tabpanel" aria-labelledby="Act1">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Seminars</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse tours" id="collapseAct1" role="tabpanel" aria-labelledby="Act1">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Tours</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse tours" id="collapseAct1" role="tabpanel" aria-labelledby="Act1">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Tours</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
               </div>
             </div>
           </div>
+          
+          
         </div>
+
         <!-- 2nd Event -->
         <div class="card">
           <a 
-          class="card-headers align-content-center" role="tab" 
+          class="card-headers align-content-center" 
+          role="tab" 
           id="headingTwo" 
           data-toggle="collapse" 
           data-parent="#accordion" 
@@ -156,23 +219,86 @@
           </a>
   
           <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="row event-container" style="background-image: url(./css/activities/creativity.jpg);">
-              <div class="col-lg-2 col-md-2 circle">
-                  <h6 class="subcatergory-card m-0" style="background-color: #669999"><a href="#" class="card-title m-0">Opera</a></h6>
+            <div class="row event-container">
+              <div class="col-lg-2 col-md-2 col circle">
+                  <a 
+                    role="tab" 
+                    id="opera" 
+                    data-toggle="collapse" 
+                    data-parent="#accordion" 
+                    href=".opera" 
+                    aria-expanded="true" 
+                    aria-controls="collapseAct2"
+                    class="card-title m-0"><h6 class="subcatergory-card" id="operaCircle">Opera</h6></a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #66cccc;"><a href="#" class="card-title m-0">Exhibition</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="exhibitions" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".exhibitions" 
+                  aria-expanded="true" 
+                  aria-controls="collapseAct2" class="card-title m-0"><h6 class="subcatergory-card" id="exhibitionsCircle">Exhibitions</h6></a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #34544f"><a href="#" class="card-title m-0">Spaces</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="spaces" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".spaces" 
+                  aria-expanded="true" 
+                  aria-controls="collapseAct2" class="card-title m-0"><h6 class="subcatergory-card" id="spacesCircle">Spaces</h6>
+                </a>
               </div>
             </div>
+            <div class="card-group">
+              <div class="card card-activity collapse opera" id="collapseAct2" role="tabpanel" aria-labelledby="Act2">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Opera</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse spaces" id="collapseAct2" role="tabpanel" aria-labelledby="Act2">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Spaces</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse exhibitions" id="collapseAct2" role="tabpanel" aria-labelledby="Act2">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Exhibitions</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse opera" id="collapseAct2" role="tabpanel" aria-labelledby="Act2">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Opera</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              
+            </div>
           </div>
+          
+          
         </div>
         <!-- 3rd Event -->
         <div class="card">
           <a 
-          class="card-headers align-content-center" role="tab" 
+          class="card-headers align-content-center" 
+          role="tab" 
           id="headingThree" 
           data-toggle="collapse" 
           data-parent="#accordion" 
@@ -180,28 +306,91 @@
           aria-expanded="true" 
           aria-controls="collapseThree">
             <div class="col-md-12 col-sm-12 event-category-title">
-                  <span>MAPPING WORKSHOPS</span>
+                  <span>CREATIVE MAPPING</span>
             </div>
           </a>
   
           <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="row event-container" style="background-image: url(./css/activities/mapping-workshop.jpg);">
-              <div class="col-lg-2 col-md-2 circle">
-                  <h6 class="subcatergory-card m-0" style="background-color: #669999"><a href="#" class="card-title m-0 text-center">Cultural Heritage</a></h6>
+            <div class="row event-container">
+              <div class="col-lg-2 col-md-2 col circle">
+                  <a 
+                    role="tab" 
+                    id="cultural" 
+                    data-toggle="collapse" 
+                    data-parent="#accordion" 
+                    href=".cultural" 
+                    aria-expanded="true" 
+                    aria-controls="collapseAct3"
+                    class="card-title m-0 text-center">
+                    <h6 class="subcatergory-card" id="culturalCircle">Cultural Heritage</h6>
+                  </a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #66cccc;"><a href="#" class="card-title m-0 text-center">Present Map</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="presentMap" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".presentMap" 
+                  aria-expanded="true" 
+                  aria-controls="collapseAct3" class="card-title text-center m-0"><h6 class="subcatergory-card" id="presentMapCircle">Present Map</h6>
+                </a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #34544f"><a href="#" class="card-title m-0 text-center">Urban Vision</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="urbanVision" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".urbanVision" 
+                  aria-expanded="true" 
+                  aria-controls="collapseAct3" class="card-title m-0 text-center"><h6 class="subcatergory-card" id="urbanVisionCircle">Urban Vision</h6></a>
               </div>
+            </div>
+            <div class="card-group">
+              <div class="card card-activity collapse cultural" id="collapseAct3" role="tabpanel" aria-labelledby="Act3">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Cultural Heritage</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse cultural" id="collapseAct3" role="tabpanel" aria-labelledby="Act3">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Cultural Heritage</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse urbanVision" id="collapseAct3" role="tabpanel" aria-labelledby="Act3">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Urban Vision</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse presentMap" id="collapseAct3" role="tabpanel" aria-labelledby="Act3">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Present Map</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
         <!-- 4th Event -->
         <div class="card">
           <a 
-          class="card-headers align-content-center" role="tab" 
+          class="card-headers align-content-center" 
+          role="tab" 
           id="headingFour" 
           data-toggle="collapse" 
           data-parent="#accordion" 
@@ -214,15 +403,69 @@
           </a>
   
           <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="row event-container" style="background-image: url(./css/activities/capacitybuilding.jpg);">
-              <div class="col-lg-2 col-md-2 circle">
-                  <h6 class="subcatergory-card m-0" style="background-color: #66cccc;"><a href="#" class="card-title m-0">Training</a></h6>
+            <div class="row event-container">
+              <div class="col-lg-2 col-md-2 col circle">
+                  <a 
+                    role="tab" 
+                    id="training" 
+                    data-toggle="collapse" 
+                    data-parent="#accordion" 
+                    href=".training" 
+                    aria-expanded="true" 
+                    aria-controls="collapseAct4"
+                    class="card-title m-0"><h6 class="subcatergory-card" id="trainingCircle">Training</h6></a>
               </div>
-              <div class="col-lg-2 col-md-2 circle">
-                <h6 class="subcatergory-card m-0" style="background-color: #34544f"><a href="#" class="card-title m-0">Study Visit</a></h6>
+              <div class="col-lg-2 col-md-2 col circle">
+                <a role="tab" 
+                  id="studyVisit" 
+                  data-toggle="collapse" 
+                  data-parent="#accordion" 
+                  href=".studyVisit" 
+                  aria-expanded="true" 
+                  aria-controls="collapseAct4" class="card-title m-0"><h6 class="subcatergory-card" id="studyVisitCircle">Study Visit</h6></a>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card card-activity collapse training" id="collapseAct4" role="tabpanel" aria-labelledby="Act4">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Training</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse training" id="collapseAct4" role="tabpanel" aria-labelledby="Act4">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Training</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse studyVisit" id="collapseAct4" role="tabpanel" aria-labelledby="Act4">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Study Visit</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
+              </div>
+              <div class="card card-activity collapse studyVisit" id="collapseAct4" role="tabpanel" aria-labelledby="Act4">
+                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-activity">
+                  <h5 class="card-title card-title-activity">Study Visit</h5>
+                  <p class="card-text card-text-activity">Christmas celebration
+                    Meeting our community</p>
+                  <button class="btn btn-about">Read About</button>
+                </div>
               </div>
             </div>
           </div>
+          
+          
         </div>
         </div>
       </div>
@@ -269,6 +512,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/activities.js"></script>
 
 </body>
 
