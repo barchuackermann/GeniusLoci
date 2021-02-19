@@ -1,18 +1,19 @@
 let crossHair = 0;
-let heritageCount = 1;
+let material = 0;
+let intangible = 0;
 
 let input = document.querySelector("#hashtags");
 let container = document.querySelector(".tag-container");
 let hashtagArray = [];
 
 /* Add ANother Picture */
-anotherPic = () => {
+/* anotherPic = () => {
   let picNode = document.getElementById("picNode");
   let inputFile = document.createElement("input");
   inputFile.classList.add("form-control-file");
   inputFile.setAttribute("type", "file");
   picNode.appendChild(inputFile);
-};
+}; */
 
 /* Keywords */
 input.addEventListener("keyup", (e) => {
@@ -35,16 +36,29 @@ input.addEventListener("keyup", (e) => {
 });
 
 /* Deshabilita opciones en Heritage */
+const setOption = (id) => {
+  if (id == "phisical") {
+    material = 1;
+    intangible = 0;
+    setDisable(material, intangible);
+  } else {
+    intangible = 1;
+    material = 0;
+    setDisable(material, intangible);
+  }
+};
+
 const setDisable = () => {
-  if (heritageCount == 0) {
-    console.log("hasta aca");
+  if (material == 0 && intangible == 1) {
     document.getElementById("phisicalInput").setAttribute("disabled", "");
     document.getElementById("abstractInput").removeAttribute("disabled", "");
-    heritageCount = 1;
+    material = 1;
+    intangible = 0;
   } else {
     document.getElementById("abstractInput").setAttribute("disabled", "");
     document.getElementById("phisicalInput").removeAttribute("disabled", "");
-    heritageCount = 0;
+    material = 0;
+    intangible = 1;
   }
 };
 /* Cambia cursor sobre mapa */
@@ -53,18 +67,24 @@ const cursorCrossHair = () => {
   crossHair = 1;
 };
 
+/* Modal Thanks */
+const setThanks = () => {
+  e.preventDefault();
+  console.log(" hola barchux");
+};
+
 const load = () => {
   const createMap = document.getElementById("createMap");
   createMap.addEventListener("click", cursorCrossHair);
 
   const phisical = document.getElementById("phisical");
-  phisical.addEventListener("click", setDisable);
+  phisical.addEventListener("click", () => setOption(phisical.id));
   const abstract = document.getElementById("abstract");
-  abstract.addEventListener("click", setDisable);
+  abstract.addEventListener("click", () => setOption(abstract.id));
 
   /* Add Picture */
-  const addPic = document.getElementById("addPic");
-  addpic.addEventListener("click", anotherPic);
+  /* const addPic = document.getElementById("addPic");
+  addpic.addEventListener("click", anotherPic); */
 
   /* Validation */
   var forms = document.getElementsByClassName("needs-validation");
@@ -82,6 +102,8 @@ const load = () => {
       false
     );
   });
+
+  form.addEventListener("submit", setThanks);
 };
 
 window.onload = load;

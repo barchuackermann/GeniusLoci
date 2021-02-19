@@ -1,6 +1,7 @@
 /* Header Map */
 .principal{
   margin-top: 2.5em;
+
 }
 .map{
   height: 45vw;
@@ -162,7 +163,7 @@
 }
 .scrollable{
   position: relative;
-  max-height: 26vw;
+  max-height: 23vw;
   overflow-y: scroll;
 }
 .scrollable::-webkit-scrollbar {
@@ -185,10 +186,11 @@
 }
 ​
 .form-group{
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 input::placeholder, textarea::placeholder, option, option::placeholder{
   font-style: italic;
+  font-size: 1em;
 }
 .form-check>label{
   font-size: 1vw;
@@ -209,17 +211,18 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   margin: auto;
 }
 .btn-back{
-  background-color: #3499cd;
+  background-color: #617e95;
   color: white;
-  font-weight: 600;
-  border-radius: 0.8em;
-  -webkit-border-radius: 0.8em;
-  -moz-border-radius: 0.8em;
-  -ms-border-radius: 0.8em;
-  -o-border-radius: 0.8em;
-  width: 75%;
+  font-weight: 400;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  width: 30%;
   margin:auto;
   text-align: center;
+  padding: 0 0.5em;
 }
 
 /* Keywords */
@@ -298,6 +301,7 @@ input:focus, textarea:focus, select:focus{
 }
 .form-group-file>input{
   margin-bottom: 0.5vw;
+
 }
 .addpic{
   margin-top: 1em;
@@ -498,17 +502,16 @@ input[type=file]::-webkit-file-upload-button{
 
 
 
-
 @media (max-width: 768px){
   /* Principal */
   .principal{
     margin-top: 15vw;
     background-color: #445154; /* Ver con red */
-    min-height: 150vh;
+    min-height: 85vh;
   }
   .map{
-      /* height: 100vh;
-      min-height: 200vh; */
+    /* height: 100vh;
+    min-height: 200vh; */
     background: no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -521,7 +524,7 @@ input[type=file]::-webkit-file-upload-button{
   }
   .sidebar{
     background-color: #445154;
-    min-height: 95vh;
+    min-height: 30vh;
     max-height: 40vh;
   }
   .sidebar>h2{
@@ -606,7 +609,7 @@ input[type=file]::-webkit-file-upload-button{
   }
   .scrollable{
     position: relative;
-    max-height: 45vh;
+    max-height: 44vh;
     overflow-y: scroll;
   }
   .scrollable::-webkit-scrollbar {
@@ -633,6 +636,7 @@ input[type=file]::-webkit-file-upload-button{
   }
   input::placeholder, textarea::placeholder, option, option::placeholder{
     font-style: italic;
+    font-size: small;
   }
   .form-check>label{
     font-size: 1vw;
@@ -652,20 +656,25 @@ input[type=file]::-webkit-file-upload-button{
     text-align: center;
     margin: auto;
   }
+
   .btn-back{
-    background-color: #3499cd;
+    background-color: #617e95;
     color: white;
-    font-weight: 600;
-    border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -ms-border-radius: 0.8em;
-    -o-border-radius: 0.8em;
-    width: 100%;
-    margin: auto;
+    font-weight: 400;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    width: 30%;
+    margin:auto;
     text-align: center;
+    padding: 0 0.5em;
     font-size: 3vw;
   }
+
+
+
   
   /* Keywords */
   .tag-container {
@@ -739,9 +748,6 @@ input[type=file]::-webkit-file-upload-button{
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
   }
-  .form-group-file>input{
-    margin-bottom: 0.5vw;
-  }
   .addpic{
     margin-top: 1em;
     background-color: transparent;
@@ -777,7 +783,7 @@ input[type=file]::-webkit-file-upload-button{
     -o-border-radius: 0.5em;
   }
   .age, .email{
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
   .form-check-label{
     font-size: 2.5vw !important;
@@ -788,9 +794,12 @@ input[type=file]::-webkit-file-upload-button{
     margin: 0;
   }
   .linkterms{
-    font-size: 2.5vw !important;
+    font-size: 3vw;
     margin: 0;
     color: #3499cd !important;
+  }
+  #termsandconditions{
+    font-size: 3vw !important;
   }
   .form-check-data>label>p{
     padding: 0;
@@ -817,6 +826,9 @@ input[type=file]::-webkit-file-upload-button{
   .finalSubmit{
     width: 60%;
     margin: auto;
+  }
+  .valid-feedback .invalid-feedback{
+    font-size: 0.25vw;
   }
 
 

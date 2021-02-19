@@ -93,14 +93,14 @@
         <!-- Desktop -->
         <div class="col-md-4 col-12 sidebar" id="init">
             <h2>MEMORY Map</h2>
-            <p>“The future cannot simply be separated from the past.[…] We come to the future only through the past. Especially when that past is still felt in the present. Something needs to be done with it because the path to the future will remain simply blocked. After all, the goal is the future, not the past. […] It's transforming energy".</p>
-            <h4>
+            <p class="d-none d-md-block d-lg-block">“The future cannot simply be separated from the past.[…] We come to the future only through the past. Especially when that past is still felt in the present. Something needs to be done with it because the path to the future will remain simply blocked. After all, the goal is the future, not the past. […] It's transforming energy".</p>
+            <h4 class="d-none d-md-block d-lg-block">
               Aleida Assman, researcher of memory culture. 
             </h4>
             <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
               How to become a creator of Šančiai history 
             </button>
-            <h4>The goal of the Šančiai memory map is to collect the values ​​of personal and collective memory and share them with others. We seek to create the history of Šančiai based not only on official policy makers, but also on the memories, experiences, legends, family albums, photos, etc. of each of us. </h4>
+            <h4 class="d-none d-md-block d-lg-block">The goal of the Šančiai memory map is to collect the values ​​of personal and collective memory and share them with others. We seek to create the history of Šančiai based not only on official policy makers, but also on the memories, experiences, legends, family albums, photos, etc. of each of us. </h4>
             <div class="botones">
               <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
                 <img src="./css/map-past/question-icon.png" alt="Having questions?">
@@ -131,7 +131,7 @@
     <div class="modal fade" id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-dialog-centered modal-lg">  
         <div class="modal-content modal-content-map">
-          <div class="modal-body modal-body-map">
+          <div class="modal-body modal-body-map" id="clear">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -151,7 +151,7 @@
                                 Looks good!
                               </div>
                               <div class="invalid-feedback">
-                                Please enter your name.
+                                Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
@@ -159,11 +159,11 @@
                               </label>
                               <div class="row align-content-center">
                                 <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="phisical" name="heritage" class="custom-control-input" value="option1">
+                                  <input type="radio" id="phisical" name="heritage" class="custom-control-input" value="option1" required>
                                   <label class="custom-control-label" for="phisical">Material object</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="abstract" name="heritage" class="custom-control-input" value="option2" check="false">
+                                  <input type="radio" id="abstract" name="heritage" class="custom-control-input" value="option2" check="false" required>
                                   <label class="custom-control-label" for="abstract">Intangible object</label>
                                 </div>
                               </div>
@@ -193,26 +193,39 @@
                             </div>
                             <div class="form-group">
                               <label for="Information">Describe your memory</label>
-                              <textarea class="form-control" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..."></textarea>
+                              <textarea class="form-control" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
                             </div>
                             <div class="form-group">
                               <label for="Information">Indicate the source of the information</label>
                               <textarea class="form-control" id="Information" rows="2" placeholder="My own info, a magazine, form an archive, institution...."></textarea>
                             </div>
                             <div class="row">
-                              <div class="col-7 p-0 pr-1 form-group">
+                              <div class="col-md-7 col-12 p-0 pr-1 form-group">
                                 <label for="epoch">Epoch</label>
-                                <select class="custom-select">
-                                  <option selected>Year or time period</option>
-                                  <option value="1">Past</option>
-                                  <option value="2">Present</option>
-                                  <option value="3">Future</option>
+                                <select class="custom-select" required>
+                                  <option selected disabled value="">Year or time period</option>
+                                  <option value="1">before 1918</option>
+                                  <option value="2">1918-1940</option>
+                                  <option value="3">1940-1990</option>
+                                  <option value="4">after 1990</option>
                                 </select>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                  Please complete this field.
+                                </div>
                               </div>
-                              <div class="col-5 p-0 form-group">
+                              <div class="col-md-5 col-12 p-0 form-group">
                                 <label for="location-type">Type of Location</label>
-                                <select class="custom-select">
-                                  <option selected>Type of place</option>
+                                <select class="custom-select" required>
+                                  <option selected disabled value="">Type of place</option>
                                   <option value="1">Building</option>
                                   <option value="2">Yard</option>
                                   <option value="3">Street</option>
@@ -226,12 +239,17 @@
                                   <option value="11">Field</option>
                                   <option value="12">Desert</option>
                                   <option value="13">Other</option>
-
                                 </select>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                  Please complete this field.
+                                </div>
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="adress" class="adress">Adress</label>
+                              <label for="adress" class="adress">Address</label>
                               <input type="text" class="form-control" id="adress" placeholder="Street and number...">
                             </div>
                           
@@ -241,7 +259,13 @@
                             </div>
                             <div class="form-group">
                               <label for="hashtags">Keywords</label>
-                              <input type="text" class="form-control" id="hashtags" autocomplete="off" placeholder="Write the words separated by commas e.g. Street / backyard ...">
+                              <input type="text" class="form-control" id="hashtags" autocomplete="off" placeholder="Write the words separated by commas e.g. Street / backyard ..." required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
                               <div class="tag-container"></div>
                             </div>
                           </div>
@@ -256,7 +280,7 @@
             
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMap">
                       <div class="card-body scrollable">
-                        <div class="form-group form-group-file" id="picNode">
+                        <!-- <div class="form-group form-group-file" id="picNode">
                           <input type="file" class="form-control-file">
                         </div>
                         <div class="form-group">
@@ -272,7 +296,98 @@
                           <input type="text" class="form-control" id="source" placeholder="Aproximately a date of the image">
                         </div>
                         <p class="line"></p>
-                        <button class="btn addpic" id="addpic" type="button">+ADD PICTURE</button>
+                        <button class="btn addpic" id="addpic" type="button">+ADD PICTURE</button> -->
+                        <div class="card-group">
+                          <div class="col">
+                            <div class="form-group form-group-file" id="picNode">
+                              <label for="file">Select your file</label>
+                              <input type="file" class="form-control-file" id="file">
+                            </div>
+                            <div class="form-group">
+                              <label for="author">Name of the author</label>
+                              <input type="text" class="form-control" id="author" placeholder="Who is the author of the image">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="source">Source of photograph</label>
+                              <input type="text" class="form-control" id="source" placeholder="My own or which is the source of the image">
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of photograph</label>
+                              <input type="text" class="form-control" id="date" placeholder="Aproximately a date of the image">
+                            </div>
+                          </div>
+                        </div>
+                        <p class="line"></p>
+                        <div class="card-group">
+                          <div class="col">
+                            <div class="form-group form-group-file" id="picNode">
+                              <label for="file">Select your file</label>
+                              <input type="file" class="form-control-file" id="file">
+                            </div>
+                            <div class="form-group">
+                              <label for="author">Name of the author</label>
+                              <input type="text" class="form-control" id="author" placeholder="Who is the author of the image">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="source">Source of photograph</label>
+                              <input type="text" class="form-control" id="source" placeholder="My own or which is the source of the image">
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of photograph</label>
+                              <input type="text" class="form-control" id="date" placeholder="Aproximately a date of the image">
+                            </div>
+                          </div>
+                        </div>
+                        <p class="line"></p>
+                        <div class="card-group">
+                          <div class="col">
+                            <div class="form-group form-group-file" id="picNode">
+                              <label for="file">Select your file</label>
+                              <input type="file" class="form-control-file" id="file">
+                            </div>
+                            <div class="form-group">
+                              <label for="author">Name of the author</label>
+                              <input type="text" class="form-control" id="author" placeholder="Who is the author of the image">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="source">Source of photograph</label>
+                              <input type="text" class="form-control" id="source" placeholder="My own or which is the source of the image">
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of photograph</label>
+                              <input type="text" class="form-control" id="date" placeholder="Aproximately a date of the image">
+                            </div>
+                          </div>
+                        </div>
+                        <p class="line"></p>
+                        <div class="card-group">
+                          <div class="col">
+                            <div class="form-group form-group-file" id="picNode">
+                              <label for="file">Select your file</label>
+                              <input type="file" class="form-control-file" id="file">
+                            </div>
+                            <div class="form-group">
+                              <label for="author">Name of the author</label>
+                              <input type="text" class="form-control" id="author" placeholder="Who is the author of the image">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label for="source">Source of photograph</label>
+                              <input type="text" class="form-control" id="source" placeholder="My own or which is the source of the image">
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of photograph</label>
+                              <input type="text" class="form-control" id="date" placeholder="Aproximately a date of the image">
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -289,13 +404,13 @@
                           <div class="col-4">
                             <label for="" class="gender">Gender</label>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1" checked>
+                              <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1" required>
                               <label class="form-check-label" for="Gender1">
                                 <p>Female</p>
                               </label>
                             </div>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="Gender" id="Gender2" value="option2">
+                              <input class="form-check-input" type="radio" name="Gender" id="Gender2" value="option2" required>
                               <label class="form-check-label" for="Gender2">
                                 <p>Male</p>
                               </label>
@@ -308,22 +423,22 @@
                             </div>
                           </div>
                           <div class="col-8">
-                            <label for="" class="connect">Connection to Šančiai:
+                            <label for="" class="connect" required>Connection to Šančiai:
                             </label>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live1" value="option1" checked>
+                              <input class="form-check-input" type="radio" name="live" id="live1" value="option1" required>
                               <label class="form-check-label" for="live1">
                                 <p>I live in Šančiai</p>
                               </label>
                             </div>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live2" value="option2">
+                              <input class="form-check-input" type="radio" name="live" id="live2" value="option2" required>
                               <label class="form-check-label" for="live2">
                                 <p>I lived in Šančiai</p>
                               </label>
                             </div>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live3" value="option3">
+                              <input class="form-check-input" type="radio" name="live" id="live3" value="option3" required>
                               <label class="form-check-label" for="live3">
                                 <p>I never lived in Šančiai</p>
                               </label>
@@ -332,21 +447,33 @@
                         </div>
                         <div class="form-group row age mt-1">
                             <label for="age">Age range</label>
-                            <select class="custom-select">
-                              <option selected>Select...</option>
-                              <option value="1">iki 13 m.</option>
-                              <option value="2">14-17 m.</option>
-                              <option value="3">18-24 m.</option>
-                              <option value="4">25-35 m.</option>
-                              <option value="5">35-44 m.</option>
-                              <option value="6">45-54 m.</option>
-                              <option value="7">55-70 m.</option>
-                              <option value="8">virš 71 m.</option>
+                            <select class="custom-select" required>
+                              <option selected disabled value="">Select...</option>
+                              <option value="1">till 13 years</option>
+                              <option value="2">14-17</option>
+                              <option value="3">18-24</option>
+                              <option value="4">25-35</option>
+                              <option value="5">35-44</option>
+                              <option value="6">45-54</option>
+                              <option value="7">55-70</option>
+                              <option value="8">more than 71</option>
                             </select>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                              Please complete this field.
+                            </div>
                         </div>
                         <div class="row form-group email">
                           <label for="email">E-mail</label>
-                          <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                          <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please complete this field.
+                          </div>
                         </div>
                         <div class="row">
                           <p class="small">*Personal data will only be used for urban research, statistical purposes and communication. Personal data is not made public.
@@ -358,11 +485,17 @@
 
                   <div class="finalSubmit">
                     <div class="row form-check form-check-inline justify-content-center">
-                      <input class="form-check-input" type="checkbox" id="agree" value="agree">
-                      <label class="form-check-label" for="agree">I agree with the <a class="linkterms" href="./terms-and-conditions.html">terms and conditions</a>. </label>
-                      <button type="submit" class="btn btn-form mt-2">SUBMIT</button>
+                      <input class="form-check-input" type="checkbox" id="agree" value="agree" required>
+                      <label class="form-check-label" id="termsandconditions" for="agree">I agree with the <a class="linkterms" href="./terms-and-conditions.html">terms and conditions</a>. </label>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please complete this field.
+                      </div>
+                      <button type="submit" class="btn btn-form mt-2" id="btn-form">SUBMIT</button>
                       <button type="button" class="btn btn-back mt-2" data-dismiss="modal" aria-label="Close">
-                        ← Back to the Memory Map
+                        ← Back
                       </button>
                     </div>
                   </div>
