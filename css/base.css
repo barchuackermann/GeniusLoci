@@ -382,8 +382,13 @@ footer{
   .bg-nav>li{
     padding: 0.2em 1em;
     align-self: flex-end;
+    justify-content: right;
+  }
+  .dropdown-item{
+    text-align: right;
   }
   .nav-link{
+    justify-content: flex-end;
     color: #435053;
     font-size: 4vw;
     font-weight: 500;
