@@ -1,0 +1,261 @@
+/* Single Event */
+.gral{
+    background-color: #445154;
+}
+.total{
+    height: 100vh;
+    background-color: #445154;
+    z-index: 1;
+}
+.carousel-indicators li{
+    background-color: #fff;
+}
+.carousel-inner{
+    margin-top: 5vw;
+    min-height: auto;
+    height: 88vh;
+    padding: 0;
+}
+.carousel-item{
+    margin: 0;
+    padding: 0;
+}
+.carousel-item>img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.right-side{
+    background-color: #445154;
+    color: white;
+    padding-right: 10vw;
+    height: auto;
+}
+.content{
+    height: 88vh;
+}
+.event-card{
+    display: block;
+    min-width: 100%;
+    background-color: #445154;
+    border: 1px solid #d1d3d4;
+}
+.event-card-body{
+    overflow-y: scroll;
+    max-height: 30vw;
+    font-size: 1vw;
+}
+.card-body-pic{
+    padding: 0;
+}
+.event-title{
+    margin-top: 6vw;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.event-date-body, .card-text{
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 0.3em;
+    width: 100%;
+}
+.event-date-body{
+    background-color: #445154;
+    border: none;
+    height: 16vh;
+    margin-bottom: 1vh;
+}
+.event-date-body>p, .card-text>p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 2vh;
+}
+.card-X-text{
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    width: 100%;
+}
+.event-date-body>p>span, .card-text>p>span{
+    font-weight: 400;
+}
+.card-title{
+    font-weight: 600;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+.btn-block{
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.event-back{
+    background-color: #617e95;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1vh auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    padding: 0.3em 2em;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    color: white;
+    vertical-align: center;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.event-back:focus{
+    outline: none;  
+}
+.event-back>img{
+    width: 1.5vw;
+    margin: 0 0.5em;
+}
+.extlink:any-link{
+    color: white;
+}
+.badges{
+    height: 1vw;
+    margin: 1vh 0;
+    padding: 0;
+}
+.badge{
+    margin: 0 auto;
+    font-size: 1vw;
+    background-color: #617e95;
+    color: #fff;
+}
+.scrollable{
+    position: relative;
+    max-height: 23vw;
+    overflow-y: scroll;
+}
+.scrollable::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    margin: 1em;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px){
+    .total{
+        background-color: #445154;
+        z-index: 1;
+        margin-top: 20vw;
+        height: 75vh;
+    }
+    .carousel-inner{
+        height: 70vh;
+    }
+    .right-side{
+        background-color: #445154;
+        color: white;
+        padding-right: 8vw;
+        margin-top: 0;
+        height: auto;
+    }
+    .gral{
+        background-color: #445154;
+    }
+    .event-title{
+        margin-top: 2vw;
+        color: white;
+        font-weight: 700;
+        font-size: 8vw;
+    }
+    .event-card{
+        display: block;
+        min-width: 100%;
+        background-color: #445154;
+        border: 1px solid #d1d3d4;
+    }
+    .event-card-body{
+        overflow-y: scroll;
+        max-height: 50vh;
+        font-size: 1vw;
+    }
+    .event-date-body, .card-text{
+        font-size: 5vw;
+        padding: 0.5vw;
+        margin-top: 0.3em;
+        width: 100%;
+    }
+    .event-date-body{
+        background-color: #445154;
+        border: none;
+        height: 26vw;
+        margin-bottom: 10vw;
+    }
+    .event-date-body>p, .card-text>p{
+        margin: 0;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+    .card-X-text{
+        font-weight: 400;
+        font-size: 3.5vw;
+        padding: 0.5em;
+        margin-top: 0.3em;
+        width: 100%;
+    }
+    .event-date-body>p>span, .card-text>p>span{
+        font-weight: 400;
+    }
+    .card-title{
+        font-weight: 600;
+        font-size: 4vw;
+    }
+    .btn-block{
+        margin: 0;
+        padding: 3vw 0;
+    }
+    .event-back{
+        font-size: 4vw;
+    }
+    .event-back>img{
+        width: 5.5vw;
+        margin: 0 1vw;
+    }
+    .badge{
+        font-size: 3.5vw;
+    }
+    .scrollable{
+        max-height: 45vh;
+    }
+
+
+    
+}
