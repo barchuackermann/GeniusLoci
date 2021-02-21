@@ -15,15 +15,22 @@
     min-height: auto;
     height: 88vh;
     padding: 0;
-}
-.carousel-item{
-    margin: 0;
-    padding: 0;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
 }
 .carousel-item>img{
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+.no-img{
+    width: 80%;    
+    object-fit: scale-down !important;
+    object-position: center center !important;
+    margin: -5vw auto ;
 }
 .carousel-caption {
     position: absolute;
@@ -179,6 +186,11 @@
     }
     .carousel-inner{
         height: 70vh;
+        border-radius: 1vh;
+        -webkit-border-radius: 1vh;
+        -moz-border-radius: 1vh;
+        -ms-border-radius: 1vh;
+        -o-border-radius: 1vh;
     }
     .right-side{
         background-color: #445154;
@@ -189,6 +201,12 @@
     }
     .gral{
         background-color: #445154;
+    }
+    .no-img{
+        width: 80%;    
+        object-fit: scale-down !important;
+        object-position: center center !important;
+        margin: -15vh auto ;
     }
     .event-title{
         margin-top: 2vw;
@@ -255,7 +273,4 @@
     .scrollable{
         max-height: 45vh;
     }
-
-
-    
 }
