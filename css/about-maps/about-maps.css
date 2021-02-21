@@ -91,7 +91,21 @@ button:focus{
     -ms-border-radius:;
     -o-border-radius:;
     margin: 0;
-}
+  }
+  .bold{
+    justify-content: space-around;
+  }
+  .bold>h3{
+    font-size: 4vw;
+    color: #144355;
+    font-weight: 700;
+    margin: auto 5vw auto auto;
+  }
+  .bold>i{
+    font-size: 15vw;
+    color: #144355;
+    margin: auto auto auto 5vw;
+  }
   .card-icon{
     min-height: 50vw;
     border: 2px solid #a7d1e7;
@@ -113,6 +127,9 @@ button:focus{
     font-weight: 700;
     padding: 0.5em;
     margin: 0;
+  }
+  .bg-about, .first{
+    font-size: 80%;
   }
 }
 
