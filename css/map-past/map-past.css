@@ -42,7 +42,7 @@
 }
 .btn-how{
   font-size: 1vw;
-  margin: 1vw 2vw 0 2vw;
+  margin: 2.5vw 2vw 0 2vw;
   padding: 0.5vw 2vw;
   background-color: #AF529E;
   width: auto;
@@ -92,7 +92,7 @@
 .botones{
   display: flex;
   justify-content: space-between;
-  margin: 2.5vw 2.5vw 2.5vw 2vw;
+  margin: 1vw 2.5vw 2.5vw 2vw;
 }
 .btn-header{
   border-radius: 1.5em;
@@ -154,6 +154,12 @@
   display: block;
   width: 100%;
   text-align: left;
+}
+.no-img{
+  width: 80%;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: auto 10%;
 }
 .general>.btn:focus{
   background-color: #af529e;
@@ -395,7 +401,7 @@ input[type=file]::-webkit-file-upload-button{
   top: calc(50% - 20%);
   line-height: 2vw;
   width: 13%;
-  color: white;
+  color: grey;
   cursor: pointer;
   z-index: 500;
   transition: 0.2s ease all;
@@ -418,6 +424,12 @@ input[type=file]::-webkit-file-upload-button{
   padding: 10% 0;
   overflow: hidden;
   scroll-behavior: smooth;
+}
+.no-img{
+  width: 80%;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: auto 10%;
 }
 .img-modal .carousel-container .carousel {
   display: flex;
