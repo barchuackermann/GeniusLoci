@@ -137,7 +137,7 @@
 .modal-content-map{
   background-color: #445154;
   color: white;
-  min-height: 45vw;
+  min-height: 20vw;
 }
 .general{
   margin: 1em 2em;
@@ -211,10 +211,17 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   padding: 0;
   margin: 1em auto 1em auto;
 }
+#thanks{
+  margin: auto 2vw;
+}
 .thanks{
   width: 90%;
   text-align: center;
   margin: auto;
+  font-size: 1.5vw;
+}
+.modal-thanks{
+  height: 20vh;
 }
 .btn-back{
   background-color: #617e95;
@@ -664,9 +671,10 @@ input[type=file]::-webkit-file-upload-button{
     margin: 1em auto 1em auto;
   }
   .thanks{
-    width: 90%;
+    width: 100%;
     text-align: center;
-    margin: auto;
+    border-top: honeydew 1px solid;
+    border-bottom: honeydew 1px solid;
   }
 
   .btn-back{

@@ -67,12 +67,6 @@ const cursorCrossHair = () => {
   crossHair = 1;
 };
 
-/* Modal Thanks */
-const setThanks = () => {
-  e.preventDefault();
-  console.log(" hola barchux");
-};
-
 const load = () => {
   const createMap = document.getElementById("createMap");
   createMap.addEventListener("click", cursorCrossHair);
@@ -103,7 +97,17 @@ const load = () => {
     );
   });
 
-  form.addEventListener("submit", setThanks);
+  var entireForm = document.getElementById("form");
+  var formTocomplete = document.getElementById("formTocomplete");
+  var thanks = document.getElementById("thanks");
+  var smallerThanks = document.getElementById("smallerThanks");
+  entireForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    formTocomplete.classList.add("d-none");
+    smallerThanks.className = "modal-dialog modal-dialog-centered";
+    thanks.className = "text-center";
+  });
 };
 
 window.onload = load;

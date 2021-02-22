@@ -128,8 +128,8 @@
         </div>
       </div>
     <!-- Modal Form -->
-    <div class="modal fade" id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-dialog-centered modal-lg">  
+    <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-lg" id="smallerThanks">  
         <div class="modal-content modal-content-map">
           <div class="modal-body modal-body-map" id="clear">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -500,17 +500,15 @@
                     </div>
                   </div>
 
-
-                  
-                  <!-- <div class="text-center">
-                    <p class="line2"></p>
-                    <p class="thanks">Thanks for your cooperation creating Šančiai Memory Map! Your data is awaiting moderation, please allow some time before it goes published. </p>
-                    <p class="line2"></p>
-                    <button type="button" class="btn btn-back">BACK TO MEMORY MAP</button>
-                  </div> -->
-
                 </div>
               </form>
+              <div class="text-center d-none" id="thanks">
+                <p class="line2"></p>
+                <p class="thanks">Thanks for your cooperation creating Šančiai Memory Map! </p>
+                <p class="thanks">Your data is awaiting moderation, please allow some time before it goes published.</p>
+                <p class="line2"></p>
+                <button type="button" class="btn btn-back mt-2" data-dismiss="modal" aria-label="Close">← Back</button>
+              </div>
           </div>
         </div>
       </div>
