@@ -115,7 +115,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 1vh auto;
+    margin: 2vh auto;
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
@@ -124,7 +124,6 @@
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-    color: white;
     vertical-align: center;
     font-weight: 500;
     font-size: 1vw;
@@ -132,12 +131,11 @@
 .event-back:focus{
     outline: none;  
 }
-.event-back>img{
-    width: 1.5vw;
-    margin: 0 0.5em;
-}
-.extlink:any-link{
+.event-back>a{
     color: white;
+}
+.extlink>a{
+    color: #007bff;
 }
 .badges{
     height: 1vw;
@@ -257,15 +255,11 @@
         font-size: 4vw;
     }
     .btn-block{
-        margin: 0;
-        padding: 3vw 0;
+        margin: 8vw 0 3vw 0;
+        padding: 1vw 0;
     }
     .event-back{
         font-size: 4vw;
-    }
-    .event-back>img{
-        width: 5.5vw;
-        margin: 0 1vw;
     }
     .badge{
         font-size: 3.5vw;
