@@ -448,6 +448,11 @@ input[type=file]::-webkit-file-upload-button{
 .img-modal .carousel-container .slide {
   min-width: 100%;
 }
+.img-modal .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
 .modal-footer{
   display: flex;
   justify-content: space-around;
