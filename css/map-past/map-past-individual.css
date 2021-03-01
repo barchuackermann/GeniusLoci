@@ -43,47 +43,6 @@
     color: #fff;
     text-align: center;
 }
-.modal-xl{
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
-}
-.modal-body-img{
-    background-color:#445154;
-    z-index: 0;
-    height: auto;
-}
-.carousel-inner-modal{
-    margin: 0;
-    min-height: auto;
-    height: 88vh;
-    padding: 0;
-    border-radius: 1vw;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
-}
-.imgmodal{
-    max-width: 100%;
-    max-height: 88vh;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
-    margin: auto;
-}
-.caption-modal {
-    position: absolute;
-    right: 15%;
-    bottom: 10%;
-    left: 15%;
-    z-index: 10;
-    color: #fff;
-    text-align: center;
-}
-
 .right-side{
     background-color: #445154;
     color: white;
@@ -231,57 +190,6 @@
         -ms-border-radius: 1vh;
         -o-border-radius: 1vh;
     }
-
-    .modal-xl{
-        height: auto;
-        min-height: 10vh;
-        max-height: 80vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .modal-body-img{
-        background-color:#445154;
-        z-index: 0;
-        height: auto;
-        min-height: 10vh;
-        max-height: 80vh;
-        align-content: center;
-    }
-    .carousel-inner-modal{
-        margin: 0;
-        width: auto;
-        height: 90vh;
-        align-content: center;
-    }
-    .imgmodal{
-        max-width: 100%;
-        max-height: 65vh;
-        border-radius: 1em;
-        -webkit-border-radius: 1em;
-        -moz-border-radius: 1em;
-        -ms-border-radius: 1em;
-        -o-border-radius: 1em;
-        margin: auto;
-    }
-    }
-    .caption-modal {
-        position: absolute;
-        right: 15%;
-        top:65%;
-        left: 15%;
-        z-index: 10;
-        color: #fff;
-        text-align: center;
-    }
-    .no-img-modal{
-        width: 80%;    
-        object-fit: scale-down !important;
-        object-position: center center !important;
-        margin: 20vh auto ;
-    }
-
-
-
     .right-side{
         background-color: #445154;
         color: white;
