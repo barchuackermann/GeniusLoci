@@ -16,7 +16,7 @@ let hashtagArray = [];
 }; */
 
 /* Keywords */
-input.addEventListener("keyup", (e) => {
+/* input.addEventListener("keyup", (e) => {
   if (e.which == 188 && input.value.length > 0) {
     var text = document.createTextNode(input.value.replace(/,/g, ""));
     var p = document.createElement("p");
@@ -33,7 +33,7 @@ input.addEventListener("keyup", (e) => {
       });
     }
   }
-});
+}); */
 
 /* Deshabilita opciones en Heritage */
 const setOption = (id) => {

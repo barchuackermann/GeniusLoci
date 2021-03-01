@@ -239,7 +239,7 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 }
 
 /* Keywords */
-.tag-container {
+/* .tag-container {
   display: flex;
   flex-flow: row wrap;
 }
@@ -266,7 +266,65 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   background-color: #4d6375;
   padding: 0 0.25vw 0.15vw 0.25vw;
   cursor: pointer;
+} */
+
+
+
+
+
+.bootstrap-tagsinput {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  padding: 4px 6px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 0.5em;
+  width: 100%;
+  line-height: 1.5em;
+  cursor: text;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput .badge {
+  margin: 2px;
+  padding:5px 8px;
+}
+.bootstrap-tagsinput .badge [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .badge [data-role="remove"]:after {
+  content: "×";
+  padding: 0px 4px;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius:50%;
+  font-size:13px;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+.bootstrap-tagsinput .badge [data-role="remove"]:hover:after {
+  background-color:rgba(0, 0, 0, 0.62);
+}
+.bootstrap-tagsinput .badge [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
 .mapa{
   padding: 0;
   margin-top: 1.75vw;
@@ -447,6 +505,11 @@ input[type=file]::-webkit-file-upload-button{
 }
 .img-modal .carousel-container .slide {
   min-width: 100%;
+}
+.img-modal .carousel-container {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 .modal-footer{
   display: flex;
