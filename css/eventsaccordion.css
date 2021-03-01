@@ -1,0 +1,235 @@
+/* Upcomming Events with accordion */
+.events{
+  font-weight: 900;
+  color: hsl(191, 11%, 29%);
+  margin: 2rem;
+}
+.card {
+  background-color: transparent;
+  border: transparent;
+}
+.card-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  margin: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.card-header:hover{
+  color: white;
+  background-color: #444444;
+}
+.event-date{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+}
+.event-month{
+  font-size: 2em;
+  margin: 0;
+}
+.event-day{
+  font-size: 3em;
+  margin: 0;
+}
+.event-type>span{
+  font-size: 0.8em;
+  margin: 0;
+}
+.event-title{
+  font-size: 1.2em;
+  margin: 0;
+}
+.event-location{
+  font-size: 100%;
+  margin: 0;
+}
+.ea::after{
+  content: "/";
+  margin: 0.5em;
+}
+.btn-register{
+  background-color: #AF529E;
+  width: inherit;
+  color: white;
+  font-weight: 500;
+  border-radius: 2em;
+  position: relative;
+  z-index: 330;
+}
+.card-body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.event-container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: 2em;
+  padding: 0;
+}
+.event-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding:0;
+  margin: 1em -1.3em;
+}
+.event-description>h6{
+  margin: 0;
+  padding:0;
+}
+.event-description>p{
+  margin: 0;
+  padding: 0;
+}
+.img-thumbnail {
+  padding: 0;
+  background-color: none;
+  border-radius: 0.5em;
+  max-width: 60%;
+  height: auto;
+}
+p.event-data{
+  font-size: 0.8em;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px){
+  /* Mobile Upcomming Events with accordion */
+  .events{
+    font-weight: 900;
+    color: #435053;
+    margin: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    border: transparent;
+  }
+  .card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+  .card-header:hover{
+    color: white;
+    background-color: #444444;
+  }
+  .event-type{
+    margin-left: 2em;
+  }
+  .event-type>span{
+    font-size: 0.7em;
+    margin: 0;
+  }
+  .event-type-title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+  }
+  .event-title{
+    font-size: 1em;
+    margin: 0;
+  }
+  .event-location{
+    font-size: 90%;
+    margin: 0;
+  }
+  .ea::after{
+    content: "/";
+    margin: 0.5em;
+  }
+  .btn-register{
+    background-color: #AF529E;
+    width: inherit;
+    color: white;
+    font-weight: 400;
+    border-radius: 2em;
+    position: relative;
+    z-index: 330;
+    margin: 0.5em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+}
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+  .event-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .event-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding:0;
+    margin: 1em;
+  }
+  .event-description>h6{
+    margin: 0;
+    margin-bottom: 0.2em;
+    padding:0;
+  }
+  .event-description>p{
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+  .img-thumbnail {
+    padding: 0;
+    background-color: none;
+    border: none;
+    border-radius: 0.5em;
+    max-width: 50%;
+    height: auto;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+  p.event-data{
+    font-size: 0.8em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .principal>.btn-register{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0;
+  }
+}
