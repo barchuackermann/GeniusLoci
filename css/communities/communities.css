@@ -1,0 +1,75 @@
+.principal{
+    height: 60vh;
+    min-height: 60vh;
+  }
+.carousel-supra {
+    height: 60vh;
+    min-height: 60vh;
+    max-height: 100vh;
+    width: 90%;
+  }
+.carousel-inner, .carousel-item{
+    height: 60vh;
+}
+.btn-maps{
+    min-width: 20vw;
+    min-height: 30vh;
+    position: absolute;
+    z-index: 50;
+    top: 30%;
+    left: 65%;
+  }
+.carousel-text{
+    margin-top: 3vw;
+}
+
+/* COMMUNITY CAROUSEL */
+.community-carousel{
+    height: 60vh;
+    background-color: #7969af;
+}
+.inner-communities{
+    z-index: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-community{
+    justify-content: center;
+    align-content: center;
+}
+.community-name{
+    width: 60%;
+    font-weight: bold;
+    margin: auto;
+}
+.back-img{
+    position: absolute;
+    z-index: 600;
+    height: 18vw;
+    object-fit: contain;
+    object-position: center center;
+    left: 0.5vw;
+    top: 4vw;
+}
+.top-img{
+    position: absolute;
+    z-index: 700;
+    left: 7vw;
+    top: 6.5vw;
+    height: 13vw;
+    width: 13vw;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+
+/* EVENTS */
+
+.card-header{
+    height: 5vw;
+}
