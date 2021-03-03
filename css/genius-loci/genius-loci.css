@@ -36,6 +36,9 @@
 .sameheight>p{
   text-align: justify;
 }
+.vimeo-section{
+  background-color: #94C4B4;
+}
 .card-vimeo{
   position: relative;
   display: -ms-flexbox;
@@ -46,22 +49,21 @@
   align-items: center;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #94C4B4;
   background-clip: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.25);
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  margin: 1em;
+  border: none;
+  padding: 2vw 1vw;
 }
 .vimeo-title{
   width: 80%;
   justify-content: center;
   align-items:center;
+  padding-bottom: 1vw;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.vimeo-title>p{
+  font-size: calc(0.6em + 0.8vw)
 }
 .event-date{
   display: flex;
@@ -84,8 +86,8 @@
   margin: 2em 2em 1em 2em;
 }
 .btn-more{
-  align-self: flex-start;
-  margin: 0.5em 0 1.5em 5em;
+  align-self: flex-end;
+  margin: 1vw 6vw;
   width: auto;
   height: auto;
   background-color: #AF529E;
