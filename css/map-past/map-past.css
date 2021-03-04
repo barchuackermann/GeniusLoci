@@ -1,7 +1,6 @@
 /* Header Map */
 .principal{
   margin-top: 2.5em;
-
 }
 .map{
   height: 45vw;
@@ -20,9 +19,16 @@
 .sidebar{
   background-color: #445154;
 }
+.active-citizens-logo-maps{
+  position: relative;
+  z-index: 10;
+  width: 10vw;
+  height: auto;
+  margin: 3.5vw 0 0 2vw;
+}
 .sidebar>h2{
   color: white;
-  margin: 5vw 0 0 2vw;
+  margin: 1.5vw 0 0 2vw;
   font-weight: 800;
   font-size: 2vw;
 }
@@ -238,40 +244,8 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   padding: 0 0.5em;
 }
 
+
 /* Keywords */
-/* .tag-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-.tag{
-  pointer-events: none;
-  background-color: #617e95;
-  border-radius: 0.4vw;
-  color: white;
-  padding: 0.5vw;
-  margin: 0.5vw;
-  -webkit-border-radius: 0.4vw;
-  -moz-border-radius: 0.4vw;
-  -ms-border-radius: 0.4vw;
-  -o-border-radius: 0.4vw;
-}
-
-.tag::before {
-  pointer-events: all;
-  display: inline-block;
-  content: 'x';
-  margin-right: 0.5vw;
-  text-align: center;
-  color: #ccc;
-  background-color: #4d6375;
-  padding: 0 0.25vw 0.15vw 0.25vw;
-  cursor: pointer;
-} */
-
-
-
-
-
 .bootstrap-tagsinput {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -374,7 +348,7 @@ input:focus, textarea:focus, select:focus{
   margin-bottom: 0.5vw;
 
 }
-.addpic{
+/* .addpic{
   margin-top: 1em;
   background-color: transparent;
   color: white;
@@ -389,7 +363,7 @@ input:focus, textarea:focus, select:focus{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 .line{
   border-top: 1px solid white;
   height: 1px;
@@ -609,9 +583,16 @@ input[type=file]::-webkit-file-upload-button{
     min-height: 30vh;
     max-height: 40vh;
   }
+  .active-citizens-logo-maps{
+    position: relative;
+    z-index: 10;
+    width: 20vh;
+    height: auto;
+    margin: 3.5vh 0 0 2vh;
+  }
   .sidebar>h2{
     color: white;
-    margin: 5vh 0 0 2vw;
+    margin: 2.5vh 0 0 2vw;
     font-weight: 800;
     font-size: 7vw;
   }
