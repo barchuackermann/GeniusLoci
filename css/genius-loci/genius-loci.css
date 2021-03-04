@@ -171,6 +171,33 @@
   .sameheight{
     height: auto;
   }
+  .vimeo-title>p{
+    font-size: 2vh;
+  }
+  .vimeo{
+    width: 80%;
+    margin-top: 3vh;
+  }
+  .btn-more{
+    align-self: flex-end;
+    margin: 0 6.5vh 1vh 0;
+    width: 30%;
+    height: auto;
+    background-color: #AF529E;
+    padding: 0;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+  }
+  .btn-more>a{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2vh;
+  }
+
   .events{
     font-size: inherit;
   }
