@@ -72,17 +72,22 @@
     font-weight: 700;
     font-size: 2vw;
 }
-.event-date-body, .card-text{
+.card-text{
     font-size: 1vw;
     padding: 0.5vw;
     margin-top: 0.3em;
     width: 100%;
 }
 .event-date-body{
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 0.3em;
+    margin-bottom: 1vh;
+    width: 100%;
     background-color: #445154;
     border: none;
-    height: 16vh;
-    margin-bottom: 1vh;
+    height: auto;
+    max-height: 24vh !important;
 }
 .event-date-body>p, .card-text>p{
     margin: 0;
