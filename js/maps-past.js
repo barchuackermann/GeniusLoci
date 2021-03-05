@@ -2,10 +2,6 @@ let crossHair = 0;
 let material = 0;
 let intangible = 0;
 
-let input = document.querySelector("#hashtags");
-let container = document.querySelector(".tag-container");
-let hashtagArray = [];
-
 /* Add ANother Picture */
 /* anotherPic = () => {
   let picNode = document.getElementById("picNode");
@@ -15,25 +11,6 @@ let hashtagArray = [];
   picNode.appendChild(inputFile);
 }; */
 
-/* Keywords */
-/* input.addEventListener("keyup", (e) => {
-  if (e.which == 188 && input.value.length > 0) {
-    var text = document.createTextNode(input.value.replace(/,/g, ""));
-    var p = document.createElement("p");
-    container.appendChild(p);
-    p.appendChild(text);
-    p.classList.add("tag");
-    input.value = "";
-
-    let deleteTags = document.querySelectorAll(".tag");
-
-    for (let i = 0; i < deleteTags.length; i++) {
-      deleteTags[i].addEventListener("click", () => {
-        container.removeChild(deleteTags[i]);
-      });
-    }
-  }
-}); */
 
 /* Deshabilita opciones en Heritage */
 const setOption = (id) => {
@@ -108,6 +85,15 @@ const load = () => {
     smallerThanks.className = "modal-dialog modal-dialog-centered";
     thanks.className = "text-center";
   });
+
+  $("#keywords").select2({
+      "maximumSelectionLength": 3,
+      "multiple": true,
+      "tags": true,
+      "width": "100%",
+      "selectOnClose": true,
+      "tokenSeparators": [","]
+   });
 };
 
 window.onload = load;
