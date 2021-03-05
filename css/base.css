@@ -21,9 +21,6 @@ a, a:link, a:visited, a:active a:hover{
   background-color: none;
   color: #435053;
 }
-a {
-  color: #435053;
-}
 .btn:focus{
   box-shadow: none;
   outline: none;

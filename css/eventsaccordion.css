@@ -1,68 +1,89 @@
 /* Upcomming Events with accordion */
 .events{
   font-weight: 900;
-  color: hsl(191, 11%, 29%);
-  margin: 2rem;
+  color: #435053;
+  margin: 0 0 2vw 0;
 }
 .card {
   background-color: transparent;
   border: transparent;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .card-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.3em;
+  padding: 0;
   margin: 0;
   background-color: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  
 }
-.card-header:hover{
+.btn-header{
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  color: #435053;
+}
+.btn-header:hover{
   color: white;
   background-color: #444444;
-}
-.event-date{
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
-  align-content: center;
-  padding: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .event-month{
   font-size: 2em;
-  margin: 0;
 }
 .event-day{
   font-size: 3em;
-  margin: 0;
 }
-.event-type>span{
-  font-size: 0.8em;
-  margin: 0;
+.event-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.event-title{
-  font-size: 1.2em;
-  margin: 0;
+.event-type{
+  color: #4d7d6d;
+  font-size: 1vw;
 }
-.event-location{
-  font-size: 100%;
-  margin: 0;
+.event-type-title{
+  font-size: 1.2vw;
+  font-weight: 500;
 }
-.ea::after{
-  content: "/";
-  margin: 0.5em;
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .btn-register{
   background-color: #AF529E;
-  width: inherit;
-  color: white;
+  width: 80%;
+  margin: 1vw 2.5vw auto auto;
+  align-self: center;
+  color: white !important;
   font-weight: 500;
   border-radius: 2em;
   position: relative;
   z-index: 330;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
 }
+
+/* Accordion */
 .card-body{
   display: flex;
   flex-direction: row;
@@ -84,7 +105,7 @@
   justify-content: start;
   align-items: flex-start;
   padding:0;
-  margin: 1em -1.3em;
+  margin: 0.8vw auto auto -1.8vw;
 }
 .event-description>h6{
   margin: 0;
@@ -102,6 +123,7 @@
   height: auto;
 }
 p.event-data{
+  width: 90%;
   font-size: 0.8em;
   border: 0;
   margin: 0;
@@ -115,66 +137,75 @@ p.event-data{
     color: #435053;
     margin: 2rem;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-color: transparent;
-    border: transparent;
-  }
-  .card-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .btn-header{
     padding: 0;
-    margin: 0;
-    background-color: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+    color: #435053;
   }
-  .card-header:hover{
+  .btn-header:hover{
     color: white;
     background-color: #444444;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
-  .event-type{
-    margin-left: 2em;
-  }
-  .event-type>span{
-    font-size: 0.7em;
-    margin: 0;
-  }
-  .event-type-title{
+  .event-info{
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    justify-content: center;
+    padding: 0;
+    margin: auto 3vh;
   }
-  .event-title{
-    font-size: 1em;
-    margin: 0;
+  .event-type{
+    color: #4d7d6d;
+    font-size: 1.5vh;
   }
-  .event-location{
-    font-size: 90%;
-    margin: 0;
+  .event-type-title{
+    margin: 1vh auto;
+    font-size: 2vh;
+    font-weight: 500;
   }
-  .ea::after{
-    content: "/";
-    margin: 0.5em;
+  .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
   .btn-register{
     background-color: #AF529E;
-    width: inherit;
-    color: white;
-    font-weight: 400;
+    width: 100%;
+    margin: 1vw auto 2vh auto;
+    align-self: center;
+    color: white !important;
+    font-weight: 500;
     border-radius: 2em;
     position: relative;
     z-index: 330;
-    margin: 0.5em;
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     -ms-border-radius: 2em;
     -o-border-radius: 2em;
-}
+  }
+
+
+
+
+
+
+
+
+/* Accordion Mobile */
   .card-body{
     display: flex;
     flex-direction: column;
@@ -199,13 +230,11 @@ p.event-data{
     margin: 1em;
   }
   .event-description>h6{
-    margin: 0;
-    margin-bottom: 0.2em;
+    margin: 1vh 0;
     padding:0;
   }
   .event-description>p{
     margin: 0;
-    margin-bottom: 0.5em;
     padding: 0;
   }
   .img-thumbnail {
