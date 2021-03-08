@@ -42,6 +42,14 @@
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
+    margin: 0;
+}
+.carousel-caption>p {
+    font-weight: 600;
+    margin: 0;
+}
+.carousel-caption>p>span {
+    font-weight:normal;
 }
 .right-side{
     background-color: #445154;
@@ -280,5 +288,9 @@
     }
     .carousel-caption {
         bottom: 30%;
+    }
+    .carousel-caption>p:last-child {
+        font-weight: 600;
+        margin-bottom: 2vh;
     }
 }
