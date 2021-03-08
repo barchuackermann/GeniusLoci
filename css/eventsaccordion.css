@@ -180,6 +180,7 @@ p.event-data{
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    text-align: left;
   }
   .btn-register{
     background-color: #AF529E;
