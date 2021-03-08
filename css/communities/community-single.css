@@ -1,0 +1,148 @@
+/* Single Event */
+.row-main{
+    align-items: center;
+    justify-content: center;
+    margin: 5vw 0;
+    height: 80vh;
+}
+.community-logo{
+    width: 45%;
+    margin: 0vw auto 1vw 0vw;
+}
+.single-title>h2{
+    color: #4888c7;
+    margin: auto auto 1vw 1vw;
+    font-size: 2.2vw;
+}
+.single-card{
+    display: block;
+    min-width: 100%;
+}
+.single-card-body{
+    overflow-y: scroll;
+    font-size: 0.8em;
+}
+.card-title{
+    font-weight: bold;
+    color: #435053;
+}
+.card-title>h2{
+    color: #435053;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.card-text>p{
+    font-size: 0.9vw;
+}
+.scrollable{
+  position: relative;
+  overflow-y: scroll;
+  height: 25vw;
+}
+.scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+.scrollable::-webkit-scrollbar-track {
+  margin: 1em;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
+}
+
+.back-img{
+    position: absolute;
+    z-index: 600;
+    height: 40vw;
+    object-fit: contain;
+    object-position: center center;
+    top: -20vw;
+    right: 4vw;
+}
+.top-img{
+    position: absolute;
+    z-index: 700;
+    height: 30vw;
+    width: 30vw;
+    top: -15vw;
+    right: 8vw;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.contact-icons>a>i{
+    font-size: 3vw;
+    margin: 2vw 1vw;
+}
+
+  /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
+
+@media (max-width: 768px){
+    /* Event */
+    .event{
+        height: auto;
+        margin: 4em 0;
+    }
+    .event-img-cont{
+        height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .single-image-res{
+        height: 100vw;
+        border-radius: 1em;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        -o-border-radius: 1em;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .event-title>h2{
+        color: #4888c7;
+        font-weight: 700;
+        font-size: 6vw;
+    }
+    .event-card{
+        height: 70vh;
+    }
+    .event-card-body{
+        overflow-y: scroll;
+        max-height: 70vh;
+        font-size: 0.8em;
+    }
+    .event-card-footer{
+        height: 10vw;
+    }
+    .facimg{
+        max-width: 10vw;
+    }
+    /* Cards */
+    .org{
+        margin-top: -8vw;
+    }
+    .sameheight>p{
+        font-size: calc(0.7em + 0.5vw)
+    }
+    .sameheight{
+        height: auto;
+    }
+    .events{
+        font-size: inherit;
+    }
+    .presentation .carousel-container .slide {
+        min-width: 100%;
+        transition: 0.3s ease all;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+}
