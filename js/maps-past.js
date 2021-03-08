@@ -11,7 +11,6 @@ let intangible = 0;
   picNode.appendChild(inputFile);
 }; */
 
-
 /* Deshabilita opciones en Heritage */
 const setOption = (id) => {
   if (id == "phisical") {
@@ -59,6 +58,7 @@ const load = () => {
 
   /* Validation */
   var forms = document.getElementsByClassName("needs-validation");
+
   // Loop over them and prevent submission
   var validation = Array.prototype.filter.call(forms, function (form) {
     form.addEventListener(
@@ -67,6 +67,7 @@ const load = () => {
         if (form.checkValidity() === false) {
           e.preventDefault();
           e.stopPropagation();
+          console.log("algo anda bien");
         }
         form.classList.add("was-validated");
       },
@@ -78,6 +79,15 @@ const load = () => {
   var formTocomplete = document.getElementById("formTocomplete");
   var thanks = document.getElementById("thanks");
   var smallerThanks = document.getElementById("smallerThanks");
+
+  entireForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    formTocomplete.classList.add("d-none");
+    smallerThanks.className = "modal-dialog modal-dialog-centered";
+    thanks.className = "text-center";
+  });
+
   entireForm.addEventListener("submit", function (e) {
     e.preventDefault();
     e.stopPropagation();
@@ -87,13 +97,13 @@ const load = () => {
   });
 
   $("#keywords").select2({
-      "maximumSelectionLength": 3,
-      "multiple": true,
-      "tags": true,
-      "width": "100%",
-      "selectOnClose": true,
-      "tokenSeparators": [","]
-   });
+    maximumSelectionLength: 3,
+    multiple: true,
+    tags: true,
+    width: "100%",
+    selectOnClose: true,
+    tokenSeparators: [","],
+  });
 };
 
 window.onload = load;
