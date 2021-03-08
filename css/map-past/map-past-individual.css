@@ -117,6 +117,7 @@
 
 .event-back{
     background-color: #617e95;
+    color: white !important;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -136,9 +137,11 @@
 .event-back:focus{
     outline: none;  
 }
-.event-back>a{
-    color: white;
+.event-back>i{
+    align-self: center;
+    margin-right: 0.5vw;
 }
+
 .extlink>a{
     color: #007bff;
 }
@@ -199,8 +202,9 @@
         background-color: #445154;
         color: white;
         padding-right: 8vw;
-        margin-top: 0;
-        height: auto;
+        margin: auto;
+        height: 88vh;
+        max-height: 100vh;
     }
     .gral{
         background-color: #445154;
@@ -229,21 +233,21 @@
         font-size: 1vw;
     }
     .event-date-body, .card-text{
-        font-size: 5vw;
         padding: 0.5vw;
-        margin-top: 0.3em;
+        margin: 1vh auto auto auto;
         width: 100%;
+        height: auto;
     }
     .event-date-body{
         background-color: #445154;
         border: none;
-        height: 26vw;
-        margin-bottom: 10vw;
+        height: auto;
+        margin-bottom: 1vh;
     }
     .event-date-body>p, .card-text>p{
         margin: 0;
         font-weight: 600;
-        font-size: 4vw;
+        font-size: 2vh;
     }
     .card-X-text{
         font-weight: 400;
@@ -259,12 +263,14 @@
         font-weight: 600;
         font-size: 4vw;
     }
-    .btn-block{
-        margin: 8vw 0 3vw 0;
-        padding: 1vw 0;
-    }
     .event-back{
+        margin: auto;
+        padding: 1vw 0;
         font-size: 4vw;
+    }
+    .event-back>i{
+        align-self: center;
+        margin-right: 0.5vh;
     }
     .badge{
         font-size: 3.5vw;
