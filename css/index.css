@@ -1,0 +1,23 @@
+/* COMMUNITY CAROUSEL */
+.vimeo-carousel{
+    height: 60vh;
+    background-color: #94C4B4;
+}
+.inner-vimeo{
+    z-index: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-item-vimeo{
+    height: auto;
+    margin: 1.5vw auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
