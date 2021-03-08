@@ -297,7 +297,7 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 
 .mapa{
   padding: 0;
-  margin-top: 1.75vw;
+  margin: 1.75vw auto;
 }
 
 
@@ -480,7 +480,10 @@ input[type=file]::-webkit-file-upload-button{
 } */
 
 
-/* Carousel */
+/* Gallery */
+.gallery{
+  margin-top: 15vh;
+}
 .presentation {
   margin-bottom: 70px;
 }
