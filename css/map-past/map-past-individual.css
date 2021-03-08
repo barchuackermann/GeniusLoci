@@ -23,8 +23,9 @@
 }
 .mainimg{
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: center center;
+    margin: -5vw auto ;
 }
 .no-img{
     width: 80%;    
@@ -216,6 +217,12 @@
     }
     .gral{
         background-color: #445154;
+    }
+    .mainimg{
+        height: 100%;
+        object-fit: scale-down;
+        object-position: center center;
+        margin: -15vh auto ;
     }
     .no-img{
         width: 80%;    
