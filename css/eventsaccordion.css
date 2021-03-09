@@ -6,7 +6,7 @@
 }
 .card {
   background-color: transparent;
-  border: transparent;
+  border: none;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -16,8 +16,7 @@
 .card-header{
   padding: 0;
   margin: 0;
-  background-color: transparent;
-  
+  background-color: transparent;  
 }
 .btn-header{
   padding: 0;
