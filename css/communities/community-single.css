@@ -85,6 +85,129 @@
     margin: 2vw 1vw;
 }
 
+/* Activities Section */
+.activities-cat{
+    height: 30vw;
+}
+.activities-cat>h2{
+    color: #58595b;
+    font-weight: bold;
+}
+.category{
+    height: 10vw;
+    border-radius: 1.5vw !important;
+    -webkit-border-radius: 1.5vw !important;
+    -moz-border-radius: 1.5vw !important;
+    -ms-border-radius: 1.5vw !important;
+    -o-border-radius: 1.5vw !important;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    margin: 1vw auto;
+}
+.category:hover{
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -o-transform: scale(1.02, 1.02);
+}
+.category>p{
+    margin: auto 2vw;
+    vertical-align: center;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+  }
+  #sancines{
+      background-color: #4888c7;
+  }
+  #laukas{
+    background-color: #7969af;
+  }
+  #nemuno{
+    background-color: #c84869;
+  }
+  #opera{
+    background-color: #e6b695;
+  }
+  #aktyvus{
+    background-color: #323652;
+  }
+  #genius{
+    background-color: #5f7d95;
+  }
+
+/* Quote */
+.quote{
+    background-color: #7969af;
+    height: 10vw;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3em 0 3em 0 rgba(0, 0, 0, 0.25) !important;
+}
+.quote>p{
+    margin: auto 10vw;
+    padding: 1.5vw 1vw;
+    color: white;
+    font-size: 2.3vw;
+    font-weight: 600;
+}
+.quote>p>span{
+    font-style: italic;
+}
+
+/* Faces */
+.faces{
+    height: 55vh;
+    margin-top: 4vw;
+}
+.faces>h2{
+    color: #58595b;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+.img-top{
+    width: 80%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 1.5vw auto;
+}
+.faces-card{
+    height: 10vw;
+    text-align: left;
+    font-weight: 400;
+    border: none;
+}
+.faces-card:hover{
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -o-transform: scale(1.02, 1.02);
+}
+.faces-text{
+    margin-left: 1.5vw;
+}
+.faces-text>p{
+    color: #c84869;
+    font-size: 1.25vw;
+    margin: 0;
+}
+.faces-text>p:last-child{
+    color: black;
+    font-size: 1.25vw;
+    margin: 0;
+}
+
+
+
+
   /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
 
 @media (max-width: 768px){
