@@ -106,8 +106,8 @@
 .card-X-text{
     font-weight: 400;
     font-size: 1vw;
-    padding: 0.5em;
-    margin-top: 0.3em;
+    padding: 0em;
+    margin-top: 0em;
     width: 100%;
 }
 .event-date-body>p>span, .card-text>p>span{
@@ -115,6 +115,9 @@
 }
 .card-title{
     font-weight: 600;
+}
+.card-title>p{
+    margin-bottom: 0.5vw;
 }
 .btn:focus{
     box-shadow: none !important;
@@ -159,8 +162,12 @@
     margin: 1vh 0;
     padding: 0;
 }
+.badges>p{
+    font-weight: 600;
+    margin: 0 0 0.5vw 0;
+}
 .badge{
-    margin: 0 auto;
+    margin: 0 auto 1vw auto;
     font-size: 1vw;
     background-color: #617e95;
     color: #fff;
@@ -267,8 +274,6 @@
     .card-X-text{
         font-weight: 400;
         font-size: 3.5vw;
-        padding: 0.5em;
-        margin-top: 0.3em;
         width: 100%;
     }
     .event-date-body>p>span, .card-text>p>span{
@@ -287,8 +292,14 @@
         align-self: center;
         margin-right: 0.5vh;
     }
+    .badges>p{
+        font-size: 2vh;
+        font-weight: 600;
+        margin: 0 0 0.5vh 0;
+    }
     .badge{
         font-size: 3.5vw;
+        margin-bottom: 1vh;
     }
     .scrollable{
         max-height: 45vh;
