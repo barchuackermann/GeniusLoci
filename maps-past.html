@@ -152,7 +152,7 @@
                           <div class="card-body scrollable">
                             <div class="form-group">
                               <label for="Object" class="labelObject">Title</label>
-                              <input type="text" class="form-control" id="Object" placeholder="Object or Event title" required>
+                              <input type="text" class="form-control firstGroup" id="Object" placeholder="Object or Event title" required>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
@@ -196,7 +196,7 @@
                             </div>
                             <div class="form-group">
                               <label for="Information">Describe your memory</label>
-                              <textarea class="form-control" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                              <textarea class="form-control firstGroup" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
@@ -208,7 +208,7 @@
                             <div class="row">
                               <div class="col-md-7 col-12 p-0 pr-1 form-group">
                                 <label for="epoch">Epoch</label>
-                                <select class="custom-select" required>
+                                <select class="custom-select firstGroup" required>
                                   <option selected disabled value="">Year or time period</option>
                                   <option value="1">before 1918</option>
                                   <option value="2">1918-1940</option>
@@ -221,7 +221,7 @@
                               </div>
                               <div class="col-md-5 col-12 p-0 form-group">
                                 <label for="location-type">Type of Location</label>
-                                <select class="custom-select" required>
+                                <select class="custom-select firstGroup" required>
                                   <option selected disabled value="">Type of place</option>
                                   <option value="1">Building</option>
                                   <option value="2">Yard</option>
@@ -253,7 +253,7 @@
                             </div>
                             <div id="jquery-script-menu">
                                 <label for="keywords">Keywords</label>
-                                <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
+                                <select class="form-control firstGroup" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
                                     <option value="1">foo</option>
                                     <option value="2">bar</option>
                                     <option value="3">baz</option>
@@ -474,7 +474,9 @@
                       <div class="invalid-feedback">
                         Please complete this field.
                       </div>
-                      <button type="submit" class="btn btn-form mt-2" id="btn-form">SUBMIT</button>
+                      <button type="submit" class="btn btn-form mt-2" id="btn-form">
+                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="spin"></span>
+                        SUBMIT</button>
                       <button type="button" class="btn btn-back mt-2" data-dismiss="modal" aria-label="Close">
                         ← Back
                       </button>

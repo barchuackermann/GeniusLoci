@@ -226,6 +226,9 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 .gender, .connect{
   font-size: 1em;
 }
+.spinner-border{
+  margin: auto 1vw 0.1vw auto;
+}
 .line2{
   border-top: 1px solid white;
   height: 1px;
@@ -258,6 +261,12 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   margin:auto;
   text-align: center;
   padding: 0 0.5em;
+}
+.border-red{
+  border: 2px solid red;
+}
+.border-none{
+  border: transparent;
 }
 
 
