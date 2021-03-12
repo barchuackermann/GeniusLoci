@@ -46,21 +46,6 @@ const load = () => {
   /* Validation */
   var forms = document.getElementsByClassName("needs-validation");
 
-  const firstGroupValidation = (firstGroup) => {
-    var confirmation;
-    for (i = 0; i < firstGroup.length; i++) {
-      var valor = firstGroup[i].value.trim();
-      if (valor.length <= 0) {
-        confirmation = false;
-      } else {
-        confirmation = true;
-      }
-    }
-    confirmation == true
-      ? (addlocation.className = "btn border-none")
-      : (addlocation.className = "btn border-red");
-  };
-
   // Loop over them and prevent submission
   var validation = Array.prototype.filter.call(forms, function (form) {
     form.addEventListener(
@@ -69,7 +54,6 @@ const load = () => {
         if (form.checkValidity() === false) {
           e.preventDefault();
           e.stopPropagation();
-          firstGroupValidation(firstGroup);
         }
         form.classList.add("was-validated");
       },
@@ -82,8 +66,6 @@ const load = () => {
   var thanks = document.getElementById("thanks");
   var smallerThanks = document.getElementById("smallerThanks");
   var spin = document.getElementById("spin");
-  var addlocation = document.getElementById("headingOne");
-  var firstGroup = document.getElementsByClassName("firstGroup");
 
   entireForm.addEventListener("submit", function (e) {
     e.preventDefault();
