@@ -113,7 +113,7 @@
 }
 .botones{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1vw 2.5vw 2.5vw 2vw;
 }
 .btn-header{
@@ -125,6 +125,7 @@
   height: 5vw;
   display: block;
   width: 40%;
+  margin: auto 1vw;
 }
 .btn-header:hover{
   transform: scale(1.1);
@@ -616,10 +617,11 @@ input[type=file]::-webkit-file-upload-button{
     height: 11vh;
     display: block;
     width: 50%;
+    margin: auto 1vh;
   }
   .btn-header>img{
-    width: 8vw;
-    margin: auto;
+    width: 3vh;
+    margin: 0.5vh auto;
   }
   .mapa{
     min-height: 55vh;
