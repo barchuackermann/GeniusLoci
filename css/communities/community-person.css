@@ -1,0 +1,104 @@
+/* Person */
+.row-main{
+    align-items: top;
+    margin: 4.5vw 0;
+    max-height: 32.5vw;
+}
+.person-image{
+    max-height: 40vw;
+    height: 37vw;
+    object-fit: cover;
+    object-position: center center;
+    width: auto;
+    margin: auto 1vw auto auto;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.breadcrumb-item{
+    font-size: 0.8em;
+}
+.event-title>h2{
+    color: #435053;
+    font-weight: 700;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.person-card-body{
+    max-height: 30vw;
+    font-size: 0.8em;
+}
+.scrollable{
+  position: relative;
+  overflow-y: scroll;
+}
+.scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  margin: 1em;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
+}
+
+/* Quote */
+.quote{
+    background-color: #e6b695;
+    height: 10vw;
+    text-align: center;
+    align-content: center;
+    box-shadow: 3em 0 3em 0 rgba(0, 0, 0, 0.25) !important;
+}
+.quote>p{
+    margin: auto 10vw;
+    padding: 1.5vw 1vw;
+    color: white;
+    font-size: 2.3vw;
+    font-weight: 600;
+}
+.quote>p>span{
+    font-style: italic;
+}
+
+/* INTERVIEW */
+.interview{
+    margin: 3vw auto;
+}
+.card-body-interview{
+    margin: auto 5vw;
+}
+.card-body-interview>h4{
+    font-size: 1.25vw;
+    font-weight: 600;
+    color: #435053;
+    margin: 2vw auto 1vw auto;
+}
+.card-body-interview>p{
+    font-size: 1vw;
+    font-weight: 400;
+    color: #435053;    
+}
+.line3{
+    border-top: 3px solid #a7d1e7;
+    max-width: 100%;
+    padding: 0;
+    margin: 1em auto 2em auto;
+}
+.line4{
+    border-top: 3px solid #a7d1e7;
+    max-width: 50%;
+    padding: 0;
+    margin: 1em auto 2em auto;
+}
