@@ -2,6 +2,14 @@ let crossHair = 0;
 let material = 0;
 let intangible = 0;
 
+function checkAccordionSection($el) {
+  if ($el.parent().find(":invalid").length) {
+    $el.removeClass("border-ok").addClass("border-wrong");
+  } else {
+    $el.removeClass("border-wrong").addClass("border-ok");
+  }
+}
+
 /* Deshabilita opciones en Heritage */
 const setOption = (id) => {
   if (id == "phisical") {
@@ -56,6 +64,10 @@ const load = () => {
           e.stopPropagation();
         }
         form.classList.add("was-validated");
+        if (form.getAttribute("id") === "formTocomplete") {
+          checkAccordionSection($("#headingOne"));
+          checkAccordionSection($("#headingThree"));
+        }
       },
       false
     );
