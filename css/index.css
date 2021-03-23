@@ -2,22 +2,24 @@
 .vimeo-title{
     font-weight: 800;
     color: white;
-    padding: 2vw 0 0 0 !important;
+    padding: 4vw 0 0 0 !important;
     margin: 0;
 }
 .vimeo-carousel{
-    height: 65vh;
+    height: 57vh;
     background-color: #94C4B4;
 }
 .inner-vimeo{
-    height: 50vh;
+    height: 45vh;
     z-index: 500;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    align-content: center;
 }
 .carousel-item-vimeo{
-    height: auto;
-    margin: 0 auto;
+    align-content: center;
+}
+.card-deck{
+    margin: 4vw auto 0 auto;
 }
 .carousel-control-prev,
 .carousel-control-next {
