@@ -55,10 +55,10 @@ const categoryCapacity = [
 ];
 
 const changeColor = ({ circle }) => {
-  if (circle.className == "subcatergory-card") {
-    circle.className = "subcatergory-card-dark";
+  if (circle.className == "subcategory-card") {
+    circle.className = "subcategory-card-dark";
   } else {
-    circle.className = "subcatergory-card";
+    circle.className = "subcategory-card";
   }
 };
 
