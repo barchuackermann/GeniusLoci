@@ -27,8 +27,11 @@
     font-size: 2vw;
     font-weight: bold;
 }
+.person-card{
+    margin-top: 1.75vw;
+}
 .person-card-body{
-    max-height: 30vw;
+    max-height: 26vw;
     font-size: 0.8em;
 }
 .scrollable{
@@ -50,7 +53,11 @@
 }
 .scrollable::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
+  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /* Quote */
