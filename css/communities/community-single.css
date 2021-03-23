@@ -161,7 +161,7 @@
 /* Faces */
 .faces{
     height: 55vh;
-    margin-top: 4vw;
+    margin: 5vw auto;
 }
 .faces>h2{
     color: #58595b;
