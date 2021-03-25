@@ -21,6 +21,30 @@
 .card-deck{
     margin: 4vw auto 0 auto;
 }
+.col-vimeo>a>img{
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.25) !important;
+}
+.col-vimeo>a>img:hover{
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -o-transform: scale(1.02, 1.02);
+}
+.vimeo-modal-header{
+    padding: 1rem 1rem 0 0;
+    border: none !important;
+}
+.vimeo-modal-footer{
+    padding: 0 1rem 1rem 0;
+    border: none !important;
+}
+.vimeo-modal-footer>.btn{
+    background-color: #AF529E;
+    color: white;
+    font-weight: 600;
+}
 .carousel-control-prev,
 .carousel-control-next {
   width: 15%;

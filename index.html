@@ -23,6 +23,15 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/eventsaccordion.css" >
+
+  <!-- GLIGHTBOX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+<script type="text/javascript">
+  const lightbox = GLightbox({ ...options });
+</script>
+
   </head>
   
 <body>
@@ -451,11 +460,18 @@
       </div>
       <!-- Modal Vimeo -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
+            <!-- <div class="modal-header vimeo-modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
             <div class="modal-body">
               <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/519465106?color=94C4B4&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-footer vimeo-modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -470,11 +486,6 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-</section>
-
-<section class="container my-5">
-    <!-- Video -->
-    
 </section>
 
 <!-- Footer -->
