@@ -5,7 +5,7 @@
     margin: 5vw 0;
     height: 80vh;
 }
-.community-logo{
+.community-logo-desk{
     width: 45%;
     margin: 0vw auto 1vw 0vw;
 }
@@ -212,60 +212,102 @@
 
 @media (max-width: 768px){
     /* Event */
-    .event{
-        height: auto;
-        margin: 4em 0;
+    .row-main{
+        height: 100vh;
+        margin: 0;
     }
-    .event-img-cont{
-        height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-    .single-image-res{
+    .logo-container{
+        display: block;
+        margin-top: 15vw;
         height: 100vw;
-        border-radius: 1em;
-        -webkit-border-radius: 1em;
-        -moz-border-radius: 1em;
-        -ms-border-radius: 1em;
-        -o-border-radius: 1em;
-        object-fit: cover;
-        object-position: center center;
     }
-    .event-title>h2{
-        color: #4888c7;
-        font-weight: 700;
-        font-size: 6vw;
+    .community-logo{
+        width: 48vw;
     }
-    .event-card{
-        height: 70vh;
+    .back-img{
+        height: 70vw;
+        top: 8vh;
+        left: 9vw;
     }
-    .event-card-body{
-        overflow-y: scroll;
-        max-height: 70vh;
-        font-size: 0.8em;
+    .top-img{
+        height: 55vw;
+        width: 55vw;
+        top: 12vh; 
+        left: 17vw;
     }
-    .event-card-footer{
-        height: 10vw;
+    .text-container{
+        height: 48vw;
+        margin: 0;
     }
-    .facimg{
-        max-width: 10vw;
+    .single-title>h2{
+        font-weight: 600;
+        margin: -10vh auto 1vh auto;
+        font-size: 5vw;
     }
-    /* Cards */
-    .org{
-        margin-top: -8vw;
+    .single-card{
+        margin: auto;
     }
-    .sameheight>p{
-        font-size: calc(0.7em + 0.5vw)
+    .card-text>p{
+        font-size: 4vw;
     }
-    .sameheight{
+    .scrollable{
+      height: 55vw;
+    }
+    .contact-icons>a>i{
+        font-size: 8vw;
+        margin: 5vw 1vw;
+    }
+    /* Activities */
+    .activities-cat{
+        margin: 25vw auto;
         height: auto;
     }
-    .events{
-        font-size: inherit;
+    .category>p{
+        margin: auto 2vw;
+        vertical-align: center;
+        text-transform: uppercase;
+        font-size: 4vw;
     }
-    .presentation .carousel-container .slide {
-        min-width: 100%;
-        transition: 0.3s ease all;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Quote */
+    .quote{
+        height: auto;
+    }
+    .quote>p{
+        margin: auto 5vw;
+        padding: 5vw 1vw;
+        font-size: 5vw;
+    }
+    /* Faces */
+    .faces{
+        height: 80vh;
+        max-height: 80vh;
+        margin: 15vw auto;
+    }
+    .faces>h2{
+        margin-bottom: 8vw;
+    }
+    .faces-card{
+        height: auto;
+        margin: 4vw auto;
+    }
+    .faces-card:hover{
+        cursor: pointer;
+        transform: scale(1.02, 1.02);
+        -webkit-transform: scale(1.02, 1.02);
+        -moz-transform: scale(1.02, 1.02);
+        -ms-transform: scale(1.02, 1.02);
+        -o-transform: scale(1.02, 1.02);
+    }
+    .faces-text{
+        margin-left: 3vw;
+    }
+    .faces-text>p{
+        color: #c84869;
+        font-size: 4vw;
+    }
+    .faces-text>p:last-child{
+        color: black;
+        font-size: 4vw;
+        margin: 0;
     }
 }
