@@ -1,3 +1,5 @@
+/* const { param } = require("jquery"); */
+
 const categoryEducation = [
   {
     subcat: "lectures",
@@ -61,6 +63,9 @@ const changeColor = ({ circle }) => {
     circle.className = "subcategory-card";
   }
 };
+const arrowAppears = (arrowTop) => {
+  arrowTop.className = "d-block d-sm-block d-md-none back-to-top";
+};
 
 const load = () => {
   document
@@ -96,6 +101,11 @@ const load = () => {
   document
     .getElementById("studyVisit")
     .addEventListener("click", () => changeColor(categoryCapacity[1]));
+  const arrowTop = document.getElementById("arrow-top");
+  const cardHeaders = document.getElementsByClassName("card-headers");
+  for (i = 0; i < cardHeaders.length; i++) {
+    cardHeaders[i].addEventListener("click", () => arrowAppears(arrowTop));
+  }
 };
 
 window.onload = load;

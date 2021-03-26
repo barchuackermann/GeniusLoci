@@ -92,7 +92,7 @@
       <div class="row m-0">
         <!-- Desktop -->
         <div class="banner" style="background-image: url(./css/banners-mas-cortos/GL_ACTIVITIES02.jpg)">
-          <h3 class="photoby">Photo by</h3>
+          <h3 class="photoby" id="top">Photo by</h3>
           <img src="./css/logos/Active-citizens-fund@4x.png" alt="Active Citizens Logo" class="active-citizens-logo">
           <div class="carousel-text --banner">
             <h2>Activities</h2>
@@ -159,7 +159,7 @@
                   aria-controls="collapseTours" class="card-title m-0"><h6 class="subcategory-card" id="toursCircle">Tours</h6></a>
               </div>
             </div>
-            <div class="row row-cols-md-4 row-cols-2">
+            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
               <div class="col card card-activity collapse lectures" id="collapseAct1" role="tabpanel" aria-labelledby="Act1">
                 <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-body-activity">
@@ -237,7 +237,6 @@
           
           
         </div>
-
         <!-- 2nd Event -->
         <div class="card">
           <a 
@@ -287,7 +286,7 @@
                 </a>
               </div>
             </div>
-            <div class="card-group">
+            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
               <div class="card card-activity collapse opera" id="collapseAct2" role="tabpanel" aria-labelledby="Act2">
                 <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-body-activity">
@@ -381,7 +380,7 @@
                   aria-controls="collapseAct3" class="card-title m-0 text-center"><h6 class="subcategory-card" id="urbanVisionCircle">Urban Vision</h6></a>
               </div>
             </div>
-            <div class="card-group">
+            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
               <div class="card card-activity collapse cultural" id="collapseAct3" role="tabpanel" aria-labelledby="Act3">
                 <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-body-activity">
@@ -461,7 +460,7 @@
                   aria-controls="collapseAct4" class="card-title m-0"><h6 class="subcategory-card" id="studyVisitCircle">Study Visit</h6></a>
               </div>
             </div>
-            <div class="card-group">
+            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
               <div class="card card-activity collapse training" id="collapseAct4" role="tabpanel" aria-labelledby="Act4">
                 <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
                 <div class="card-body card-body-activity">
@@ -503,9 +502,11 @@
           
           
         </div>
-        </div>
       </div>
     </div>
+    <a type="button" class="d-none back-to-top" id="arrow-top" href="#top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </section>
 
 <!-- Footer -->

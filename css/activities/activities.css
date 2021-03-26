@@ -104,7 +104,7 @@
   -o-border-radius: 1em !important;
 }
 .card-body-activity{
-  padding: 2vw;
+  padding: 1vw;
 }
 .card-title-activity{
   color: #af539c !important;
@@ -122,6 +122,22 @@
   -moz-border-radius: 3em;
   -ms-border-radius: 3em;
   -o-border-radius: 3em;
+}
+.back-to-top{
+  color: rgba(255, 255, 255, 0.774);
+  position: fixed;
+  z-index: 1500;
+  right: 4vh;
+  bottom: 3vh;
+  background-color: #af539dab;
+  width: 4.5vh;
+  padding: 1vw;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  text-align: center;
 }
 
 @media (max-width: 768px){
