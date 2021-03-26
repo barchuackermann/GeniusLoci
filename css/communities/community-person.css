@@ -10,7 +10,7 @@
     object-fit: cover;
     object-position: center center;
     width: auto;
-    margin: auto 1vw auto auto;
+    margin: auto 1vw auto 0;
 }
 .breadcrumb{
     background-color: transparent;
@@ -33,6 +33,9 @@
 .person-card-body{
     max-height: 26vw;
     font-size: 0.8em;
+}
+.card-text>p{
+    line-height: 1.7vw;
 }
 .scrollable{
   position: relative;
@@ -96,6 +99,7 @@
     font-size: 1vw;
     font-weight: 400;
     color: #435053;    
+    line-height: 2vw;
 }
 .line3{
     border-top: 3px solid #a7d1e7;
