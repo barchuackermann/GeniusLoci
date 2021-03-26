@@ -359,6 +359,57 @@ footer{
   justify-content: center;
 }
 
+/* COOKIES */
+#myCookieConsent {
+  z-index: 999;
+  min-height: 6vw;
+  max-height: 10vw;
+  padding: 1vw;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  overflow: hidden;
+  position: fixed;
+  color: #FFF;
+  bottom: 0px;
+  /* display: none; */
+  text-align: left;
+  font-size: 1vw;
+}
+#myCookieConsent div {
+  margin: auto 0;
+  justify-content: center;
+}
+#myCookieConsent a {
+    color: #D7DF23;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+#myCookieConsent a:hover {
+	color: #a5ac23;
+}
+#myCookieConsent p {
+  margin: 0;
+}
+#myCookieConsent a#cookieButton {
+  color: #000000;
+  font-size: 1.2vw;
+  width: auto;
+  background-color: #D7DF23;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.25vw 1vw;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+  background: #a5ac23;
+  color: #000;
+}
+
 /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
 
 @media (max-width: 768px){
@@ -516,4 +567,54 @@ footer{
     font-size: 1rem;
     color: rgba(255,255,255, 0.5);
   }
+  /* COOKIES */
+#myCookieConsent {
+  z-index: 999;
+  min-height: 6vh;
+  max-height: 28vh;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  overflow: hidden;
+  position: fixed;
+  color: #FFF;
+  bottom: 0px;
+  /* display: none; */
+  text-align: left;
+  font-size: 2vh;
+}
+#myCookieConsent div {
+  margin: auto 0;
+  justify-content: center;
+}
+#myCookieConsent a {
+    color: #D7DF23;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2vh;
+}
+#myCookieConsent a:hover {
+	color: #a5ac23;
+}
+#myCookieConsent p {
+  margin: 1vh 0;
+}
+#myCookieConsent a#cookieButton {
+  color: #000000;
+  font-size: 2vh;
+  width: auto;
+  margin: 1vh auto;
+  background-color: #D7DF23;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.25vh 2vh;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+  background: #a5ac23;
+  color: #000;
+}
 }  
