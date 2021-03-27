@@ -25,12 +25,7 @@
   <link rel="stylesheet" href="css/eventsaccordion.css" >
 
   <!-- GLIGHTBOX -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-
-<script type="text/javascript">
-  const lightbox = GLightbox({ ...options });
-</script>
+  <link rel="stylesheet" href="vendor/glightbox/css/glightbox.min.css"/>
 
   </head>
   
@@ -422,17 +417,17 @@
         <div class="carousel-item active carousel-item-vimeo">
           <div class="card-deck">
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/519465106" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
             </div>
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/484369040" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
             </div>
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/382377015" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
             </div>
@@ -441,37 +436,19 @@
         <div class="carousel-item carousel-item-vimeo">
           <div class="card-deck">
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/315132686" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
             </div>
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/388730532" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
             </div>
             <div class="card col col-vimeo">
-              <a data-toggle="modal" data-target="#exampleModal">
+              <a href="https://vimeo.com/379585450" class="glightbox">
                 <img src="./css/img/36.jpg" alt="image" class="img-fluid"/>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Vimeo -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <!-- <div class="modal-header vimeo-modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div> -->
-            <div class="modal-body">
-              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/519465106?color=94C4B4&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            </div>
-            <div class="modal-footer vimeo-modal-footer">
-              <button type="button" class="btn" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -538,7 +515,8 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="vendor/glightbox/js/glightbox.min.js"></script>
+<script src="js/index.js"></script>
 <script src="js/cookies.js"></script>
 
 </body>
