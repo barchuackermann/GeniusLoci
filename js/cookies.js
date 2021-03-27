@@ -1,4 +1,4 @@
-/* // Cookie Compliancy BEGIN
+// Cookie Compliancy BEGIN
 function GetCookie(name) {
   var arg = name + "=";
   var alen = arg.length;
@@ -35,4 +35,4 @@ $(document).ready(function () {
   });
   testFirstCookie();
 });
-// Cookie Compliancy END */
+// Cookie Compliancy END

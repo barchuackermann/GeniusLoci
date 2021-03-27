@@ -371,7 +371,7 @@ footer{
   position: fixed;
   color: #FFF;
   bottom: 0px;
-  /* display: none; */
+  display: none;
   text-align: left;
   font-size: 1vw;
 }
