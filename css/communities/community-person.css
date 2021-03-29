@@ -15,6 +15,7 @@
 .breadcrumb{
     background-color: transparent;
     padding-left: 0;
+    margin-top: 2vw;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -29,6 +30,7 @@
 }
 .person-card{
     margin-top: 1.75vw;
+    width: 80%;
 }
 .person-card-body{
     max-height: 26vw;
@@ -112,4 +114,172 @@
     max-width: 50%;
     padding: 0;
     margin: 1em auto 2em auto;
+}
+.pagination{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.page-item.active{
+    background-color: #e6b695 !important;
+    
+}
+.page-link{
+    background-color: white;
+    border: none;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    .row-main{
+        align-items: top;
+        margin: 10vh 0 3vh 0;
+        max-height: 75vh;
+    }
+    .col-img{
+        padding: 0;
+        margin: 0;
+    }
+    .person-image{
+        max-height: auto;
+        height: auto;
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        margin: 0;
+    }
+    .col-text{
+        margin: 0;
+        padding: 1vh 3vh;
+    }
+    .breadcrumb{
+        background-color: transparent;
+        padding-left: 0;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .breadcrumb-item{
+        font-size: 1.8vh;
+    }
+    .event-title>h2{
+        color: #435053;
+        font-weight: 700;
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .person-card{
+        margin: 1.75vw auto;
+        width: 100%;
+    }
+    .person-card-body{
+        max-height: 35vh;
+        font-size: 1.8vh;
+    }
+    .card-text>p{
+        line-height: 2.5vh;
+    }
+    .scrollable{
+      position: relative;
+      overflow-y: scroll;
+    }
+    .scrollable::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    .scrollable::-webkit-scrollbar-track {
+      margin: 1em;
+      -webkit-box-shadow: inset 0 0 6px rgba(160, 160, 160, 0.3);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .scrollable::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(114, 114, 114, 0.5);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    
+    /* Quote */
+    .quote{
+        background-color: #e6b695;
+        height: auto;
+        text-align: center;
+        align-content: center;
+        box-shadow: 3em 0 3em 0 rgba(0, 0, 0, 0.25) !important;
+    }
+    .quote>p{
+        margin: auto 2vw;
+        padding: 1.5vw 1vw;
+        color: white;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    .quote>p>span{
+        font-style: italic;
+    }
+    
+    /* INTERVIEW */
+    .interview{
+        margin: 8vh auto;
+    }
+    .card-body-interview{
+        margin: auto 5vw;
+    }
+    .card-body-interview>h4{
+        font-size: 2.5vh;
+        font-weight: 600;
+        color: #435053;
+        margin: 2vw auto 1vw auto;
+    }
+    .card-body-interview>p{
+        font-size: 1.75vh;
+        font-weight: 400;
+        color: #435053;    
+        line-height: 3vh;
+    }
+    .line3{
+        border-top: 3px solid #a7d1e7;
+        max-width: 100%;
+        padding: 0;
+        margin: 1em auto 2em auto;
+    }
+    .line4{
+        border-top: 3px solid #a7d1e7;
+        max-width: 50%;
+        padding: 0;
+        margin: 1em auto 2em auto;
+    }
+    .pagination{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .page-item.active{
+        background-color: #e6b695 !important;
+        
+    }
+    .page-link{
+        background-color: white;
+        border: none;
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        -ms-border-radius: 0 !important;
+        -o-border-radius: 0 !important;
+    }
 }
