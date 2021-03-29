@@ -376,7 +376,7 @@ footer{
   font-size: 1vw;
 }
 #myCookieConsent div {
-  margin: auto 0;
+  margin: auto;
   justify-content: center;
 }
 #myCookieConsent a {
@@ -390,6 +390,7 @@ footer{
 }
 #myCookieConsent p {
   margin: 0;
+  padding-left: 2%;
 }
 #myCookieConsent a#cookieButton {
   color: #000000;
@@ -578,7 +579,7 @@ footer{
   position: fixed;
   color: #FFF;
   bottom: 0px;
-  /* display: none; */
+  display: none;
   text-align: left;
   font-size: 2vh;
 }
