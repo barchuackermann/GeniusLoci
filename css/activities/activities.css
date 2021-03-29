@@ -162,7 +162,7 @@ a.card-title > h6.subcategory-card{
     -moz-border-radius: 10em;
     -ms-border-radius: 10em;
     -o-border-radius: 10em;
-    color: white;
+    color: white !important;
     font-size: 2.5vw;
     font-weight: 600;
   }
@@ -236,7 +236,7 @@ a.card-title > h6.subcategory-card{
     width: auto;
     border-radius: 1em;
     padding: 0.3vw 2vw;
-    color: white;
+    color: white !important;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -ms-border-radius: 1em;
