@@ -80,8 +80,7 @@
 .event-card{
     display: block;
     min-width: 100%;
-    background-color: transparent;
-    border: 2px solid #d1d3d4;
+    background-color: white;
     border-radius: 1vw;
     -webkit-border-radius: 1vw;
     -moz-border-radius: 1vw;
@@ -92,10 +91,11 @@
     overflow-y: scroll;
     max-height: 50vw;
     font-size: 1vw;
+    color: #494949;
 }
 .event-title{
     margin: 1vw auto 3vw auto;
-    color: white;
+    color: #494949;
     font-weight: 700;
     font-size: 2vw;
 }
@@ -105,7 +105,7 @@
 .card-X-text{
     font-weight: 400;
     font-size: 1vw;
-    padding: 0.5em;
+    padding: 0.5em 0;
     margin-top: 0.3em;
     width: 100%;
 }
@@ -136,9 +136,9 @@
     margin: 4vw auto;
 }
 .past-events>h2{
-        color: #58595b;
-        font-weight: bold;
-        margin-bottom: 2vw;
+    color: #58595b;
+    font-weight: bold;
+    margin-bottom: 2vw;
 }
 .filter{
     display: flex;
@@ -174,7 +174,7 @@
     -o-border-radius: 15em;
   }
   .card-activity{
-    height: 28vw;
+      max-width: 15vw;
     margin: 1vw;
     border: 1px solid #4888c7 !important;
     border-radius: 1em !important;
@@ -195,7 +195,7 @@
     -o-border-radius: 1em !important;
   }
   .card-body-activity{
-    padding: 2vw;
+    padding: 1vw;
   }
   .card-title-activity{
     color: #af539c !important;
@@ -213,7 +213,7 @@
     width: auto;
     border-radius: 3em;
     padding: 0.3vw 2vw;
-    color: white;
+    color: white !important;
     -webkit-border-radius: 3em;
     -moz-border-radius: 3em;
     -ms-border-radius: 3em;
@@ -291,11 +291,17 @@
     .event-card{
         display: block;
         min-width: 100%;
-        background-color: transparent;
-        border: 2px solid #d1d3d4;
+        background-color: white;
+        border-radius: 10px;
         margin: auto;
-    }
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
     .event-card-body{
+        color: #494949;
+        
         overflow-y: scroll;
         font-size: 2vh;
     }
@@ -323,7 +329,7 @@
     }
     /* Past Events */
     .past-events{
-        margin: 4vw auto;
+        margin: 10vh auto;
     }
     .past-events>h2{
             color: #58595b;
@@ -334,7 +340,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 0.5vw;
+        margin-bottom: 1vh;
     }
     .filter>a{
         background-color: #D7DF23;
@@ -364,49 +370,51 @@
         -o-border-radius: 15em;
     }
     .card-activity{
-        height: 28vw;
-        margin: 1vw;
+        max-width: 42vw;
+        height: auto;
+        margin: 0.25vw;
+        padding: 0;
         border: 1px solid #4888c7 !important;
-        border-radius: 1em !important;
-        -webkit-border-radius: 1em !important;
-        -moz-border-radius: 1em !important;
-        -ms-border-radius: 1em !important;
-        -o-border-radius: 1em !important;
+        border-radius: 4em !important;
+        -webkit-border-radius: 4em !important;
+        -moz-border-radius: 4em !important;
+        -ms-border-radius: 4em !important;
+        -o-border-radius: 4em !important;
         font-size: 0.8vw;
     }
-    .card-activity>img{
-        height: 17vw;
+      .card-activity>img{
+        height: 40vw;
         object-fit: cover;
         object-position: center center;
-        border-radius: 1em !important;
-        -webkit-border-radius: 1em !important;
-        -moz-border-radius: 1em !important;
-        -ms-border-radius: 1em !important;
-        -o-border-radius: 1em !important;
+        border-radius: 4em !important;
+        -webkit-border-radius: 4em !important;
+        -moz-border-radius: 4em !important;
+        -ms-border-radius: 4em !important;
+        -o-border-radius: 4em !important;
     }
-    .card-body-activity{
+      .card-body-activity{
         padding: 2vw;
-    }
-    .card-title-activity{
+      }
+      .card-title-activity{
         color: #af539c !important;
-        font-size: 0.8vw;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-    .card-title-activity>span:first-child::after{
-        content: " / ";
-    }
-    .btn-about{
+        font-size: 4vw;
+        margin: 0;
+      }
+      .card-text-activity{
+        font-size: 3vw;
+        margin: 1vh;
+      }
+      .btn-about{
         background-color: #47636b;
-        font-size: 0.8vw;
+        font-size: 3vw;
         float: right;
         width: auto;
-        border-radius: 3em;
+        border-radius: 1em;
         padding: 0.3vw 2vw;
-        color: white;
-        -webkit-border-radius: 3em;
-        -moz-border-radius: 3em;
-        -ms-border-radius: 3em;
-        -o-border-radius: 3em;
-    }
+        color: white !important;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        -o-border-radius: 1em;
+      }
 }
