@@ -86,21 +86,27 @@
       <div class="principal">
         <div class="row m-0">
           <!-- Desktop -->
-          <div class="banner" style="background-image: url(./css/banners-mas-cortos/GL_PARTNERS02.jpg)">
-            <div class="active-citizens-logo"></div>
-            <div class="carousel-text --banner">
-              <h2>Opera Performance</h2>
-              <!-- <h3>Partners</h3> -->
-              <h4>Žemųjų Šančių bendruomenė / Registration to Events</h4>
-            </div>
+          <div class="banner">
+
           </div>
         </div>
       </div>
     </header>
-
-  <!-- Form -->
-  <section class="container">
-    <div class="row mt-5 mb-5 d-flex align-content-center justify-content-between border">
+    
+    <!-- Form -->
+    <section class="container form">
+      <div class="row mt-5" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="./genius-loci.html">Genius Loci</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="">Registration to events</a>
+              </li>
+        </ol>
+      </div>
+      <h2 class="form-title">Opera Performance Si Tuviera Un Texto Recontra Largo Como De Tres Renglones Para Que Veas Qué Herrrrrmoso Quedaría </h2>
+      <div class="row mt-4 mb-5 d-flex align-content-center justify-content-between border">
       <div class="col-lg-8 col-md-8 col-12 mt-3 mb-3">
         <form action="" method="POST" class="form2 d-flex">
           <h6 class="ml-2 mt-3">Add Your Details</h6>
@@ -120,25 +126,29 @@
               <input type="email" id="email" required class="input emailfit">
             </p>
           </div>
-          <div class="checks">
-            <div class="custom-control custom-checkbox align-content-center justify-content-between">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Accept <a href="./terms-and-conditions.html" class="terms">Terms and Conditions</a></label>
-            </div>
-            <img src="./css/logos/recaptcha.png" alt="captcha" class="img-small">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">I accept the terms of <a href="./terms-and-conditions.html">Private Policy</a> </label>
           </div>
           <button class="btn btn-form">Submit</button>
         </form>
       </div>
       <div class="col-lg-4 col-md-4 col-12 right">
-        <div class="event-data border">
+        <div class="event-data back-light">
           <h6 class="event-category">CREATIVITY</h6>
           <h3 class="event-activity">ŠANČIAI OPERA</h3>
           <hr>
-          <h4 class="event-date">Nov 29, 2020, 20:00</h4>
-          <h4 class="event-location">Sanciai Biblioteka</h4>
+          <h4>Date</h4>
+          <p>Nov 29, 2020, 20:00</p>
+          <h4>Time</h4>
+          <p>2:00 pm (EEST)</p>
+          <h4>Place:</h4>
+          <p>Sanciai Biblioteka</p>
+          <div class="event-img text-center">
+            <i class="fas fa-globe"></i>
+            <!-- <img src="./css/events photos/meeting.jpg" alt="Event Image" class="map-img"> -->
+          </div>
         </div>
-        <img src="./css/events photos/meeting.jpg" alt="Event Image" class="img">
       </div>
     </div>
   </section>
