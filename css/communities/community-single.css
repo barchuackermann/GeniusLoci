@@ -209,56 +209,10 @@
 
 @media (max-width: 768px){
     /* Event */
-/*     .row-main{
-        align-items: flex-start;
-        height: 150vh;
-        margin: 11vh auto;
-    }
-    .logo-container{
-        display: block;
-        margin-top: 0vw;
-        height: 100vw;
-    }
-    .community-logo{
-        width: 48vw;
-    }
-    .back-img{
-        height: 70vw;
-        top: 8vh;
-        left: 9vw;
-    }
-    .top-img{
-        height: 55vw;
-        width: 55vw;
-        top: 12vh; 
-        left: 17vw;
-    }
-    .text-container{
-        height: 48vh;
-        margin: 0;
-    }
-    .single-title>h2{
-        font-weight: 600;
-        margin: -8vh auto 1vh auto;
-        font-size: 3vh;
-    }
-    .single-card{
-        margin: auto;
-    }
-    .card-text>p{
-        font-size: 2vh;
-    }
-    .scrollable{
-      height: 55vw;
-    }
-    .contact-icons>a>i{
-        font-size: 8vw;
-        margin: 5vw 1vw;
-    } */
 
     .row-main{
         align-items: flex-start;
-        margin: 10vh 0;
+        margin: 12vh 0;
         height: 90vh;
     }
     .logo-container{
@@ -311,8 +265,8 @@
       -webkit-box-shadow: inset 0 0 6px rgba(82, 82, 82, 0.5); 
     }
     .contact-icons>a>i{
-        font-size: 4vh;
-        margin: 2vw 1vw 5vw auto;
+        font-size: 5vh;
+        margin: 4vh 1vw 5vw auto;
     }
 
     /* Activities */
