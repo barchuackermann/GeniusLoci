@@ -94,64 +94,133 @@
     </header>
     
     <!-- Form -->
-    <section class="container form">
-      <div class="row mt-5" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="./genius-loci.html">Genius Loci</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="">Registration to events</a>
-              </li>
-        </ol>
-      </div>
-      <h2 class="form-title">Opera Performance Si Tuviera Un Texto Recontra Largo Como De Tres Renglones Para Que Veas Qué Herrrrrmoso Quedaría </h2>
-      <div class="row mt-4 mb-5 d-flex align-content-center justify-content-between border">
-      <div class="col-lg-8 col-md-8 col-12 mt-3 mb-3">
-        <form action="" method="POST" class="form2 d-flex">
-          <h6 class="ml-2 mt-3">Add Your Details</h6>
-          <div class="form-group d-flex justify-content-between align-content-center">
-            <p>
-              <label for="#firstname">*First Name</label>
-              <input type="text" id="firstname" required class="input">
-            </p>
-            <p>
-              <label for="#lastname">*Last Name</label>
-              <input type="text" id="lastname" required class="input">
-            </p>
+    <section class="container form d-none d-sm-none d-md-block">
+      <div class="row">
+        <div class="col-10 nuvacol">
+          <div class="mt-5" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="./genius-loci.html">Genius Loci</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="">Registration to events</a>
+                  </li>
+            </ol>
           </div>
-          <div class="form-group d-flex">
-            <p class="emailfit">
-              <label for="#email">*Email</label>
-              <input type="email" id="email" required class="input emailfit">
-            </p>
+          <h2 class="form-title">Opera Performance</h2>
+          <div class="mt-4 mb-5 d-flex align-content-center justify-content-between border">
+          <div class="col-lg-8 col-md-8 col-12 mt-3 mb-3">
+            <form action="" method="POST" class="form2 d-flex needs-validation" novalidate>
+              <h6 class="ml-2 mt-3">Add Your Details</h6>
+              <div class="form-group d-flex justify-content-between align-content-center">
+                <p>
+                  <label for="#firstname">*First Name</label>
+                  <input type="text" id="firstname" required class="form-control input">
+                </p>
+                <p>
+                  <label for="#lastname">*Last Name</label>
+                  <input type="text" id="lastname" required class="form-control input">
+                </p>
+              </div>
+              <div class="form-group d-flex">
+                <p class="emailfit">
+                  <label for="#email">*Email</label>
+                  <input type="email" id="email" required class="form-control input emailfit">
+                </p>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" required>
+                <label class="form-check-label" for="inlineCheckbox1">I accept the terms of <a href="./terms-and-conditions.html">Private Policy</a> </label>
+              </div>
+              <button class="btn btn-form">Submit</button>
+            </form>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">I accept the terms of <a href="./terms-and-conditions.html">Private Policy</a> </label>
+          <div class="col-lg-4 col-md-4 col-12 right">
+            <div class="event-data back-light">
+              <h6 class="event-category">CREATIVITY</h6>
+              <h3 class="event-activity">ŠANČIAI OPERA</h3>
+              <hr>
+              <h4>Date:</h4>
+              <p>Nov 29, 2020, 20:00</p>
+              <h4>Time:</h4>
+              <p>2:00 pm (EEST)</p>
+              <h4>Place:</h4>
+              <p>Sanciai Biblioteka</p>
+              <div class="event-img text-center">
+                <!-- <i class="fas fa-globe"></i> -->
+                <img src="./css/events photos/meeting.jpg" alt="Event Image" class="map-img">
+              </div>
+            </div>
           </div>
-          <button class="btn btn-form">Submit</button>
-        </form>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12 right">
-        <div class="event-data back-light">
-          <h6 class="event-category">CREATIVITY</h6>
-          <h3 class="event-activity">ŠANČIAI OPERA</h3>
-          <hr>
-          <h4>Date</h4>
-          <p>Nov 29, 2020, 20:00</p>
-          <h4>Time</h4>
-          <p>2:00 pm (EEST)</p>
-          <h4>Place:</h4>
-          <p>Sanciai Biblioteka</p>
-          <div class="event-img text-center">
-            <i class="fas fa-globe"></i>
-            <!-- <img src="./css/events photos/meeting.jpg" alt="Event Image" class="map-img"> -->
-          </div>
+              </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="container form d-block d-sm-block d-md-none">
+      <div class="row">
+        <div class="col-12 nuvacol">
+          <div class="mt-4" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="./genius-loci.html">Genius Loci</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="">Registration to events</a>
+                  </li>
+            </ol>
+          </div>
+          <h2 class="form-title">Opera Performance</h2>
+
+          <div class="col-lg-4 col-md-4 col-12 right">
+            <div class="event-data back-light">
+              <table class="table table-borderless text-center center">
+                  <tr class="first-row">
+                    <td>Date</td>
+                    <td>Time</td>
+                    <td>Place</td>
+                  </tr>
+                  <tr class="second-row">
+                    <td>November 29, 2020</td>
+                    <td>2:00 pm (EEST)</td>
+                    <td>Sanciai Biblioteka</td>
+                  </tr>
+              </table>
+          </div>
+
+
+
+          <div class="mt-4 mb-5 d-flex align-content-center justify-content-between border">
+          <div class="col-lg-8 col-md-8 col-12 mt-3 mb-3">
+            <form action="" method="POST" class="form2 d-flex needs-validation" novalidate>
+              <h6 class="ml-2 mt-3">Add Your Details</h6>
+              <div class="form-group d-flex justify-content-between align-content-center">
+                <p>
+                  <label for="#firstname">*First Name</label>
+                  <input type="text" id="firstname" required class="form-control input">
+                </p>
+                <p>
+                  <label for="#lastname">*Last Name</label>
+                  <input type="text" id="lastname" required class="form-control input">
+                </p>
+              </div>
+              <div class="form-group d-flex">
+                <p class="emailfit">
+                  <label for="#email">*Email</label>
+                  <input type="email" id="email" required class="form-control input emailfit">
+                </p>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" required>
+                <label class="form-check-label" for="inlineCheckbox1">I accept the terms of <a href="./terms-and-conditions.html">Private Policy</a> </label>
+              </div>
+              <button class="btn btn-form">Submit</button>
+            </form>
+          </div>
+              </div>
+        </div>
+      </div>
+    </section>
 
   <!-- Footer -->
   <footer class="py-4 bg-green2">
@@ -194,6 +263,26 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 
 </html>
