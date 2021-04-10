@@ -121,6 +121,9 @@ label{
   .form{
     padding: 0;
   }
+  .nuvacol{
+    padding: 0;
+  }
   .right{
     padding: 0;
     margin: auto;
