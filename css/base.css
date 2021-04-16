@@ -358,6 +358,19 @@ footer{
 .donate-body{
   justify-content: center;
 }
+.thankyou{
+  color: #154455;
+  height: 30vh;
+  margin: 15vw;
+}
+.thankyou h2{
+  font-size: 3vw;
+  font-weight: bold;
+}
+.thankyou h4{
+  font-size: 1.25vw;
+  font-weight: normal;
+}
 
 /* COOKIES */
 #myCookieConsent {
@@ -617,5 +630,18 @@ footer{
 #myCookieConsent a#cookieButton:hover {
   background: #a5ac23;
   color: #000;
+}
+.thankyou{
+  color: #154455;
+  height: 50vh;
+  margin: 20vh 10vh;
+}
+.thankyou h2{
+  font-size: 5vh;
+  font-weight: bold;
+}
+.thankyou h4{
+  font-size: 5vw;
+  font-weight: normal;
 }
 }  
