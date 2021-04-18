@@ -52,8 +52,6 @@
 .top-img{
     position: absolute;
     z-index: 700;
-    left: 7vw;
-    top: 6.5vw;
     height: 13vw;
     width: 13vw;
     object-fit: cover;
@@ -63,6 +61,14 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+    left: 7vw;
+    top: 6.5vw;
+}
+.comm1 .top-img{
+    left: 34vw;
+}
+.comm2 .top-img{
+    left: 13.5vw;
 }
 .btn-header{
     height: 100%;
