@@ -23,7 +23,7 @@
     object-position: center center;
     margin: -5vw auto ;
 }
-.no-img{
+.no-img{    
     width: 80%;    
     object-fit: scale-down !important;
     object-position: center center !important;
@@ -102,9 +102,10 @@
 .card-X-text{
     font-weight: 400;
     font-size: 1vw;
-    padding: 0.5em 0;
-    margin-top: 0.3em;
     width: 100%;
+}
+.extlink>a{
+    color: #007bff;
 }
 .scrollable{
     position: relative;
@@ -205,6 +206,9 @@
 }
   .card-title-activity>span:first-child::after{
       content: " / ";
+  }
+  .card-title>p{
+      margin-bottom: 0;
   }
   .btn-about{
     background-color: #47636b;
@@ -320,6 +324,9 @@
         padding: 0;
         margin-top: 0;
         width: 100%;
+    }
+    .card-X-text>p{
+        margin-bottom: 0 !important;
     }
     .scrollable{
         max-height: 25vh;
