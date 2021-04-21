@@ -1,4 +1,15 @@
 /* HEADER */
+.snap-container {
+    height: 200vh;
+    overflow-y: scroll;  
+    scroll-snap-type: y mandatory !important;  
+  }
+  
+::-webkit-scrollbar {display: none;}
+  .snap-section {
+    min-height: 60vh;
+    scroll-snap-align: start !important;
+  }
 .btn-maps{
     min-width: 20vw;
     min-height: 30vh;
