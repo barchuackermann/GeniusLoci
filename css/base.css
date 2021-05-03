@@ -483,13 +483,13 @@ footer{
     z-index: 20;
     top: 15%;
     left: -5%;
-    width: 30vw;
+    width: 80vw;
     height: 100vh;
   }
   .carousel-text>h2{  
     color: white;
     font-weight: 900;
-    font-size: 8vh;
+    font-size: 9vw;
   }  
   .carousel-text .--banner{
     width: 70vw;
@@ -526,14 +526,10 @@ footer{
     margin-top: 20vw;
   }
   .btn-maps{
+    width: 99vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-width: 90vw;
     background: url("./home/MAP_EN.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: contain;
     color: white;
     font-style: italic;
@@ -556,11 +552,11 @@ footer{
   }
   .twobtn{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    left: 60%;
     top: 10%;
+    margin-left: 1.5vw;
   }
   .carousel-text>h4{
     color: white;

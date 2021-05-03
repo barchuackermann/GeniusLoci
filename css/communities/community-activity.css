@@ -104,8 +104,8 @@
     font-size: 1vw;
     width: 100%;
 }
-.extlink>a{
-    color: #007bff;
+p a{
+    color: #007bff !important;
 }
 .scrollable{
     position: relative;
