@@ -265,11 +265,12 @@
     /* Quote */
     .quote{
         height: auto;
+        max-height: 80vh;
     }
     .quote>p{
         margin: auto 5vw;
         padding: 5vw 1vw;
-        font-size: 5vw;
+        font-size: 0.8rem;
     }
     /* Faces */
     .faces{
