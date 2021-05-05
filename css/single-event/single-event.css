@@ -19,6 +19,14 @@
     font-weight: bold;
     color: #435053;
 }
+.card-X-text{
+    font-weight: 400;
+    font-size: 1vw;
+    width: 100%;
+}
+p a{
+    color: #007bff !important;
+}
 .event-image{
     max-height: 35vw;
     height: 35vw;
