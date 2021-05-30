@@ -1,0 +1,314 @@
+/* Single Event */
+.gral{
+    background-color: #445154;
+}
+.total{
+    height: 100vh;
+    background-color: #445154;
+    z-index: 1;
+}
+.carousel-indicators li{
+    background-color: #fff;
+}
+.carousel-inner{
+    margin-top: 5vw;
+    min-height: auto;
+    height: 88vh;
+    padding: 0;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+}
+.mainimg{
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center center;
+    margin: -5vw auto ;
+}
+.no-img{
+    width: 80%;    
+    object-fit: scale-down !important;
+    object-position: center center !important;
+    margin: -5vw auto ;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.carousel-caption>p {
+    font-weight: 600;
+    margin: 0;
+}
+.carousel-caption>p>span {
+    font-weight:normal;
+}
+.right-side{
+    background-color: #445154;
+    color: white;
+    padding-right: 10vw;
+    height: auto;
+}
+.content{
+    height: 88vh;
+}
+.event-card{
+    display: block;
+    min-width: 100%;
+    background-color: #445154;
+    border: 1px solid #d1d3d4;
+}
+.event-card-body{
+    overflow-y: scroll;
+    max-height: 30vw;
+    font-size: 1vw;
+}
+.card-body-pic{
+    padding: 0;
+}
+.event-title{
+    margin-top: 6vw;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.card-text{
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 0.3em;
+    width: 100%;
+}
+.event-date-body{
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-top: 0.3em;
+    margin-bottom: 1vh;
+    width: 100%;
+    background-color: #445154;
+    border: none;
+    height: auto;
+    max-height: 24vh !important;
+}
+.event-date-body>p, .card-text>p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 2vh;
+}
+.card-X-text{
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0em;
+    margin-top: 0em;
+    width: 100%;
+}
+.event-date-body>p>span, .card-text>p>span{
+    font-weight: 400;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-title>p{
+    margin-bottom: 0.5vw;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+.btn-block{
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.event-back{
+    background-color: #617e95;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2vh auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    padding: 0.3em 2em;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    vertical-align: center;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.event-back:focus{
+    outline: none;  
+}
+.event-back>i{
+    align-self: center;
+    margin-right: 0.5vw;
+}
+
+.extlink>a{
+    color: #007bff;
+}
+.badges{
+    height: 1vw;
+    margin: 1vh 0;
+    padding: 0;
+}
+.badges>p{
+    font-weight: 600;
+    margin: 0 0 0.5vw 0;
+}
+.badge{
+    margin: 0 auto 1vw auto;
+    font-size: 1vw;
+    background-color: #617e95;
+    color: #fff;
+}
+.scrollable{
+    position: relative;
+    max-height: 23vw;
+    overflow-y: scroll;
+}
+.scrollable::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    margin: 1em;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px){
+    .total{
+        background-color: #445154;
+        z-index: 1;
+        margin-top: 20vw;
+        height: 75vh;
+    }
+    .carousel-inner{
+        height: 70vh;
+        border-radius: 1vh;
+        -webkit-border-radius: 1vh;
+        -moz-border-radius: 1vh;
+        -ms-border-radius: 1vh;
+        -o-border-radius: 1vh;
+    }
+    .right-side{
+        background-color: #445154;
+        color: white;
+        padding-right: 8vw;
+        margin: auto;
+        height: 88vh;
+        max-height: 100vh;
+    }
+    .gral{
+        background-color: #445154;
+    }
+    .mainimg{
+        height: 100%;
+        object-fit: scale-down;
+        object-position: center center;
+        margin: -15vh auto ;
+    }
+    .no-img{
+        width: 80%;    
+        object-fit: scale-down !important;
+        object-position: center center !important;
+        margin: -15vh auto ;
+    }
+    .event-title{
+        margin-top: 2vw;
+        color: white;
+        font-weight: 700;
+        font-size: 8vw;
+    }
+    .event-card{
+        display: block;
+        min-width: 100%;
+        background-color: #445154;
+        border: 1px solid #d1d3d4;
+    }
+    .event-card-body{
+        overflow-y: scroll;
+        max-height: 50vh;
+        font-size: 1vw;
+    }
+    .event-date-body, .card-text{
+        padding: 0.5vw;
+        margin: 1vh auto auto auto;
+        width: 100%;
+        height: auto;
+    }
+    .event-date-body{
+        background-color: #445154;
+        border: none;
+        height: auto;
+        margin-bottom: 1vh;
+    }
+    .event-date-body>p, .card-text>p{
+        margin: 0;
+        font-weight: 600;
+        font-size: 2vh;
+    }
+    .card-X-text{
+        font-weight: 400;
+        font-size: 3.5vw;
+        width: 100%;
+    }
+    .event-date-body>p>span, .card-text>p>span{
+        font-weight: 400;
+    }
+    .card-title{
+        font-weight: 600;
+        font-size: 4vw;
+    }
+    .event-back{
+        margin: auto;
+        padding: 1vw 0;
+        font-size: 4vw;
+    }
+    .event-back>i{
+        align-self: center;
+        margin-right: 0.5vh;
+    }
+    .badges>p{
+        font-size: 2vh;
+        font-weight: 600;
+        margin: 0 0 0.5vh 0;
+    }
+    .badge{
+        font-size: 3.5vw;
+        margin-bottom: 1vh;
+    }
+    .scrollable{
+        max-height: 45vh;
+    }
+    .carousel-caption {
+        bottom: 30%;
+    }
+    .carousel-caption>p:last-child {
+        font-weight: 600;
+        margin-bottom: 2vh;
+    }
+}
