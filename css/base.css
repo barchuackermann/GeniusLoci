@@ -145,7 +145,10 @@ header{
   vertical-align: center;
   width: 100%;
 }
-.banner {
+.short{
+  height: 70vh !important;
+}
+.carousel-supra-banner {
   height: 70vh;
   min-height: 50vh;
   max-height: 90vh;
@@ -154,7 +157,7 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
+  position: absolute;
   z-index: 10;
   vertical-align: center;
   width: 100%;
@@ -292,6 +295,14 @@ header{
   left: 50%;
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
+}
+.photoby-banner{
+  position: absolute;
+  z-index: 5000;
+  margin-top: -33vh;
+  margin-left: 31vw;
+  font-size: 1.25vw;
+  color: rgb(221, 221, 221);
 }
 /* Footer */
 footer{
@@ -481,8 +492,8 @@ footer{
   .carousel-text{
     position: absolute;
     z-index: 20;
-    top: 15%;
-    left: -5%;
+    top: 25%;
+    left: 0%;
     width: 80vw;
     height: 100vh;
   }
@@ -561,6 +572,7 @@ footer{
   .carousel-text>h4{
     color: white;
     font-weight: 900;
+    font-size: 2vh;
   }
   .carousel-item {
     height: 100vh;
@@ -576,6 +588,14 @@ footer{
   .photoby{
     font-size: 1rem;
     color: rgba(255,255,255, 0.5);
+  }
+  .photoby-banner{
+    position: absolute;
+    z-index: 5000;
+    margin-top: -33vh;
+    margin-left: 31vw;
+    font-size: 1.25vw;
+    color: rgb(221, 221, 221);
   }
   /* COOKIES */
 #myCookieConsent {
