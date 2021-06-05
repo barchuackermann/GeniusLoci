@@ -482,6 +482,9 @@ footer{
   z-index: 10;
   width: 100vw;
   }
+  .carousel-supra-banner {
+    width: 130%;
+  }
   .active-citizens-logo{
     position: relative;
     z-index: 10;
@@ -493,12 +496,12 @@ footer{
     position: absolute;
     z-index: 20;
     top: 25%;
-    left: 0%;
+    left: -5%;
     width: 80vw;
     height: 100vh;
   }
   .carousel-text>h2{  
-    color: white;
+    color: #435053;
     font-weight: 900;
     font-size: 9vw;
   }  
