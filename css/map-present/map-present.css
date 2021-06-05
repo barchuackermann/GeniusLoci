@@ -173,7 +173,7 @@
 }
 /* MODAL-FORM-MAP */
 .modal-content-map{
-  background-color: #445154;
+  background-color: #cca59d;
   color: white;
   min-height: 20vw;
 }
@@ -181,7 +181,7 @@
   margin: 1em 2em;
 }
 .general>.btn{
-  background-color: #93c2b4;
+  background-color: #7083c0;
   color: white;
   font-weight: 600;
   border-radius: 0.8em;
@@ -200,7 +200,7 @@
   margin: auto 10%;
 }
 .general>.btn:focus{
-  background-color: #af529e;
+  background-color: #5e4242;
 }
 #ADDLOCATION{
   margin-top: 2em;
@@ -397,7 +397,7 @@ input[type=file]::-webkit-file-upload-button{
   border: none;
   padding: 0.5em;
   color: white;
-  background-color: #af529e;
+  background-color: #5e4242;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -ms-border-radius: 0.5em;
@@ -423,7 +423,7 @@ input[type=file]::-webkit-file-upload-button{
   color: white;
 }
 .btn-form{
-  background-color: #af529e;
+  background-color: #332f8c;
   color: white;
   font-weight: 600;
   border-radius: 0.8em;
@@ -439,6 +439,9 @@ input[type=file]::-webkit-file-upload-button{
 .finalSubmit{
   width: 60%;
   margin: auto;
+}
+.inner-group{
+  font-weight: 600;
 }
 /* Modal Picture */
 .picture-content{
@@ -845,7 +848,7 @@ input[type=file]::-webkit-file-upload-button{
     border: none;
     padding: 0.5em;
     color: white;
-    background-color: #af529e;
+    background-color: #5e4242;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;

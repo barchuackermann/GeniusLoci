@@ -117,9 +117,9 @@
 
 
 
-              <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
+              <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
                 <p>IR AL FORM</p>
-              </button> -->
+              </button>
 
 
 
@@ -144,100 +144,98 @@
 
                   <div class="general" id="ADDLOCATION">
                     <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-                      1# POST YOUR MEMORY </button>
+                      1# SHARE YOUR EXPERIENCE </button>
                 
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
-                            <div class="form-group">
-                              <label for="Object" class="labelObject">Title</label>
-                              <input type="text" class="form-control" id="Object" placeholder="Object or Event title" required>
+                            <div class="col-12 p-0 form-group">
+                              <label for="location-type">Location Type</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Please choose location type</option>
+                                <option value="1">Building</option>
+                                <option value="2">Yard</option>
+                                <option value="3">Street</option>
+                                <option value="4">Quarter</option>
+                                <option value="5">Coast</option>
+                                <option value="6">Park</option>
+                                <option value="7">Cemetery</option>
+                                <option value="8">Representative Space</option>
+                                <option value="9">Sports Ground</option>
+                                <option value="10">Playground</option>
+                                <option value="11">Field</option>
+                                <option value="12">Desert</option>
+                                <option value="13">Other</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                            </div>
+                            <div class="col-12 p-0 form-group">
+                              <label for="location-type">Season and time of the day</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Time of the day at which you observed or performed activity</option>
+                                <option value="1">Ejemplo</option>
+                                <option value="2">Ejemplo</option>
+                                <option value="3">Ejemplo</option>
+                                <option value="4">Ejemplo</option>
+                                <option value="5">Ejemplo</option>
+                                <option value="6">Ejemplo</option>
+                                <option value="7">Ejemplo</option>
+                                <option value="8">Ejemplo</option>
+                                <option value="9">Ejemplo</option>
+                                <option value="10">Ejemplo</option>
+                                <option value="11">Ejemplo</option>
+                                <option value="12">Ejemplo</option>
+                                <option value="13">Ejemplo</option>
+                              </select>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="heritage" class="heritage">Choose a type of heritage:
-                              </label>
-                              <div class="row align-content-center">
-                                <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="phisical" name="heritage" class="custom-control-input" value="option1" required>
-                                  <label class="custom-control-label" for="phisical">Material object</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="abstract" name="heritage" class="custom-control-input" value="option2" check="false" required>
-                                  <label class="custom-control-label" for="abstract">Intangible object</label>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col p-0 pr-1 form-group">
-                                  <select class="custom-select" id="phisicalInput">
-                                    <option selected>Choose...</option>
-                                    <option value="1">Buildings</option>
-                                    <option value="2">Elements of small architecture</option>
-                                    <option value="3">Space, small territory</option>
-                                    <option value="4">Sight, panorama, landscape.</option>
-                                    <option value="5">Work of art</option>
-                                    <option value="6">Other</option>
-                                  </select>
-                                </div>
-                                <div class="col p-0 form-group">
-                                  <select class="custom-select" id="abstractInput">
-                                    <option selected>Choose...</option>
-                                    <option value="1">Event</option>
-                                    <option value="2">Narrative</option>
-                                    <option value="3">Activities, events</option>
-                                    <option value="4">Extinct object</option>
-                                    <option value="5">Other</option>
-                                  </select>
-                                </div>
+                              <label for="InformationPresent">Describe your experience</label>
+                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Description of the experience, or information you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                              <div class="invalid-feedback">
+                                Please complete this field.
                               </div>
                             </div>
-                            <div class="form-group">
-                              <label for="Information">Describe your memory</label>
-                              <textarea class="form-control" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                            <div class="col-12 p-0 form-group">
+                              <label for="activity-selection">Selection of the activity</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Choose one type of activity</option>
+                                <option disabled value="" class="inner-group">Active activities</option>
+                                <option value="1">Bathing</option>
+                                <option value="2">Ball games</option>
+                                <option value="3">Shipping</option>
+                                <option value="4">Fishing</option>
+                                <option value="5">Games, sports</option>
+                                <option value="6">Exercise</option>
+                                <option value="7">Meetings</option>
+                                <option value="8">Picnic</option>
+                                <option value="9">Walking</option>
+                                <option value="10">Children's games</option>
+                                <option value="11">Peaceful rest, sitting</option>
+                                <option value="12">Shopping</option>
+                                <option value="13">Gardening</option>
+                                <option disabled value="" class="inner-group">Passive Activities</option>
+                                <option value="14">Recreation in nature</option>
+                                <option value="15">Admiring flower beds</option>
+                                <option value="16">Rest in the green</option>
+                                <option value="17">Admiring the panoramas</option>
+                                <option value="18">Rest by the water</option>
+                                <option disabled value="" class="inner-group">Events</option>
+                                <option value="19">Renginiai, įvykiai'</option>
+                                <option value="20">Folkloro renginiai</option>
+                              </select>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="Information">Indicate the source of the information</label>
-                              <textarea class="form-control" id="Information" rows="2" placeholder="My own info, a magazine, form an archive, institution...."></textarea>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-7 col-12 p-0 pr-1 form-group">
-                                <label for="epoch">Epoch</label>
-                                <select class="custom-select" required>
-                                  <option selected disabled value="">Year or time period</option>
-                                  <option value="1">before 1918</option>
-                                  <option value="2">1918-1940</option>
-                                  <option value="3">1940-1990</option>
-                                  <option value="4">after 1990</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  Please complete this field.
-                                </div>
-                              </div>
-                              <div class="col-md-5 col-12 p-0 form-group">
-                                <label for="location-type">Type of Location</label>
-                                <select class="custom-select" required>
-                                  <option selected disabled value="">Type of place</option>
-                                  <option value="1">Building</option>
-                                  <option value="2">Yard</option>
-                                  <option value="3">Street</option>
-                                  <option value="4">Quarter</option>
-                                  <option value="5">Coast</option>
-                                  <option value="6">Park</option>
-                                  <option value="7">Cemetery</option>
-                                  <option value="8">Representative Space</option>
-                                  <option value="9">Sports Ground</option>
-                                  <option value="10">Playground</option>
-                                  <option value="11">Field</option>
-                                  <option value="12">Desert</option>
-                                  <option value="13">Other</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  Please complete this field.
-                                </div>
+                              <label for="ObjectOther" class="labelObject">Other</label>
+                              <input type="text" class="form-control" id="ObjectOther" placeholder="Write an activity that is not listed above" required>
+                              <div class="invalid-feedback">
+                                Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
@@ -245,10 +243,6 @@
                               <input type="text" class="form-control" id="adress" placeholder="Street and number...">
                             </div>
 
-                            <div class="form-group">
-                              <label for="aditionalinfo">External link</label>
-                              <input type="text" class="form-control" id="aditionalinfo" placeholder="Links related to the memory e.g. video, audio...">
-                            </div>
                             <div id="jquery-script-menu">
                                 <label for="keywords">Keywords</label>
                                 <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
@@ -494,6 +488,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
     <!-- Modal How to Create -->
     <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
