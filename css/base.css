@@ -288,6 +288,9 @@ header{
   position: relative;
   z-index: -1;
 }
+.banner {
+  width: 100%;
+}
 .banner .photoby{
   position: absolute;
   z-index: 5000;
@@ -483,7 +486,7 @@ footer{
   width: 100vw;
   }
   .carousel-supra-banner {
-    width: 130%;
+    width: 100vw;
   }
   .active-citizens-logo{
     position: relative;
