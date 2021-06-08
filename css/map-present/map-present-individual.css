@@ -173,7 +173,8 @@
 }
 .scrollable{
     position: relative;
-    max-height: 33vw;
+    min-height: 20vw;
+    max-height: 35vw;
     overflow-y: scroll;
 }
 .scrollable::-webkit-scrollbar {
