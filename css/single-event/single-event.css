@@ -55,9 +55,10 @@ p a{
 }
 .facigroup{
     margin-bottom: 1em;
+    font-size: 1vw;
 }
 .facimg{
-    max-width: 3vw;
+    max-width: 5vw;
     margin: 0 0.5em;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
@@ -79,11 +80,12 @@ p a{
     font-weight: 600;
 }
 .links-card-footer{
-    display: flex;
+    display: block;
     align-items: center;
+    text-align: end;
 }
 .links-card-footer>a>.fab{
-    margin: 0 0.5em 0 0;
+    margin: 0.5vw;
     font-size: 2em;
 }
 .event-date-body{
@@ -295,10 +297,22 @@ p a{
         font-size: 0.8em;
     }
     .event-card-footer{
-        height: 10vh;
+        height: auto;
+    }
+    .card-X-text{
+        font-size: 2vh;
+    }
+    .facigroup{
+        margin-bottom: 1em;
+        font-size: 2vh;
     }
     .facimg{
-        max-width: 10vw;
+        max-width: 10vh;
+    }
+    .links-card-footer>a>.fab{
+        margin: 0.5vh;
+        font-size: 2em;
+        text-align: end;
     }
     /* Cards */
     .org{
