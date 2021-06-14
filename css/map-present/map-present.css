@@ -317,15 +317,10 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 .select2-selection__choice>button:hover{
   background-color: #93c2b4 !important;
 }
-
-
-
 .mapa{
   padding: 0;
   margin: 1.75vw auto;
 }
-
-
 label{
   margin-bottom: 0;
 }
@@ -342,9 +337,6 @@ input:focus, textarea:focus, select:focus{
 }
 .custom-control>label{
   font-size: 1em;
-}
-.heritage{
-  margin-bottom: 0.5em;
 }
 .form-control, .custom-select{
   height: calc(1.5em + 0.5rem + 2px);
@@ -706,8 +698,8 @@ input[type=file]::-webkit-file-upload-button{
     margin-right: 1em;
   }
   input::placeholder, textarea::placeholder, option, option::placeholder{
-    font-style: italic;
-    font-size: small;
+    font-style: italic !important;
+    font-size: small !important;
   }
   .form-check>label{
     font-size: 1vw;

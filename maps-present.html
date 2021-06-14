@@ -172,7 +172,7 @@
                             </div>
                             <div class="form-group">
                               <label for="InformationPresent">Season and time of the day</label>
-                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Time of the day at which you observed or performed activity" maxlength="4000" required></textarea>
+                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Time of the day at which you observed or performed activity" required></textarea>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
@@ -184,7 +184,7 @@
                                 Please complete this field.
                               </div>
                             </div>
-                            <div class="col-12 p-0 form-group">
+                            <div class="form-group">
                               <label for="activity-selection">Selection of the activity</label>
                               <select class="custom-select" required>
                                 <option selected disabled value="">Choose one type of activity</option>
@@ -218,11 +218,8 @@
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="ObjectOther" class="labelObject">Other</label>
-                              <input type="text" class="form-control" id="ObjectOther" placeholder="Write an activity that is not listed above" required>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
+                              <label for="ObjectOther">Other</label>
+                              <textarea class="form-control" id="ObjectOther" rows="1" placeholder="Write an activity that is not listed above"></textarea>
                             </div>
                             <div class="form-group">
                               <label for="adress" class="adress">Address</label>
@@ -711,7 +708,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- JS -->
-  <script src="./js/maps-past.js"></script>
+  <script src="./js/maps-present.js"></script>
   <!-- Select2 -->
   <script src="vendor/select2/js/select2.min.js"></script>
 </body>
