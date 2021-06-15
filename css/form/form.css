@@ -118,6 +118,9 @@ label{
 
 
 @media (max-width: 768px){
+  .principal, .banner-img{
+    height: 50vh;
+  }
   .form{
     padding: 0;
   }
