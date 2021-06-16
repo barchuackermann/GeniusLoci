@@ -100,7 +100,7 @@
   outline: transparent;
 }
 .how-content{
-  background-color: #b18d7f;
+  background-color: #cca59d;
   justify-content: center;
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -304,7 +304,7 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
   outline: transparent !important;
 }
 .select2-selection__choice{
-  background-color: #93c2b4 !important;
+  background-color: #617e95 !important;
   border: transparent !important;
 }
 .select2-selection__choice>span{
