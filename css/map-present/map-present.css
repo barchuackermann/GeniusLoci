@@ -5,7 +5,7 @@
 .map{
   height: 45vw;
   min-height: 50vh;
-  max-height: 45vw;
+  max-height: 94.5vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,45 +18,46 @@
 }
 .sidebar{
   background-color: #b18d7f;
+  max-height: 94.5vh;
 }
 .active-citizens-logo-maps{
   position: relative;
   z-index: 10;
-  width: 10vw;
+  width: 20vh;
   height: auto;
   margin: 3.5vw 0 0 2vw;
 }
 .sidebar>h2{
   color: white;
-  margin: 1.5vw 0 0 2vw;
+  margin: 1.25vw 0 0 2vw;
   font-weight: 800;
   font-size: 2vw;
 }
 .hide>h4{
   color: white;
   margin: 1vw 2vw 0 2vw;
-  font-size: 0.9vw;
+  font-size: 1em;
   font-weight: bold;
   line-height: 135%;
 }
 .hide>h6>span{
   color: white;
   margin: 1vw 0 0 0;
-  font-size: 0.9vw;
+  font-size: 0.9em;
   font-weight: 500;
   line-height: 150%;
   font-style: italic;
 }
 .hide>h6{
   color: white;
-  margin: 1vw 2vw 0 2vw;
+  margin: 0.5vw 2vw 0 2vw;
   font-size: 0.9vw;
   font-weight: lighter;
   line-height: 150%;
 }
 .btn-how{
-  font-size: 1vw;
-  margin: 2.5vw auto 0 auto;
+  font-size: 0.9em;
+  margin: 1vw auto 0 auto;
   padding: 0.5vw 2vw;
   background-color: #5e4242;
   width: auto;
@@ -320,6 +321,7 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 .mapa{
   padding: 0;
   margin: 1.75vw auto;
+  max-height: 94.5vh;
 }
 label{
   margin-bottom: 0;

@@ -1,11 +1,12 @@
 /* Header Map */
 .principal{
   margin-top: 2.5em;
+  max-height: 94.5vh;
 }
 .map{
   height: 45vw;
   min-height: 50vh;
-  max-height: 45vw;
+  max-height: 94.5vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,6 +19,7 @@
 }
 .sidebar{
   background-color: #445154;
+  max-height: 94.5vh;
 }
 .active-citizens-logo-maps{
   position: relative;
@@ -28,23 +30,23 @@
 }
 .sidebar>h2{
   color: white;
-  margin: 1.5vw 0 0 2vw;
+  margin: 1.25vw 0 0 2vw;
   font-weight: 800;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .hide>h4{
   color: white;
   margin: 1vw 2vw 0 2vw;
-  font-size: 0.9vw;
+  font-size: 0.9em;
   font-weight: bold;
-  line-height: 200%;
+  line-height: 1.25rem;
 }
 .hide>p{
   color: white;
-  margin: 1vw 2vw 0 2vw;
-  font-size: 0.9vw;
+  margin: 2vh 2vw 0 2vw;
+  font-size: 0.9em;
   font-weight: lighter;
-  line-height: 150%;
+  line-height: 1.25rem;
   font-style: italic;
 }
 .hide>h6{
@@ -55,8 +57,8 @@
   line-height: 150%;
 }
 .btn-how{
-  font-size: 1vw;
-  margin: 2.5vw auto 0 auto;
+  font-size: 1em;
+  margin: 1vw auto 0 auto;
   padding: 0.5vw 2vw;
   background-color: #AF529E;
   width: auto;
