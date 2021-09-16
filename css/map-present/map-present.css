@@ -232,25 +232,7 @@
 
 /* SIDEBAR-SCROLLABLE */
 .sidebar-scrollable{
-  position: relative;
-  max-height: 20vw;
-  overflow-y: scroll;
-}
-.scrollsidebar-scrollableable::-webkit-scrollbar {
-  width: 12px;
-}
-.sidebar-scrollable::-webkit-scrollbar-track {
-  margin: 1em;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.sidebar-scrollable::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
+  max-height: 25vw;
 }
 ​/* FIN SIDEBAR-SCROLLABLE */
 
@@ -619,7 +601,7 @@ input[type=file]::-webkit-file-upload-button{
     width: 100%;
   }
   .sidebar{
-    background-color: #445154;
+    background-color: #b18d7f;
     min-height: 30vh;
     max-height: 40vh;
   }
