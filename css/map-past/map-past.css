@@ -1,10 +1,10 @@
 /* Header Map */
 .principal{
   margin-top: 2.5em;
-  max-height: 94.5vh;
+  max-height: 100vh;
 }
 .map{
-  height: 45vw;
+  height: 100vh;
   min-height: 50vh;
   max-height: 94.5vh;
   background: no-repeat center center;
@@ -216,7 +216,7 @@
   -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
 }
 .sidebar-scrollable{
-  max-height: 25vw;
+  max-height: 45vh;
 }
 ​
 .form-group{

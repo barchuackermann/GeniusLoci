@@ -1,9 +1,10 @@
 /* Header Map */
 .principal{
   margin-top: 2.5em;
+  max-height: 100vh;
 }
 .map{
-  height: 45vw;
+  height: 100vh;
   min-height: 50vh;
   max-height: 94.5vh;
   background: no-repeat center center;
@@ -232,7 +233,7 @@
 
 /* SIDEBAR-SCROLLABLE */
 .sidebar-scrollable{
-  max-height: 25vw;
+  max-height: 45vh;
 }
 ​/* FIN SIDEBAR-SCROLLABLE */
 
@@ -620,7 +621,7 @@ input[type=file]::-webkit-file-upload-button{
   }
   .btn-how{
     font-size: 3.5vw;
-    margin: 2vh auto;
+    margin: 3vh auto;
     padding: 0.8vh 3vh;
     background-color: #5e4242;
     width: auto;
