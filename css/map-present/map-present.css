@@ -235,6 +235,9 @@
 .sidebar-scrollable{
   max-height: 45vh;
 }
+.sidebar-scrollable::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+}
 ​/* FIN SIDEBAR-SCROLLABLE */
 
 .form-group{
