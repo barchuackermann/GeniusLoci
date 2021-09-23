@@ -657,7 +657,7 @@ input[type=file]::-webkit-file-upload-button{
   }
   /* MODAL-FORM-MAP */
   .modal-content-map{
-    background-color: #445154;
+    background-color: #cca59d;
     color: white;
     min-height: 95vh;
   }
@@ -665,7 +665,7 @@ input[type=file]::-webkit-file-upload-button{
     margin: 1em 0;
   }
   .general>.btn{
-    background-color: #93c2b4;
+    background-color: #7083c0;
     color: white;
     font-weight: 600;
     border-radius: 0.8em;
@@ -678,7 +678,7 @@ input[type=file]::-webkit-file-upload-button{
     text-align: left;
   }
   .general>.btn:focus{
-    background-color: #af529e;
+    background-color: #5e4242;
   }
   #ADDLOCATION{
     margin-top: 2em;
@@ -741,11 +741,11 @@ input[type=file]::-webkit-file-upload-button{
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
-    width: 30%;
+    width: 50%;
     margin:auto;
     text-align: center;
     padding: 0 0.5em;
-    font-size: 3vw;
+    font-size: 2.5vh;
   }
 
 
@@ -851,7 +851,7 @@ input[type=file]::-webkit-file-upload-button{
     border: none;
     padding: 0.5em;
     color: white;
-    background-color: #5e4242;
+    background-color: #24295e;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
@@ -869,12 +869,12 @@ input[type=file]::-webkit-file-upload-button{
     margin: 0;
   }
   .linkterms{
-    font-size: 3vw;
+    font-size: 2vh !important;
     margin: 0;
     color: #3499cd !important;
   }
   #termsandconditions{
-    font-size: 3vw !important;
+    font-size: 2vh !important;
   }
   .form-check-data>label>p{
     padding: 0;
@@ -884,7 +884,7 @@ input[type=file]::-webkit-file-upload-button{
     color: white;
   }
   .btn-form{
-    background-color: #af529e;
+    background-color: #332f8c;
     color: white;
     font-weight: 600;
     border-radius: 0.8em;
@@ -896,7 +896,7 @@ input[type=file]::-webkit-file-upload-button{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vh;
   }
   .finalSubmit{
     width: 60%;
