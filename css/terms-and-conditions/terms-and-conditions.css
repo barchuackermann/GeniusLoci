@@ -14,3 +14,14 @@
     font-weight: 700;
     font-size: 1.5vw;
 }
+@media (max-width: 768px){
+    .terms{
+        font-size: 1em;
+    }
+    .terms>h2{
+        font-size: 1.25em;
+    }
+    .terms>h4{
+        font-size: 1em;
+    }
+}
