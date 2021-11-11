@@ -178,7 +178,7 @@ header{
 .carousel-text{
   position: absolute;
   width: 40vw;
-  height: 80%;
+  height: 60%;
   margin-left: 0.75em;
 }
 .banner-text{
@@ -207,7 +207,7 @@ header{
   font-weight: 500;
   text-align: left;
   line-height: 2em;
-  margin-top: 5vw;
+  margin-top: 1vw;
   margin-right: 2vw;
   width: 25vw;
 }
@@ -500,13 +500,16 @@ footer{
     top: 25%;
     left: -5%;
     width: 80vw;
-    height: 100vh;
+    height: 50vh;
   }
   .carousel-text>h2{  
     color: #435053;
     font-weight: 900;
     font-size: 9vw;
-  }  
+  }
+  .carousel-text-title{
+    color: white !important;
+  }
   .carousel-text .--banner{
     width: 70vw;
     margin-left: 0.5em;
