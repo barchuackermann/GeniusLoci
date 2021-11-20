@@ -162,6 +162,17 @@ header{
   vertical-align: center;
   width: 100%;
 }
+.supra-banner2{
+  background: no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  vertical-align: bottom !important;
+  text-align: center;
+}
 .active-citizens-logo{
   position: relative;
   z-index: 10;
@@ -503,7 +514,7 @@ footer{
     height: 50vh;
   }
   .carousel-text>h2{  
-    color: #435053;
+    color: white;
     font-weight: 900;
     font-size: 9vw;
   }
