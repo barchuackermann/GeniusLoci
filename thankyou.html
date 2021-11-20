@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand lexend active" href="index.html">
+      <a class="navbar-brand lexend" href="index.html">
         <img src="./css/Logo Icon.svg" alt="logo icon" class="logo">
         <span class="title2">Genius Loci</span>
       </a>
@@ -37,8 +37,15 @@
       </button>
       <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarResponsive">
         <ul class="navbar-nav bg-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">MAPS</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MAPS</a>
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="./maps-past.html">Past</a>
+              <a class="dropdown-item" href="./maps-present.html">Present</a>
+              <a class="dropdown-item" href="./maps-future.html">Future</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./maps-nature.html">Nature</a>
+            </div>
           </li>
           <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item">
@@ -46,7 +53,7 @@
           </li>
           <li class="separador d-none d-sm-none d-md-block">|</li>
           <li class="nav-item dropdown">
-            <a class="nav-link active" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENIUS LOCI</a>
+            <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENIUS LOCI</a>
             <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
               <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
               <a class="dropdown-item" href="./activities.html">Activities</a>
