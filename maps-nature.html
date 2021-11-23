@@ -25,7 +25,7 @@
 
   <!-- Select2 -->
   <link href="vendor/select2/css/select2.min.css" rel="stylesheet"/>
-  <link href="css/map-present/map-present.css" rel="stylesheet">
+  <link href="css/maps-nature/maps-nature.css" rel="stylesheet">
 </head>
 
 <body>
@@ -143,12 +143,12 @@
 
                   <div class="general" id="ADDLOCATION">
                     <button class="btn text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-                      #1  Share about an important nature place or object </button>
+                      #1  write about a natural habitat or species </button>
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
                             <div class="col-12 p-0 form-group">
                               <label for="nat-title">Title</label>
-                              <textarea class="form-control" id="nat-title" rows="1" placeholder="Please enter the title" required></textarea>
+                              <textarea class="form-control" id="nat-title" rows="1" placeholder="Please enter a title or name" required></textarea>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="form-group">
                               <label for="nat-links">Links</label>
-                              <textarea class="form-control" id="nat-links" rows="1" placeholder="Cómo deberían verse los links?"></textarea>
+                              <textarea class="form-control" id="nat-links" rows="1" placeholder="Use coma for more than one link"></textarea>
                             </div>
 
                             <div id="jquery-script-menu">
@@ -172,7 +172,7 @@
                                     <option value="2">bar</option>
                                     <option value="3">baz</option>
                                 </select>
-                                <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div>
+                                <!-- <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div> -->
                                 <small id="keywords_help" class="form-text text-muted">Write and press enter or comma</small>
                             </div>
                           </div>
@@ -308,7 +308,7 @@
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMap">
                       <div class="card-body scrollable">
                         <div class="row">
-                          <div class="col-4">
+                          <div class="col-6">
                             <label for="" class="gender">Gender</label>
                             <div class="form-check form-check-data">
                               <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1" required>
@@ -329,7 +329,24 @@
                               </label>
                             </div>
                           </div>
-                          <div class="col-8">
+                          <div class="col-6">
+                            <div class="form-group row age">
+                              <label for="age">Age range</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Select...</option>
+                                <option value="1">till 13 years</option>
+                                <option value="2">14-17</option>
+                                <option value="3">18-24</option>
+                                <option value="4">25-35</option>
+                                <option value="5">35-44</option>
+                                <option value="6">45-54</option>
+                                <option value="7">55-70</option>
+                                <option value="8">more than 71</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                            </div>
                             <!-- <label for="" class="connect" required>Connection to Šančiai:
                             </label>
                             <div class="form-check form-check-data">
@@ -352,24 +369,8 @@
                             </div> -->
                           </div>
                         </div>
-                        <div class="form-group row age mt-1">
-                            <label for="age">Age range</label>
-                            <select class="custom-select" required>
-                              <option selected disabled value="">Select...</option>
-                              <option value="1">till 13 years</option>
-                              <option value="2">14-17</option>
-                              <option value="3">18-24</option>
-                              <option value="4">25-35</option>
-                              <option value="5">35-44</option>
-                              <option value="6">45-54</option>
-                              <option value="7">55-70</option>
-                              <option value="8">more than 71</option>
-                            </select>
-                            <div class="invalid-feedback">
-                              Please complete this field.
-                            </div>
-                        </div>
-                        <div class="row form-group email">
+                        
+                        <div class="row form-group email mt-2">
                           <label for="email">E-mail</label>
                           <input type="email" class="form-control" id="email" placeholder="email@example.com">
                         </div>
@@ -483,7 +484,7 @@
           </div>
           <div class="modal-footer">
             <p>Bažnyčia</p>
-            <a href="./map-present-individual.html" class="btn btn-how btn-how-onmodal"><button type="button" class="btn">Read about</button></a>
+            <a href="./maps-nature-individual.html" class="btn btn-how btn-how-onmodal"><button type="button" class="btn">Read about</button></a>
           </div>
         </div>
       </div>

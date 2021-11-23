@@ -18,7 +18,7 @@
     width: 100%;
   }
   .sidebar{
-    background-color: #b18d7f;
+    background-color: #c2c474;
     max-height: 94.5vh;
   }
   .active-citizens-logo-maps{
@@ -60,7 +60,7 @@
     font-size: 0.9em;
     margin: 1vw auto 0 auto;
     padding: 0.5vw 2vw;
-    background-color: #5e4242;
+    background-color: #615859;
     width: auto;
     border-radius: 1em;
     color: white;
@@ -92,7 +92,7 @@
     color: black;
   }
   .btn-how-onmodal{
-    background-color: #332f8c;
+    background-color: #79a071;
   }
   .btn-how-onmodal>button{
     color: white;
@@ -102,7 +102,7 @@
     outline: transparent;
   }
   .how-content{
-    background-color: #cca59d;
+    background-color: #c2c474;
     justify-content: center;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
@@ -117,7 +117,7 @@
     justify-content: center;
     align-items: center;
     margin: 1.5vw;
-    color: white;
+    color: #445053;
   }
   #emailHelp{
     color: white !important;
@@ -161,11 +161,11 @@
   }
   .btn-header-question{
     margin: 0;
-    background-color: #617d94;
+    background-color: #79a071;
   }
   .btn-header-point{
     margin: 0;
-    background-color: #332f8c;
+    background-color: #fd7335;
   }
   .btn>p{
     font-size: 0.75em;
@@ -175,7 +175,7 @@
   }
   /* MODAL-FORM-MAP */
   .modal-content-map{
-    background-color: #cca59d;
+    background-color: #79a071;
     color: white;
     min-height: 20vw;
   }
@@ -183,7 +183,7 @@
     margin: 1em 2em;
   }
   .general>.btn{
-    background-color: #7083c0;
+    background-color: #445053;
     color: white;
     font-weight: 600;
     border-radius: 0.8em;
@@ -202,7 +202,7 @@
     margin: auto 10%;
   }
   .general>.btn:focus{
-    background-color: #5e4242;
+    background-color: #e4cd6d;
   }
   #ADDLOCATION{
     margin-top: 2em;
@@ -276,7 +276,7 @@
     height: 20vh;
   }
   .btn-back{
-    background-color: #617e95;
+    background-color: #92c1b2;
     color: white;
     font-weight: 400;
     border-radius: 0.5em;
@@ -401,7 +401,7 @@
     border: none;
     padding: 0.5em;
     color: white;
-    background-color: #24295e;
+    background-color: #e4cd6d;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
@@ -427,7 +427,7 @@
     color: white;
   }
   .btn-form{
-    background-color: #332f8c;
+    background-color: #fd7335;
     color: white;
     font-weight: 600;
     border-radius: 0.8em;
@@ -508,7 +508,7 @@
   .modal-footer>p{
     font-size: 1.2vw;
     font-weight: 700;
-    color: #cca59d;
+    color: #79a071;
   }
   .modal-footer>.btn-how{
     margin: 0;
@@ -605,7 +605,7 @@
       width: 100%;
     }
     .sidebar{
-      background-color: #b18d7f;
+      background-color: #c2c474;
       min-height: 30vh;
       max-height: 40vh;
     }
@@ -733,7 +733,7 @@
     }
   
     .btn-back{
-      background-color: #617e95;
+      background-color: #92c1b2;
       color: white;
       font-weight: 400;
       border-radius: 0.5em;
@@ -851,7 +851,7 @@
       border: none;
       padding: 0.5em;
       color: white;
-      background-color: #24295e;
+      background-color: #79a071;
       -webkit-border-radius: 0.5em;
       -moz-border-radius: 0.5em;
       -ms-border-radius: 0.5em;
@@ -928,7 +928,7 @@
       font-size: 4vw;
     }
     .btn-how-onmodal{
-      background-color: #24295e;
+      background-color: #79a071;
       font-size: 5vw;
       padding: 0 1vw 0 1vw;
     }
