@@ -44,6 +44,8 @@
     color: #fff;
     text-align: center;
     margin: 0;
+    line-height: 1.25em;
+    font-size: 0.8em;
 }
 .carousel-caption>p {
     font-weight: 600;
@@ -51,6 +53,10 @@
 }
 .carousel-caption>p>span {
     font-weight:normal;
+}
+.carousel-caption>h5{
+    font-size: 1em;
+    margin: 0;
 }
 .right-side{
     background-color: #b18d7f;

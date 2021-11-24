@@ -18,7 +18,7 @@
     width: 100%;
   }
   .sidebar{
-    background-color: #c2c474;
+    background-color: #79a071;
     max-height: 94.5vh;
   }
   .active-citizens-logo-maps{
@@ -75,7 +75,7 @@
     margin-top: 1.5vw;
     width: 100%;
     padding: 0.5vw 3vw;
-    background-color: #332f8c;
+    background-color: #c2c474;
     color: white;
     font-weight: 600;
     border-radius: 0.8em;
@@ -102,7 +102,7 @@
     outline: transparent;
   }
   .how-content{
-    background-color: #c2c474;
+    background-color: #79a071;
     justify-content: center;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
@@ -161,7 +161,7 @@
   }
   .btn-header-question{
     margin: 0;
-    background-color: #79a071;
+    background-color: #c2c474;
   }
   .btn-header-point{
     margin: 0;
@@ -456,7 +456,8 @@
     -o-border-radius: 15px;
   }
   .modal-body-picture{
-    margin: 0;
+    width: 100%;
+    margin: auto;
   }
   .total{
     height: 80vh;
@@ -466,19 +467,26 @@
   .carousel-indicators li{
     background-color: #fff;
   }
+  .img-modal{
+    width: 100%;
+    margin: auto !important;
+    align-content: center !important;
+  }
   .carousel-inner{
-    margin: 0.25vw;
+    margin: auto;
     height: 80vh;
     border-radius: 0.5vw;
     -webkit-border-radius: 0.5vw;
     -moz-border-radius: 0.5vw;
     -ms-border-radius: 0.5vw;
     -o-border-radius: 0.5vw;
+    align-content: center !important;
   }
   .mainimg{
     height: 80vh;
     object-fit: scale-down !important;
-    object-position: center center;
+    object-position: center center !important;
+    margin: auto !important;
   }
   .no-img{
     width: 80%;    
@@ -605,7 +613,7 @@
       width: 100%;
     }
     .sidebar{
-      background-color: #c2c474;
+      background-color: #79a071;
       min-height: 30vh;
       max-height: 40vh;
     }
@@ -624,9 +632,8 @@
     }
     .btn-how{
       font-size: 3.5vw;
-      margin: 3vh auto;
+      margin: 2vh auto;
       padding: 0.8vh 3vh;
-      background-color: #5e4242;
       width: auto;
       border-radius: 0.75em;
       color: white;
@@ -652,12 +659,11 @@
       margin: 0.5vh auto;
     }
     .mapa{
-      min-height: 55vh;
+      min-height: 65vh;
       margin: 0;
     }
     /* MODAL-FORM-MAP */
     .modal-content-map{
-      background-color: #cca59d;
       color: white;
       min-height: 95vh;
     }
@@ -665,7 +671,6 @@
       margin: 1em 0;
     }
     .general>.btn{
-      background-color: #7083c0;
       color: white;
       font-weight: 600;
       border-radius: 0.8em;
@@ -676,9 +681,6 @@
       display: block;
       width: 100%;
       text-align: left;
-    }
-    .general>.btn:focus{
-      background-color: #5e4242;
     }
     #ADDLOCATION{
       margin-top: 2em;
@@ -733,7 +735,6 @@
     }
   
     .btn-back{
-      background-color: #92c1b2;
       color: white;
       font-weight: 400;
       border-radius: 0.5em;
@@ -851,7 +852,7 @@
       border: none;
       padding: 0.5em;
       color: white;
-      background-color: #79a071;
+      background-color: #e4cd6d;
       -webkit-border-radius: 0.5em;
       -moz-border-radius: 0.5em;
       -ms-border-radius: 0.5em;
@@ -884,7 +885,6 @@
       color: white;
     }
     .btn-form{
-      background-color: #332f8c;
       color: white;
       font-weight: 600;
       border-radius: 0.8em;
@@ -892,14 +892,14 @@
       -moz-border-radius: 0.8em;
       -ms-border-radius: 0.8em;
       -o-border-radius: 0.8em;
-      width: 100%;
+      width: 6  0%;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       font-size: 2.5vh;
     }
     .finalSubmit{
-      width: 60%;
+      width: 100%;
       margin: auto;
     }
     .valid-feedback .invalid-feedback{
