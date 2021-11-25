@@ -44,9 +44,8 @@
     color: #fff;
     text-align: center;
     margin: 0;
-
-        line-height: 1.25em;
-        font-size: 0.8em;
+    line-height: 1.25em;
+    font-size: 0.8em;
 }
 .carousel-caption>p {
     font-weight: 600;

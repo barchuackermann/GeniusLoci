@@ -473,7 +473,7 @@
     align-content: center !important;
   }
   .carousel-inner{
-    margin: auto;
+    margin: auto !important;
     height: 80vh;
     border-radius: 0.5vw;
     -webkit-border-radius: 0.5vw;
