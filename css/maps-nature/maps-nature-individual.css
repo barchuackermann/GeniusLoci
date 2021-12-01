@@ -134,7 +134,7 @@
 }
 
 .event-back{
-    background-color: #fd7335;
+    background-color: #E57E38;
     color: white !important;
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@
 }
 
 .extlink>a{
-    color: #007bff;
+    color: #445053;
 }
 .badges{
     height: 1vw;
