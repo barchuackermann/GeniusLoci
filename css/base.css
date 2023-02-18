@@ -57,10 +57,10 @@ nav, footer{
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.075) !important;
 }
 .logo{
-  display: inline-block;
-  width: 1.5em;
+  display: inline-flex;
+  width: 1.25em;
   height: auto;
-  margin-bottom: 0.4em;
+  margin: auto;
 }
 .title2{
   font-size: 1.2em;
@@ -134,7 +134,7 @@ span.navbar-toggler-icon{
 }
 @media (min-width: 2001px) {
   .logo{
-    width: 6%;
+    width: 1.5em;
     margin-bottom: 0;
   }
   .title2{
@@ -146,6 +146,9 @@ span.navbar-toggler-icon{
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
+  .logo{
+    width: 1em;
+  }
   .nav-item:after{
     line-height: 1.25em;
     font-size: 1em;
