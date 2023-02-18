@@ -77,6 +77,7 @@ nav, footer{
 .nav-item:after{
   content: "\7c";
   font-size: 1vw;
+  margin: auto;
 }
 .nav-item:last-child:after, .genius:after{
   content: none;
@@ -90,6 +91,7 @@ nav, footer{
   font-size: 1vw;
   font-weight: 500;
   padding: 0;
+  align-items: center;
 }
 .nav-link.active{
   color: #D7DF23;
@@ -143,6 +145,7 @@ span.navbar-toggler-icon{
   .nav-item:after{
     line-height: 1.5em;
     font-size: 1.5em;
+    margin: auto;
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
