@@ -194,6 +194,9 @@ span.navbar-toggler-icon{
     padding: 0.5em;
     font-size: 0.6em;
   }
+  .dropdown-item{
+    font-size: .8em;
+  }
 }
 @media (max-width: 991.98px){
   .navbar .container-fluid{
