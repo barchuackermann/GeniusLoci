@@ -128,7 +128,7 @@ nav, footer{
   height: 2em;
   background-color: #DADADA;
   font-size: 0.75em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -199,6 +199,28 @@ span.navbar-toggler-icon{
   }
 }
 @media (max-width: 991.98px){
+
+  #navbarResponsive.show{
+    overflow-y: scroll;
+    max-height: 80vh;
+    padding-right: .5em;
+  }
+  .show::-webkit-scrollbar {
+    display: none;
+  }
+ /*  .show::-webkit-scrollbar-track {
+      margin: 1em 0 0 0;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+  }
+  .show::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  } */
   .navbar .container-fluid{
     padding-right: 1em;
   }
