@@ -1,14 +1,15 @@
 /* HEADER */
-.btn-maps{
-    min-width: 20vw;
-    min-height: 30vh;
-    position: absolute;
-    z-index: 50;
-    top: 60%;
-    left: 5%;
+.btn-maps>span{
+    color: white !important;
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+    font-size: .5em;
+    width: 70%;
+    overflow: visible;
+    white-space: wrap;
 }
 .lietuvos-logo{
-    margin: 3vw 0;
     width: 13vw;
 }
 .carousel-text{

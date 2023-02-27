@@ -41,6 +41,7 @@
         <span class="title2">Šančių bendruomenė</span>
       </a>
       <button
+        id="burger"
         class="navbar-toggler navbar-toggler-right bg-white"
         type="button"
         data-toggle="collapse"
@@ -52,7 +53,7 @@
         <span class="navbar-toggler-icon">
           <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="black"/>
-            </svg>
+          </svg>
         </span>
       </button>
       <div
@@ -68,7 +69,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              >Šančių vizija</a
+              >Šančiai Vision</a
             >
             <div
               class="dropdown-menu dropdown-menu-left"
@@ -87,7 +88,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              >BENDRUOMENĖS ŽEMĖLAPIAI</a
+              >MAPS</a
             >
             <div
               class="dropdown-menu dropdown-menu-left"
@@ -97,12 +98,12 @@
               <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
               <a class="dropdown-item" href="./maps-present.html">Present Map</a>
               <a class="dropdown-item" href="./maps-nature.html">Nature Map</a>
-              <a class="dropdown-item" href=#>Analysis of Maps
+              <a class="dropdown-item" href="./analysis-maps.html">Analysis of Maps
               </a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./communities.html">BENDRUOMENĖ</a>
+            <a class="nav-link" href="./communities.html">COMMUNITIES</a>
           </li>
           <li class="nav-item dropdown genius">
             <a
@@ -133,7 +134,7 @@
                 aria-label="Search"
                 method="GET"
                 action=""
-                placeholder="Paieška"
+                placeholder="Search"
                 class="form-inline bg-transparent input2"
               />
               <button class="btn lupa" type="button">
@@ -154,7 +155,7 @@
           </div>
         </ul>
         <button type="button" class="btn login">
-          <span>Prisijungti</span>
+          <span>Login</span>
           </button>
       </div>
     </div>
@@ -162,18 +163,20 @@
 
 <!-- Header / Carousel -->
 <header class="display-4">
-  <div class="principal">
     <div class="row m-0">
       <!-- Desktop --> 
-      <div class="carousel-supra d-none d-sm-none d-md-block" style="background-image: url(./css/communities/fondo-color-cC.png)">
+      <div class="carousel-supra d-none d-sm-none d-md-flex" style="background-image: url(./css/communities/fondo-color-cC.png)">
         <div class="carousel-text">
           <!-- <h2>GENIUS LOCI:</h2> -->
           <img src="./css/logos/SADM logo_herbas(1).png" alt="logo" class="lietuvos-logo">
           <h3>Šančių bendruomenės</h3>
           <h4>Project activities began on September 24, 2020 and will continue until September 24, 2023.</h4>
           <h4>We invite you to get acquainted with upcoming events. Please register for activities that are of interest to you.</h4>
+          <div class="btn-container">
+            <a class="btn-maps" href="" style="background-image: url(./css/communities/button-community.png);">
+            <span>Join this page</span></a>
+          </div>
         </div>
-        <a class="btn-maps" href="" style="background-image: url(./css/communities/Cbutton-EN.png);"></a>
       </div>
       <!-- Mobile -->
       <div class="carousel-supra d-block d-sm-block d-md-none" style="background-image: url(./css/communities/WAVE-MOBILE-C.png)"> 
@@ -212,7 +215,6 @@
         </div>
       </div>
     </div>
-  </div>    
 </header>
 
 <!-- Communities -->

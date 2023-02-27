@@ -1,12 +1,7 @@
 /* Header Map */
-.principal{
-  margin-top: 2.5em;
-  max-height: 100vh;
-}
 .map{
-  height: 100vh;
+  height: 95vh;
   min-height: 50vh;
-  max-height: 94.5vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,6 +11,7 @@
   z-index: 10;
   vertical-align: center;
   width: 100%;
+  padding-top: 1em;
 }
 .sidebar{
   background-color: #b18d7f;

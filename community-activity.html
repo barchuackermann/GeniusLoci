@@ -29,65 +29,136 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid">
+      <div class="container-fluid">
         <a class="navbar-brand lexend active" href="index.html">
-            <img src="./css/Logo Icon.svg" alt="logo icon" class="logo">
-            <span class="title2">Genius Loci</span>
+          <div class="logo">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 22.6" style="enable-background:new 0 0 30 22.6;" xml:space="preserve">
+              <path class="st0" d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
+                C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"/>
+            </svg>
+          </div>
+
+          <span class="title2">Šančių bendruomenė</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          id="burger"
+          class="navbar-toggler navbar-toggler-right bg-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="black"/>
+            </svg>
+          </span>
         </button>
-        <div class="collapse navbar-collapse d-lg-flex justify-content-around" id="navbarResponsive">
-            <ul class="navbar-nav bg-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MAPS</a>
-                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
-                  <a class="dropdown-item" href="./maps-past.html">Past</a>
-                  <a class="dropdown-item" href="./maps-present.html">Present</a>
-                  <a class="dropdown-item" href="./maps-future.html">Future</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="./maps-nature.html">Nature</a>
-                </div>
-              </li>
-            <li class="separador d-none d-sm-none d-md-block">|</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./communities.html">COMMUNITIES</a>
-            </li>
-            <li class="separador d-none d-sm-none d-md-block">|</li>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-around"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav bg-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENIUS LOCI</a>
-                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
+              <a
+                class="nav-link active"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Šančiai Vision</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item active" href="">Results of Workshops</a>
+                <a class="dropdown-item" href="">Your Proposals</a>
+                <a class="dropdown-item" href="">Vote</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >MAPS</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
                 <a class="dropdown-item" href="./about-maps.html">About Maps</a>
+                <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
+                <a class="dropdown-item" href="./maps-present.html">Present Map</a>
+                <a class="dropdown-item" href="./maps-nature.html">Nature Map</a>
+                <a class="dropdown-item" href="./analysis-maps.html">Analysis of Maps
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./communities.html">COMMUNITIES</a>
+            </li>
+            <li class="nav-item dropdown genius">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >GENIUS LOCI</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
                 <a class="dropdown-item" href="./activities.html">Activities</a>
-                <a class="dropdown-item" href="./calendar.html">Calendar</a>
+                <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
                 <a class="dropdown-item" href="./partners.html">Partners</a>
-                </div>
+              </div>
             </li>
-            <!-- <li class="separador d-none d-sm-none d-md-block">|</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./news.html">NEWS</a>
-            </li> -->
-            <li class="separador d-none d-sm-none d-md-block">|</li>
-            <li>
-                <form method ="get" action="#" class="input-group">
-                <input type="search" id="search" name="Search" aria-label="Search" method="GET" action="" placeholder="Search" class="form-inline bg-transparent input2">
-                    <button class="btn lupa" type="button">
-                    <i class="fas fa-search"></i>
-                    </button>
-                </form>          
+            <li class="input2-container">
+              <form method="get" action="#" class="input-group">
+                <input
+                  type="search"
+                  id="search"
+                  name="Search"
+                  aria-label="Search"
+                  method="GET"
+                  action=""
+                  placeholder="Search"
+                  class="form-inline bg-transparent input2"
+                />
+                <button class="btn lupa" type="button">
+                  <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z" fill="#454646"/>
+                    </svg>
+                </button>
+              </form>
             </li>
-            <li class="nav-item">
+            <div class="d-flex languaje-container">
+              <li class="nav-item">
                 <a class="nav-link languaje" href="#">LT</a>
-            </li>
-            <li class="separador d-none d-sm-none d-md-block">|</li>
-            <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link languaje active" href="#">EN</a>
-            </li>
-            </ul>
-            <button type="button" class="btn login">Log-In</button>
-        </div>      
+              </li>
+
+            </div>
+          </ul>
+          <button type="button" class="btn login">
+            <span>Login</span>
+            </button>
         </div>
+      </div>
     </nav>
 
 <!-- Main -->

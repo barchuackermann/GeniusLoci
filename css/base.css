@@ -331,24 +331,17 @@ span.navbar-toggler-icon{
 header{
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.175) !important;
 }
-.principal{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 .carousel-supra {
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
   background: no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: absolute;
   z-index: 10;
-  vertical-align: center;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 .short{
   height: 70vh !important;
@@ -366,16 +359,17 @@ header{
   z-index: 10;
   vertical-align: center;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel-supra-banner .carousel-text{
+  height: 60%;
 }
 .supra-banner2{
   background: no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: contain;
   position: absolute;
   z-index: 10;
-  vertical-align: bottom !important;
   text-align: center;
 }
 .active-citizens-logo{
@@ -383,7 +377,7 @@ header{
   z-index: 10;
   width:12vw;
   height: auto;
-  margin: 2em 0 0.25em 0.75em;
+  margin: 1.5em 0 0 1em;
 }
 .active-citizens-logo.--communities{
   margin: 1.5em 0 0 0.75em;
@@ -392,10 +386,21 @@ header{
   margin-top: 1vw;
 }
 .carousel-text{
-  position: absolute;
-  width: 40vw;
-  height: 60%;
-  margin-left: 0.75em;
+  width: 50%;
+  height: 80%;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.carousel-supra-banner .carousel-text h2{  
+  color: #435053;
+  font-weight: 900;
+  font-size: 1em;
+}
+.btn-container{
+  display: flex;
 }
 .banner-text{
   width: 40vw;
@@ -405,7 +410,7 @@ header{
 .carousel-text>h2{  
   color: #435053;
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 3em;
 }
 .--banner>h2{
   margin-top: 1em;
@@ -423,8 +428,6 @@ header{
   font-weight: 500;
   text-align: left;
   line-height: 2em;
-  margin-top: 1vw;
-  margin-right: 2vw;
   width: 25vw;
 }
 .btn-maps{
@@ -438,14 +441,6 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
-  position: relative;
-  top: 5%;
-  color: white !important;
-  font-style: italic;
-  vertical-align: center;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.75vw;
 }
 .btn-maps:hover{
   transform: scale(1.1);
@@ -458,6 +453,16 @@ header{
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+.btn-maps>span{
+  color: white !important;
+  font-style: italic;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
+  width: 70%;
+  overflow: visible;
+  white-space: wrap;
 }
 .btn-maps-pills:hover{
   transform: scale(1.1);
