@@ -181,7 +181,7 @@ span.navbar-toggler-icon{
 }
 @media (max-width: 2000px) and (min-width: 1441px){
   .bg-nav{
-    padding-right: 25em;
+    padding-right: 18em;
   }
   .logo{
     width: 1.25em;
@@ -196,6 +196,9 @@ span.navbar-toggler-icon{
   .navbar{
     padding-left: 0;
     padding-right: 0;
+  }
+  .navbar-collapse{
+    padding-right: 1em;
   }
   .logo{
     margin-left: 1em;
@@ -221,19 +224,6 @@ span.navbar-toggler-icon{
   .show::-webkit-scrollbar {
     display: none;
   }
- /*  .show::-webkit-scrollbar-track {
-      margin: 1em 0 0 0;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-  }
-  .show::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  } */
   .navbar .container-fluid{
     padding-right: 1em;
   }
@@ -454,8 +444,9 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 10vw;
-  min-height: 20vh;
+  min-width: 11vw;
+  min-height: 24vh;
+  margin-right: 3em;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -538,6 +529,9 @@ header{
   left: 50%;
   font-size: 1rem;
   color: rgba(255,255,255, 0.5);
+}
+.carousel-caption .photoby{
+  font-size: 1em;
 }
 .photoby-banner{
   position: absolute;
@@ -677,20 +671,27 @@ footer{
   background: #a5ac23;
   color: #000;
 }
-
-/* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
-
-@media (max-width: 768px){
+/* Header Responsive */
+@media (max-width: 1024px){
+  .btn-maps{
+    margin-right: 1em;
+  }
+  .carousel-text{
+    justify-content: start;
+    padding-top: 3em;
+  }
+}
+@media (max-width: 991.98px){
   /* Header Mobile */
   .carousel-supra {
   background: url("./home/WAVE-MOBILE.png") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100vw;
+  background-size: 100%;
   position: absolute;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   }
   .carousel-supra-banner {
     width: 100vw;
@@ -703,17 +704,17 @@ footer{
     margin: 1.5em 0 0 0.5em;
   }
   .carousel-text{
-    position: absolute;
-    z-index: 20;
-    top: 25%;
-    left: -5%;
-    width: 80vw;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10em 2em 2em 2em;
   }
   .carousel-text>h2{  
     color: white;
     font-weight: 900;
-    font-size: 9vw;
+    font-size: 5vw;
   }
   .carousel-text-title{
     color: white !important;
@@ -752,18 +753,22 @@ footer{
     font-size: 10vw;
     margin-top: 20vw;
   }
+  .btn-container{
+    padding-top: 0;
+    align-items: stretch;
+  }
+  .btn-container h4{
+    font-size: 1em;
+    padding: 2em 4em 0 1em;
+  }
   .btn-maps{
-    width: 99vw;
+    min-width: 5vw;
+    min-height: 100vh;
+    width: 60%;
     display: flex;
     justify-content: center;
     background: url("./home/MAP_EN.png") no-repeat center center;
     background-size: contain;
-    color: white;
-    font-style: italic;
-    vertical-align: center;
-    text-align: center;
-    font-weight: 900;
-    font-size: 1.8rem;
   }
   .btn-maps-pills{
     background-color: #AF529E;
