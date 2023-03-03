@@ -25,7 +25,7 @@
 
   <!-- Select2 -->
   <link href="vendor/select2/css/select2.min.css" rel="stylesheet"/>
-  <link href="css/map-past/map-past.css" rel="stylesheet">
+  <link href="css/your-proposals/your-proposals.css" rel="stylesheet">
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         </span>
       </button>
       <div
-        class="collapse navbar-collapse d-lg-flex justify-content-around"
+        class="collapse navbar-collapse d-lg-flex justify-content-end"
         id="navbarResponsive"
       >
         <ul class="navbar-nav bg-nav">
@@ -77,9 +77,9 @@
               class="dropdown-menu dropdown-menu-left"
               aria-labelledby="navbarDropdownPortfolio"
             >
-              <a class="dropdown-item active" href="">Results of Workshops</a>
-              <a class="dropdown-item" href="">Your Proposals</a>
-              <a class="dropdown-item" href="">Vote</a>
+              <a class="dropdown-item active" href="./index.html">Workshops Results</a>
+              <a class="dropdown-item" href="./your-proposals.html">Your Proposals</a>
+              <a class="dropdown-item" href="./vote.html">Vote</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -164,36 +164,35 @@
   </nav>
 
   <!-- Header Map -->
-  <header class="principal">
+  <header>
       <div class="row m-0 map">
         <!-- Desktop -->
         <div class="col-md-4 col-12 sidebar" id="init">
             <img src="./css/logos/Active-citizens-fund_White@4x.png" alt="Active-citizens-logo" class="active-citizens-logo-maps">
             <h2>Your Proposals</h2>
             <div class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable">
-              <!-- <p>“The future cannot simply be separated from the past.[…] We come to the future only through the past. Especially when that past is still felt in the present. Something needs to be done with it because the path to the future will remain simply blocked. After all, the goal is the future, not the past. […] It's transforming energy".</p>
               <h6>
-                Aleida Assman, researcher of memory culture.
-              </h6> -->
-              <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias reiciendis inventore consequuntur rem sed animi delectus mollitia aperiam commodi? Fuga numquam amet asperiores aliquid officiis commodi enim aperiam, corrupti ullam.</h4>
-              <h4>The goal of the Šančiai memory map is to collect the values ​​of personal and collective memory and share them with others. We seek to create the history of Šančiai based not only on official policy makers, but also on the memories, experiences, legends, family albums, photos, etc. of each of us. We hope that this map will become a fulcrum for creating a vision of the future of Šančiai and a means to get to know this area better.</h4>
+                City is made not only from open spaces and buildings – it is a local community first of all. People use public spaces together, adopt them to own needs and add social meaning and value. Henri Lefebvre in his pamphlet Right to the city (1968) asks: <span>"Which are the socially successful places and which will they be? How do we recognize them? Based on what criteria?" </span>. While answering to these questions Alexander Ståhle created sociotop mapping method in 2000 as an urban planning tools which allows to identify use and social values of public spaces objectively. Sociotop method till now is successfully and widely used in urban planning Sweden. 
+              </h6>
+              <h4>The aim of the "Present map“ of Šanciai is to collect information about the contemporary your activities in public spaces, their use and social values based on the Sociotop method. This map will become an important corner stone for the vision of Šančiai.</h4>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt impedit unde voluptas cum rerum minus dolor cupiditate quidem aliquam voluptatum maxime, consectetur neque quo delectus, a ratione, ab et.</h4>
             </div>
-            <div class="mt-4">
+            <div class="row btn-container">
               <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
-                How to become a creator of Šančiai history
+                How to become a Šančiai visionary?
               </button>
               <div class="botones">
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block">
                   <p>Having questions?</p>
                 </button>
                 <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block">
                   <p>Create the map</p>
                 </button>
-                <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
+                <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
                   <p>IR AL FORM</p>
-                </button> -->
+                </button>
               </div>
             </div>
         </div>
@@ -216,111 +215,88 @@
 
                   <div class="general" id="ADDLOCATION">
                     <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-                      1# POST YOUR MEMORY </button>
+                      1# SHARE YOUR EXPERIENCE </button>
                 
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
-                            <div class="form-group">
-                              <label for="Object" class="labelObject">Title</label>
-                              <input type="text" class="form-control" id="Object" placeholder="Object or Event title" required>
+                            <div class="col-12 p-0 form-group">
+                              <label for="location-type">Location Type</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Please choose location type</option>
+                                <option value="1">Building</option>
+                                <option value="2">Yard</option>
+                                <option value="3">Street</option>
+                                <option value="4">Quarter</option>
+                                <option value="5">Coast</option>
+                                <option value="6">Park</option>
+                                <option value="7">Cemetery</option>
+                                <option value="8">Representative Space</option>
+                                <option value="9">Sports Ground</option>
+                                <option value="10">Playground</option>
+                                <option value="11">Field</option>
+                                <option value="12">Desert</option>
+                                <option value="13">Other</option>
+                              </select>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="heritage" class="heritage">Choose a type of heritage:
-                              </label>
-                              <div class="row align-content-center">
-                                <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="phisical" name="heritage" class="custom-control-input" value="option1" required>
-                                  <label class="custom-control-label" for="phisical">Material object</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline col">
-                                  <input type="radio" id="abstract" name="heritage" class="custom-control-input" value="option2" check="false" required>
-                                  <label class="custom-control-label" for="abstract">Intangible object</label>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col p-0 pr-1 form-group">
-                                  <select class="custom-select" id="phisicalInput">
-                                    <option selected>Choose...</option>
-                                    <option value="1">Buildings</option>
-                                    <option value="2">Elements of small architecture</option>
-                                    <option value="3">Space, small territory</option>
-                                    <option value="4">Sight, panorama, landscape.</option>
-                                    <option value="5">Work of art</option>
-                                    <option value="6">Other</option>
-                                  </select>
-                                </div>
-                                <div class="col p-0 form-group">
-                                  <select class="custom-select" id="abstractInput">
-                                    <option selected>Choose...</option>
-                                    <option value="1">Event</option>
-                                    <option value="2">Narrative</option>
-                                    <option value="3">Activities, events</option>
-                                    <option value="4">Extinct object</option>
-                                    <option value="5">Other</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="Information">Describe your memory</label>
-                              <textarea class="form-control" id="Information" rows="3" placeholder="Data you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                              <label for="InformationPresent">Season and time of the day</label>
+                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Time of the day at which you observed or performed activity" required></textarea>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="Information">Indicate the source of the information</label>
-                              <textarea class="form-control" id="Information" rows="2" placeholder="My own info, a magazine, form an archive, institution...."></textarea>
+                              <label for="InformationPresent">Describe your experience</label>
+                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Description of the experience, or information you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
                             </div>
-                            <div class="row">
-                              <div class="col-md-7 col-12 p-0 pr-1 form-group">
-                                <label for="epoch">Epoch</label>
-                                <select class="custom-select" required>
-                                  <option selected disabled value="">Year or time period</option>
-                                  <option value="1">before 1918</option>
-                                  <option value="2">1918-1940</option>
-                                  <option value="3">1940-1990</option>
-                                  <option value="4">after 1990</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  Please complete this field.
-                                </div>
+                            <div class="form-group">
+                              <label for="activity-selection">Selection of the activity</label>
+                              <select class="custom-select" required>
+                                <option selected disabled value="">Choose one type of activity</option>
+                                <option disabled value="" class="inner-group">Active activities</option>
+                                <option value="1">Bathing</option>
+                                <option value="2">Ball games</option>
+                                <option value="3">Shipping</option>
+                                <option value="4">Fishing</option>
+                                <option value="5">Games, sports</option>
+                                <option value="6">Exercise</option>
+                                <option value="7">Meetings</option>
+                                <option value="8">Picnic</option>
+                                <option value="9">Walking</option>
+                                <option value="10">Children's games</option>
+                                <option value="11">Peaceful rest, sitting</option>
+                                <option value="12">Shopping</option>
+                                <option value="13">Gardening</option>
+                                <option disabled value="" class="inner-group">Passive Activities</option>
+                                <option value="14">Recreation in nature</option>
+                                <option value="15">Admiring flower beds</option>
+                                <option value="16">Rest in the green</option>
+                                <option value="17">Admiring the panoramas</option>
+                                <option value="18">Rest by the water</option>
+                                <option disabled value="" class="inner-group">Events</option>
+                                <option value="19">Renginiai, įvykiai'</option>
+                                <option value="20">Folkloro renginiai</option>
+                                <option value="21" class="inner-group">Other activities</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please complete this field.
                               </div>
-                              <div class="col-md-5 col-12 p-0 form-group">
-                                <label for="location-type">Type of Location</label>
-                                <select class="custom-select" required>
-                                  <option selected disabled value="">Type of place</option>
-                                  <option value="1">Building</option>
-                                  <option value="2">Yard</option>
-                                  <option value="3">Street</option>
-                                  <option value="4">Quarter</option>
-                                  <option value="5">Coast</option>
-                                  <option value="6">Park</option>
-                                  <option value="7">Cemetery</option>
-                                  <option value="8">Representative Space</option>
-                                  <option value="9">Sports Ground</option>
-                                  <option value="10">Playground</option>
-                                  <option value="11">Field</option>
-                                  <option value="12">Desert</option>
-                                  <option value="13">Other</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                  Please complete this field.
-                                </div>
-                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="ObjectOther">Other</label>
+                              <textarea class="form-control" id="ObjectOther" rows="1" placeholder="Write an activity that is not listed above"></textarea>
                             </div>
                             <div class="form-group">
                               <label for="adress" class="adress">Address</label>
                               <input type="text" class="form-control" id="adress" placeholder="Street and number...">
                             </div>
 
-                            <div class="form-group">
-                              <label for="aditionalinfo">External link</label>
-                              <input type="text" class="form-control" id="aditionalinfo" placeholder="Links related to the memory e.g. video, audio...">
-                            </div>
                             <div id="jquery-script-menu">
                                 <label for="keywords">Keywords</label>
                                 <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
@@ -566,6 +542,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
     <!-- Modal How to Create -->
     <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
@@ -574,68 +556,72 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h6>We hope that this map will become a fulcrum for creating a vision of the future of Šančiai and a means to get to know this area better. 
+            <h6>How to become a Šančiai visionary? 
             </h6>
-            <h6>You can become a creator of Šančiai memory map following these steps:
-            </h6>
-            <p>1) Click the button "Create Map".</p>
-            <p>2) Mark the location on the map. If you made a mistake, drag the symbol to another location on the map.</p>
-            <p>3) Provide information in the opened window.</p>
-            <p>4) Click the "Agree" button and confirm that you agree with data protection conditions.</p>
-            <a href="./about-maps.html">
+            <p>1) Get to know the Šančiai mapping archive: MEMORY  NATURE   PRESENT maps.</p>
+            <p>2)  Click on the button "Your suggestions for the vision of Šančiai".</p>
+            <p>3)  Mark the location on the map.</p>
+            <p>4) Pažymėkite varnelę "Sutinku su privatumo politika" ir patvirtinkite, kad sutinkate su duomenų platinimu ir apsaugaSubmit your information in the window that opens.</p>
+            <p>5) Tick the "I agree to the privacy policy" box and confirm that you agree to the dissemination and protection of data.</p>
+            <p>6) Click the "Submit" button.</p>
+            <!-- <a href="./about-maps.html">
               <button class="btn-how-modal">
                 Read more about Šančiai Maps
               </button>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
     </div>
     <!-- Modal Point Map -->
     <div class="modal fade" id="picture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered picture-dialog modal-lg">  
+      <div class="modal-dialog modal-dialog-centered picture-dialog modal-xl">  
         <div class="modal-content picture-content">
           <div class="modal-body modal-body-picture">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
             <section class="row justify-content-center">
-              <div class="col-md-10 center">
-
                 <div class="img-modal row">  
-                  <div class="total align-content-center col-12">
-                    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./css/single-event/creativity3jpg.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/activities/capacitybuilding.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/activities/education.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/communities/button-community.png" class="d-block mainimg no-img" alt="...">
+                  <div class="col-12 title-container">
+                    <h4>Title of the object and it could be long enough to have two lines</h4>
+                  </div>
+                  <div class="col-6 px-0">
+                    <div class="card pic-card" style="width: 18rem;">
+                      <img src="./css/single-event/creativity3jpg.jpg" class="modal-img card-img-top" alt="...">
+                      <!-- <img src="./css/communities/button-community.png" class="no-img card-img-top" alt="..."> -->
+                      <div class="card-footer">
+                        <h5 class="card-title">Author:</h5>
+                        <p class="card-text">Ana María</p>
+                        <h5 class="card-title">Date:</h5>
+                        <p class="card-text">21-12-2023</p>
+                        <h5 class="card-title">Source:</h5>
+                        <p class="card-text">National Magazine</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 px-0">
+                    <div class="card proposal-card">
+                      <div class="card-body proposal-card-body scrollable">
+                          <h5 class="card-title">Location type: </h5>
+                          <p class="card-text">Building</p>
+                          <h5 class="card-title">Adress:</h5>
+                          <p class="card-text"> į Lietuvos kariuomenės Šančių įgulos karių katalikų bažnyčią, jai</p>
+                          <h5 class="card-title">Description of the proposal:</h5>
+                          <p class="card-text">XIX a. carinės Rusijos armijos kareivinių rajone, dabartinio Vilijos parko centre (prie Juozapavičiaus pr.), buvo pastatyta medinė cerkvė Kauno tvirtovės įgulos reikmėms. Tai buvo 109-ojo Volgos pėstininkų pulko Dievo Motinos Globėjos cerkvė, pastatyta 1896 m. Ji buvo kryžiaus formos su pagrindiniu kupolu, apsuptu keturių nedidelių bokštų. Viso statinio tiek išorė, tiek ir vidus buvo papuoštas rusiško </p>
+                          <h5 class="card-title">Arguments why this is important for Šančiai:</h5>
+                          <p class="card-text">Stiliaus raižiniais ir dažytas aliejiniais dažais. Turėjo gana masyvų dviejų aukštų ikonostasą su raižiniais, kolonomis ir karnizais, su piešiniais ant paauksuoto fono. Statybas palaimino pats imperatorius Aleksandras III. Atkūrus</p>
+                          <div class="badges">
+                            <span class="badge">Keywords</span>
+                            <span class="badge">Key</span>
+                            <span class="badge">Keywordsmaslargas</span>
+                            <span class="badge">Keywordsmas</span>
                           </div>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
                   </div>
                 </div>
-              </div>
             </section>
-          </div>
-          <div class="modal-footer">
-            <p>Bažnyčia</p>
-            <a href="./map-past-individual.html" class="btn btn-how btn-how-onmodal"><button type="button" class="btn-how-onmodal">Read about</button></a>
           </div>
         </div>
       </div>
@@ -801,7 +787,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- JS -->
-  <script src="./js/maps-past.js"></script>
+  <script src="./js/maps-present.js"></script>
   <!-- Select2 -->
   <script src="vendor/select2/js/select2.min.js"></script>
 </body>
