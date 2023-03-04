@@ -115,6 +115,9 @@
 .modal-body-how>p{
   margin: 0;
 }
+.btn-container button, .botones button{
+  border-radius: 10px;
+}
 .botones{
   display: flex;
   justify-content: space-around;
@@ -128,6 +131,7 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
+  min-height: 4em;
 }
 .botones button img {
   width: 2em;
@@ -632,8 +636,8 @@ input[type=file]::-webkit-file-upload-button{
   .proposal-card-body{
     max-height: 436px;
   }
-  .btn-container button, .botones button{
-    border-radius: 10px;
+  .botones button{
+    min-height: 6em;
   }
 }
 @media (max-width: 991.98px){
