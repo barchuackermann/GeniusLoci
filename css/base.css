@@ -755,20 +755,21 @@ footer{
   }
   .btn-container{
     padding-top: 0;
-    align-items: stretch;
+    align-items: center;
   }
   .btn-container h4{
-    font-size: 1em;
-    padding: 2em 4em 0 1em;
+    font-size: 2vw;
+    padding-right: 1em;
+    margin: 0;
   }
   .btn-maps{
-    min-width: 5vw;
-    min-height: 100vh;
+    min-width: 13vw;
     width: 60%;
     display: flex;
     justify-content: center;
     background: url("./home/MAP_EN.png") no-repeat center center;
     background-size: contain;
+    margin-right: 0.5em;
   }
   .btn-maps-pills{
     background-color: #AF529E;
