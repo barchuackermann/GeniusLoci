@@ -183,16 +183,16 @@
               </button>
               <div class="botones">
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block">
+                  <img src="./css/map-past/question-icon.png" alt="Having questions?">
                   <p>Having questions?</p>
                 </button>
                 <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block">
+                  <img src="./css/map-past/point-icon.png" alt="Create the map">
                   <p>Create the map</p>
                 </button>
-                <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
+                <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
                   <p>IR AL FORM</p>
-                </button>
+                </button> -->
               </div>
             </div>
         </div>
@@ -204,7 +204,7 @@
       </div>
     <!-- Modal Form -->
     <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-dialog-centered modal-lg" id="smallerThanks">  
+      <div class="modal-dialog modal-dialog-centered modal-xl" id="smallerThanks">  
         <div class="modal-content modal-content-map">
           <div class="modal-body modal-body-map" id="clear">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -215,253 +215,98 @@
 
                   <div class="general" id="ADDLOCATION">
                     <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-                      1# SHARE YOUR EXPERIENCE </button>
+                      1# Your proposal for Šančiai </button>
                 
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
-                            <div class="col-12 p-0 form-group">
+                            <div class="form-group">
                               <label for="location-type">Location Type</label>
                               <select class="custom-select" required>
-                                <option selected disabled value="">Please choose location type</option>
+                                <option selected="selected" value="" hidden="hidden">Choose...</option>
                                 <option value="1">Building</option>
-                                <option value="2">Yard</option>
-                                <option value="3">Street</option>
-                                <option value="4">Quarter</option>
-                                <option value="5">Coast</option>
-                                <option value="6">Park</option>
-                                <option value="7">Cemetery</option>
-                                <option value="8">Representative Space</option>
-                                <option value="9">Sports Ground</option>
-                                <option value="10">Playground</option>
-                                <option value="11">Field</option>
-                                <option value="12">Desert</option>
-                                <option value="13">Other</option>
+                                <option value="2">Public space</option>
+                                <option value="3">Small architectural object</option>
+                                <option value="4">Other</option>
                               </select>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="InformationPresent">Season and time of the day</label>
-                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Time of the day at which you observed or performed activity" required></textarea>
+                              <label for="InformationPresent">Title</label>
+                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Please enter a title or name" required></textarea>
                               <div class="invalid-feedback">
                                 Please complete this field.
                               </div>
                             </div>
-                            <div class="form-group">
-                              <label for="InformationPresent">Describe your experience</label>
-                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Description of the experience, or information you want to share in the map, like facts, stories, anecdotes..." maxlength="4000" required></textarea>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="activity-selection">Selection of the activity</label>
-                              <select class="custom-select" required>
-                                <option selected disabled value="">Choose one type of activity</option>
-                                <option disabled value="" class="inner-group">Active activities</option>
-                                <option value="1">Bathing</option>
-                                <option value="2">Ball games</option>
-                                <option value="3">Shipping</option>
-                                <option value="4">Fishing</option>
-                                <option value="5">Games, sports</option>
-                                <option value="6">Exercise</option>
-                                <option value="7">Meetings</option>
-                                <option value="8">Picnic</option>
-                                <option value="9">Walking</option>
-                                <option value="10">Children's games</option>
-                                <option value="11">Peaceful rest, sitting</option>
-                                <option value="12">Shopping</option>
-                                <option value="13">Gardening</option>
-                                <option disabled value="" class="inner-group">Passive Activities</option>
-                                <option value="14">Recreation in nature</option>
-                                <option value="15">Admiring flower beds</option>
-                                <option value="16">Rest in the green</option>
-                                <option value="17">Admiring the panoramas</option>
-                                <option value="18">Rest by the water</option>
-                                <option disabled value="" class="inner-group">Events</option>
-                                <option value="19">Renginiai, įvykiai'</option>
-                                <option value="20">Folkloro renginiai</option>
-                                <option value="21" class="inner-group">Other activities</option>
+                            <div id="jquery-script-menu">
+                              <label for="keywords">Keywords</label>
+                              <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
+                                  <option value="1">foo</option>
+                                  <option value="2">bar</option>
+                                  <option value="3">baz</option>
                               </select>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="ObjectOther">Other</label>
-                              <textarea class="form-control" id="ObjectOther" rows="1" placeholder="Write an activity that is not listed above"></textarea>
+                              <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div>
+                              <small id="keywords_help" class="form-text text-muted">Write a word and comma e.g. Nature, Street, backyard...
+                              </small>
                             </div>
                             <div class="form-group">
                               <label for="adress" class="adress">Address</label>
-                              <input type="text" class="form-control" id="adress" placeholder="Street and number...">
+                              <input type="text" class="form-control" id="adress" placeholder="Street and number... (optional)">
+                            </div>
+                            <div class="form-group">
+                              <label for="InformationPresent">Brief description of the proposal</label>
+                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Please describe your proposal briefly" maxlength="4000" required></textarea>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="InformationPresent">Please provide the arguments why this is important for Šančiai?</label>
+                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Please provide the arguments why this is important for Šančiai" maxlength="4000" required></textarea>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                            </div>
+                            <div class="card-group files-container">
+                              <label for="card-group" class="col-12 p-0">Add an associative image or reference (optional)
+                              </label>
+                              <div class="col p-0">
+                                <div class="form-group form-group-file" id="picNode">
+                                  <label for="file">Choose file</label>
+                                  <input type="file" class="form-control-file" id="file">
+                                </div>
+                                <div class="form-group">
+                                  <label for="author">Name of the author</label>
+                                  <input type="text" class="form-control" id="author" placeholder="">
+                                </div>
+                              </div>
+                              <div class="col p-0">
+                                <div class="form-group">
+                                  <label for="source">Source of photograph</label>
+                                  <input type="text" class="form-control" id="source" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                  <label for="date">Date of photograph</label>
+                                  <input type="text" class="form-control" id="date" placeholder="">
+                                </div>
+                              </div>
                             </div>
 
-                            <div id="jquery-script-menu">
-                                <label for="keywords">Keywords</label>
-                                <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
-                                    <option value="1">foo</option>
-                                    <option value="2">bar</option>
-                                    <option value="3">baz</option>
-                                </select>
-                                <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div>
-                                <small id="keywords_help" class="form-text text-muted">Write and press enter or comma</small>
-                            </div>
+                            
                           </div>
                     </div>
                   </div>
-
-
-                  <div class="general" id="ADDPICTURE">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
-                      #2 ADD PICTURES
-                    </button>
-            
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMap">
-                      <div class="card-body scrollable">
-                        <!-- <div class="form-group form-group-file" id="picNode">
-                          <input type="file" class="form-control-file">
-                        </div>
-                        <div class="form-group">
-                          <label for="author">Name of the author</label>
-                          <input type="text" class="form-control" id="author" placeholder="Who is the author of the image">
-                        </div>
-                        <div class="form-group">
-                          <label for="source">Source of photograph</label>
-                          <input type="text" class="form-control" id="source" placeholder="My own or which is the source of the image">
-                        </div>
-                        <div class="form-group">
-                          <label for="date">Date of photograph</label>
-                          <input type="text" class="form-control" id="source" placeholder="Aproximately a date of the image">
-                        </div>
-                        <p class="line"></p>
-                        <button class="btn addpic" id="addpic" type="button">+ADD PICTURE</button> -->
-                        <div class="card-group">
-                          <div class="col">
-                            <div class="form-group form-group-file" id="picNode">
-                              <label for="file">Select your file</label>
-                              <input type="file" class="form-control-file" id="file">
-                            </div>
-                            <div class="form-group">
-                              <label for="author">Name of the author</label>
-                              <input type="text" class="form-control" id="author" placeholder="">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-group">
-                              <label for="source">Source of photograph</label>
-                              <input type="text" class="form-control" id="source" placeholder="">
-                            </div>
-                            <div class="form-group">
-                              <label for="date">Date of photograph</label>
-                              <input type="text" class="form-control" id="date" placeholder="">
-                            </div>
-                          </div>
-                        </div>
-                        <p class="line"></p>
-                        <div class="card-group">
-                          <div class="col">
-                            <div class="form-group form-group-file" id="picNode">
-                              <label for="file">Select your file</label>
-                              <input type="file" class="form-control-file" id="file">
-                            </div>
-                            <div class="form-group">
-                              <label for="author">Name of the author</label>
-                              <input type="text" class="form-control" id="author" placeholder="">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-group">
-                              <label for="source">Source of photograph</label>
-                              <input type="text" class="form-control" id="source" placeholder="">
-                            </div>
-                            <div class="form-group">
-                              <label for="date">Date of photograph</label>
-                              <input type="text" class="form-control" id="date" placeholder="">
-                            </div>
-                          </div>
-                        </div>
-                        <p class="line"></p>
-                        <div class="card-group">
-                          <div class="col">
-                            <div class="form-group form-group-file" id="picNode">
-                              <label for="file">Select your file</label>
-                              <input type="file" class="form-control-file" id="file">
-                            </div>
-                            <div class="form-group">
-                              <label for="author">Name of the author</label>
-                              <input type="text" class="form-control" id="author" placeholder="">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-group">
-                              <label for="source">Source of photograph</label>
-                              <input type="text" class="form-control" id="source" placeholder="">
-                            </div>
-                            <div class="form-group">
-                              <label for="date">Date of photograph</label>
-                              <input type="text" class="form-control" id="date" placeholder="">
-                            </div>
-                          </div>
-                        </div>
-                        <p class="line"></p>
-                        <div class="card-group">
-                          <div class="col">
-                            <div class="form-group form-group-file" id="picNode">
-                              <label for="file">Select your file</label>
-                              <input type="file" class="form-control-file" id="file">
-                            </div>
-                            <div class="form-group">
-                              <label for="author">Name of the author</label>
-                              <input type="text" class="form-control" id="author" placeholder="">
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-group">
-                              <label for="source">Source of photograph</label>
-                              <input type="text" class="form-control" id="source" placeholder="">
-                            </div>
-                            <div class="form-group">
-                              <label for="date">Date of photograph</label>
-                              <input type="text" class="form-control" id="date" placeholder="">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
 
                   <div class="general" id="ADDDATA">
                     <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
-                          #3 PERSONAL DATA*
+                          #2 PERSONAL DATA*
                     </button>
                 
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMap">
                       <div class="card-body scrollable">
                         <div class="row">
-                          <div class="col-4">
-                            <label for="" class="gender">Gender</label>
-                            <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="Gender" id="Gender1" value="option1" required>
-                              <label class="form-check-label" for="Gender1">
-                                <p>Female</p>
-                              </label>
-                            </div>
-                            <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="Gender" id="Gender2" value="option2" required>
-                              <label class="form-check-label" for="Gender2">
-                                <p>Male</p>
-                              </label>
-                            </div>
-                            <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="Gender" id="Gender3" value="option3">
-                              <label class="form-check-label" for="Gender3">
-                                <p>Other</p>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="col-8">
+                          <div class="col-sm-6 col-12 p-0">
                             <label for="" class="connect" required>Connection to Šančiai:
                             </label>
                             <div class="form-check form-check-data">
@@ -483,30 +328,30 @@
                               </label>
                             </div>
                           </div>
-                        </div>
-                        <div class="form-group row age mt-1">
-                            <label for="age">Age range</label>
-                            <select class="custom-select" required>
-                              <option selected disabled value="">Select...</option>
-                              <option value="1">till 13 years</option>
-                              <option value="2">14-17</option>
-                              <option value="3">18-24</option>
-                              <option value="4">25-35</option>
-                              <option value="5">35-44</option>
-                              <option value="6">45-54</option>
-                              <option value="7">55-70</option>
-                              <option value="8">more than 71</option>
-                            </select>
-                            <div class="invalid-feedback">
-                              Please complete this field.
-                            </div>
+                          <div class="col-sm-6 col-12 p-0 form-group age">
+                              <label for="age">Age range</label>
+                              <select class="custom-select" required>
+                                <option selected="selected" value="" hidden="hidden">Choose...</option>
+                                <option value="1">till 13 years</option>
+                                <option value="2">14-17</option>
+                                <option value="3">18-24</option>
+                                <option value="4">25-35</option>
+                                <option value="5">35-44</option>
+                                <option value="6">45-54</option>
+                                <option value="7">55-70</option>
+                                <option value="8">more than 71</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                          </div>
                         </div>
                         <div class="row form-group email">
                           <label for="email">E-mail</label>
                           <input type="email" class="form-control" id="email" placeholder="email@example.com">
                         </div>
                         <div class="row">
-                          <p class="small">*Personal data will only be used for urban research, statistical purposes and communication. Personal data is not made public.
+                          <p class="small">*Personal data will only be used for urban research, statistical purposes and communication. The data is not made public.
                           </p>
                         </div>
                       </div>
@@ -523,7 +368,7 @@
                       <button type="submit" class="btn btn-form mt-2" id="btn-form">
                         <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="spin"></span>
                         SUBMIT</button>
-                      <button type="button" class="btn btn-back mt-2" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="btn btn-back" data-dismiss="modal" aria-label="Close">
                         ← Back
                       </button>
                     </div>
@@ -564,11 +409,6 @@
             <p>4) Pažymėkite varnelę "Sutinku su privatumo politika" ir patvirtinkite, kad sutinkate su duomenų platinimu ir apsaugaSubmit your information in the window that opens.</p>
             <p>5) Tick the "I agree to the privacy policy" box and confirm that you agree to the dissemination and protection of data.</p>
             <p>6) Click the "Submit" button.</p>
-            <!-- <a href="./about-maps.html">
-              <button class="btn-how-modal">
-                Read more about Šančiai Maps
-              </button>
-            </a> -->
           </div>
         </div>
       </div>
@@ -586,7 +426,7 @@
                   <div class="col-12 title-container">
                     <h4>Title of the object and it could be long enough to have two lines</h4>
                   </div>
-                  <div class="col-6 px-0">
+                  <div class="col-lg-6 col-12 px-0">
                     <div class="card pic-card" style="width: 18rem;">
                       <img src="./css/single-event/creativity3jpg.jpg" class="modal-img card-img-top" alt="...">
                       <!-- <img src="./css/communities/button-community.png" class="no-img card-img-top" alt="..."> -->
@@ -600,7 +440,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 px-0">
+                  <div class="col-lg-6 col-12 px-0">
                     <div class="card proposal-card">
                       <div class="card-body proposal-card-body scrollable">
                           <h5 class="card-title">Location type: </h5>
@@ -671,78 +511,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Gallery -->
-  <section class="container gallery my-5">
-    
-      <div class="row justify-content-center">
-        <h2 class="text-center events mt-5">Gallery</h2>
-      </div>
-
-      <div class="presentation row">  
-        <div class="container-principal d-flex center">
-          <button role="button" id="left-arrow" class="left-arrow">
-            <i class="fas fa-angle-left"></i>
-          </button>
-  
-          <div class="carousel-container">
-            <div class="carousel">
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide1.JPG" alt="Slide 1" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide2.JPG" alt="Slide 2" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide3.JPG" alt="Slide 3" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide4.JPG" alt="Slide 4" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide5.JPG" alt="Slide 5" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide6.JPG" alt="Slide 6" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide7.JPG" alt="Slide 7" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide8.JPG" alt="Slide 8" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide9.JPG" alt="Slide 9" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide10.JPG" alt="Slide 10" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide11.JPG" alt="Slide 11" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide12.JPG" alt="Slide 12" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide13.JPG" alt="Slide 13" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide14.JPG" alt="Slide 14" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide15.JPG" alt="Slide 15" />
-              </div>
-              <div class="slide">
-                <img src="./css/genius-loci/jpg presentation/Slide16.JPG" alt="Slide 16" />
-              </div>
-            </div>
-          </div>
-  
-          <button role="button" id="right-arrow" class="right-arrow">
-            <i class="fas fa-angle-right"></i>
-          </button>
-
-  </section>
 
   <!-- Footer -->
   <footer class="py-4 bg-green2">
