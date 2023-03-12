@@ -57,7 +57,7 @@
   margin: 1vw auto 0 auto;
   padding: 0.5vw 2vw;
   background-color: #31ACB4;
-  width: auto;
+  width: 93%;
   border-radius: 1em;
   color: white;
   font-weight: 600;
@@ -115,13 +115,18 @@
 .modal-body-how>p{
   margin: 0;
 }
+.btn-container{
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
 .btn-container button, .botones button{
   border-radius: 10px;
 }
 .botones{
   display: flex;
   justify-content: space-around;
-  margin: 1vw 0 2vw 0;
+  margin: 2vw 0px;
   width: 100%;
 }
 .botones button{
@@ -636,16 +641,35 @@ input[type=file]::-webkit-file-upload-button{
   .proposal-card-body{
     max-height: 436px;
   }
+  .btn-container{
+    width: 90%;
+  }
   .botones button{
     min-height: 6em;
+  }
+  .botones button img{
+    display: none;
+  }
+  .sidebar-scrollable{
+    max-height: 40vh;
   }
 }
 @media (max-width: 991.98px){
   .sidebar-scrollable{
-    max-height: 52vh;
+    max-height: 50vh;
+  }
+  .btn-container{
+    position: relative;
+    width: 100%;
   }
   .btn-container button, .botones button{
     font-size: .8em;
+  }
+  .botones button p{
+    justify-content: center;
+  }
+  .btn-how{
+    width: 78%;
   }
   .modal-body-picture{
     padding: 1em 2em;
@@ -728,6 +752,21 @@ input[type=file]::-webkit-file-upload-button{
 @media (max-width: 575.98px){
   .age{
     margin-top: 1em;
+  }
+  .btn-container button, .botones button {
+    min-height: 4em;
+  }
+  .active-citizens-logo-maps{
+    width: 25vw;
+    margin: 2em 0.5em 0.5em 0.5em;
+  }
+  .sidebar>h2{
+    margin: 2.5vh 0 0 2vw;
+    font-weight: 800;
+    position: absolute;
+    font-size: 6vw;
+    top: 1em;
+    left: 36vw;
   }
 }
 @media (max-width: 320.98px){
