@@ -246,11 +246,21 @@
 .sidebar-scrollable{
   max-height: 45vh;
 }
-.sidebar-scrollable::-webkit-scrollbar-track {
+.proposal-card-body.scrollable {
+  max-height: 70vh;
+  padding-right: 1em;
+}
+.sidebar-scrollable::-webkit-scrollbar-track{
   -webkit-box-shadow: none;
 }
-​/* FIN SIDEBAR-SCROLLABLE */
+.proposal-card-body.scrollable::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.3);
+}
+.proposal-card-body.scrollable::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(82, 82, 82, 0.5);
+}
 
+​/* FIN SIDEBAR-SCROLLABLE */
 .form-group{
   margin-right: 0.5em;
 }
@@ -631,10 +641,18 @@ input[type=file]::-webkit-file-upload-button{
   .title-container h4, .proposal-card-body{
     font-size: 1.5em;
   }
+  .proposal-card-body.scrollable {
+    max-height: 47vh;
+    padding-right: 1em;
+  }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
   .form-control, .custom-select, .form-group label, #jquery-script-menu label, #jquery-script-menu .form-control, #keywords_help, .files-container label, .form-group-file input, .connect, .modal-body-how>h6, .modal-body-how>p{
     font-size: 1em;
+  }
+  .proposal-card-body.scrollable {
+    max-height: 47vh;
+    padding-right: 1em;
   }
 }
 @media (max-width: 1200px){
