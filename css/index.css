@@ -1,3 +1,244 @@
+/* Header */
+  header{
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  .carousel-supra {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .active-citizens-logo{
+    position: relative;
+    z-index: 10;
+    width:12vw;
+    height: auto;
+    margin: 1.5em 0 0 1em;
+  }
+  .carousel-text{
+    width: 50%;
+    height: 80%;
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .btn-container{
+    display: flex;
+  }
+  .carousel-text>h2{  
+    color: #435053;
+    font-weight: 900;
+    font-size: 3em;
+  }
+  .carousel-text>h3{
+    color: #435053;
+    font-weight: 900;
+    font-size: 2vw;
+  }
+  .carousel-text>h4{
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2em;
+    width: 25vw;
+  }
+  .btn-maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 11vw;
+    min-height: 24vh;
+    margin-right: 3em;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+  }
+  .btn-maps:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .btn-maps>span{
+    color: white !important;
+    font-style: italic;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+    width: 70%;
+    overflow: visible;
+    white-space: wrap;
+  }
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .carousel-caption .photoby{
+    font-size: 1em;
+  }
+  
+  
+  /* Header Responsive */
+/*   @media (min-width: 2001px){
+
+  } */
+  @media (max-width: 2000px) and (min-width: 1441px){
+    .carousel-text{
+        justify-content: start;
+    padding-top: 7em;        
+    }
+    .btn-container{
+        margin: 2em 0;
+    }
+  }
+  @media (max-width: 1200px){
+      .btn-maps{
+        margin-right: 1em;
+      }
+      .carousel-text{
+        justify-content: start;
+        align-items: start;
+        padding-top: 3em;
+      }
+  }
+  @media (max-width: 991.98px){
+    .carousel-supra {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+    .carousel-supra img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -5000;
+        height: 55%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .active-citizens-logo{
+      position: relative;
+      z-index: 10;
+      width:30vw;
+      height: auto;
+      margin: 1.5em 0 0 0.5em;
+    }
+    .carousel-text{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10em 2em 2em 2em;
+    }
+    .carousel-text>h2{  
+      color: white;
+      font-weight: 900;
+      font-size: 5vw;
+    }
+    .carousel-inner{
+      width: 100%;
+    }
+    .carousel-text>h3{
+      color: white;
+      font-weight: 900;
+      font-size: 7vw;
+    }
+    .btn-container{
+      padding-top: 0;
+      align-items: center;
+    }
+    .btn-container h4{
+      font-size: 2vw;
+      padding-right: 1em;
+      margin: 0;
+    }
+    .btn-maps{
+      min-width: 13vw;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      margin-right: 0.5em;
+    }
+    .carousel-text>h4{
+      color: white;
+      font-weight: 900;
+      font-size: 2vh;
+    }
+    .carousel-item {
+      height: 100vh;
+      min-height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: relative;
+      z-index: -1;
+    }
+    .photoby{
+      font-size: 1rem;
+      color: rgba(255,255,255, 0.5);
+    }
+  }
+  @media (max-width: 768px){
+    .carousel-text{
+        padding: 10em 0 2em 0;
+    }
+    .btn-container h4{
+        display: none;
+    }
+    .btn-maps{
+        min-width: 20vw;
+        width: 100%;
+    }   
+    .carousel-indicators{
+        display: none;
+    }
+  }
+  @media (max-width: 426px){
+    .carousel-text h2{
+        font-size: 2em;
+    }
+    .btn-maps{
+        min-width: 25vw;
+        width: 100%;
+        padding-bottom: 1em;
+    }   
+  }
+  @media (max-width: 321px){
+    .btn-maps{
+        min-width: 28vw;
+    }
+  }
+
+
 /* COMMUNITY CAROUSEL */
 .vimeo-title{
     font-weight: 800;
