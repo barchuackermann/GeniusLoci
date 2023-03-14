@@ -23,11 +23,11 @@
   background-color: transparent;  
 }
 .btn-header{
-  padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   color: #435053;
   padding: 1em;
   border-radius: 0;
+  margin-bottom: 0.5px;
 }
 .btn-header:hover{
   color: white;
@@ -52,10 +52,10 @@
 }
 .event-type{
   color: #4d7d6d;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .event-type-title{
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 500;
 }
 .breadcrumb {
@@ -135,10 +135,16 @@
 }
 p.event-data{
   width: 90%;
-  font-size: 0.8em;
+  font-size: 1em;
   border: 0;
   margin: 0;
   padding: 0;
+}
+.event-description>h6:last-of-type{
+  margin-top: 1em;
+}
+.event-description>p:last-of-type{
+  padding-bottom: 1em;
 }
 @media (min-width: 2001px){
   .events-container{
@@ -154,16 +160,62 @@ p.event-data{
     font-size: 1.5em;
   }
   .event-description{
-    font-size: 2em;
+    font-size: 1.5rem;
     line-height: 1.25em;
   }
   .event-about{
-    font-size: 1em;
+    font-size: 1.5rem;
     line-height: 2em;
   }
+  .event-type, .event-type-title{
+    font-size: 1.5rem;
+  }
 }
-@media (max-width: 768px){
-  /* Mobile Upcomming Events with accordion */
+@media (max-width: 2000px) and (min-width: 1441px){
+  .btn-register{
+    font-size: 1rem;
+  }
+  .events-section-title{
+    margin: 7rem 0 2vw 0;
+    font-size: 2rem;
+  }
+  .event-type, .event-type-title{
+    font-size: 1rem;
+  }
+  .event-description{
+    font-size: 1rem;
+  }
+  .event-about{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1024.98px){
+  .event-container{
+    margin-left: 1.5em;
+  }
+  .btn-register{
+    font-size: 0.8em;
+  }
+  .card-body{
+    padding: 1.25em 0;
+  }
+  .event-description, .event-description p{
+    font-size: 1.2vw;
+  }
+  .event-about{
+    font-size: 1.25vw;
+  }
+  .event-month{
+    font-size: 1.5rem;
+  }
+  .event-day{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767.98px){
+  .events-container{
+    padding: 0;
+  }
   .events-section-title{
     font-weight: 900;
     color: #435053;
@@ -187,15 +239,15 @@ p.event-data{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
-    margin: auto 3vh;
+    padding: 0 1em;
+    margin: auto;
   }
   .event-type{
     color: #4d7d6d;
-    font-size: 1.5vh;
+    font-size: 1em;
   }
   .event-type-title{
-    font-size: 2vh;
+    font-size: 1em;
     font-weight: 500;
   }
   .breadcrumb {
@@ -217,7 +269,7 @@ p.event-data{
   .btn-register{
     background-color: #AF529E;
     width: 100%;
-    margin: 1vw auto 2vh auto;
+    margin: 1.5rem auto;
     align-self: center;
     color: white !important;
     font-weight: 500;
@@ -228,15 +280,8 @@ p.event-data{
     -moz-border-radius: 2em;
     -ms-border-radius: 2em;
     -o-border-radius: 2em;
+    font-size: 1rem;
   }
-
-
-
-
-
-
-
-
 /* Accordion Mobile */
   .card-body{
     display: flex;
@@ -253,20 +298,24 @@ p.event-data{
     margin: 0;
     padding: 0;
   }
+  .breadcrumb-item+.breadcrumb-item.event-location{
+    padding: 0;
+  }
   .event-description{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
     padding:0;
-    margin: 1em;
+    margin: 3em 1em 0 1em;
   }
-  .event-description>h6{
-    margin: 1vh 0;
-    padding:0;
+  .event-about{
+    font-size: 1rem;
   }
-  .event-description>p{
-    margin: 0;
+  .event-description p {
+    font-size: 1rem;
+  }
+  .event-description>p:last-of-type{
     padding: 0;
   }
   .img-thumbnail {
@@ -280,17 +329,5 @@ p.event-data{
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
-}
-  p.event-data{
-    font-size: 0.8em;
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .principal>.btn-register{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0.5em 0;
   }
 }
