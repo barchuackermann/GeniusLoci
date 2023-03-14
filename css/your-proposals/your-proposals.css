@@ -244,7 +244,7 @@
 
 /* SIDEBAR-SCROLLABLE */
 .sidebar-scrollable{
-  max-height: 45vh;
+  max-height: 42vh;
 }
 .proposal-card-body.scrollable {
   max-height: 70vh;
@@ -577,6 +577,9 @@ input[type=file]::-webkit-file-upload-button{
   .map{
     padding-top: 4.5em;
   }
+  .mapa{
+    margin: 2.5rem 0 0 auto;
+  }
   .hide>h4{
     font-size: 1.25em;
   }
@@ -647,6 +650,12 @@ input[type=file]::-webkit-file-upload-button{
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
+  .sidebar{
+    max-height: 96.5vh;
+  }
+  .active-citizens-logo-maps{
+    margin: 5vw 0 0 2vw;
+  }
   .form-control, .custom-select, .form-group label, #jquery-script-menu label, #jquery-script-menu .form-control, #keywords_help, .files-container label, .form-group-file input, .connect, .modal-body-how>h6, .modal-body-how>p{
     font-size: 1em;
   }
