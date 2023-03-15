@@ -1,357 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a99166f815.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a99166f815.js" crossorigin="anonymous"></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
+    <title>Šančiųbendruomenė.lt</title>
 
-  <title>Šančiųbendruomenė.lt</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/base.css" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/base.css">
+    <!-- Select2 -->
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
+    <link href="css/your-proposals/your-proposals.css" rel="stylesheet" />
+  </head>
 
-  <!-- Select2 -->
-  <link href="vendor/select2/css/select2.min.css" rel="stylesheet"/>
-  <link href="css/your-proposals/your-proposals.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand lexend active" href="index.html">
-        <div class="logo">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 22.6" style="enable-background:new 0 0 30 22.6;" xml:space="preserve">
-            <path class="st0" d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
-              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"/>
-          </svg>
-        </div>
-
-        <span class="title2">Šančių bendruomenė</span>
-      </a>
-      <button
-        id="burger"
-        class="navbar-toggler navbar-toggler-right bg-white"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon">
-          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="black"/>
-          </svg>
-        </span>
-      </button>
-      <div
-        class="collapse navbar-collapse d-lg-flex justify-content-end"
-        id="navbarResponsive"
-      >
-        <ul class="navbar-nav bg-nav">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link active"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Šančiai Vision</a
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand lexend active" href="index.html">
+          <div class="logo">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 22.6"
+              style="enable-background: new 0 0 30 22.6"
+              xml:space="preserve"
             >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item active" href="./index.html">Workshops Results</a>
-              <a class="dropdown-item" href="./your-proposals.html">Your Proposals</a>
-              <a class="dropdown-item" href="./vote.html">Vote</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >MAPS</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./about-maps.html">About Maps</a>
-              <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
-              <a class="dropdown-item" href="./maps-present.html">Present Map</a>
-              <a class="dropdown-item" href="./maps-nature.html">Nature Map</a>
-              <a class="dropdown-item" href="./analysis-maps.html">Analysis of Maps
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./communities.html">COMMUNITIES</a>
-          </li>
-          <li class="nav-item dropdown genius">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >GENIUS LOCI</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
-              <a class="dropdown-item" href="./activities.html">Activities</a>
-              <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
-              <a class="dropdown-item" href="./partners.html">Partners</a>
-            </div>
-          </li>
-          <li class="input2-container">
-            <form method="get" action="#" class="input-group">
-              <input
-                type="search"
-                id="search"
-                name="Search"
-                aria-label="Search"
-                method="GET"
-                action=""
-                placeholder="Search"
-                class="form-inline bg-transparent input2"
+              <path
+                class="st0"
+                d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
+              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"
               />
-              <button class="btn lupa" type="button">
-                <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z" fill="#454646"/>
-                  </svg>
-              </button>
-            </form>
-          </li>
-          <div class="d-flex languaje-container">
-            <li class="nav-item">
-              <a class="nav-link languaje" href="#">LT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link languaje active" href="#">EN</a>
-            </li>
-
+            </svg>
           </div>
-        </ul>
-        <button type="button" class="btn login">
-          <span>Login</span>
-          </button>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Header Map -->
-  <header>
-      <div class="row m-0 map">
+          <span class="title2">Šančių bendruomenė</span>
+        </a>
+        <button
+          id="burger"
+          class="navbar-toggler navbar-toggler-right bg-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-end"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav bg-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Šančiai Vision</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item active" href="./index.html"
+                  >Workshops Results</a
+                >
+                <a class="dropdown-item" href="./your-proposals.html"
+                  >Your Proposals</a
+                >
+                <a class="dropdown-item" href="./vote.html">Vote</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >MAPS</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./about-maps.html">About Maps</a>
+                <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
+                <a class="dropdown-item" href="./maps-present.html"
+                  >Present Map</a
+                >
+                <a class="dropdown-item" href="./maps-nature.html"
+                  >Nature Map</a
+                >
+                <a class="dropdown-item" href="./analysis-maps.html"
+                  >Analysis of Maps
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./communities.html">COMMUNITIES</a>
+            </li>
+            <li class="nav-item dropdown genius">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >GENIUS LOCI</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
+                <a class="dropdown-item" href="./activities.html">Activities</a>
+                <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
+                <a class="dropdown-item" href="./partners.html">Partners</a>
+              </div>
+            </li>
+            <li class="input2-container">
+              <form method="get" action="#" class="input-group">
+                <input
+                  type="search"
+                  id="search"
+                  name="Search"
+                  aria-label="Search"
+                  method="GET"
+                  action=""
+                  placeholder="Search"
+                  class="form-inline bg-transparent input2"
+                />
+                <button class="btn lupa" type="button">
+                  <svg
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z"
+                      fill="#454646"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </li>
+            <div class="d-flex languaje-container">
+              <li class="nav-item">
+                <a class="nav-link languaje" href="#">LT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link languaje active" href="#">EN</a>
+              </li>
+            </div>
+          </ul>
+          <button type="button" class="btn login">
+            <span>Login</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Map -->
+    <header>
+      <div class="row map">
         <!-- Desktop -->
         <div class="col-md-4 col-12 sidebar" id="init">
-            <img src="./css/logos/Active-citizens-fund_White@4x.png" alt="Active-citizens-logo" class="active-citizens-logo-maps">
-            <h2>Your Proposals</h2>
-            <div class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable">
-              <h6>
-                City is made not only from open spaces and buildings – it is a local community first of all. People use public spaces together, adopt them to own needs and add social meaning and value. Henri Lefebvre in his pamphlet Right to the city (1968) asks: <span>"Which are the socially successful places and which will they be? How do we recognize them? Based on what criteria?" </span>. While answering to these questions Alexander Ståhle created sociotop mapping method in 2000 as an urban planning tools which allows to identify use and social values of public spaces objectively. Sociotop method till now is successfully and widely used in urban planning Sweden. 
-              </h6>
-              <h4>The aim of the "Present map“ of Šanciai is to collect information about the contemporary your activities in public spaces, their use and social values based on the Sociotop method. This map will become an important corner stone for the vision of Šančiai.</h4>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt impedit unde voluptas cum rerum minus dolor cupiditate quidem aliquam voluptatum maxime, consectetur neque quo delectus, a ratione, ab et.</h4>
-            </div>
-            <div class="row btn-container">
-              <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
-                How to become a Šančiai visionary?
+          <img
+            src="./css/logos/Active-citizens-fund_White@4x.png"
+            alt="Active-citizens-logo"
+            class="active-citizens-logo-maps"
+          />
+          <h2>Your Proposals</h2>
+          <div
+            class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable"
+          >
+            <h6>
+              City is made not only from open spaces and buildings – it is a
+              local community first of all. People use public spaces together,
+              adopt them to own needs and add social meaning and value. Henri
+              Lefebvre in his pamphlet Right to the city (1968) asks:
+              <span
+                >"Which are the socially successful places and which will they
+                be? How do we recognize them? Based on what criteria?" </span
+              >. While answering to these questions Alexander Ståhle created
+              sociotop mapping method in 2000 as an urban planning tools which
+              allows to identify use and social values of public spaces
+              objectively. Sociotop method till now is successfully and widely
+              used in urban planning Sweden.
+            </h6>
+            <h4>
+              The aim of the "Present map“ of Šanciai is to collect information
+              about the contemporary your activities in public spaces, their use
+              and social values based on the Sociotop method. This map will
+              become an important corner stone for the vision of Šančiai.
+            </h4>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis nesciunt impedit unde voluptas cum rerum minus dolor
+              cupiditate quidem aliquam voluptatum maxime, consectetur neque quo
+              delectus, a ratione, ab et.
+            </h4>
+          </div>
+          <div class="row btn-container">
+            <button
+              class="btn btn-block btn-how"
+              data-toggle="modal"
+              data-target="#how"
+            >
+              How to become a Šančiai visionary?
+            </button>
+            <div class="botones">
+              <button
+                class="btn btn-header btn-header-question"
+                data-toggle="modal"
+                data-target="#quest"
+              >
+                <img
+                  src="./css/map-past/question-icon.png"
+                  alt="Having questions?"
+                />
+                <p>Having questions?</p>
               </button>
-              <div class="botones">
-                <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?">
-                  <p>Having questions?</p>
-                </button>
-                <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map">
-                  <p>Create the map</p>
-                </button>
-                <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
+              <button
+                class="btn btn-header btn-header-point"
+                type="button"
+                id="createMap"
+              >
+                <img src="./css/map-past/point-icon.png" alt="Create the map" />
+                <p>Create the map</p>
+              </button>
+              <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
                   <p>IR AL FORM</p>
                 </button> -->
-              </div>
             </div>
+          </div>
         </div>
 
-        
-        <div class="col-md-8 col-12 mapa" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
+        <div
+          class="col-md-8 col-12 mapa"
+          style="background-image: url(./css/map-past/Map.png)"
+          data-toggle="modal"
+          data-target="#picture"
+          id="mappast"
+        >
           <a href=""></a>
         </div>
       </div>
-    <!-- Modal Form -->
-    <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
-      <div class="modal-dialog modal-dialog-centered modal-xl" id="smallerThanks">  
-        <div class="modal-content modal-content-map">
-          <div class="modal-body modal-body-map" id="clear">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-              <form class="sidebar-map needs-validation" novalidate id="formTocomplete">
+      <!-- Modal Form -->
+      <div
+        class="modal fade"
+        id="form"
+        tabindex="-1"
+        aria-labelledby="form"
+        aria-hidden="true"
+        data-backdrop="static"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-xl"
+          id="smallerThanks"
+        >
+          <div class="modal-content modal-content-map">
+            <div class="modal-body modal-body-map" id="clear">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <form
+                class="sidebar-map needs-validation"
+                novalidate
+                id="formTocomplete"
+              >
                 <div class="accordion" id="accordionMap">
-
                   <div class="general" id="ADDLOCATION">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
-                      1# Your proposal for Šančiai </button>
-                
-                    <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
-                          <div class="card-body scrollable">
-                            <div class="form-group">
-                              <label for="location-type">Location Type</label>
-                              <select class="custom-select" required>
-                                <option selected="selected" value="" hidden="hidden">Choose...</option>
-                                <option value="1">Building</option>
-                                <option value="2">Public space</option>
-                                <option value="3">Small architectural object</option>
-                                <option value="4">Other</option>
-                              </select>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="InformationPresent">Title</label>
-                              <textarea class="form-control" id="InformationPresent" rows="1" placeholder="Please enter a title or name" required></textarea>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div id="jquery-script-menu">
-                              <label for="keywords">Keywords</label>
-                              <select class="form-control" id="keywords" name="keywords[]" multiple="multiple" required="" aria-describedby="keywords_invalid_feedback keywords_help">
-                                  <option value="1">foo</option>
-                                  <option value="2">bar</option>
-                                  <option value="3">baz</option>
-                              </select>
-                              <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div>
-                              <small id="keywords_help" class="form-text text-muted">Write a word and comma e.g. Nature, Street, backyard...
-                              </small>
-                            </div>
-                            <div class="form-group">
-                              <label for="adress" class="adress">Address</label>
-                              <input type="text" class="form-control" id="adress" placeholder="Street and number... (optional)">
-                            </div>
-                            <div class="form-group">
-                              <label for="InformationPresent">Brief description of the proposal</label>
-                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Please describe your proposal briefly" maxlength="4000" required></textarea>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="InformationPresent">Please provide the arguments why this is important for Šančiai?</label>
-                              <textarea class="form-control" id="InformationPresent" rows="3" placeholder="Please provide the arguments why this is important for Šančiai" maxlength="4000" required></textarea>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
-                            </div>
-                            <div class="card-group files-container">
-                              <label for="card-group" class="col-12 p-0">Add an associative image or reference (optional)
-                              </label>
-                              <div class="col p-0">
-                                <div class="form-group form-group-file" id="picNode">
-                                  <label for="file">Choose file</label>
-                                  <input type="file" class="form-control-file" id="file">
-                                </div>
-                                <div class="form-group">
-                                  <label for="author">Name of the author</label>
-                                  <input type="text" class="form-control" id="author" placeholder="">
-                                </div>
-                              </div>
-                              <div class="col p-0">
-                                <div class="form-group">
-                                  <label for="source">Source of photograph</label>
-                                  <input type="text" class="form-control" id="source" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                  <label for="date">Date of photograph</label>
-                                  <input type="text" class="form-control" id="date" placeholder="">
-                                </div>
-                              </div>
-                            </div>
+                    <button
+                      class="btn"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                      id="headingOne"
+                    >
+                      1# Your proposal for Šančiai
+                    </button>
 
-                            
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      data-spy="scroll"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionMap"
+                    >
+                      <div class="card-body scrollable">
+                        <div class="form-group">
+                          <label for="location-type">Location Type</label>
+                          <select class="custom-select" required>
+                            <option
+                              selected="selected"
+                              value=""
+                              hidden="hidden"
+                            >
+                              Choose...
+                            </option>
+                            <option value="1">Building</option>
+                            <option value="2">Public space</option>
+                            <option value="3">
+                              Small architectural object
+                            </option>
+                            <option value="4">Other</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please complete this field.
                           </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="InformationPresent">Title</label>
+                          <textarea
+                            class="form-control"
+                            id="InformationPresent"
+                            rows="1"
+                            placeholder="Please enter a title or name"
+                            required
+                          ></textarea>
+                          <div class="invalid-feedback">
+                            Please complete this field.
+                          </div>
+                        </div>
+                        <div id="jquery-script-menu">
+                          <label for="keywords">Keywords</label>
+                          <select
+                            class="form-control"
+                            id="keywords"
+                            name="keywords[]"
+                            multiple="multiple"
+                            required=""
+                            aria-describedby="keywords_invalid_feedback keywords_help"
+                          >
+                            <option value="1">foo</option>
+                            <option value="2">bar</option>
+                            <option value="3">baz</option>
+                          </select>
+                          <div
+                            id="keywords_invalid_feedback"
+                            class="invalid-feedback"
+                          >
+                            Please enter up to three keywords.
+                          </div>
+                          <small id="keywords_help" class="form-text text-muted"
+                            >Write a word and comma e.g. Nature, Street,
+                            backyard...
+                          </small>
+                        </div>
+                        <div class="form-group">
+                          <label for="adress" class="adress">Address</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="adress"
+                            placeholder="Street and number... (optional)"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="InformationPresent"
+                            >Brief description of the proposal</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="InformationPresent"
+                            rows="3"
+                            placeholder="Please describe your proposal briefly"
+                            maxlength="4000"
+                            required
+                          ></textarea>
+                          <div class="invalid-feedback">
+                            Please complete this field.
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="InformationPresent"
+                            >Please provide the arguments why this is important
+                            for Šančiai?</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="InformationPresent"
+                            rows="3"
+                            placeholder="Please provide the arguments why this is important for Šančiai"
+                            maxlength="4000"
+                            required
+                          ></textarea>
+                          <div class="invalid-feedback">
+                            Please complete this field.
+                          </div>
+                        </div>
+                        <div class="card-group files-container">
+                          <label for="card-group" class="col-12 p-0"
+                            >Add an associative image or reference (optional)
+                          </label>
+                          <div class="col p-0">
+                            <div
+                              class="form-group form-group-file"
+                              id="picNode"
+                            >
+                              <label for="file">Choose file</label>
+                              <input
+                                type="file"
+                                class="form-control-file"
+                                id="file"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <label for="author">Name of the author</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="author"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col p-0">
+                            <div class="form-group">
+                              <label for="source">Source of photograph</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="source"
+                                placeholder=""
+                              />
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of photograph</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="date"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="general" id="ADDDATA">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
-                          #2 PERSONAL DATA*
+                    <button
+                      class="btn"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                      id="headingThree"
+                    >
+                      #2 PERSONAL DATA*
                     </button>
-                
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMap">
+
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionMap"
+                    >
                       <div class="card-body scrollable">
                         <div class="row">
                           <div class="col-sm-6 col-12 p-0">
-                            <label for="" class="connect" required>Connection to Šančiai:
+                            <label for="" class="connect" required
+                              >Connection to Šančiai:
                             </label>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live1" value="option1" required>
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="live"
+                                id="live1"
+                                value="option1"
+                                required
+                              />
                               <label class="form-check-label" for="live1">
                                 <p>I live in Šančiai</p>
                               </label>
                             </div>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live2" value="option2" required>
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="live"
+                                id="live2"
+                                value="option2"
+                                required
+                              />
                               <label class="form-check-label" for="live2">
                                 <p>I lived in Šančiai</p>
                               </label>
                             </div>
                             <div class="form-check form-check-data">
-                              <input class="form-check-input" type="radio" name="live" id="live3" value="option3" required>
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="live"
+                                id="live3"
+                                value="option3"
+                                required
+                              />
                               <label class="form-check-label" for="live3">
                                 <p>I never lived in Šančiai</p>
                               </label>
                             </div>
                           </div>
                           <div class="col-sm-6 col-12 p-0 form-group age">
-                              <label for="age">Age range</label>
-                              <select class="custom-select" required>
-                                <option selected="selected" value="" hidden="hidden">Choose...</option>
-                                <option value="1">till 13 years</option>
-                                <option value="2">14-17</option>
-                                <option value="3">18-24</option>
-                                <option value="4">25-35</option>
-                                <option value="5">35-44</option>
-                                <option value="6">45-54</option>
-                                <option value="7">55-70</option>
-                                <option value="8">more than 71</option>
-                              </select>
-                              <div class="invalid-feedback">
-                                Please complete this field.
-                              </div>
+                            <label for="age">Age range</label>
+                            <select class="custom-select" required>
+                              <option
+                                selected="selected"
+                                value=""
+                                hidden="hidden"
+                              >
+                                Choose...
+                              </option>
+                              <option value="1">till 13 years</option>
+                              <option value="2">14-17</option>
+                              <option value="3">18-24</option>
+                              <option value="4">25-35</option>
+                              <option value="5">35-44</option>
+                              <option value="6">45-54</option>
+                              <option value="7">55-70</option>
+                              <option value="8">more than 71</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please complete this field.
+                            </div>
                           </div>
                         </div>
                         <div class="row form-group email">
                           <label for="email">E-mail</label>
-                          <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="email@example.com"
+                          />
                         </div>
                         <div class="row">
-                          <p class="small">*Personal data will only be used for urban research, statistical purposes and communication. The data is not made public.
+                          <p class="small">
+                            *Personal data will only be used for urban research,
+                            statistical purposes and communication. The data is
+                            not made public.
                           </p>
                         </div>
                       </div>
@@ -359,76 +611,154 @@
                   </div>
 
                   <div class="finalSubmit">
-                    <div class="row form-check form-check-inline justify-content-center">
-                      <input class="form-check-input" type="checkbox" id="agree" value="agree" required>
-                      <label class="form-check-label" id="termsandconditions" for="agree">I agree with the <a class="linkterms" href="./terms-and-conditions.html">terms and conditions</a>. </label>
+                    <div
+                      class="row form-check form-check-inline justify-content-center"
+                    >
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="agree"
+                        value="agree"
+                        required
+                      />
+                      <label
+                        class="form-check-label"
+                        id="termsandconditions"
+                        for="agree"
+                        >I agree with the
+                        <a class="linkterms" href="./terms-and-conditions.html"
+                          >terms and conditions</a
+                        >.
+                      </label>
                       <div class="invalid-feedback">
                         Please complete this field.
                       </div>
-                      <button type="submit" class="btn btn-form mt-2" id="btn-form">
-                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="spin"></span>
-                        SUBMIT</button>
-                      <button type="button" class="btn btn-back" data-dismiss="modal" aria-label="Close">
+                      <button
+                        type="submit"
+                        class="btn btn-form mt-2"
+                        id="btn-form"
+                      >
+                        <span
+                          class="spinner-border spinner-border-sm d-none"
+                          role="status"
+                          aria-hidden="true"
+                          id="spin"
+                        ></span>
+                        SUBMIT
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-back"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
                         ← Back
                       </button>
                     </div>
                   </div>
-
                 </div>
               </form>
               <div class="text-center d-none" id="thanks">
                 <p class="line2"></p>
-                <p class="thanks">Thanks for your cooperation creating Šančiai Memory Map! </p>
-                <p class="thanks">Your data is awaiting moderation, please allow some time before it goes published.</p>
+                <p class="thanks">
+                  Thanks for your cooperation creating Šančiai Memory Map!
+                </p>
+                <p class="thanks">
+                  Your data is awaiting moderation, please allow some time
+                  before it goes published.
+                </p>
                 <p class="line2"></p>
-                <button type="button" class="btn btn-back mt-2" data-dismiss="modal" aria-label="Close">← Back</button>
+                <button
+                  type="button"
+                  class="btn btn-back mt-2"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  ← Back
+                </button>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-
-
-
-
-
-    <!-- Modal How to Create -->
-    <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered how-dialog">  
-        <div class="modal-content how-content">
-          <div class="modal-body modal-body-how">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h6>How to become a Šančiai visionary? 
-            </h6>
-            <p>1) Get to know the Šančiai mapping archive: MEMORY  NATURE   PRESENT maps.</p>
-            <p>2)  Click on the button "Your suggestions for the vision of Šančiai".</p>
-            <p>3)  Mark the location on the map.</p>
-            <p>4) Pažymėkite varnelę "Sutinku su privatumo politika" ir patvirtinkite, kad sutinkate su duomenų platinimu ir apsaugaSubmit your information in the window that opens.</p>
-            <p>5) Tick the "I agree to the privacy policy" box and confirm that you agree to the dissemination and protection of data.</p>
-            <p>6) Click the "Submit" button.</p>
+      <!-- Modal How to Create -->
+      <div
+        class="modal fade"
+        id="how"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered how-dialog">
+          <div class="modal-content how-content">
+            <div class="modal-body modal-body-how">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h6>How to become a Šančiai visionary?</h6>
+              <p>
+                1) Get to know the Šančiai mapping archive: MEMORY NATURE
+                PRESENT maps.
+              </p>
+              <p>
+                2) Click on the button "Your suggestions for the vision of
+                Šančiai".
+              </p>
+              <p>3) Mark the location on the map.</p>
+              <p>
+                4) Pažymėkite varnelę "Sutinku su privatumo politika" ir
+                patvirtinkite, kad sutinkate su duomenų platinimu ir
+                apsaugaSubmit your information in the window that opens.
+              </p>
+              <p>
+                5) Tick the "I agree to the privacy policy" box and confirm that
+                you agree to the dissemination and protection of data.
+              </p>
+              <p>6) Click the "Submit" button.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal Point Map -->
-    <div class="modal fade" id="picture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered picture-dialog modal-xl">  
-        <div class="modal-content picture-content">
-          <div class="modal-body modal-body-picture">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <section class="row justify-content-center">
-                <div class="img-modal row">  
+      <!-- Modal Point Map -->
+      <div
+        class="modal fade"
+        id="picture"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered picture-dialog modal-xl">
+          <div class="modal-content picture-content">
+            <div class="modal-body modal-body-picture">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <section class="row justify-content-center">
+                <div class="img-modal row">
                   <div class="col-12 title-container">
-                    <h4>Title of the object and it could be long enough to have two lines</h4>
+                    <h4>
+                      Title of the object and it could be long enough to have
+                      two lines
+                    </h4>
                   </div>
                   <div class="col-lg-6 col-12 px-0">
-                    <div class="card pic-card" style="width: 18rem;">
-                      <img src="./css/single-event/creativity3jpg.jpg" class="modal-img card-img-top" alt="...">
+                    <div class="card pic-card" style="width: 18rem">
+                      <img
+                        src="./css/single-event/creativity3jpg.jpg"
+                        class="modal-img card-img-top"
+                        alt="..."
+                      />
                       <!-- <img src="./css/communities/button-community.png" class="no-img card-img-top" alt="..."> -->
                       <div class="card-footer">
                         <h5 class="card-title">Author:</h5>
@@ -443,125 +773,224 @@
                   <div class="col-lg-6 col-12 px-0">
                     <div class="card proposal-card">
                       <div class="card-body proposal-card-body scrollable">
-                          <h5 class="card-title">Location type: </h5>
-                          <p class="card-text">Building</p>
-                          <h5 class="card-title">Adress:</h5>
-                          <p class="card-text"> į Lietuvos kariuomenės Šančių įgulos karių katalikų bažnyčią, jai</p>
-                          <h5 class="card-title">Description of the proposal:</h5>
-                          <p class="card-text">XIX a. carinės Rusijos armijos kareivinių rajone, dabartinio Vilijos parko centre (prie Juozapavičiaus pr.), buvo pastatyta medinė cerkvė Kauno tvirtovės įgulos reikmėms. Tai buvo 109-ojo Volgos pėstininkų pulko Dievo Motinos Globėjos cerkvė, pastatyta 1896 m. Ji buvo kryžiaus formos su pagrindiniu kupolu, apsuptu keturių nedidelių bokštų. Viso statinio tiek išorė, tiek ir vidus buvo papuoštas rusiško 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic velit assumenda alias temporibus voluptate illum recusandae provident modi, nostrum, dolore, ipsa placeat eligendi illo? Quas cum esse odio culpa?
-                            Fugit, dicta dolores nemo aut ipsam autem vitae soluta quam pariatur perspiciatis? Odit voluptatem culpa vitae nulla sint nostrum aspernatur non animi explicabo eos veritatis eum tempora, harum vel voluptate!
-                            Pariatur, velit esse cum accusamus ut dicta assumenda doloremque suscipit quos quidem consectetur numquam sed iusto nam consequuntur, mollitia ducimus non modi corporis quae nulla doloribus dolorem voluptatum quo. Quia?
-                          </p>
-                          <h5 class="card-title">Arguments why this is important for Šančiai:</h5>
-                          <p class="card-text">Stiliaus raižiniais ir dažytas aliejiniais dažais. Turėjo gana masyvų dviejų aukštų ikonostasą su raižiniais, kolonomis ir karnizais, su piešiniais ant paauksuoto fono. Statybas palaimino pats imperatorius Aleksandras III. Atkūrus</p>
-                          <div class="badges">
-                            <span class="badge">Keywords</span>
-                            <span class="badge">Key</span>
-                            <span class="badge">Keywordsmaslargas</span>
-                            <span class="badge">Keywordsmas</span>
-                          </div>
+                        <h5 class="card-title">Location type:</h5>
+                        <p class="card-text">Building</p>
+                        <h5 class="card-title">Adress:</h5>
+                        <p class="card-text">
+                          į Lietuvos kariuomenės Šančių įgulos karių katalikų
+                          bažnyčią, jai
+                        </p>
+                        <h5 class="card-title">Description of the proposal:</h5>
+                        <p class="card-text">
+                          XIX a. carinės Rusijos armijos kareivinių rajone,
+                          dabartinio Vilijos parko centre (prie Juozapavičiaus
+                          pr.), buvo pastatyta medinė cerkvė Kauno tvirtovės
+                          įgulos reikmėms. Tai buvo 109-ojo Volgos pėstininkų
+                          pulko Dievo Motinos Globėjos cerkvė, pastatyta 1896 m.
+                          Ji buvo kryžiaus formos su pagrindiniu kupolu, apsuptu
+                          keturių nedidelių bokštų. Viso statinio tiek išorė,
+                          tiek ir vidus buvo papuoštas rusiško Lorem ipsum dolor
+                          sit amet consectetur adipisicing elit. Aut hic velit
+                          assumenda alias temporibus voluptate illum recusandae
+                          provident modi, nostrum, dolore, ipsa placeat eligendi
+                          illo? Quas cum esse odio culpa? Fugit, dicta dolores
+                          nemo aut ipsam autem vitae soluta quam pariatur
+                          perspiciatis? Odit voluptatem culpa vitae nulla sint
+                          nostrum aspernatur non animi explicabo eos veritatis
+                          eum tempora, harum vel voluptate! Pariatur, velit esse
+                          cum accusamus ut dicta assumenda doloremque suscipit
+                          quos quidem consectetur numquam sed iusto nam
+                          consequuntur, mollitia ducimus non modi corporis quae
+                          nulla doloribus dolorem voluptatum quo. Quia?
+                        </p>
+                        <h5 class="card-title">
+                          Arguments why this is important for Šančiai:
+                        </h5>
+                        <p class="card-text">
+                          Stiliaus raižiniais ir dažytas aliejiniais dažais.
+                          Turėjo gana masyvų dviejų aukštų ikonostasą su
+                          raižiniais, kolonomis ir karnizais, su piešiniais ant
+                          paauksuoto fono. Statybas palaimino pats imperatorius
+                          Aleksandras III. Atkūrus
+                        </p>
+                        <div class="badges">
+                          <span class="badge">Keywords</span>
+                          <span class="badge">Key</span>
+                          <span class="badge">Keywordsmaslargas</span>
+                          <span class="badge">Keywordsmas</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal Having Questions? -->
-    <div class="modal fade" id="quest" tabindex="-1" aria-labelledby="quest" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered how-dialog">  
-        <div class="modal-content how-content">
-          <div class="modal-body modal-body-how">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <form action="" class="needs-validation" novalidate>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name" required>
-                <div class="invalid-feedback">
-                  Please complete this field.
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourname@example.com" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                <div class="invalid-feedback">
-                  Please complete this field.
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="comments">Your comments</label>
-                  <textarea name="" id="comments" cols="30" rows="10" class="form-control" placeholder="Max. 1200 characters" required></textarea>
+      <!-- Modal Having Questions? -->
+      <div
+        class="modal fade"
+        id="quest"
+        tabindex="-1"
+        aria-labelledby="quest"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered how-dialog">
+          <div class="modal-content how-content">
+            <div class="modal-body modal-body-how">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <form action="" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
                   <div class="invalid-feedback">
                     Please complete this field.
                   </div>
-              </div>
-              <div class="row form-check form-check-inline modal-quest-terms">
-                <input class="form-check-input" type="checkbox" id="agree" value="agree" required>
-                <label class="form-check-label" for="agree"><p>I agree with the <a class="linkterms" href="./terms-and-conditions.html">terms and conditions</a>.</p> </label>
-                <div class="invalid-feedback">
-                  Please complete this field.
                 </div>
-              </div>
-              <button type="" class="btn btn-how-modal">Submit</button>
-            </form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="yourname@example.com"
+                    required
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                  <div class="invalid-feedback">
+                    Please complete this field.
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="comments">Your comments</label>
+                  <textarea
+                    name=""
+                    id="comments"
+                    cols="30"
+                    rows="10"
+                    class="form-control"
+                    placeholder="Max. 1200 characters"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please complete this field.
+                  </div>
+                </div>
+                <div class="row form-check form-check-inline modal-quest-terms">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="agree"
+                    value="agree"
+                    required
+                  />
+                  <label class="form-check-label" for="agree"
+                    ><p>
+                      I agree with the
+                      <a class="linkterms" href="./terms-and-conditions.html"
+                        >terms and conditions</a
+                      >.
+                    </p>
+                  </label>
+                  <div class="invalid-feedback">
+                    Please complete this field.
+                  </div>
+                </div>
+                <button type="" class="btn btn-how-modal">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Footer -->
-  <footer class="py-4 bg-green2">
-    <div class="container-fluid">
+    <!-- Footer -->
+    <footer class="py-4 bg-green2">
+      <div class="container-fluid">
         <div class="row text-center align-items-center">
-            <div class="col-12">
+          <div class="col-12">
             <span class="support">Paremkite Šančių pilietinę visuomenę</span>
-            </div>
-            <div class="col-12">
-            <button type="button" class="btn btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
-            </div>
-            <div class="col-12">
-            <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
+          </div>
+          <div class="col-12">
+            <button
+              type="button"
+              class="btn btn-donate"
+              data-toggle="modal"
+              data-target="#donate"
+            >
+              Paaukok
+            </button>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              >Internetinę svetainę administruoja Žemųjų Šančių bendruomenė,
+              Įmonės kodas 303497934 - sanciubendruomene@gmail.com
             </span>
-            </div>
-            <div class="col-12">
-            <span class="legal"><a href="./terms-and-conditions.html">Privatumo politika</a></span>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              ><a href="./terms-and-conditions.html"
+                >Privatumo politika</a
+              ></span
+            >
             <span class="legal">|</span>
-            <span class="legal">Design by <a href="https://desenioras.com/" target="_blank">desenioras.com</a>
+            <span class="legal"
+              >Design by
+              <a href="https://desenioras.com/" target="_blank"
+                >desenioras.com</a
+              >
             </span>
-            </div>
+          </div>
         </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog donate-dialog">  
-            <div class="modal-content donate-content">
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="donate"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog donate-dialog">
+          <div class="modal-content donate-content">
             <div class="modal-header donate-header">
-                <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
+              <h5 class="modal-title" id="exampleModalLabel">
+                Paremkite Šančių pilietinę bendruomenę
+              </h5>
             </div>
             <div class="modal-body donate-body">
-                <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
-                <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
-                <p>Įmonės kodas: 303497934</p>
-                <p>Adresas: Norvegų g. 7A, Kaunas</p>
+              <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
+              <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
+              <p>Įmonės kodas: 303497934</p>
+              <p>Adresas: Norvegų g. 7A, Kaunas</p>
             </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- JS -->
-  <script src="./js/maps-present.js"></script>
-  <!-- Select2 -->
-  <script src="vendor/select2/js/select2.min.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./js/maps-present.js"></script>
+    <!-- Select2 -->
+    <script src="vendor/select2/js/select2.min.js"></script>
+  </body>
 </html>
