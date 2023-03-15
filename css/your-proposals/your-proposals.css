@@ -116,9 +116,10 @@
   margin: 0;
 }
 .btn-container{
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  width: 95%;
+  width: 95%; */
+  width: 100%;
 }
 .btn-container button, .botones button{
   border-radius: 10px;
