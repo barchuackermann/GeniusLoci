@@ -1,23 +1,85 @@
-/* HEADER */
+/* COMMUNITIES HEADER */
+.lietuvos-logo{
+    width: 13vw;
+}
+header{
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.175) !important;
+    margin-top: 10vh;
+    height: 90vh;
+}
+.carousel-supra {
+    height: auto;
+    min-height: 90vh;
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-text{
+    width: 50%;
+    height: 90vh;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.carousel-text>h3{
+    color: #435053;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.carousel-text>h4{
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2em;
+    width: 25vw;
+}
+.btn-maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 11vw;
+    min-height: 24vh;
+    margin-right: 3em;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
 .btn-maps>span{
     color: white !important;
     font-style: italic;
     text-align: center;
     font-weight: 900;
-    font-size: .5em;
+    font-size: 2rem;
     width: 70%;
     overflow: visible;
     white-space: wrap;
 }
-.lietuvos-logo{
-    width: 13vw;
+.carousel{
+    height: 90vh;
 }
-.carousel-text{
-    margin-top: 3vw;
+.carousel-item {
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
 }
-.carousel-text>h3{
-    font-size: 2vw;
+.photoby{
+    font-size: 1rem;
 }
+
 
 /* COMMUNITY CAROUSEL */
 .community-carousel{
@@ -88,8 +150,6 @@
 .btn-header{
     height: 100%;
 }
-
-
 /* EVENTS */
 .section-events{
     margin: 6vw auto;
@@ -98,21 +158,171 @@
     height: 5vw;
 }
 
-/* MOBILE */
-
-@media (max-width: 768px){
-    /* Header Mobile */
+@media (min-width: 2001px){
+    .carousel-text{
+        padding-left: 5rem;
+    }
     .carousel-text>h3{
-        margin-top: 4vw;
-      color: white;
-      font-weight: 900;
-      font-size: 10vw;
+        font-size: 4rem;
+    }
+    .carousel-text>h4{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 2000px) and (min-width: 1441px){
+    .carousel-text h3{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 1200px){
+    .carousel-text h3{
+        font-size: 2rem;
+    }
+    .carousel-text h4{
+        font-size: 1rem;
     }
     .btn-maps{
+        min-height: 20vh;
+    }
+}
+@media (max-width: 1024px){
+    .btn-container{
+        margin: 0;
+    }
+    .btn-maps{
+        margin-right: 0;
+        justify-content: center;
+    }
+    .btn-maps>span{
+        font-size: 1.5rem;
+    }
+    .carousel-text{
+        justify-content: space-evenly;
+        padding-top: 0;
+        padding-left: 2rem;
+    }
+}
+@media (max-width: 991.98px){
+    .carousel-supra-banner {
+        width: 100vw;
+    }
+    .active-citizens-logo{
+        position: relative;
+        z-index: 10;
+        width: 30vw;
+        height: auto;
+        margin: 1.5em 0 0 0.5em;
+    }
+    .carousel-text{
+        width: 50%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+    .carousel-text>h2{  
+        color: #435053;
+        font-weight: 900;
+        font-size: 5vw;
+    }
+    .carousel-text-title{
+        color: #435053;
+    }
+    .carousel-inner{
+        width: 100%;
+    }
+    .carousel-text>h3{
+        color: #435053;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .carousel-text>h4{
+        color: #435053;
+        font-weight: 600;
+        font-size: 2vh;
+    }
+    .btn-container{
+        padding-top: 0;
+        align-items: center;
+    }
+    .btn-container h4{
+        font-size: 2vw;
+        padding-right: 1em;
+        margin: 0;
+    }
+    .btn-maps{
+        min-width: 13vw;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        background: url("./home/MAP_EN.png") no-repeat center center;
+        background-size: contain;
+        margin-right: 0.5em;
+    }
+    .btn-maps-pills{
+        background-color: #AF529E;
+        border-radius: 2rem;
+        color: white;
+        vertical-align: center;
+        font-weight: 400;
+        font-size: 1rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+    }
+    .twobtn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 10%;
+        margin-left: 1.5vw;
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+    }
+    .photoby{
+        font-size: 1rem;
+        color: rgba(255,255,255, 0.5);
+    }
+    .photoby-banner{
       position: absolute;
-      top: 40%;
-      left: -10%;
-      min-width: 90vw;
+      z-index: 5000;
+      margin-top: -33vh;
+      margin-left: 31vw;
+      font-size: 1.25vw;
+      color: rgb(221, 221, 221);
+    }
+}
+@media (max-width: 767.98px){
+    .carousel-text{
+        width: 100%;
+    }
+    .carousel-text h2{
+        color: white;
+        width: 85%;
+    }
+    .carousel-text h3{
+        margin-top: 4vw;
+        color: white;
+        font-weight: 900;
+        font-size: 10vw;
+    }
+    .btn-maps{
+        min-width: 5rem;
+        height: 11rem;
+        width: 80%;
+        margin-bottom: 6rem;
     }
     .community-carousel{
         height: 90vw;
@@ -167,5 +377,9 @@
     .btn-header{
         height: 100%;
     }
-    
+}
+@media (max-width: 426px){
+    .carousel-text h2{
+        font-size: 1.5rem;
+    }
 }
