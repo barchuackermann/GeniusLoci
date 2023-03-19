@@ -1,641 +1,1025 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a99166f815.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a99166f815.js" crossorigin="anonymous"></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
+    <title>Šančiųbendruomenė.lt</title>
 
-  <title>Šančiųbendruomenė.lt</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link href="css/activities/activities.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/base.css">
-  <link href="css/activities/activities.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand lexend active" href="index.html">
-        <div class="logo">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 22.6" style="enable-background:new 0 0 30 22.6;" xml:space="preserve">
-            <path class="st0" d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
-              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"/>
-          </svg>
-        </div>
-
-        <span class="title2">Šančių bendruomenė</span>
-      </a>
-      <button
-        id="burger"
-        class="navbar-toggler navbar-toggler-right bg-white"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon">
-          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="black"/>
-          </svg>
-        </span>
-      </button>
-      <div
-        class="collapse navbar-collapse d-lg-flex justify-content-around"
-        id="navbarResponsive"
-      >
-        <ul class="navbar-nav bg-nav">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link active"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Šančiai Vision</a
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand lexend active" href="index.html">
+          <div class="logo">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 22.6"
+              style="enable-background: new 0 0 30 22.6"
+              xml:space="preserve"
             >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item active" href="">Results of Workshops</a>
-              <a class="dropdown-item" href="">Your Proposals</a>
-              <a class="dropdown-item" href="">Vote</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >MAPS</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./about-maps.html">About Maps</a>
-              <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
-              <a class="dropdown-item" href="./maps-present.html">Present Map</a>
-              <a class="dropdown-item" href="./maps-nature.html">Nature Map</a>
-              <a class="dropdown-item" href="./analysis-maps.html">Analysis of Maps
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./communities.html">COMMUNITIES</a>
-          </li>
-          <li class="nav-item dropdown genius">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >GENIUS LOCI</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
-              <a class="dropdown-item" href="./activities.html">Activities</a>
-              <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
-              <a class="dropdown-item" href="./partners.html">Partners</a>
-            </div>
-          </li>
-          <li class="input2-container">
-            <form method="get" action="#" class="input-group">
-              <input
-                type="search"
-                id="search"
-                name="Search"
-                aria-label="Search"
-                method="GET"
-                action=""
-                placeholder="Search"
-                class="form-inline bg-transparent input2"
+              <path
+                class="st0"
+                d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
+              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"
               />
-              <button class="btn lupa" type="button">
-                <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z" fill="#454646"/>
+            </svg>
+          </div>
+
+          <span class="title2">Šančių bendruomenė</span>
+        </a>
+        <button
+          id="burger"
+          class="navbar-toggler navbar-toggler-right bg-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-around"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav bg-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Šančiai Vision</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item active" href="">Results of Workshops</a>
+                <a class="dropdown-item" href="">Your Proposals</a>
+                <a class="dropdown-item" href="">Vote</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >MAPS</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./about-maps.html">About Maps</a>
+                <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
+                <a class="dropdown-item" href="./maps-present.html"
+                  >Present Map</a
+                >
+                <a class="dropdown-item" href="./maps-nature.html"
+                  >Nature Map</a
+                >
+                <a class="dropdown-item" href="./analysis-maps.html"
+                  >Analysis of Maps
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./communities.html">COMMUNITIES</a>
+            </li>
+            <li class="nav-item dropdown genius">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >GENIUS LOCI</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
+                <a class="dropdown-item" href="./activities.html">Activities</a>
+                <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
+                <a class="dropdown-item" href="./partners.html">Partners</a>
+              </div>
+            </li>
+            <li class="input2-container">
+              <form method="get" action="#" class="input-group">
+                <input
+                  type="search"
+                  id="search"
+                  name="Search"
+                  aria-label="Search"
+                  method="GET"
+                  action=""
+                  placeholder="Search"
+                  class="form-inline bg-transparent input2"
+                />
+                <button class="btn lupa" type="button">
+                  <svg
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z"
+                      fill="#454646"
+                    />
                   </svg>
-              </button>
-            </form>
-          </li>
-          <div class="d-flex languaje-container">
-            <li class="nav-item">
-              <a class="nav-link languaje" href="#">LT</a>
+                </button>
+              </form>
             </li>
-            <li class="nav-item">
-              <a class="nav-link languaje active" href="#">EN</a>
-            </li>
-
-          </div>
-        </ul>
-        <button type="button" class="btn login">
-          <span>Login</span>
+            <div class="d-flex languaje-container">
+              <li class="nav-item">
+                <a class="nav-link languaje" href="#">LT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link languaje active" href="#">EN</a>
+              </li>
+            </div>
+          </ul>
+          <button type="button" class="btn login">
+            <span>Login</span>
           </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Header -->
-  <header class="display-4">
-    <div class="principal short">
-      <div class="row m-0">
-        <!-- Desktop -->
-        <div class="carousel-supra-banner d-none d-sm-none d-md-block" style="background-image: url(./css/banners-mas-cortos/banner-page.png)">
-          <img src="./css/logos/Active-citizens-fund@4x.png" alt="Active Citizens Logo" class="active-citizens-logo">
-          <div class="carousel-text">
-            <h2>Activities</h2>
-            <!-- <h3>Activities</h3> -->
-            <h4>This project is about the involvement of citizens in the planning of the territory of Šančiai district. It is funded by the EEA and Norwegian financial mechanisms and organised by Žemųjų Šančių community. Project time: 2020-2023.</h4>
+    <!-- Header -->
+    <header class="container-fluid p-0">
+      <div class="short">
+        <div class="row m-0">
+          <!-- Desktop -->
+          <div
+            class="carousel-supra-banner d-none d-sm-none d-md-flex"
+            style="
+              background-image: url(./css/banners-mas-cortos/banner-page.png);
+            "
+          >
+            <img
+              src="./css/logos/Active-citizens-fund@4x.png"
+              alt="Active Citizens Logo"
+              class="active-citizens-logo"
+            />
+            <div class="carousel-text">
+              <h2>Activities</h2>
+              <!-- <h3>Activities</h3> -->
+              <h4>
+                This project is about the involvement of citizens in the
+                planning of the territory of Šančiai district. It is funded by
+                the EEA and Norwegian financial mechanisms and organised by
+                Žemųjų Šančių community. Project time: 2020-2023.
+              </h4>
+            </div>
+          </div>
+          <div
+            class="carousel-supra-banner supra-banner2 d-block d-sm-block d-md-none"
+            style="background-image: url('./css/home/WAVE-MOBILE.png')"
+          >
+            <div class="carousel-text">
+              <h2>Activities</h2>
+            </div>
           </div>
         </div>
-          <div class="carousel-supra-banner supra-banner2 d-block d-sm-block d-md-none" style="background-image: url('./css/home/WAVE-MOBILE.png');">
-          <div class="carousel-text">
-            <h2>Activities</h2>
+        <!-- Carousel Images and indicators -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner short" role="listbox">
+            <div
+              class="carousel-item active"
+              style="background-image: url(./css/img/002.jpg)"
+            >
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="photoby-banner">
+                  <i class="fa fa-camera" aria-hidden="true"></i> Ed Carroll
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Carousel Images and indicators -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol> -->
-        <div class="carousel-inner short" role="listbox">
-          <div class="carousel-item active" style="background-image: url(./css/img/002.jpg)">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="photoby-banner"><i class="fa fa-camera" aria-hidden="true"></i>
-                Ed Carroll</h3>
-            </div>
-          </div>
-          <!-- <div class="carousel-item" style="background-image: url('./css/img/002.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="photoby-banner"><i class="fa fa-camera" aria-hidden="true"></i>
-                Ed Carroll</h3>
-            </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('./css/img/4.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 class="photoby-banner"><i class="fa fa-camera" aria-hidden="true"></i>
-                Ed Carroll</h3>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>      
-  </header>
+    </header>
 
-  <!-- Activities -->
-  <section class="row mt-5 mb-5 justify-content-center">
-    <div class="col-md-8 center">
-      <!-- <div class="row justify-content-center ">
+    <!-- Activities -->
+    <section class="row mt-5 mb-5 justify-content-center">
+      <div class="col-md-8 center">
+        <!-- <div class="row justify-content-center ">
         <h2 class="text-center events">Upcomming Events</h2>
       </div> -->
-      <div class="mb-4 justify-content-center" id="accordion" role="tablist" aria-multiselectable="true">
-        <!-- 1st Event -->
-        <div class="card">
-          <a 
-          class="card-headers align-content-center" 
-          role="tab" 
-          id="headingOne" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseOne" 
-          aria-expanded="true" 
-          aria-controls="collapseOne">
-            <div class="col-md-12 col-sm-12 event-category-title">
-                  <span>EDUCATION</span>
-            </div>
-          </a>
-  
-          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="row event-container">
-              <div class="col-lg-2 col-md-2 col circle">
-                  <a 
-                    role="tab" 
-                    id="lectures" 
-                    data-toggle="collapse" 
-                    data-parent="#accordion" 
-                    href=".lectures" 
-                    aria-expanded="true" 
-                    class="card-title m-0 text-center"><h6 class="subcategory-card" id="lecturesCircle">Lectures</h6></a>
+        <div
+          class="mb-4 justify-content-center"
+          id="accordion"
+          role="tablist"
+          aria-multiselectable="true"
+        >
+          <!-- 1st Event -->
+          <div class="card">
+            <a
+              class="card-headers align-content-center"
+              role="tab"
+              id="headingOne"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              href="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <div class="col-md-12 col-sm-12 event-category-title">
+                <span>EDUCATION</span>
               </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="seminars" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".seminars" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="seminarsCircle">Seminars</h6></a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="tours" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".tours" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="toursCircle">Tours</h6></a>
-              </div>
-            </div>
-            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
-              <div class="col card card-activity collapse lectures" role="tabpanel" aria-labelledby="lectures">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Lectures</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse seminars" role="tabpanel" aria-labelledby="seminars">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Seminars</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse tours" role="tabpanel" aria-labelledby="tours">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Tours</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse tours" role="tabpanel" aria-labelledby="tours">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Tours</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse lectures" role="tabpanel" aria-labelledby="lectures">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Lectures</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse seminars" role="tabpanel" aria-labelledby="seminars">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Seminars</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse tours" role="tabpanel" aria-labelledby="tours">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Tours</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="col card card-activity collapse tours" role="tabpanel" aria-labelledby="tours">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <p class="card-text card-text-activity">Tours</p>
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-        <!-- 2nd Event -->
-        <div class="card">
-          <a 
-          class="card-headers align-content-center" 
-          role="tab" 
-          id="headingTwo" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseTwo" 
-          aria-expanded="true" 
-          aria-controls="collapseTwo">
-            <div class="col-md-12 col-sm-12 event-category-title">
-                  <span>CREATIVITY</span>
-            </div>
-          </a>
-  
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="row event-container">
-              <div class="col-lg-2 col-md-2 col circle">
-                  <a 
-                    role="tab" 
-                    id="opera" 
-                    data-toggle="collapse" 
-                    data-parent="#accordion" 
-                    href=".opera" 
-                    aria-expanded="true" 
-                    class="card-title m-0 text-center"><h6 class="subcategory-card" id="operaCircle">Opera</h6></a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="exhibitions" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".exhibitions" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="exhibitionsCircle">Exhibitions</h6></a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="spaces" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".spaces" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="spacesCircle">Spaces</h6>
-                </a>
-              </div>
-            </div>
-            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
-              <div class="card card-activity collapse opera" role="tabpanel" aria-labelledby="opera">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Opera</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse spaces" role="tabpanel" aria-labelledby="spaces">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Spaces</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse exhibitions" role="tabpanel" aria-labelledby="exhibitions">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Exhibitions</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse opera" role="tabpanel" aria-labelledby="opera">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Opera</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          
-          
-        </div>
-        <!-- 3rd Event -->
-        <div class="card">
-          <a 
-          class="card-headers align-content-center" 
-          role="tab" 
-          id="headingThree" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseThree" 
-          aria-expanded="true" 
-          aria-controls="collapseThree">
-            <div class="col-md-12 col-sm-12 event-category-title">
-                  <span>CREATIVE MAPPING</span>
-            </div>
-          </a>
-  
-          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="row event-container">
-              <div class="col-lg-2 col-md-2 col circle">
-                  <a 
-                    role="tab" 
-                    id="cultural" 
-                    data-toggle="collapse" 
-                    data-parent="#accordion" 
-                    href=".cultural" 
-                    aria-expanded="true" 
-                    class="card-title m-0 text-center">
-                    <h6 class="subcategory-card" id="culturalCircle">Cultural Heritage</h6>
-                  </a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="presentMap" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".presentMap" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="presentMapCircle">Present Map</h6>
-                </a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="urbanVision" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".urbanVision" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="urbanVisionCircle">Urban Vision</h6></a>
-              </div>
-            </div>
-            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
-              <div class="card card-activity collapse cultural" role="tabpanel" aria-labelledby="cultural">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Cultural Heritage</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse cultural" role="tabpanel" aria-labelledby="cultural">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Cultural Heritage</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse urbanVision" role="tabpanel" aria-labelledby="urbanVision">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Urban Vision</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse presentMap" role="tabpanel" aria-labelledby="presentMap">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Present Map</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <!-- 4th Event -->
-        <div class="card">
-          <a 
-          class="card-headers align-content-center" 
-          role="tab" 
-          id="headingFour" 
-          data-toggle="collapse" 
-          data-parent="#accordion" 
-          href="#collapseFour" 
-          aria-expanded="true" 
-          aria-controls="collapseFour">
-            <div class="col-md-12 col-sm-12 event-category-title">
-                  <span>CAPACITY BUILDING</span>
-            </div>
-          </a>
-  
-          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="row event-container">
-              <div class="col-lg-2 col-md-2 col circle">
-                  <a 
-                    role="tab" 
-                    id="training" 
-                    data-toggle="collapse" 
-                    data-parent="#accordion" 
-                    href=".training" 
-                    aria-expanded="true" 
-                    class="card-title m-0 text-center"><h6 class="subcategory-card" id="trainingCircle">Training</h6></a>
-              </div>
-              <div class="col-lg-2 col-md-2 col circle">
-                <a role="tab" 
-                  id="studyVisit" 
-                  data-toggle="collapse" 
-                  data-parent="#accordion" 
-                  href=".studyVisit" 
-                  aria-expanded="true" 
-                  class="card-title m-0 text-center"><h6 class="subcategory-card" id="studyVisitCircle">Study Visit</h6></a>
-              </div>
-            </div>
-            <div class="row row-cols-md-4 row-cols-2 justify-content-center">
-              <div class="card card-activity collapse training" role="tabpanel" aria-labelledby="training">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Training</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse training" role="tabpanel" aria-labelledby="training">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Training</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse studyVisit" role="tabpanel" aria-labelledby="studyVisit">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Study Visit</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-              <div class="card card-activity collapse studyVisit" role="tabpanel" aria-labelledby="studyVisit">
-                <img src="./css/activities/creativity.jpg" class="card-img-top" alt="...">
-                <div class="card-body card-body-activity">
-                  <h5 class="card-title card-title-activity">Christmas celebration Meeting our community</h5>
-                  <p class="card-text card-text-activity">Study Visit</p>
-                  <a href="./single-event.html" class="btn btn-about">Read About</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-      </div>
-    </div>
-    <button type="button" class="d-none back-to-top" id="arrow-top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </section>
+            </a>
 
-<!-- Footer -->
-<footer class="py-4 bg-green2">
-  <div class="container-fluid">
-      <div class="row text-center align-items-center">
-          <div class="col-12">
-          <span class="support">Paremkite Šančių pilietinę visuomenę</span>
+            <div
+              id="collapseOne"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne"
+            >
+              <div class="row event-container">
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="lectures"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".lectures"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="lecturesCircle">
+                      Lectures
+                    </h6></a
+                  >
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="seminars"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".seminars"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="seminarsCircle">
+                      Seminars
+                    </h6></a
+                  >
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="tours"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".tours"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="toursCircle">Tours</h6></a
+                  >
+                </div>
+              </div>
+              <div class="row row-cols-md-4 row-cols-2 justify-content-center">
+                <div
+                  class="col card card-activity collapse lectures"
+                  role="tabpanel"
+                  aria-labelledby="lectures"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Lectures</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse seminars"
+                  role="tabpanel"
+                  aria-labelledby="seminars"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Seminars</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse tours"
+                  role="tabpanel"
+                  aria-labelledby="tours"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Tours</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse tours"
+                  role="tabpanel"
+                  aria-labelledby="tours"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Tours</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse lectures"
+                  role="tabpanel"
+                  aria-labelledby="lectures"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Lectures</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse seminars"
+                  role="tabpanel"
+                  aria-labelledby="seminars"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Seminars</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse tours"
+                  role="tabpanel"
+                  aria-labelledby="tours"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Tours</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col card card-activity collapse tours"
+                  role="tabpanel"
+                  aria-labelledby="tours"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <p class="card-text card-text-activity">Tours</p>
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
-          <button type="button" class="btn btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
+          <!-- 2nd Event -->
+          <div class="card">
+            <a
+              class="card-headers align-content-center"
+              role="tab"
+              id="headingTwo"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              href="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+              <div class="col-md-12 col-sm-12 event-category-title">
+                <span>CREATIVITY</span>
+              </div>
+            </a>
+
+            <div
+              id="collapseTwo"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingTwo"
+            >
+              <div class="row event-container">
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="opera"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".opera"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="operaCircle">Opera</h6></a
+                  >
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="exhibitions"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".exhibitions"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="exhibitionsCircle">
+                      Exhibitions
+                    </h6></a
+                  >
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="spaces"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".spaces"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="spacesCircle">Spaces</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-cols-md-4 row-cols-2 justify-content-center">
+                <div
+                  class="card card-activity collapse opera"
+                  role="tabpanel"
+                  aria-labelledby="opera"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Opera</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse spaces"
+                  role="tabpanel"
+                  aria-labelledby="spaces"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Spaces</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse exhibitions"
+                  role="tabpanel"
+                  aria-labelledby="exhibitions"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Exhibitions</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse opera"
+                  role="tabpanel"
+                  aria-labelledby="opera"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Opera</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
-          <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
-          </span>
+          <!-- 3rd Event -->
+          <div class="card">
+            <a
+              class="card-headers align-content-center"
+              role="tab"
+              id="headingThree"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              href="#collapseThree"
+              aria-expanded="true"
+              aria-controls="collapseThree"
+            >
+              <div class="col-md-12 col-sm-12 event-category-title">
+                <span>CREATIVE MAPPING</span>
+              </div>
+            </a>
+
+            <div
+              id="collapseThree"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingThree"
+            >
+              <div class="row event-container">
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="cultural"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".cultural"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                  >
+                    <h6 class="subcategory-card" id="culturalCircle">
+                      Cultural Heritage
+                    </h6>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="presentMap"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".presentMap"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="presentMapCircle">
+                      Present Map
+                    </h6>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="urbanVision"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".urbanVision"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="urbanVisionCircle">
+                      Urban Vision
+                    </h6></a
+                  >
+                </div>
+              </div>
+              <div class="row row-cols-md-4 row-cols-2 justify-content-center">
+                <div
+                  class="card card-activity collapse cultural"
+                  role="tabpanel"
+                  aria-labelledby="cultural"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">
+                      Cultural Heritage
+                    </p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse cultural"
+                  role="tabpanel"
+                  aria-labelledby="cultural"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">
+                      Cultural Heritage
+                    </p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse urbanVision"
+                  role="tabpanel"
+                  aria-labelledby="urbanVision"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Urban Vision</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse presentMap"
+                  role="tabpanel"
+                  aria-labelledby="presentMap"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Present Map</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
-          <span class="legal"><a href="./terms-and-conditions.html">Privatumo politika</a></span>
-          <span class="legal">|</span>
-          <span class="legal">Design by <a href="https://desenioras.com/" target="_blank">desenioras.com</a>
-          </span>
+          <!-- 4th Event -->
+          <div class="card">
+            <a
+              class="card-headers align-content-center"
+              role="tab"
+              id="headingFour"
+              data-toggle="collapse"
+              data-parent="#accordion"
+              href="#collapseFour"
+              aria-expanded="true"
+              aria-controls="collapseFour"
+            >
+              <div class="col-md-12 col-sm-12 event-category-title">
+                <span>CAPACITY BUILDING</span>
+              </div>
+            </a>
+
+            <div
+              id="collapseFour"
+              class="collapse"
+              role="tabpanel"
+              aria-labelledby="headingFour"
+            >
+              <div class="row event-container">
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="training"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".training"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="trainingCircle">
+                      Training
+                    </h6></a
+                  >
+                </div>
+                <div class="col-lg-2 col-md-2 col circle">
+                  <a
+                    role="tab"
+                    id="studyVisit"
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href=".studyVisit"
+                    aria-expanded="true"
+                    class="card-title m-0 text-center"
+                    ><h6 class="subcategory-card" id="studyVisitCircle">
+                      Study Visit
+                    </h6></a
+                  >
+                </div>
+              </div>
+              <div class="row row-cols-md-4 row-cols-2 justify-content-center">
+                <div
+                  class="card card-activity collapse training"
+                  role="tabpanel"
+                  aria-labelledby="training"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Training</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse training"
+                  role="tabpanel"
+                  aria-labelledby="training"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Training</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse studyVisit"
+                  role="tabpanel"
+                  aria-labelledby="studyVisit"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Study Visit</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card card-activity collapse studyVisit"
+                  role="tabpanel"
+                  aria-labelledby="studyVisit"
+                >
+                  <img
+                    src="./css/activities/creativity.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body card-body-activity">
+                    <h5 class="card-title card-title-activity">
+                      Christmas celebration Meeting our community
+                    </h5>
+                    <p class="card-text card-text-activity">Study Visit</p>
+                    <a href="./single-event.html" class="btn btn-about"
+                      >Read About</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog donate-dialog">  
-          <div class="modal-content donate-content">
-          <div class="modal-header donate-header">
-              <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
+      <button type="button" class="d-none back-to-top" id="arrow-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-green2">
+      <div class="container-fluid">
+        <div class="row text-center align-items-center">
+          <div class="col-12">
+            <span class="support">Paremkite Šančių pilietinę visuomenę</span>
           </div>
-          <div class="modal-body donate-body">
+          <div class="col-12">
+            <button
+              type="button"
+              class="btn btn-donate"
+              data-toggle="modal"
+              data-target="#donate"
+            >
+              Paaukok
+            </button>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              >Internetinę svetainę administruoja Žemųjų Šančių bendruomenė,
+              Įmonės kodas 303497934 - sanciubendruomene@gmail.com
+            </span>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              ><a href="./terms-and-conditions.html"
+                >Privatumo politika</a
+              ></span
+            >
+            <span class="legal">|</span>
+            <span class="legal"
+              >Design by
+              <a href="https://desenioras.com/" target="_blank"
+                >desenioras.com</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="donate"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog donate-dialog">
+          <div class="modal-content donate-content">
+            <div class="modal-header donate-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Paremkite Šančių pilietinę bendruomenę
+              </h5>
+            </div>
+            <div class="modal-body donate-body">
               <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
               <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
               <p>Įmonės kodas: 303497934</p>
               <p>Adresas: Norvegų g. 7A, Kaunas</p>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-  </div>
-</footer>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script src="./js/activities.js"></script>
-
-</body>
-
+    <script src="./js/activities.js"></script>
+  </body>
 </html>

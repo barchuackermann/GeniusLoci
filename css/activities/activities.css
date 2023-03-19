@@ -1,3 +1,92 @@
+/* Header */
+header{
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.short{
+  height: 70vh;
+}
+.carousel-supra-banner {
+  height: 60vh;
+  margin-top: 10vh;
+  min-height: 50vh;
+  max-height: 90vh;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  vertical-align: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+.carousel-supra-banner .carousel-text{
+  height: 70%;
+  padding-left: 1em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.supra-banner2{
+  background: no-repeat center bottom;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+.active-citizens-logo{
+  position: relative;
+  z-index: 10;
+  width:12vw;
+  height: auto;
+  margin: 0 0 0 1em;
+}
+.carousel-text h2{  
+  color: #435053;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.carousel-text>h3{
+  color: #435053;
+  font-weight: 900;
+  font-size: 2vw;
+}
+.carousel-text>h4{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2em;
+  width: 25vw;
+}
+.carousel-item {
+  height: 70vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.carousel-caption .photoby{
+  font-size: 1em;
+}
+.photoby-banner{
+  position: absolute;
+  z-index: 5000;
+  bottom: 0em;
+  font-size: 1rem;
+  color: rgb(221, 221, 221);
+  right: 44%;
+}
+
 /* Activities */
 .card {
   background-color: transparent;
@@ -139,11 +228,51 @@ a.card-title > h6.subcategory-card{
   -o-border-radius: 50px;
   text-align: center;
 }
-
-@media (max-width: 768px){
-  .--banner{
-    height: 50vh;
+@media (min-width: 2001px){
+  .carousel-text h2{
+    font-size: 4rem;
   }
+  .carousel-text>h4{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 2000px) and (min-width: 1441px){
+  .carousel-text h2{
+    font-size: 2.5rem;
+  }
+  .carousel-text>h4{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1440px){
+  .carousel-text h2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .carousel-text h4{
+    font-size: .8rem;
+  }
+}
+@media (max-width: 1024px){
+  .carousel-supra-banner{
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 767.98px){
+  /* HEADER */
+  .supra-banner2{
+    background: no-repeat center bottom;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+  }
+  .carousel-text h2{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: white;
+  }
+  /* HEADER FIN */
   .event-container{
     height: 90vw;
     width: auto;
@@ -243,15 +372,3 @@ a.card-title > h6.subcategory-card{
     -o-border-radius: 1em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
