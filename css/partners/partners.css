@@ -1,4 +1,91 @@
-/* PARTNERS */
+/* Header */
+header{
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.short{
+  height: 70vh;
+}
+.carousel-supra-banner {
+  height: 60vh;
+  margin-top: 10vh;
+  min-height: 50vh;
+  max-height: 90vh;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  vertical-align: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+.carousel-supra-banner .carousel-text{
+  height: 70%;
+  padding-left: 1em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.supra-banner2{
+  background: no-repeat center bottom;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+}
+.active-citizens-logo{
+  position: relative;
+  z-index: 10;
+  width:12vw;
+  height: auto;
+  margin: 0 0 0 1em;
+}
+.carousel-text h2{  
+  color: #435053;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.carousel-text>h3{
+  color: #435053;
+  font-weight: 900;
+  font-size: 2vw;
+}
+.carousel-text>h4{
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2em;
+  width: 25vw;
+}
+.carousel-item {
+  height: 70vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.carousel-caption .photoby{
+  font-size: 1em;
+}
+.photoby-banner{
+  position: absolute;
+  z-index: 5000;
+  bottom: 0em;
+  font-size: 1rem;
+  color: rgb(221, 221, 221);
+  right: 44%;
+}/* PARTNERS */
 .card {
   background-color: transparent;
   border: transparent;
@@ -70,7 +157,7 @@
   background: url(../events\ photos/meeting.jpg);
   background-position: center;
   background-size: contain;
-  max-width: 10vw;
+  max-width: 8vw;
   height: auto;
   border-radius: 15em;
   -webkit-border-radius: 15em;
@@ -118,70 +205,114 @@
   margin: 0.2em -0.5em;
   font-size: 1.5em;
 }
-
-@media (max-width: 767px){
-/* Partners Cards */
-.partner-card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-  border: 2px solid #d6de26;
-  border-radius: 0.5em;
-  margin: 0.2em;
-  padding: 0.2em;
-  height: auto;
+@media (min-width: 2001px){
+  .carousel-text h2{
+    font-size: 4rem;
+  }
+  .carousel-text>h4{
+    font-size: 1.5rem;
+  }
 }
-.card-title{
-  width: 90%;
-  margin: 0.2em;
-  background-color: #AF529E;
-  border-radius: 2em;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
-  box-shadow: 2px 3px 8px -3px #3F4F4C;
+@media (max-width: 2000px) and (min-width: 1441px){
+  .carousel-text h2{
+    font-size: 2.5rem;
+  }
+  .carousel-text>h4{
+    font-size: 1rem;
+  }
 }
-.card-title>h6{
-  font-size: 1em;
+@media (max-width: 1440px){
+  .carousel-text h2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .carousel-text h4{
+    font-size: .8rem;
+  }
 }
-.namepartner{
-  font-size: 1em;
+@media (max-width: 1024px){
+  .carousel-supra-banner{
+    padding-left: 2rem;
+  }
 }
-.img {
-  padding: 1em;
-  background-color: none;
-  max-width: 40vw;
-  height: auto;
-  border-radius: 15em;
-  -webkit-border-radius: 15em;
-  -moz-border-radius: 15em;
-  -ms-border-radius: 15em;
-  -o-border-radius: 15em;
-}
-/* Modal MObile */
-.modal-dialog{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  border: none;
-}
-.modal-content{
-  background-color: white;
-  border: 5px solid #d6de26;
-  border-radius: 0.5em;
-  color: #435053;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
-}
-.modal-logo{
-  height: 20vw;
-  width: auto;
-  margin: 1em 0 2em 0;
-}
+@media (max-width: 767.98px){
+  /* HEADER */
+  .supra-banner2{
+    background: no-repeat center bottom;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+  }
+  .carousel-text h2{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: white;
+  }
+  /* HEADER FIN */
+  /* Partners Cards */
+  .partner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #d6de26;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    padding: 0.2em;
+    height: auto;
+  }
+  .card-title{
+    width: 90%;
+    margin: 0.2em;
+    background-color: #AF529E;
+    border-radius: 2em;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    box-shadow: 2px 3px 8px -3px #3F4F4C;
+  }
+  .card-title>h6{
+    font-size: 1em;
+  }
+  .namepartner{
+    font-size: 1em;
+  }
+  .img {
+    padding: 1em;
+    background-color: none;
+    max-width: 40vw;
+    height: auto;
+    border-radius: 15em;
+    -webkit-border-radius: 15em;
+    -moz-border-radius: 15em;
+    -ms-border-radius: 15em;
+    -o-border-radius: 15em;
+    margin-bottom: 1rem;
+  }
+  /* Modal MObile */
+  .modal-dialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    border: none;
+  }
+  .modal-content{
+    background-color: white;
+    border: 5px solid #d6de26;
+    border-radius: 0.5em;
+    color: #435053;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+  }
+  .modal-logo{
+    height: 10vw;
+    width: auto;
+    margin: 1em 0 2em 0;
+  }
 }
