@@ -1,0 +1,85 @@
+main .row{
+    height: 90vh;
+    margin-top: 10vh;
+}
+.sidebar{
+    background-color: #339966;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.sidebar-title{
+    color: white;
+    width: 100%;
+    padding: 2rem 1rem 0 1rem;
+}
+.sidebar-title h2{
+    border-bottom: 1px solid white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.sidebar-title h4{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.accordion{
+    width: calc(100% - 1rem);
+}
+.sidebar-accordion .btn-layer{
+    background-color: #455154;
+    width: 100%;
+    margin: 1rem 0 0 0;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sidebar-accordion .collapse .card-body{
+    background-color: transparent;
+    border: none;
+}
+.collapse .card-body .card-text{
+    height: 29vh;
+    overflow-y: scroll;
+    color: white;
+}
+.scrollable{
+  position: relative;
+  max-height: 20vw;
+  overflow-y: scroll;
+  padding-right: 1rem;
+}
+.scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+.scrollable::-webkit-scrollbar-track {
+  margin: 1em;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
+}
+.form-check-label{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.pic-container{
+    background-color: rgb(235, 252, 252);
+}
+.pic-layer{
+    height: 90vh;
+}
