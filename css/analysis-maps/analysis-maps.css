@@ -1,85 +1,259 @@
 main .row{
     height: 90vh;
     margin-top: 10vh;
+    --radios1: #4474b4;
+    --radios2: #fef2fe;
+    --radios3: #38a700;
+    --radios4: #fae9d5;
+    --radios5: #fecccb;
+    --radios6: #ffeacb;
+    --radios7: #d2e4e8;
+    --radios8: #d6efae;
+    --radios9: #e5d5f2;
 }
 .sidebar{
-    background-color: #339966;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
+    padding-left: 2rem;
+    margin-right: -1px;
 }
-.sidebar-title{
-    color: white;
-    width: 100%;
-    padding: 2rem 1rem 0 1rem;
-}
-.sidebar-title h2{
-    border-bottom: 1px solid white;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.sidebar-title h4{
-    font-size: 0.75rem;
-    text-transform: uppercase;
+.active-citizens-logo-maps{
+    position: relative;
+    z-index: 10;
+    width: 10vw;
+    height: auto;
+    margin: 2rem auto 0 1.5rem;
 }
 .accordion{
     width: calc(100% - 1rem);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.sidebar-accordion{
+    height: 100%;
 }
 .sidebar-accordion .btn-layer{
-    background-color: #455154;
+    background-color: white;
     width: 100%;
     margin: 1rem 0 0 0;
-    color: white;
-    font-weight: 600;
-    text-align: left;
+    color: black;
+    font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.28);
+    -moz-box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.28);
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.28);
+    padding-left: 1rem;
+}
+.sidebar-accordion .btn-layer.active{
+    background-color: #454646;
+    border: none;
+    color: white;
+}
+.sidebar-accordion .btn-layer:hover{
+    background-color: #454646;
+    border: none;
+    color: white;
+}
+.sidebar-accordion .collapse .card-body{
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.collapse .card-body .card-text{
+    height: auto;
+    overflow-y: scroll;
+    color: black;
+    font-size: .9rem;
+}
+#collapseOne .scrollable{
+    position: relative;
+    max-height: 27vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+}
+#collapseTwo .scrollable{
+    position: relative;
+    max-height: 20vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+}
+#collapseThree .scrollable{
+    position: relative;
+    max-height: 40vh;
+    overflow-y: scroll;
+    padding-right: 1rem;
+}
+.scrollable::-webkit-scrollbar {
+    width: 12px;
+}
+.scrollable::-webkit-scrollbar-track {
+    margin: 1em;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.sidebar-accordion .collapse .card-body{
-    background-color: transparent;
-    border: none;
-}
-.collapse .card-body .card-text{
-    height: 29vh;
-    overflow-y: scroll;
-    color: white;
-}
-.scrollable{
-  position: relative;
-  max-height: 20vw;
-  overflow-y: scroll;
-  padding-right: 1rem;
-}
-.scrollable::-webkit-scrollbar {
-  width: 12px;
-}
-.scrollable::-webkit-scrollbar-track {
-  margin: 1em;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
 .scrollable::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
 }
-.form-check-label{
-    color: white;
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
+.btn-container p{
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 0.25rem;
+}
+.btn-check{
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin: 0.1rem 0.5rem auto 0.5rem;
+    background-color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.btn-check.checked{
+    border: 2px solid white;
+    background-color: #BD1575;
+}
+.btn-label{
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
     font-size: .9rem;
 }
-.pic-container{
-    background-color: rgb(235, 252, 252);
+.pic-layer, .pic-ref{
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+    padding: 1rem;
 }
-.pic-layer{
-    height: 90vh;
+.pic-container, .pic-references{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 2001px){
+    .sidebar-accordion .btn-layer{
+        font-size: 1.5rem;
+    }
+    .collapse .card-body .card-text{
+        font-size: 1.5rem;
+    }
+    #collapseOne .scrollable{
+        position: relative;
+        max-height: 27vh;
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+    #collapseTwo .scrollable{
+        position: relative;
+        max-height: 20vh;
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+    #collapseThree .scrollable{
+        position: relative;
+        max-height: 40vh;
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+    .scrollable::-webkit-scrollbar {
+        width: 15px;
+    }
+    .btn-container p{
+        font-size: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    .btn-check{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.25rem 1rem auto 0.5rem;
+    }
+    .btn-check.checked{
+        border: 3px solid white;
+    }
+    .btn-label{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 1440px){
+    .sidebar{
+        padding-left: 1rem;
+    }
+    .active-citizens-logo-maps{
+        margin: 1rem auto 0 1.5rem;
+    }
+    .accordion{
+        padding-top: 0;
+    }
+    #collapseOne .scrollable{
+        max-height: 22vh;
+    }
+    #collapseTwo .scrollable{
+        max-height: 14vh;
+    }
+    .pic-layer, .pic-ref{
+        max-width: 70%;
+    }
+}
+@media (max-width: 1024px){
+    .btn-container p{
+        font-size: .75rem;
+    }
+    .btn-label{
+        font-size: .75rem;
+    }
+    .pic-layer, .pic-ref{
+        max-width: 100%;
+    }
+}
+@media (max-width: 991.98px) and (min-width: 426px){
+    .pic-references{
+        background-color: #4474b4;
+    }
+}
+@media (max-width: 991.98px){
+    main .row{
+        height: auto;
+    }
+    .sidebar{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .active-citizens-logo-maps{
+        width: 10rem;
+        margin: 1rem auto 0 1.5rem;
+    }
+    .accordion{
+        padding-top: 0;
+    }
+    .scrollable{
+        display: none;
+    }
 }
