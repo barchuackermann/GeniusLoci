@@ -119,89 +119,90 @@ font-size: 1em;
     }
 }
 @media (max-width: 991.98px){
-.carousel-supra {
-position: absolute;
-z-index: 10;
-width: 100%;
-}
-.carousel-supra img{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -5000;
-    height: 55%;
-    object-fit: cover;
-    object-position: center center;
-}
-.carousel-indicators{
-    display: none;
-}
-.active-citizens-logo{
-    position: relative;
-    z-index: 10;
-    width:30vw;
-    height: auto;
-    margin: 1.5em 0 0 0.5em;
-}
-.carousel-text{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10em 2em 2em 2em;
-}
-.carousel-text>h2{  
-    color: white;
-    font-weight: 900;
-    font-size: 5vw;
-}
-.carousel-inner{
-    width: 100%;
-}
-.carousel-text-container{
-    max-height: 35vh;
-    overflow: scroll;
-}
-.carousel-text-container h4, .carousel-text-container h3{
-font-size: 1rem;
-font-weight: 500;
-text-align: left;
-line-height: 2rem;
-width: 100%;
-}
-.btn-container{
-    padding-top: 0;
-    align-items: center;
-    width: 100%;
-}
-.btn-maps{
-    min-width: 13vw;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    margin-right: 0.5em;
-}
-.carousel-text>h4{
-    color: white;
-    font-weight: 900;
-    font-size: 2vh;
-}
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-    z-index: -1;
-}
-.photoby{
+    .carousel-supra {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+    }
+    .carousel-supra img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -5000;
+        height: 55%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .active-citizens-logo{
+        position: relative;
+        z-index: 10;
+        width:30vw;
+        height: auto;
+        margin: 1.5em 0 0 0.5em;
+    }
+    .carousel-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10em 2em 2em 2em;
+    }
+    .carousel-text>h2{  
+        color: white;
+        font-weight: 900;
+        font-size: 5vw;
+    }
+    .carousel-inner{
+        width: 100%;
+    }
+    .carousel-text-container{
+        /* max-height: 35vh;
+        overflow: scroll; */
+        display: none;
+    }
+    /* .carousel-text-container h4, .carousel-text-container h3{
     font-size: 1rem;
-    color: rgba(255,255,255, 0.5);
-}
+    font-weight: 500;
+    text-align: left;
+    line-height: 2rem;
+    width: 100%;
+    } */
+/*     .btn-container{
+        padding-top: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .btn-maps{
+        min-width: 13vw;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0.5em;
+    } */
+    .carousel-text>h4{
+        color: white;
+        font-weight: 900;
+        font-size: 2vh;
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+    }
+    .photoby{
+        font-size: 1rem;
+        color: rgba(255,255,255, 0.5);
+    }
 }
 @media (max-width: 768px){
     .carousel-text{
