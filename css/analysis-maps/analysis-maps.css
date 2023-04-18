@@ -1,4 +1,4 @@
-main .row{
+    main .row{
     height: 90vh;
     margin-top: 10vh;
     --radios1: #4474b4;
@@ -120,6 +120,9 @@ main .row{
     color: black;
     margin-bottom: 0.25rem;
 }
+.btn-group{
+    cursor: pointer;
+}
 .btn-check{
     content: "";
     width: 1rem;
@@ -142,13 +145,15 @@ main .row{
     text-transform: uppercase;
     font-weight: 600;
     font-size: .9rem;
+    cursor: pointer;
 }
 .pic-layer, .pic-ref{
     display: flex;
     margin: auto;
-    max-width: 80%;
+    width: auto;
     height: auto;
-    padding: 1rem;
+    max-height: 90vh;
+    padding: 0;
 }
 .pic-container, .pic-references{
     display: flex;
@@ -218,9 +223,6 @@ main .row{
     #collapseTwo .scrollable{
         max-height: 14vh;
     }
-    .pic-layer, .pic-ref{
-        max-width: 70%;
-    }
 }
 @media (max-width: 1024px){
     .btn-container p{
@@ -229,13 +231,18 @@ main .row{
     .btn-label{
         font-size: .75rem;
     }
-    .pic-layer, .pic-ref{
-        max-width: 100%;
-    }
 }
 @media (max-width: 991.98px) and (min-width: 426px){
     .pic-references{
         background-color: #4474b4;
+    }
+    .pic-layer, .pic-ref{
+        display: flex;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-height: 80vh;
+        padding: 5vh;
     }
 }
 @media (max-width: 991.98px){
@@ -255,5 +262,8 @@ main .row{
     }
     .scrollable{
         display: none;
+    }
+    .btn-container{
+        align-items: flex-start;
     }
 }
