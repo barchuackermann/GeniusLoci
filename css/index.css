@@ -336,3 +336,35 @@ font-size: 1em;
       -o-transition: none !important;
     }
 }
+/* Media queries for iPhone 11 */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+        .fixed-top{
+            height: auto;
+            min-height: 0;
+        }
+}
+/* Media queries for iPhone 11 Pro */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .fixed-top{
+            height: auto;
+            min-height: 0;
+        }
+}
+
+
+/* Media queries for iPhone 11 Pro Max */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .fixed-top{
+            height: auto;
+            min-height: 0;
+        }
+}
