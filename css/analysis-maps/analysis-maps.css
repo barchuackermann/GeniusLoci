@@ -117,8 +117,9 @@
 }
 .btn-container p{
     font-size: 0.9rem;
-    color: black;
     margin-bottom: 0.25rem;
+    font-weight: 700;
+    color: #BD1575;
 }
 .btn-group{
     cursor: pointer;
@@ -259,9 +260,6 @@
     }
     .accordion{
         padding-top: 0;
-    }
-    .scrollable{
-        display: none;
     }
     .btn-container{
         align-items: flex-start;
