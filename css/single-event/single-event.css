@@ -1,10 +1,17 @@
 /* Single Event */
-.event {
-    margin: 6em auto 0em auto;
+.single-event {
+    height: 90vh;
+    margin-top: 10vh;
 }
 .row-main{
-    align-items: center;
-    margin: 5em 0;
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+}
+.col-md-5.col-12, .col-md-7.col-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .event-card{
     display: block;
@@ -28,16 +35,16 @@ p a{
     color: #007bff !important;
 }
 .event-image{
-    max-height: 35vw;
-    height: 35vw;
-      object-fit: cover;
-      object-position: center center;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center center;
     width: auto ;
     border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     -ms-border-radius: 1em;
     -o-border-radius: 1em;
+    margin: auto;
 }
 .breadcrumb{
     background-color: transparent;
@@ -130,7 +137,18 @@ p a{
 .event-register:focus{
     outline: none;
 }
+.modal-body-event > button{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+.event-image-modal{
+    width: 100%;
+}
 /* SECTION ORGANIZERS */
+.container.org{
+    margin: 5rem auto;
+}
 .organizers{
     margin-bottom: 3em;
 }
@@ -228,108 +246,130 @@ p a{
 }
 
 .scrollable{
-  position: relative;
-  overflow-y: scroll;
+    position: relative;
+    overflow-y: scroll;
 }
 .scrollable::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 .scrollable::-webkit-scrollbar-track {
-  margin: 1em;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+    margin: 1em;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(156, 156, 156, 0.5); 
 }
 
-  /* MOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILEMOBILE */
-
-@media (max-width: 768px){
-    /* Event */
-    .event{
-        height: auto;
-        margin: 4em 0;
-    }
-    .event-img-cont{
-        height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-    .event-image-res{
-        height: 100vw;
-        border-radius: 1em;
-        -webkit-border-radius: 1em;
-        -moz-border-radius: 1em;
-        -ms-border-radius: 1em;
-        -o-border-radius: 1em;
-        object-fit: cover;
-        object-position: center center;
-}
-    .breadcrumb{
-        background-color: transparent;
-        padding-left: 0;
-        margin: 0 0 2vw 0;
-        padding-bottom: 0;
-        font-size: 6vw;
-    }
+@media (min-width: 2001px){
     .breadcrumb-item{
-        font-size: 0.5em;
+        font-size: 1.5rem;
     }
-    .event-title>h2{
-        color: #435053;
-        font-weight: 700;
-        font-size: 6vw;
-    }
-    .event-card{
-        height: auto;
+    .event-title{
+        font-size: 2.5rem;
     }
     .event-card-body{
-        overflow-y: scroll;
-        max-height: 50vh;
-        font-size: 0.8em;
+        height: 40vh;
+        max-height: 100%;
     }
-    .event-card-footer{
-        height: auto;
-    }
-    .card-X-text{
-        font-size: 2vh;
-    }
-    .facigroup{
-        margin-bottom: 1em;
-        font-size: 2vh;
-    }
-    .facimg{
-        max-width: 10vh;
+    .card-title, .card-text{
+        font-size: 1.5rem;
     }
     .links-card-footer>a>.fab{
-        margin: 0.5vh;
-        font-size: 2em;
-        text-align: end;
+        font-size: 2rem;
     }
-    /* Cards */
-    .org{
-        margin-top: -8vw;
+    .event-date-body p{
+        font-size: 1.5rem;
     }
-    .sameheight>p{
-        font-size: calc(0.7em + 0.5vw)
+    .event-register{
+        font-size: 2rem;
     }
-    .sameheight{
-        height: auto;
+    .container.org{
+        max-width: 1800px;
     }
-    .events{
-        font-size: inherit;
+}
+@media (max-width: 2000px) and (min-width: 1441px){
+    .breadcrumb-item{
+        font-size: 1rem;
     }
-    .presentation .carousel-container .slide {
-        min-width: 100%;
-        transition: 0.3s ease all;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    .event-title{
+        font-size: 2rem;
+    }
+    .event-card-body{
+        height: 40vh;
+        max-height: 100%;
+    }
+    .card-title, .card-text{
+        font-size: 1rem;
+    }
+    .links-card-footer>a>.fab{
+        font-size: 1rem;
+    }
+    .event-date-body p{
+        font-size: 1rem;
+    }
+    .event-register{
+        font-size: 1rem;
+    }
+    .container.org{
+        max-width: 1800px;
+    }
+}
+@media (max-width: 1440px){
+    .event-title{
+        font-size: 1.5rem;
+    }
+    .event-card-body{
+        height: 35vh;
+        max-height: 100%;
+    }
+}
+@media (max-width: 1024px){
+    .row-main{
+        max-width: 100%;
+        width: 100%;
+    }
+    .event-card-body{
+        height: 30vh;
+        max-height: 100%;
+    }
+    .facigroup{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 767.98px){
+    .single-event, .row-main{
+        height: 100%;
+    }
+    .event-title{
+        font-size: 1.5rem;
+    }
+    .event-card-body{
+        max-height: 40vh;
+        font-size: .9rem;
+    }
+    .extlink, .facigroup {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 426px){
+    .row-main{
+        padding-top: 1rem;
+    }
+    .col-md-5.col-12, .col-md-7.col-12{
+        padding: 0;
+    }
+    .facimg{
+        max-width: 15%;
+    }
+    .organizers .text-center .row .col-6{
+        padding: 0;
     }
 }
