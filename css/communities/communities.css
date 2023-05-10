@@ -207,7 +207,7 @@ header{
         left: 33%;
     }
 }
-@media (max-wi18dth: 2000px) and (min-width: 1441px){
+@media (max-width: 2000px) and (min-width: 1441px){
     .carousel-text h3{
         font-size: 4rem;
     }
