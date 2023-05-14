@@ -1,10 +1,10 @@
 /* Header Map */
 .principal{
-  margin-top: 2.5em;
-  max-height: 100vh;
+  margin-top: 10vh;
+  height: 90vh;
 }
 .map{
-  height: 100vh;
+  height: 90vh;
   min-height: 50vh;
   max-height: 94.5vh;
   background: no-repeat center center;
@@ -26,7 +26,7 @@
   z-index: 10;
   width: 10vw;
   height: auto;
-  margin: 3.5vw 0 0 2vw;
+  margin: 1.5rem 0 0 2vw;
 }
 .sidebar>h2{
   color: white;
