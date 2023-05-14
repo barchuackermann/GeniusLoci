@@ -244,6 +244,7 @@
         height: auto;
         max-height: 80vh;
         padding: 5vh;
+        max-width: 40vh;
     }
 }
 @media (max-width: 991.98px){
@@ -264,8 +265,11 @@
     .btn-container{
         align-items: flex-start;
     }
+    .pic-ref, .pic-layer{
+        max-width: 40vw;
+    }
 }
-@media (max-width: 320px){
+@media (max-width: 575.98px){
     .pic-ref, .pic-layer{
         max-width: 100vw;
     }

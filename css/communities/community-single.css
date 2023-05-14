@@ -164,6 +164,13 @@ main{
     flex-wrap: wrap;
     align-content: center;
 }
+.faces-col{
+    flex: 1 0 0%;
+    max-width: 35%;
+}
+.faces-col a{
+    max-width: 20%;
+}
 .faces>h2{
     color: #58595b;
     font-weight: bold;
@@ -330,7 +337,7 @@ main{
     }
     /* FACES */
     .faces{
-        min-height: 80vh;
+        min-height: auto;
         margin: auto;
         display: flex;
         align-items: center;
