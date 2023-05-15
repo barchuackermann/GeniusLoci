@@ -80,13 +80,13 @@
 }
 #collapseOne .scrollable{
     position: relative;
-    max-height: 27vh;
+    max-height: 26vh;
     overflow-y: scroll;
     padding-right: 1rem;
 }
 #collapseTwo .scrollable{
     position: relative;
-    max-height: 20vh;
+    max-height: 18vh;
     overflow-y: scroll;
     padding-right: 1rem;
 }
@@ -121,7 +121,6 @@
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: #BD1575;
-    margin-top: 0.75rem;
 }
 .btn-group{
     cursor: pointer;
