@@ -4,12 +4,19 @@ const setImg = () => {
   $(".pic-container").css("background-color", "var(--" + map + ")");
   $(".sidebar").css("background-color", "var(--" + map + ")");
   $(".pic-ref").attr("src", "./css/analysis-maps/refs/" + map + ".png");
-  if (screen.width < 982 && screen.width > 576) {
+  var screenWidth = $(window).width();
+  if (screenWidth < 992 && screenWidth > 575) {
     $(".pic-references").css("background-color", "var(--" + map + ")");
   }
 };
 
 $(document).ready(function () {
+  $(".sidebar").css("background-color", "#4474b4");
+  $(".pic-container").css("background-color", "#4474b4");
+  var screenWidth = $(window).width();
+  if (screenWidth < 992 && screenWidth > 575) {
+    $(".pic-references").css("background-color", "#4474b4");
+  }
   $(".btn-layer").click(function () {
     var btnLayerId = $(this).attr("id");
     var firstChild = $("." + btnLayerId);
