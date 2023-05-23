@@ -479,10 +479,6 @@ input[type=file]::-webkit-file-upload-button{
   object-fit: cover;
   object-position: center center;
   border-radius: 15px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
 }
 .carousel-inner > .carousel-item > .mainimg.no-img{
   object-fit: contain;
