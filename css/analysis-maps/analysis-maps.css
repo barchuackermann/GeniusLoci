@@ -24,14 +24,14 @@ main .row{
     z-index: 10;
     width: 10vw;
     height: auto;
-    margin: 2rem auto 0 1.5rem;
+    margin: 1.5rem auto 0 1.5rem;
 }
 .accordion{
     width: calc(100% - 1rem);
     display: flex;
     justify-content: start;
     flex-direction: column;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .sidebar-accordion{
     height: 100%;
@@ -59,7 +59,6 @@ main .row{
     background-color: #454646;
     border: none;
     color: white;
-    margin-bottom: 1rem;
 }
 .sidebar-accordion .btn-layer:hover{
     background-color: #454646;
@@ -74,27 +73,23 @@ main .row{
 }
 .collapse .card-body .card-text{
     height: auto;
-    overflow-y: scroll;
     color: black;
     font-size: .9rem;
+    margin-top: 0.5rem;
 }
-#collapseOne .scrollable{
+.card-body.scrollable{
     position: relative;
-    max-height: 26vh;
-    overflow-y: scroll;
+    max-height: 48vh;
+    overflow-y: auto;
     padding-right: 1rem;
+    margin: 1rem 0;
 }
-#collapseTwo .scrollable{
+.card-body.scrollable.onebutton{
     position: relative;
-    max-height: 18vh;
-    overflow-y: scroll;
+    max-height: 65vh;
+    overflow-y: auto;
     padding-right: 1rem;
-}
-#collapseThree .scrollable{
-    position: relative;
-    max-height: 40vh;
-    overflow-y: scroll;
-    padding-right: 1rem;
+    margin: 1rem 0;
 }
 .scrollable::-webkit-scrollbar {
     width: 12px;
@@ -118,7 +113,7 @@ main .row{
 }
 .btn-container p{
     font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+    margin: 0 0 1rem 0;
     font-weight: 700;
     color: #BD1575;
 }
@@ -172,23 +167,19 @@ main .row{
     .collapse .card-body .card-text{
         font-size: 1.5rem;
     }
-    #collapseOne .scrollable{
+    .card-body.scrollable{
         position: relative;
-        max-height: 27vh;
-        overflow-y: scroll;
+        max-height: 56vh;
+        overflow-y: auto;
         padding-right: 1rem;
+        margin: 1rem 0;
     }
-    #collapseTwo .scrollable{
+    .card-body.scrollable.onebutton{
         position: relative;
-        max-height: 20vh;
-        overflow-y: scroll;
+        max-height: 70vh;
+        overflow-y: auto;
         padding-right: 1rem;
-    }
-    #collapseThree .scrollable{
-        position: relative;
-        max-height: 40vh;
-        overflow-y: scroll;
-        padding-right: 1rem;
+        margin: 1rem 0;
     }
     .scrollable::-webkit-scrollbar {
         width: 15px;
@@ -210,6 +201,22 @@ main .row{
         margin-bottom: 1rem;
     }
 }
+@media (max-width: 2000px) and (min-width: 1441px){
+    .card-body.scrollable{
+        position: relative;
+        max-height: 48vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin: 1rem 0;
+    }
+    .card-body.scrollable.onebutton{
+        position: relative;
+        max-height: 65vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin: 1rem 0;
+    }
+}
 @media (max-width: 1440px){
     .sidebar{
         padding-left: 1rem;
@@ -220,11 +227,19 @@ main .row{
     .accordion{
         padding-top: 0;
     }
-    #collapseOne .scrollable{
-        max-height: 20vh;
+    .card-body.scrollable{
+        position: relative;
+        max-height: 45vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin: 1rem 0;
     }
-    #collapseTwo .scrollable{
-        max-height: 14vh;
+    .card-body.scrollable.onebutton{
+        position: relative;
+        max-height: 65vh;
+        overflow-y: auto;
+        padding-right: 1rem;
+        margin: 1rem 0;
     }
 }
 @media (max-width: 1024px){
@@ -233,6 +248,9 @@ main .row{
     }
     .btn-label{
         font-size: .75rem;
+    }
+    .card-body.scrollable.onebutton{
+        max-height: 66vh;
     }
 }
 @media (max-width: 991.98px) and (min-width: 426px){

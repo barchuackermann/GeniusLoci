@@ -11,11 +11,11 @@ const setImg = () => {
 };
 
 $(document).ready(function () {
-  $(".sidebar").css("background-color", "#4474b4");
-  $(".pic-container").css("background-color", "#4474b4");
+  $(".sidebar").css("background-color", "#e5d5f2");
+  $(".pic-container").css("background-color", "#e5d5f2");
   var screenWidth = $(window).width();
   if (screenWidth < 992 && screenWidth > 575) {
-    $(".pic-references").css("background-color", "#4474b4");
+    $(".pic-references").css("background-color", "#e5d5f2");
   }
   $(".btn-layer").click(function () {
     var btnLayerId = $(this).attr("id");
