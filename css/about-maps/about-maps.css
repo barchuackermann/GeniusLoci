@@ -111,10 +111,11 @@ main{
   -o-border-radius: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 1rem;
   cursor: pointer;
+  height: 100%;
 }
 .about-maps .row .col-lg-4 .about-card:hover{
   text-decoration: none;
@@ -383,8 +384,12 @@ main{
     text-align: center;
     margin-bottom: 3rem;
   }
-  .about-card{
-    margin: 0 0 1rem 0!important;
+  .about-maps .row .col-6{
+    padding: 0 5px;
+  }
+  .about-maps .row .col-lg-4 .about-card{
+    margin: 0 0 1rem 0;
+    padding: 10px;
   }
   .about-maps .row .col-lg-4 .about-card img{
     width: 100%;
