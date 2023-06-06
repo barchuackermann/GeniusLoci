@@ -1,289 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a99166f815.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a99166f815.js" crossorigin="anonymous"></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./css/Logo Icon.svg" />
+    <title>Šančiųbendruomenė.lt</title>
 
-  <title>Šančiųbendruomenė.lt</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link href="css/communities/community-person.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/base.css">
-  <link href="css/communities/community-person.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand lexend active" href="index.html">
-        <div class="logo">
-          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 22.6" style="enable-background:new 0 0 30 22.6;" xml:space="preserve">
-            <path class="st0" d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
-              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"/>
-          </svg>
-        </div>
-
-        <span class="title2">Šančių bendruomenė</span>
-      </a>
-      <button
-        id="burger"
-        class="navbar-toggler navbar-toggler-right bg-white"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon">
-          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="black"/>
-          </svg>
-        </span>
-      </button>
-      <div
-        class="collapse navbar-collapse d-lg-flex justify-content-around"
-        id="navbarResponsive"
-      >
-        <ul class="navbar-nav bg-nav">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link active"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Šančiai Vision</a
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand lexend active" href="index.html">
+          <div class="logo">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 22.6"
+              style="enable-background: new 0 0 30 22.6"
+              xml:space="preserve"
             >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item active" href="">Results of Workshops</a>
-              <a class="dropdown-item" href="">Your Proposals</a>
-              <a class="dropdown-item" href="">Vote</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >MAPS</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./about-maps.html">About Maps</a>
-              <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
-              <a class="dropdown-item" href="./maps-present.html">Present Map</a>
-              <a class="dropdown-item" href="./maps-nature.html">Nature Map</a>
-              <a class="dropdown-item" href="./analysis-maps.html">Analysis of Maps
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./communities.html">COMMUNITIES</a>
-          </li>
-          <li class="nav-item dropdown genius">
-            <a
-              class="nav-link"
-              href="#"
-              id="navbarDropdownPortfolio"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >GENIUS LOCI</a
-            >
-            <div
-              class="dropdown-menu dropdown-menu-left"
-              aria-labelledby="navbarDropdownPortfolio"
-            >
-              <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
-              <a class="dropdown-item" href="./activities.html">Activities</a>
-              <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
-              <a class="dropdown-item" href="./partners.html">Partners</a>
-            </div>
-          </li>
-          <li class="input2-container">
-            <form method="get" action="#" class="input-group">
-              <input
-                type="search"
-                id="search"
-                name="Search"
-                aria-label="Search"
-                method="GET"
-                action=""
-                placeholder="Search"
-                class="form-inline bg-transparent input2"
+              <path
+                class="st0"
+                d="M29.3,5.9c0.3-0.4,0.3-1.2,0-1.6l-2.4-3.5c-0.3-0.4-0.9-0.5-1.3-0.1l-9.7,8.7c-0.4,0.3-1.1,0.3-1.5,0L4.5,0.6
+              C4,0.3,3.4,0.3,3.2,0.7L0.8,4.1C0.4,4.6,0.4,5.3,0.7,5.9l9.8,15.6c0.3,0.4,1,0.9,1.5,0.9h6.1c0.5,0,1.2-0.3,1.5-0.9L29.3,5.9z"
               />
-              <button class="btn lupa" type="button">
-                <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z" fill="#454646"/>
-                  </svg>
-              </button>
-            </form>
-          </li>
-          <div class="d-flex languaje-container">
-            <li class="nav-item">
-              <a class="nav-link languaje" href="#">LT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link languaje active" href="#">EN</a>
-            </li>
-
+            </svg>
           </div>
-        </ul>
-        <button type="button" class="btn login">
-          <span>Login</span>
-          </button>
-      </div>
-    </div>
-  </nav>
 
-  <section class="container-fluid p-0">
-    <div class="row row-main">
-      <div class="col-md-6 text-center p-0 col-img">
-        <img src="./css/activities/capacitybuilding.jpg" alt="Person Image" class="img-fluid person-image">
-      </div>
-      <div class="col-md-6 col-12 col-text">
-        <div class="bredandtitle">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./communities.html">Communities</a></li>
-              <li class="breadcrumb-item"><a href="./community-single.html">Žemųjų Šančių bendruomenė</a></li>
-            </ol>
-          </nav>
-        </div>
-        <div class="row event-title">
-          <h2>Name and Surname</h2>
-        </div>
-        <div class="row">
-          <div class="card person-card">
-            <div class="card-body person-card-body scrollable">
-              <div class="card-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus similique ipsum accusantium perspiciatis totam sequi soluta, ut expedita rerum? Quaerat nemo vitae natus autem maiores dignissimos asperiores id commodi!
-                  Officiis quam quo ex, qui sequi consequuntur veritatis exercitationem, assumenda error harum ut quos excepturi molestias iure iste alias! Mollitia a est officiis voluptatum consequuntur voluptas praesentium excepturi reiciendis doloremque?
-                  Minima, voluptatum! Dignissimos laboriosam accusamus nisi? Labore numquam ea dolorum obcaecati, molestiae molestias saepe, voluptates culpa enim aspernatur laborum error. Consequatur earum assumenda repellat pariatur ducimus qui ut molestias asperiores.
-                  Quas, inventore. Deserunt culpa quidem laudantium alias delectus iure cum eum sit natus harum, iste ea eveniet at quae quod velit. Aliquid iure harum explicabo pariatur perferendis exercitationem animi atque!
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam veritatis cum eligendi unde magnam, ratione earum. Aut totam dolorem quod, impedit quam nulla magni omnis perferendis, aperiam officiis et.
-                  Labore est iste inventore saepe error architecto soluta consequatur officia quam explicabo nulla odio, voluptas id tempora quaerat ratione pariatur? At labore aperiam cum omnis incidunt expedita sed, quisquam iure.
-                  Laudantium assumenda vitae consequatur doloremque molestiae voluptatem vel at facilis ut ducimus, sapiente maiores. Maiores eum voluptates delectus provident debitis nemo sapiente ea iusto veritatis, adipisci odit maxime ipsam facilis?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate, odio adipisci porro architecto sapiente eaque aut laborum ducimus facilis voluptatem incidunt dolorem ad veritatis vero illum. Earum, iusto dolor?
-                  Sed accusantium consectetur, delectus deleniti perferendis iure ipsam dolor inventore pariatur magnam esse tenetur a, quis error neque laudantium excepturi! Dolore repudiandae amet error perferendis temporibus cupiditate voluptate, atque sit.
-                  Quisquam aut possimus, repellendus perspiciatis perferendis eaque eos? Necessitatibus, ipsum! Nemo atque, odit, provident architecto soluta nisi quis, cum corrupti a dolor accusamus. Nostrum architecto, suscipit distinctio similique id sit.
-                  Minus veniam eveniet, numquam delectus provident assumenda quibusdam eligendi sapiente quasi id non ipsa dignissimos consequatur hic consequuntur similique. Facere maiores fuga itaque accusantium blanditiis ex aperiam, delectus dolorem amet.
-                </p>
+          <span class="title2">Šančių bendruomenė</span>
+        </a>
+        <button
+          id="burger"
+          class="navbar-toggler navbar-toggler-right bg-white"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z"
+                fill="black"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-around"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav bg-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Šančiai Vision</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item active" href="">Results of Workshops</a>
+                <a class="dropdown-item" href="">Your Proposals</a>
+                <a class="dropdown-item" href="">Vote</a>
               </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >MAPS</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./about-maps.html">About Maps</a>
+                <a class="dropdown-item" href="./maps-past.html">Memory Map</a>
+                <a class="dropdown-item" href="./maps-present.html"
+                  >Present Map</a
+                >
+                <a class="dropdown-item" href="./maps-nature.html"
+                  >Nature Map</a
+                >
+                <a class="dropdown-item" href="./analysis-maps.html"
+                  >Analysis of Maps
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./communities.html">COMMUNITIES</a>
+            </li>
+            <li class="nav-item dropdown genius">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >GENIUS LOCI</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a class="dropdown-item" href="./genius-loci.html">Proyect</a>
+                <a class="dropdown-item" href="./activities.html">Activities</a>
+                <!-- <a class="dropdown-item" href="./calendar.html">Calendar</a> -->
+                <a class="dropdown-item" href="./partners.html">Partners</a>
+              </div>
+            </li>
+            <li class="input2-container">
+              <form method="get" action="#" class="input-group">
+                <input
+                  type="search"
+                  id="search"
+                  name="Search"
+                  aria-label="Search"
+                  method="GET"
+                  action=""
+                  placeholder="Search"
+                  class="form-inline bg-transparent input2"
+                />
+                <button class="btn lupa" type="button">
+                  <svg
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.288 15.0046L13.5007 10.1435C13.9343 9.27771 14.2215 8.18965 14.2215 7.1016C14.2215 5.35837 13.5711 3.83159 12.5515 2.53294L11.1041 1.22845C9.93799 0.503079 8.561 0 7.1078 0C3.11735 0 0 3.25831 0 7.17765C0 11.097 3.19353 14.3611 7.1078 14.3611C8.20356 14.3611 9.28757 14.0628 10.2251 13.6299L11.1041 14.5015L12.7038 16.0927L14.9481 18.3507C15.3817 18.7836 16.0028 19 16.6239 19C17.245 19 17.8544 18.7836 18.288 18.3507C19.2373 17.403 19.2373 15.8762 18.288 15.0105V15.0046ZM7.03749 12.6881C3.99045 12.6881 1.44732 10.1435 1.44732 7.1016C1.44732 4.05973 3.99045 1.43904 7.03749 1.43904C10.1607 1.58528 12.7097 3.98368 12.7097 7.1016C12.7097 10.2195 10.1607 12.6881 7.03749 12.6881ZM17.204 17.2568C17.0634 17.403 16.8583 17.4732 16.665 17.4732C16.4716 17.4732 16.2606 17.403 16.12 17.2568L11.6139 12.6881C12.0475 12.4717 12.4108 11.9686 12.7097 11.5942L17.204 16.1687C17.497 16.4554 17.497 16.9643 17.204 17.2509V17.2568Z"
+                      fill="#454646"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </li>
+            <div class="d-flex languaje-container">
+              <li class="nav-item">
+                <a class="nav-link languaje" href="#">LT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link languaje active" href="#">EN</a>
+              </li>
             </div>
+          </ul>
+          <button type="button" class="btn login">
+            <span>Login</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid p-0">
+      <div class="row">
+        <div class="col-lg-6 p-0 col-img">
+          <img
+            src="./css/activities/capacitybuilding.jpg"
+            alt="Person Image"
+            class="img-fluid person-image"
+          />
+        </div>
+        <div class="col-lg-6 col-12 col-text">
+          <div class="bredandtitle">
+            <nav aria-label="breadcrumb" class="breadcrumb-container">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./communities.html">Communities</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="./community-single.html"
+                    >Žemųjų Šančių bendruomenė</a
+                  >
+                </li>
+              </ol>
+            </nav>
+            <h2 class="event-title">Name and Surname</h2>
+          </div>
+          <div class="person-card scrollable">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              repellendus similique ipsum accusantium perspiciatis totam sequi
+              soluta, ut expedita rerum? Quaerat nemo vitae natus autem maiores
+              dignissimos asperiores id commodi! Officiis quam quo ex, qui sequi
+              consequuntur veritatis exercitationem, assumenda error harum ut
+              quos excepturi molestias iure iste alias! Mollitia a est officiis
+              voluptatum consequuntur voluptas praesentium excepturi reiciendis
+              doloremque? Minima, voluptatum! Dignissimos laboriosam accusamus
+              nisi? Labore numquam ea dolorum obcaecati, molestiae molestias
+              saepe, voluptates culpa enim aspernatur laborum error. Consequatur
+              earum assumenda repellat pariatur ducimus qui ut molestias
+              asperiores. Quas, inventore. Deserunt culpa quidem laudantium
+              alias delectus iure cum eum sit natus harum, iste ea eveniet at
+              quae quod velit. Aliquid iure harum explicabo pariatur perferendis
+              exercitationem animi atque! Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Ipsa quibusdam veritatis cum
+              eligendi unde magnam, ratione earum. Aut totam dolorem quod,
+              impedit quam nulla magni omnis perferendis, aperiam officiis et.
+              Labore est iste inventore saepe error architecto soluta
+              consequatur officia quam explicabo nulla odio, voluptas id tempora
+              quaerat ratione pariatur? At labore aperiam cum omnis incidunt
+              expedita sed, quisquam iure. Laudantium assumenda vitae
+              consequatur doloremque molestiae voluptatem vel at facilis ut
+              ducimus, sapiente maiores. Maiores eum voluptates delectus
+              provident debitis nemo sapiente ea iusto veritatis, adipisci odit
+              maxime ipsam facilis? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Officia cupiditate, odio adipisci porro
+              architecto sapiente eaque aut laborum ducimus facilis voluptatem
+              incidunt dolorem ad veritatis vero illum. Earum, iusto dolor? Sed
+              accusantium consectetur, delectus deleniti perferendis iure ipsam
+              dolor inventore pariatur magnam esse tenetur a, quis error neque
+              laudantium excepturi! Dolore repudiandae amet error perferendis
+              temporibus cupiditate voluptate, atque sit. Quisquam aut possimus,
+              repellendus perspiciatis perferendis eaque eos? Necessitatibus,
+              ipsum! Nemo atque, odit, provident architecto soluta nisi quis,
+              cum corrupti a dolor accusamus. Nostrum architecto, suscipit
+              distinctio similique id sit. Minus veniam eveniet, numquam
+              delectus provident assumenda quibusdam eligendi sapiente quasi id
+              non ipsa dignissimos consequatur hic consequuntur similique.
+              Facere maiores fuga itaque accusantium blanditiis ex aperiam,
+              delectus dolorem amet.
+            </p>
           </div>
         </div>
       </div>
+    </main>
 
-    </div>
-  </section>
+    <section class="container-fluid quote" style="background-color: #e6b695">
+      <p>
+        Quote:
+        <span>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ad
+          impedit repudiandae. Dolore, dolores. Eveniet illo tempore eius non
+          omnis quibusdam perferendis vel maxime libero doloremque. Dignissimos
+          neque ullam excepturi! Et, repudiandae! Repellendus praesentium
+          obcaecati, quam dignissimos assumenda sapiente pariatur. Vel nobis
+          alias illum molestiae odit temporibus itaque harum, modi ex aliquam
+          soluta veritatis quae id facilis! Unde, perspiciatis modi.
+        </span>
+      </p>
+    </section>
 
-<section class="container-fluid quote" style="background-color: #e6b695">
-    <p>
-        Quote: <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ad impedit repudiandae. Dolore, dolores. Eveniet illo tempore eius non omnis quibusdam perferendis vel maxime libero doloremque. Dignissimos neque ullam excepturi!
-        Et, repudiandae! Repellendus praesentium obcaecati, quam dignissimos assumenda sapiente pariatur. Vel nobis alias illum molestiae odit temporibus itaque harum, modi ex aliquam soluta veritatis quae id facilis! Unde, perspiciatis modi. </span>
-    </p>
-</section>
-
-<section class="container interview">
-    <div class="card card-interview">
-        <div class="card-body card-body-interview">
-            <h4>Interview 11/24/2020 by Julija</h4>
-            <p class="line3"></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore, minima eius qui totam repellat illum, adipisci fugiat ducimus recusandae ut, cum consequatur dignissimos? Dignissimos quibusdam illum distinctio voluptatum tenetur.</p>
-            <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim error tempore commodi assumenda ex, praesentium iure tenetur laborum, nostrum corporis esse quam odio nulla a voluptates pariatur iste maxime!
+    <section class="container-fluid interview">
+      <div class="row">
+        <div class="col-12 interview-content">
+          <h4>Interview 11/24/2020 by Julija</h4>
+          <p class="divider"></p>
+          <div class="interview-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              labore, minima eius qui totam repellat illum, adipisci fugiat
+              ducimus recusandae ut, cum consequatur dignissimos? Dignissimos
+              quibusdam illum distinctio voluptatum tenetur.
             </p>
             <p>
-            Nihil perferendis laboriosam iste. Nulla, illum reiciendis asperiores dolor est quibusdam nesciunt nam. Aspernatur veniam sit non quibusdam dolore odio ipsa animi expedita sunt? Tempora dolores blanditiis quia consectetur iure?
-            Omnis illum quia, placeat, fugiat, natus assumenda reprehenderit eligendi quam quis soluta a laudantium perferendis dolor cumque quae earum adipisci quibusdam repellat sunt! Rem quibusdam laborum optio! Excepturi, quis consequuntur!
-            Enim, facere quidem! Exercitationem necessitatibus veritatis quia commodi officiis molestiae saepe labore aliquam nam voluptate, distinctio fugit beatae quaerat. Vitae consequuntur id eligendi nobis, dicta ea. Consequuntur nobis repellat quidem.
-            Ab officia quidem labore quisquam, nesciunt veniam inventore recusandae voluptate consequatur cum. Enim porro quo officia quia aut, nam consequuntur commodi officiis deserunt id saepe aspernatur omnis corrupti eos exercitationem.
-            Numquam consectetur deserunt minima, voluptatibus sapiente est nisi. Atque vero dolor eius, perferendis vitae culpa, ad assumenda, consequatur dolorem voluptatibus quasi voluptate praesentium at adipisci molestiae animi! Quae, odio unde?</p>
-            <p class="line3"></p>
-            <nav aria-label="...">
-              <ul class="pagination pagination-sm justify-content-center">
-                <li class="page-item" aria-current="page">
-                  <span class="page-link">
-                    1
-                    <span class="sr-only">(current)</span>
-                  </span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-              </ul>
-            </nav>
+              - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eligendi enim error tempore commodi assumenda ex, praesentium iure
+              tenetur laborum, nostrum corporis esse quam odio nulla a
+              voluptates pariatur iste maxime!
+            </p>
+            <p>
+              Nihil perferendis laboriosam iste. Nulla, illum reiciendis
+              asperiores dolor est quibusdam nesciunt nam. Aspernatur veniam sit
+              non quibusdam dolore odio ipsa animi expedita sunt? Tempora
+              dolores blanditiis quia consectetur iure? Omnis illum quia,
+              placeat, fugiat, natus assumenda reprehenderit eligendi quam quis
+              soluta a laudantium perferendis dolor cumque quae earum adipisci
+              quibusdam repellat sunt! Rem quibusdam laborum optio! Excepturi,
+              quis consequuntur! Enim, facere quidem! Exercitationem
+              necessitatibus veritatis quia commodi officiis molestiae saepe
+              labore aliquam nam voluptate, distinctio fugit beatae quaerat.
+              Vitae consequuntur id eligendi nobis, dicta ea. Consequuntur nobis
+              repellat quidem. Ab officia quidem labore quisquam, nesciunt
+              veniam inventore recusandae voluptate consequatur cum. Enim porro
+              quo officia quia aut, nam consequuntur commodi officiis deserunt
+              id saepe aspernatur omnis corrupti eos exercitationem. Numquam
+              consectetur deserunt minima, voluptatibus sapiente est nisi. Atque
+              vero dolor eius, perferendis vitae culpa, ad assumenda,
+              consequatur dolorem voluptatibus quasi voluptate praesentium at
+              adipisci molestiae animi! Quae, odio unde?
+            </p>
+          </div>
+          <p class="divider"></p>
+          <nav aria-label="...">
+            <ul class="pagination pagination-sm justify-content-center">
+              <li class="page-item" aria-current="page">
+                <span class="page-link">
+                  1
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="py-4 bg-green2">
-  <div class="container-fluid">
-      <div class="row text-center align-items-center">
-          <div class="col-12">
-          <span class="support">Paremkite Šančių pilietinę visuomenę</span>
-          </div>
-          <div class="col-12">
-          <button type="button" class="btn btn-donate" data-toggle="modal" data-target="#donate">Paaukok</button>
-          </div>
-          <div class="col-12">
-          <span class="legal">Internetinę svetainę administruoja Žemųjų Šančių bendruomenė, Įmonės kodas 303497934 - sanciubendruomene@gmail.com
-          </span>
-          </div>
-          <div class="col-12">
-          <span class="legal"><a href="./terms-and-conditions.html">Privatumo politika</a></span>
-          <span class="legal">|</span>
-          <span class="legal">Design by <a href="https://desenioras.com/" target="_blank">desenioras.com</a>
-          </span>
-          </div>
       </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog donate-dialog">  
-          <div class="modal-content donate-content">
-          <div class="modal-header donate-header">
-              <h5 class="modal-title" id="exampleModalLabel">Paremkite Šančių pilietinę bendruomenę</h5>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-green2">
+      <div class="container-fluid">
+        <div class="row text-center align-items-center">
+          <div class="col-12">
+            <span class="support">Paremkite Šančių pilietinę visuomenę</span>
           </div>
-          <div class="modal-body donate-body">
+          <div class="col-12">
+            <button
+              type="button"
+              class="btn btn-donate"
+              data-toggle="modal"
+              data-target="#donate"
+            >
+              Paaukok
+            </button>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              >Internetinę svetainę administruoja Žemųjų Šančių bendruomenė,
+              Įmonės kodas 303497934 - sanciubendruomene@gmail.com
+            </span>
+          </div>
+          <div class="col-12">
+            <span class="legal"
+              ><a href="./terms-and-conditions.html"
+                >Privatumo politika</a
+              ></span
+            >
+            <span class="legal">|</span>
+            <span class="legal"
+              >Design by
+              <a href="https://desenioras.com/" target="_blank"
+                >desenioras.com</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="donate"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog donate-dialog">
+          <div class="modal-content donate-content">
+            <div class="modal-header donate-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Paremkite Šančių pilietinę bendruomenę
+              </h5>
+            </div>
+            <div class="modal-body donate-body">
               <p>Sąskaitos numeris: LT28 7044 0600 0800 9369, AB SEB bankas</p>
               <p>Juridinio asmens pavadinimas: Žemųjų Šančių bendruomenė</p>
               <p>Įmonės kodas: 303497934</p>
               <p>Adresas: Norvegų g. 7A, Kaunas</p>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-  </div>
-</footer>
-<!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
