@@ -166,7 +166,8 @@ main{
 }
 .faces-col{
     flex: 1 0 0%;
-    max-width: 35%;
+    max-width: 100%;
+    min-width: 20%;
 }
 .faces-col a{
     max-width: 20%;
@@ -301,6 +302,19 @@ main{
         font-size: 0.8rem;
     }
     /* Faces */
+    .faces{
+        margin: 2rem auto;
+    }
+    .faces-col{
+        min-width: 40%;
+        max-width: 50%;
+    }
+    .faces-card{
+        margin-bottom: 2rem;
+    }
+    .faces-text{
+        text-align: center;
+    }
     .faces-text>p{
         font-size: 1rem;
     }
