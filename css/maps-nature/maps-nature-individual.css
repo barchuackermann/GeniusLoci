@@ -1,42 +1,74 @@
 /* Single Event */
-.gral{
+main.container{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    margin-top: 10vh;
+    max-width: 100%;
     background-color: #79a071;
 }
-.total{
-    height: 100vh;
-    background-color: #79a071;
-    z-index: 1;
+.gral{
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    width: 80%;
+}
+.gral>.col-md-5, .gral>.col-md-7{
+    padding: 0;
+    margin: auto;
+    height: auto;
+    max-height: 80vh;
+}
+.gral>.col-md-7{
+    padding-left: 2rem;
+}
+.carousel.slide{
+    max-height: 80vh;
+}
+.carousel-indicators{
+    margin-bottom: 0.5rem;
 }
 .carousel-indicators li{
-    background-color: #fff;
+    width: 80px;
+    height: 6px;
 }
 .carousel-inner{
-    margin-top: 5vw;
-    min-height: auto;
-    height: 88vh;
-    padding: 0;
-    border-radius: 1vw;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
+    z-index: 10;
+    max-height: 80vh;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
-.mainimg{
+.carousel-inner > .carousel-item{
+    height: 80vh;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.carousel-inner > .carousel-item > .mainimg{
     height: 100%;
-    object-fit: scale-down;
+    width: 100%;
+    object-fit: cover;
     object-position: center center;
-    margin: -5vw auto ;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
-.no-img{
-    width: 80%;    
-    object-fit: scale-down !important;
-    object-position: center center !important;
-    margin: -5vw auto ;
+.carousel-inner > .carousel-item > .mainimg.no-img{
+    object-fit: contain;
 }
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 15%;
+    bottom: 3%;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
@@ -45,7 +77,7 @@
     text-align: center;
     margin: 0;
     line-height: 1.25em;
-    font-size: 0.8em;
+    font-size: 1rem;
 }
 .carousel-caption>p {
     font-weight: 600;
@@ -54,10 +86,13 @@
 .carousel-caption>p>span {
     font-weight:normal;
 }
-
 .carousel-caption>h5{
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 15;
+    max-height: 80vh;
 }
 .right-side{
     background-color: #79a071;
@@ -76,14 +111,13 @@
 }
 .event-card-body{
     overflow-y: scroll;
-    max-height: 50vw;
+    max-height: 30vw;
     font-size: 1vw;
 }
 .card-body-pic{
     padding: 0;
 }
 .event-title{
-    margin-top: 6vw;
     color: white;
     font-weight: 700;
     font-size: 2vw;
@@ -117,13 +151,14 @@
     margin-top: 0em;
     width: 100%;
 }
-
+.event-date-body>p>span, .card-text>p>span{
+    font-weight: 400;
+}
 .card-title{
     font-weight: 600;
-    margin: 0;
 }
 .card-title>p{
-    margin-bottom: 0vw;
+    margin-bottom: 0.5vw;
 }
 .btn:focus{
     box-shadow: none !important;
@@ -132,7 +167,6 @@
     margin: 0;
     padding: 0.5em 0;
 }
-
 .event-back{
     background-color: #E57E38;
     color: white !important;
@@ -159,7 +193,6 @@
     align-self: center;
     margin-right: 0.5vw;
 }
-
 .extlink>a{
     color: #445053;
 }
@@ -181,15 +214,14 @@
 .scrollable{
     position: relative;
     min-height: 20vw;
-    max-height: 35vw;
+    max-height: 24vw;
     overflow-y: scroll;
 }
 .scrollable::-webkit-scrollbar {
     width: 12px;
 }
-
 .scrollable::-webkit-scrollbar-track {
-    margin: 1em;
+    margin: 0;
     -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -197,132 +229,123 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
 .scrollable::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
 }
 
-
-/* MOBILE */
-
-@media (max-width: 768px){
-    .total{
-        background-color: #79a071;
-        z-index: 1;
-        margin-top: 20vw;
-        height: 75vh;
+@media (min-width: 2001px){
+    .scrollable{
+        max-height: 50vh;
     }
-    .carousel-inner{
-        height: 70vh;
-        border-radius: 1vh;
-        -webkit-border-radius: 1vh;
-        -moz-border-radius: 1vh;
-        -ms-border-radius: 1vh;
-        -o-border-radius: 1vh;
-    }
-    .right-side{
-        justify-content: center;
-        background-color: #79a071;
-        color: white;
-        padding-left: 8vw;
-        padding-right: 8vw;
-        margin: auto;
-        height: 100vh;
-        max-height: 100vh;
-    }
-    .gral{
-        background-color: #79a071;
-    }
-    .mainimg{
-        height: 100%;
-        object-fit: scale-down;
-        object-position: center center;
-        margin: -15vh auto ;
-    }
-    .no-img{
-        width: 80%;    
-        object-fit: scale-down !important;
-        object-position: center center !important;
-        margin: -15vh auto ;
+    .card-title p, .card-X-text p{
+        font-size: 1.5rem;
     }
     .event-title{
-        margin-top: 2vw;
-        color: white;
-        font-weight: 700;
-        font-size: 8vw;
+        font-size: 3rem;
     }
-    .event-card{
-        display: block;
-        min-width: 100%;
-        background-color: #79a071;
-        border: 1px solid #d1d3d4;
+}
+@media (max-width: 2000px) and (min-width: 1441px){
+    .gral>.col-md-5, .gral>.col-md-7{
+        padding: 0;
+        margin: auto;
+        height: auto;
+        max-height: 90vh;
     }
-    .event-card-body{
-        overflow-y: scroll;
+    .gral>.col-md-7{
+        padding-left: 2rem;
+    }
+    .card-title p, .card-X-text p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1440px){
+    .scrollable{
         max-height: 50vh;
-        font-size: 1vw;
     }
-    .event-date-body, .card-text{
-        padding: 0.5vw;
-        margin: 1vh auto auto auto;
-        width: 100%;
+}
+@media (max-width: 1024px){
+    .gral>.col-md-5, .gral>.col-md-7{
+        padding: 0;
+        margin: auto;
         height: auto;
+        max-height: 90vh;
     }
-    .event-date-body{
-        background-color: #79a071;
-        border: none;
-        height: auto;
-        margin-bottom: 1vh;
-    }
-    .event-date-body>p, .card-text>p{
-        margin: 0;
-        font-weight: 600;
-        font-size: 2vh;
-    }
-    .card-X-text{
-        font-weight: 400;
-        font-size: 3.5vw;
-        width: 100%;
-    }
-    .event-date-body>p>span, .card-text>p>span{
-        font-weight: 400;
-    }
-    .card-title{
-        font-weight: 600;
-        font-size: 4vw;
-    }
-    .event-back{
-        margin: 10vh auto;
-        padding: 1vw 0;
-        font-size: 4vw;
-    }
-    .event-back>i{
-        align-self: center;
-        margin-right: 0.5vh;
-    }
-    .badges{
-        margin-bottom: 8vw;
-    }
-    .badge{
-        font-size: 3.5vw;
-        margin-bottom: 1vh;
+    .gral>.col-md-7{
+        padding-left: 2rem;
     }
     .scrollable{
-        max-height: 66vh;
+        max-height: 50vh;
     }
-    .carousel-caption {
-        bottom: 30%;
-        line-height: 1.25em;
-        font-size: 0.8em;
+    .card-title p, .card-X-text p{
+        font-size: 0.8rem;
     }
-
-    .carousel-caption>h5{
-        font-size: 1em;
+    .event-back{
+        font-size: 0.8rem;
+    }
+    .row.gral{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+        flex-wrap: nowrap;
+    }
+    .badge{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 767.98px){
+    main.container{
+        height: auto;
+    }
+    .row.gral{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 1rem 2rem;
+        flex-wrap: nowrap;
+    }
+    .gral>.col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+        max-height: 80vh;
+        margin: 1rem 0;
+        overflow: visible;
+    }
+    .total.right-side{
+        padding: 0;
+    }
+    .event-title{
+        font-size: 2rem;
+    }
+    .badges{
+        font-size: 0.8rem;
+    }
+    .badges span{
+        font-size: 0.8rem;
+    }
+    .event-back{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 426px){
+    .scrollable {
+        max-height: 50vh;
+    }
+}
+@media (max-width: 320px){
+    .row.gral{
+        margin: 1rem;
+        overflow-y: clip;
+    }
+    .gral>.col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-height: 85vh;
         margin: 0;
     }
-    .carousel-caption>p:last-child {
-        font-weight: 600;
-        margin-bottom: 2vh;
+    .scrollable{
+        height: 60vh;
     }
 }

@@ -193,12 +193,10 @@ main.container{
     align-self: center;
     margin-right: 0.5vw;
 }
-
 .extlink>a{
     color: #007bff;
 }
 .badges{
-    height: 1vw;
     margin: 1vh 0;
     padding: 0;
 }
@@ -208,7 +206,7 @@ main.container{
 }
 .badge{
     margin: 0 auto 1vw auto;
-    font-size: 1vw;
+    font-size: .8rem;
     background-color: #617e95;
     color: #fff;
 }
@@ -230,7 +228,6 @@ main.container{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
 .scrollable::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
@@ -245,6 +242,9 @@ main.container{
     }
     .event-title{
         font-size: 3rem;
+    }
+    .badges p, .badge {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
@@ -283,6 +283,16 @@ main.container{
         font-size: 0.8rem;
     }
     .event-back{
+        font-size: 0.8rem;
+    }
+    .row.gral{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+        flex-wrap: nowrap;
+    }
+    .badges p{
         font-size: 0.8rem;
     }
 }
