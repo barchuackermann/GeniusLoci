@@ -167,10 +167,10 @@
   <header class="principal">
       <div class="row m-0 map">
         <!-- Desktop -->
-        <div class="col-md-4 col-12 sidebar" id="init">
+        <div class="col-lg-4 col-12 sidebar" id="init">
             <img src="./css/logos/Active-citizens-fund_White@4x.png" alt="Active-citizens-logo" class="active-citizens-logo-maps">
             <h2>MEMORY Map</h2>
-            <div class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable">
+            <div class="d-none d-lg-block hide scrollable sidebar-scrollable">
               <p>“The future cannot simply be separated from the past.[…] We come to the future only through the past. Especially when that past is still felt in the present. Something needs to be done with it because the path to the future will remain simply blocked. After all, the goal is the future, not the past. […] It's transforming energy".</p>
               <h6>
                 Aleida Assman, researcher of memory culture.
@@ -178,31 +178,32 @@
               <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias reiciendis inventore consequuntur rem sed animi delectus mollitia aperiam commodi? Fuga numquam amet asperiores aliquid officiis commodi enim aperiam, corrupti ullam.</h4>
               <h4>The goal of the Šančiai memory map is to collect the values ​​of personal and collective memory and share them with others. We seek to create the history of Šančiai based not only on official policy makers, but also on the memories, experiences, legends, family albums, photos, etc. of each of us. We hope that this map will become a fulcrum for creating a vision of the future of Šančiai and a means to get to know this area better.</h4>
             </div>
-            <div class="mt-4">
+            <div class="btn-container">
               <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
                 How to become a creator of Šančiai history
               </button>
               <div class="botones">
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="btn-icon">
                   <p>Having questions?</p>
                 </button>
                 <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="btn-icon">
                   <p>Create the map</p>
                 </button>
-                <!-- <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
+                <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
                   <p>IR AL FORM</p>
-                </button> -->
+                </button>
               </div>
             </div>
         </div>
 
         
-        <div class="col-md-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
+        <div class="col-lg-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
           <a href=""></a>
         </div>
       </div>
+
     <!-- Modal Form -->
     <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-dialog-centered modal-lg" id="smallerThanks">  
@@ -240,8 +241,8 @@
                                   <label class="custom-control-label" for="abstract">Intangible object</label>
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="col p-0 pr-1 form-group">
+                              <div class="row gap-2">
+                                <div class="col p-0 pr-2 form-group">
                                   <select class="custom-select" id="phisicalInput">
                                     <option selected>Choose...</option>
                                     <option value="1">Buildings</option>
@@ -275,8 +276,8 @@
                               <label for="Information">Indicate the source of the information</label>
                               <textarea class="form-control" id="Information" rows="2" placeholder="My own info, a magazine, form an archive, institution...."></textarea>
                             </div>
-                            <div class="row">
-                              <div class="col-md-7 col-12 p-0 pr-1 form-group">
+                            <div class="row gap-2">
+                              <div class="col-lg-7 col-12 p-0 pr-2 form-group">
                                 <label for="epoch">Epoch</label>
                                 <select class="custom-select" required>
                                   <option selected disabled value="">Year or time period</option>
@@ -289,7 +290,7 @@
                                   Please complete this field.
                                 </div>
                               </div>
-                              <div class="col-md-5 col-12 p-0 form-group">
+                              <div class="col-lg-5 col-12 p-0 form-group">
                                 <label for="location-type">Type of Location</label>
                                 <select class="custom-select" required>
                                   <option selected disabled value="">Type of place</option>
@@ -566,6 +567,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal How to Create -->
     <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
@@ -591,6 +593,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal Point Map -->
     <div class="modal fade" id="picture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered picture-dialog modal-lg">  
@@ -604,11 +607,9 @@
 
                 <div class="img-modal row">  
                   <div class="total align-content-center col-12">
-                    <div
-                      id="carouselIndicators"
+                    <div id="carouselIndicators"
                       class="carousel slide"
-                      data-ride="carousel"
-                    >
+                      data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img
@@ -674,6 +675,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Modal Having Questions? -->
     <div class="modal fade" id="quest" tabindex="-1" aria-labelledby="quest" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  

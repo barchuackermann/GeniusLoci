@@ -167,27 +167,27 @@
   <header class="principal">
       <div class="row m-0 map">
         <!-- Desktop -->
-        <div class="col-md-4 col-12 sidebar" id="init">
+        <div class="col-lg-4 col-12 sidebar" id="init">
             <img src="./css/logos/Active-citizens-fund_White@4x.png" alt="Active-citizens-logo" class="active-citizens-logo-maps">
             <h2>Present Map</h2>
-            <div class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable">
-              <h6>
+            <div class="d-none d-lg-block hide scrollable sidebar-scrollable">
+              <p>
                 City is made not only from open spaces and buildings – it is a local community first of all. People use public spaces together, adopt them to own needs and add social meaning and value. Henri Lefebvre in his pamphlet Right to the city (1968) asks: <span>"Which are the socially successful places and which will they be? How do we recognize them? Based on what criteria?" </span>. While answering to these questions Alexander Ståhle created sociotop mapping method in 2000 as an urban planning tools which allows to identify use and social values of public spaces objectively. Sociotop method till now is successfully and widely used in urban planning Sweden. 
-              </h6>
+              </p>
               <h4>The aim of the "Present map“ of Šanciai is to collect information about the contemporary your activities in public spaces, their use and social values based on the Sociotop method. This map will become an important corner stone for the vision of Šančiai.</h4>
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt impedit unde voluptas cum rerum minus dolor cupiditate quidem aliquam voluptatum maxime, consectetur neque quo delectus, a ratione, ab et.</h4>
             </div>
-            <div class="mt-4">
+            <div class="btn-container">
               <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
                 Kaip Šančių dabarties žemėlapio kūrėju? El boton un poco mas largo
               </button>
               <div class="botones">
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="btn-icon">
                   <p>Having questions?</p>
                 </button>
                 <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="btn-icon">
                   <p>Create the map</p>
                 </button>
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
@@ -198,10 +198,11 @@
         </div>
 
         
-        <div class="col-md-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
+        <div class="col-lg-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
           <a href=""></a>
         </div>
       </div>
+
     <!-- Modal Form -->
     <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog modal-dialog-centered modal-lg" id="smallerThanks">  
@@ -219,6 +220,13 @@
                 
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
+                            <div class="form-group">
+                              <label for="Object" class="labelObject">Title</label>
+                              <input type="text" class="form-control" id="Object" placeholder="Experience title..." required>
+                              <div class="invalid-feedback">
+                                Please complete this field.
+                              </div>
+                            </div>
                             <div class="col-12 p-0 form-group">
                               <label for="location-type">Location Type</label>
                               <select class="custom-select" required>
@@ -543,11 +551,6 @@
       </div>
     </div>
 
-
-
-
-
-
     <!-- Modal How to Create -->
     <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
@@ -587,18 +590,18 @@
                   <div class="total align-content-center col-12">
                     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./css/single-event/creativity3jpg.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/activities/capacitybuilding.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/activities/education.jpg" class="d-block w-100 mainimg" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./css/communities/button-community.png" class="d-block mainimg no-img" alt="...">
-                          </div>
+                        <div class="carousel-item active">
+                          <img src="./css/single-event/creativity3jpg.jpg" class="mainimg" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./css/activities/capacitybuilding.jpg" class="mainimg" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./css/activities/education.jpg" class="mainimg" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./css/communities/button-community.png" class="d-block mainimg no-img" alt="...">
+                        </div>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -617,7 +620,9 @@
           </div>
           <div class="modal-footer">
             <p>Bažnyčia</p>
-            <a href="./map-present-individual.html" class="btn btn-how btn-how-onmodal"><button type="button" class="btn">Read about</button></a>
+            <a href="./map-present-individual.html" class="btn">
+              <button type="button" class="btn-how-onmodal">Read about</button>
+            </a>
           </div>
         </div>
       </div>

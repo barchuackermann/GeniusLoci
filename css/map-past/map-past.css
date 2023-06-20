@@ -120,6 +120,11 @@
   align-items: center;
   margin: 1.5vw;
 }
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
 .botones{
   display: flex;
   justify-content: space-around;
@@ -148,8 +153,8 @@
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-.btn-header>img{
-  width: 2vw;
+.botones .btn-header .btn-icon{
+  width: 1.5rem;
 }
 .btn-header-question{
   margin: 0;
@@ -186,6 +191,7 @@
   display: block;
   width: 100%;
   text-align: left;
+  text-transform: uppercase;
 }
 .no-img{
   width: 80%;
@@ -210,7 +216,8 @@
 .scrollable{
   position: relative;
   max-height: 20vw;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .scrollable::-webkit-scrollbar {
   width: 12px;
@@ -242,7 +249,6 @@
 }
 input::placeholder, textarea::placeholder, option, option::placeholder{
   font-style: italic;
-  font-size: 1em;
 }
 .form-check>label{
   font-size: 1vw;
@@ -295,6 +301,9 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 
 
 /* Keywords */
+/* #jquery-script-menu{
+  margin-right: 0.5rem;
+} */
 .select2-selection--multiple{
   border: 1px solid #ccc;
   color: #555;
@@ -325,15 +334,10 @@ input::placeholder, textarea::placeholder, option, option::placeholder{
 .select2-selection__choice>button:hover{
   background-color: #93c2b4 !important;
 }
-
-
-
 .mapa{
   padding: 0;
   margin: 1.75vw auto;
 }
-
-
 label{
   margin-bottom: 0;
 }
@@ -375,7 +379,6 @@ input:focus, textarea:focus, select:focus{
 }
 .form-group-file>input{
   margin-bottom: 0.5vw;
-
 }
 .line{
   border-top: 1px solid white;
@@ -403,13 +406,13 @@ input[type=file]::-webkit-file-upload-button{
   margin: 0;
 }
 .linkterms{
-  font-size: 1vw;
+  font-size: .9rem;
   margin: 0;
   color: #3499cd !important;
 }
 .form-check-data>label>p{
   padding: 0;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .linkterms:visited{
   color: white;
@@ -492,13 +495,13 @@ input[type=file]::-webkit-file-upload-button{
   justify-content: space-around;
 }
 .modal-footer>p{
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-weight: 500;
   color: grey;
 }
-.modal-footer>.btn-how{
+.modal-footer .btn-how{
   margin: 0;
-  padding: 0.3vw 1vw;
+  padding: 0.3rem 1rem;
 }
 
 
@@ -606,6 +609,9 @@ input[type=file]::-webkit-file-upload-button{
   .how-content .form-control{
     font-size: 1.5rem;
   }
+  .linkterms{
+    font-size: 1.5rem !important;
+  }
   .modal-quest-terms input[type=checkbox]{
     content: "";
     width: 1.5rem;
@@ -618,6 +624,30 @@ input[type=file]::-webkit-file-upload-button{
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+  }
+  .general .btn{
+    font-size: 1.75rem;
+    padding-left: 2rem;
+  }
+  .general label, .general .form-control, .general .select.custom-select, input::placeholder, textarea::placeholder, .general .form-group, .general .custom-select{
+    font-size: 1.5rem !important;
+  }
+  .general option, .general option::placeholder, small{
+    font-size: 1rem !important;
+  }
+  .select2-results__options li, .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    font-size: 1.75rem;
+  }
+  .finalSubmit .btn-form{
+    font-size: 2rem;
+  }
+  .finalSubmit .btn-back{
+    font-size: 1.5rem;
+  }
+  .picture-content .btn-how-onmodal, .picture-content .modal-footer p{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
@@ -671,7 +701,13 @@ input[type=file]::-webkit-file-upload-button{
     font-size: 0.8rem;
   }
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
+  .form-check label, .form-check label p, .custom-control-label, .custom-control>label, label, .form-check>label, .gender, .connect, .form-group>label, .form-control, .custom-select, .form-group-file{
+    font-size: 0.8rem;
+  }
+  .col.form-group:first-child{
+    margin-right: 0.5rem;
+  }
   .principal{
     background-color: #445154;
   }
@@ -700,16 +736,27 @@ input[type=file]::-webkit-file-upload-button{
     color: white;
     margin: 1rem 0.5rem;
     font-weight: 800;
-    font-size: 3vw;
+    font-size: 1.5rem;
+  }
+  .btn-container{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
   }
   .btn-how{
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    font-weight: 500;
   }
   .btn-header{
     font-size: 1.25rem;
-    min-height: 4rem;
+    min-height: 2.75rem;
   }
+  .botones .btn-header .btn-icon{
+    display: none;
+  }
+  .botones .btn-header
   .gallery{
     margin-top: 5rem !important;
   }
@@ -764,18 +811,15 @@ input[type=file]::-webkit-file-upload-button{
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 200px rgba(255, 255, 255, 100); 
   }
-  .form-group{
-    margin-right: 1em;
-  }
   input::placeholder, textarea::placeholder, option, option::placeholder{
     font-style: italic;
-    font-size: small;
   }
-  .form-check>label{
-    font-size: 1vw;
-  }
-  .gender, .connect{
-    font-size: 1em;
+  #thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
   }
   .line2{
     border-top: 1px solid white;
@@ -787,10 +831,11 @@ input[type=file]::-webkit-file-upload-button{
   .thanks{
     width: 100%;
     text-align: center;
-    border-top: honeydew 1px solid;
-    border-bottom: honeydew 1px solid;
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-size: 1rem;
   }
-  .btn-back{
+  #thanks .btn-back{
     background-color: #617e95;
     color: white;
     font-weight: 400;
@@ -799,11 +844,12 @@ input[type=file]::-webkit-file-upload-button{
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
-    width: 30%;
-    margin:auto;
+    width: auto;
+    margin: 0 auto;
     text-align: center;
     padding: 0 0.5em;
-    font-size: 3vw;
+    font-size: 1.25rem;
+    display: flex;
   }
   .tag-container {
     display: flex;
@@ -842,16 +888,10 @@ input[type=file]::-webkit-file-upload-button{
   .labelObject{
     margin-top: 0;
   }
-  .form-group>label{
-    font-size: 1em;
-  }
   input:focus, textarea:focus, select:focus{
     border-color: none !important;
     box-shadow: none !important;
     outline: none !important;
-  }
-  .custom-control>label{
-    font-size: 3.2vw;
   }
   .heritage{
     margin-bottom: 0.5em;
@@ -859,7 +899,6 @@ input[type=file]::-webkit-file-upload-button{
   .form-control, .custom-select{
     height: calc(1.5em + 0.5rem + 2px);
     padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
@@ -868,7 +907,6 @@ input[type=file]::-webkit-file-upload-button{
     -o-border-radius: 0.5rem;
   }
   .form-group-file{
-    font-size: 0.875rem;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -896,25 +934,14 @@ input[type=file]::-webkit-file-upload-button{
   .age, .email{
     margin-bottom: 0.5em;
   }
-  .form-check-label{
-    font-size: 2.5vw !important;
-    margin: 0;
-  }
-  .form-check-label>p{
-    font-size: 3.2vw !important;
-    margin: 0;
-  }
   .linkterms{
-    font-size: 3vw;
+    font-size: 0.8rem;
     margin: 0;
     color: #3499cd !important;
   }
-  #termsandconditions{
-    font-size: 3vw !important;
-  }
   .form-check-data>label>p{
     padding: 0;
-    font-size: 1vw;
+    font-size: 0.8rem;
   }
   .linkterms:visited{
     color: white;
@@ -932,17 +959,14 @@ input[type=file]::-webkit-file-upload-button{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.25rem;
   }
   .finalSubmit{
     width: 60%;
     margin: auto;
   }
   .valid-feedback .invalid-feedback{
-    font-size: 0.25vw;
-  }
-  .modal-quest-terms>label>p, .linkterms{
-    font-size: 3vw;
+    font-size: 0.25rem;
   }
   .presentation .carousel-container .slide {
     min-width: 100%;
@@ -959,10 +983,10 @@ input[type=file]::-webkit-file-upload-button{
     font-size: 1rem;
   }
   .btn-how-modal{
-    font-size: 4vw;
+    font-size: 1.25rem;
   }
   .btn-how-onmodal{
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -977,6 +1001,28 @@ input[type=file]::-webkit-file-upload-button{
 }
 @media (max-width: 426px){
   .sidebar>h2{
-    font-size: 6vw;
+    font-size: 1.5rem;
+  }
+  .card-group .col{
+    padding: 0;
+  }
+  .card-body.scrollable{
+    padding: 0.5rem;
+  }
+  .card-body.scrollable .row .col-4, .card-body.scrollable .row .col-8{
+    padding: 0;
+  }
+  .card-body.scrollable .row .col-8{
+    padding-left: 1rem;
+  }
+  .finalSubmit{
+    width: 100%;
+  }
+  .btn-form{
+    font-size: 1rem;
+  }
+  .btn-back{
+    display: flex;
+    width: auto;
   }
 }

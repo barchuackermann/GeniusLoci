@@ -167,27 +167,27 @@
   <header class="principal">
       <div class="row m-0 map">
         <!-- Desktop -->
-        <div class="col-md-4 col-12 sidebar" id="init">
+        <div class="col-lg-4 col-12 sidebar" id="init">
             <img src="./css/logos/Active-citizens-fund_White@4x.png" alt="Active-citizens-logo" class="active-citizens-logo-maps">
             <h2>Nature Map</h2>
-            <div class="d-none d-md-block d-lg-block hide scrollable sidebar-scrollable">
-              <h6>
+            <div class="d-none d-lg-block hide scrollable sidebar-scrollable">
+              <p>
                 City is made not only from open spaces and buildings – it is a local community first of all. People use public spaces together, adopt them to own needs and add social meaning and value. Henri Lefebvre in his pamphlet Right to the city (1968) asks: ”Which are the socially successful places and which will they be? How do we recognize them? Based on what criteria?”. While answering to these questions Alexander Ståhle created sociotop mapping method in 2000 as an urban planning tools which allows to identify use and social values of public spaces objectively. Sociotop method till now is successfully and widely used in urban planning Sweden. 
-              </h6>
+              </p>
               <h4>The aim of the "Nature Map" of Šanciai is to collect information about the nature activities in common spaces and create a vision of the Natural important places for community. This map will become an important corner stone for the vision of Šančiai.</h4>
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt impedit unde voluptas cum rerum minus dolor cupiditate quidem aliquam voluptatum maxime, consectetur neque quo delectus, a ratione, ab et.</h4>
             </div>
-            <div class="mt-4">
+            <div class="btn-container">
               <button class="btn btn-block btn-how" data-toggle="modal" data-target="#how">
                 How to create Šančiai Nature Map
               </button>
               <div class="botones">
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#quest">
-                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/question-icon.png" alt="Having questions?" class="btn-icon">
                   <p>Having questions?</p>
                 </button>
                 <button class="btn btn-header btn-header-point" type="button" id="createMap">
-                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="d-none d-sm-none d-md-block m-auto">
+                  <img src="./css/map-past/point-icon.png" alt="Create the map" class="btn-icon">
                   <p>Create the map</p>
                 </button>
                 <button class="btn btn-header btn-header-question" data-toggle="modal" data-target="#form">
@@ -198,13 +198,13 @@
         </div>
 
         
-        <div class="col-md-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
+        <div class="col-lg-8 col-12 mapa m-0" style="background-image: url(./css/map-past/Map.png)" data-toggle="modal" data-target="#picture" id="mappast">
           <a href=""></a>
         </div>
       </div>
     <!-- Modal Form -->
     <div class="modal fade"  id="form" tabindex="-1" aria-labelledby="form" aria-hidden="true" data-backdrop="static">
-      <div class="modal-lg modal-dialog modal-dialog-centered" id="smallerThanks">  
+      <div class="modal-dialog modal-dialog-centered modal-lg" id="smallerThanks">  
         <div class="modal-content modal-content-map">
           <div class="modal-body modal-body-map" id="clear">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -214,7 +214,7 @@
                 <div class="accordion" id="accordionMap">
 
                   <div class="general" id="ADDLOCATION">
-                    <button class="btn text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
                       #1  write about a natural habitat or species </button>
                     <div id="collapseOne" class="collapse show" data-spy="scroll" aria-labelledby="headingOne" data-parent="#accordionMap">
                           <div class="card-body scrollable">
@@ -248,7 +248,7 @@
                                     <option value="2">bar</option>
                                     <option value="3">baz</option>
                                 </select>
-                                <!-- <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div> -->
+                                <div id="keywords_invalid_feedback" class="invalid-feedback">Please enter up to three keywords.</div>
                                 <small id="keywords_help" class="form-text ">Write and press enter or comma</small>
                             </div>
                           </div>
@@ -257,7 +257,7 @@
 
 
                   <div class="general" id="ADDPICTURE">
-                    <button class="btn text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
                       #2 ADD PICTURES
                     </button>
             
@@ -360,7 +360,7 @@
 
 
                   <div class="general" id="ADDDATA">
-                    <button class="btn text-uppercase" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
                           #3 PERSONAL DATA*
                     </button>
                 
@@ -429,7 +429,7 @@
                           </div>
                         </div>
                         
-                        <div class="row form-group email mt-2">
+                        <div class="row form-group email">
                           <label for="email">E-mail</label>
                           <input type="email" class="form-control" id="email" placeholder="email@example.com">
                         </div>
@@ -470,6 +470,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal How to Create -->
     <div class="modal fade" id="how" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
@@ -494,6 +495,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal Point Map -->
     <div class="modal fade" id="picture" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered picture-dialog modal-lg">  
@@ -510,13 +512,13 @@
                     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./css/single-event/creativity3jpg.jpg" class="d-block w-100 mainimg" alt="...">
+                            <img src="./css/single-event/creativity3jpg.jpg" class="mainimg" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="./css/activities/capacitybuilding.jpg" class="d-block w-100 mainimg" alt="...">
+                            <img src="./css/activities/capacitybuilding.jpg" class="mainimg" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="./css/activities/education.jpg" class="d-block w-100 mainimg" alt="...">
+                            <img src="./css/activities/education.jpg" class="mainimg" alt="...">
                           </div>
                           <div class="carousel-item">
                             <img src="./css/communities/button-community.png" class="d-block mainimg no-img" alt="...">
@@ -538,11 +540,14 @@
           </div>
           <div class="modal-footer">
             <p>Bažnyčia</p>
-            <a href="./maps-nature-individual.html" class="btn btn-how btn-how-onmodal"><button type="button" class="btn">Read about</button></a>
+            <a href="./maps-nature-individual.html" class="btn">
+              <button type="button" class="btn-how-onmodal">Read about</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Modal Having Questions? -->
     <div class="modal fade" id="quest" tabindex="-1" aria-labelledby="quest" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered how-dialog">  
