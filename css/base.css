@@ -274,6 +274,21 @@ footer{
   background: #a5ac23;
   color: #000;
 }
+
+/* LIGHTBOX */
+.ginner-container.desc-bottom{
+  max-width: 900px;
+  padding: 24px;
+  background: white;
+  border-radius: 0.3rem;
+}
+.ginner-container.desc-bottom .gslide-media.gslide-image{
+  box-shadow: none;
+}
+.ginner-container.desc-bottom .gslide-media.gslide-image img.zoomable{
+  border-radius: 0.3rem;
+}
+
 @media (min-width: 2001px) {
   .navbar{
     height: 6em;
@@ -307,6 +322,10 @@ footer{
   .login{
     font-size: 1em;
     width: auto;
+  }
+  /* LIGHTBOX */
+  .ginner-container.desc-bottom{
+    max-width: 1500px;
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
@@ -342,6 +361,10 @@ footer{
   }
   .dropdown-item{
     font-size: .8em;
+  }
+  /* LIGHTBOX */
+  .ginner-container.desc-bottom{
+    max-width: 100%;
   }
 }
 @media (max-width: 991.98px){
