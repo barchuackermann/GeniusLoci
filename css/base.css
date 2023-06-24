@@ -275,20 +275,6 @@ footer{
   color: #000;
 }
 
-/* LIGHTBOX */
-.ginner-container.desc-bottom{
-  max-width: 900px;
-  padding: 24px;
-  background: white;
-  border-radius: 0.3rem;
-}
-.ginner-container.desc-bottom .gslide-media.gslide-image{
-  box-shadow: none;
-}
-.ginner-container.desc-bottom .gslide-media.gslide-image img.zoomable{
-  border-radius: 0.3rem;
-}
-
 @media (min-width: 2001px) {
   .navbar{
     height: 6em;

@@ -51,7 +51,7 @@ main.container{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.carousel-inner > .carousel-item > .mainimg{
+.mainimg{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -62,7 +62,7 @@ main.container{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.carousel-inner > .carousel-item > .mainimg.no-img{
+.mainimg.no-img{
     object-fit: contain;
 }
 .carousel-caption {
@@ -338,7 +338,7 @@ main.container{
 }
 @media (max-width: 320px){
     .row.gral{
-        margin: 1rem;
+        margin: 1rem !important;
         overflow-y: clip;
     }
     .gral>.col-12{
