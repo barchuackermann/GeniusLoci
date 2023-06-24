@@ -32,12 +32,15 @@ header{
   justify-content: space-evenly;
   align-items: start;
 }
-.supra-banner2{
+/* .supra-banner2{
   background: no-repeat center bottom;
   background-size: contain;
   position: absolute;
   z-index: 10;
   text-align: center;
+} */
+.supra-mobile{
+  display: none;
 }
 .active-citizens-logo{
   position: relative;
@@ -49,7 +52,7 @@ header{
 .carousel-text h2{  
   color: #435053;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2rem !important;
   margin-top: 1rem;
 }
 .carousel-text>h3{
@@ -207,18 +210,24 @@ header{
 }
 @media (min-width: 2001px){
   .carousel-text h2{
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   .carousel-text>h4{
+    font-size: 1.5rem;
+  }
+  .modal-partner .modal-body p{
     font-size: 1.5rem;
   }
 }
 @media (max-width: 2000px) and (min-width: 1441px){
   .carousel-text h2{
-    font-size: 2.5rem;
+    font-size: 3rem !important;
   }
   .carousel-text>h4{
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+  .modal-partner .modal-body p{
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 1440px){
@@ -230,13 +239,7 @@ header{
     font-size: .8rem;
   }
 }
-@media (max-width: 1024px){
-  .carousel-supra-banner{
-    padding-left: 2rem;
-  }
-}
-@media (max-width: 767.98px){
-  /* HEADER */
+@media (max-width: 1023.98px){
   .supra-banner2{
     background: no-repeat center bottom;
     background-size: cover;
@@ -244,6 +247,27 @@ header{
     z-index: 10;
     text-align: center;
   }
+  .supra-mobile{
+    display: flex;
+  }
+  .supra-desktop{
+    display: none;
+  }
+  .carousel-supra-banner{
+    padding-left: 2rem;
+  }
+  .carousel-text{
+    padding-top: 0;
+  }
+  .carousel-text{
+    padding-top: 0;
+  }
+  .carousel-text h2{
+    color: white !important;
+  }
+}
+@media (max-width: 767.98px){
+  /* HEADER */
   .carousel-text h2{
     font-size: 2.5rem;
     margin-top: 2rem;
@@ -268,12 +292,12 @@ header{
     margin: 0.2em;
     background-color: #AF529E;
     border-radius: 2em;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
     box-shadow: 2px 3px 8px -3px #3F4F4C;
-  }
+}
   .card-title>h6{
     font-size: 1em;
   }

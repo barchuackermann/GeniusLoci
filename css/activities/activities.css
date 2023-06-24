@@ -32,12 +32,15 @@ header{
   justify-content: space-evenly;
   align-items: start;
 }
-.supra-banner2{
+/* .supra-banner2{
   background: no-repeat center bottom;
   background-size: contain;
   position: absolute;
   z-index: 10;
   text-align: center;
+} */
+.supra-mobile{
+  display: none;
 }
 .active-citizens-logo{
   position: relative;
@@ -49,7 +52,7 @@ header{
 .carousel-text h2{  
   color: #435053;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2rem !important;
   margin-top: 1rem;
 }
 .carousel-text>h3{
@@ -230,7 +233,7 @@ a.card-title > h6.subcategory-card{
 }
 @media (min-width: 2001px){
   .carousel-text h2{
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   .carousel-text>h4{
     font-size: 1.5rem;
@@ -253,13 +256,7 @@ a.card-title > h6.subcategory-card{
     font-size: .8rem;
   }
 }
-@media (max-width: 1024px){
-  .carousel-supra-banner{
-    padding-left: 2rem;
-  }
-}
-@media (max-width: 767.98px){
-  /* HEADER */
+@media (max-width: 1023.98px){
   .supra-banner2{
     background: no-repeat center bottom;
     background-size: cover;
@@ -267,10 +264,28 @@ a.card-title > h6.subcategory-card{
     z-index: 10;
     text-align: center;
   }
+  .supra-mobile{
+    display: flex;
+  }
+  .supra-desktop{
+    display: none;
+  }
+  .carousel-supra-banner{
+    padding-left: 2rem;
+  }
+  .carousel-text{
+    padding-top: 0;
+  }
+  .carousel-text h2{
+    color: white !important;
+  }
+}
+@media (max-width: 767.98px){
+  /* HEADER */
   .carousel-text h2{
     font-size: 2.5rem;
-    margin-top: 2rem;
-    color: white;
+    margin-top: -2rem;
+    color: white !important;
   }
   /* HEADER FIN */
   .event-container{
